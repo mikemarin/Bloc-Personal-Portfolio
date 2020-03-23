@@ -1,0 +1,86 @@
+@charset "UTF-8"; /* CSS Document */
+
+/* === GENERAL/COMMON FORMATTING === */
+
+/* === QUICK TROUBLESHOOTING === */
+
+.border {
+  border: 1px solid white;
+}
+
+/* === COLOR SWATCH === */
+
+/*
+#0E8F9E - Viridian Green
+#4F7C74 - Hooker's Green
+#C12020 - Firebrick
+#82200A - Smokey Topaz
+#3F0A0A - Black Bean
+*/
+
+/* === BASE FORMATTING === */
+
+:root {
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+img {
+}
+
+svg {
+}
+
+button {
+}
+
+button:active {
+}
+
+a:link {
+}
+
+/* === FLEX FORMATTING === */
+
+
+/*
+.flex {
+  display: flex;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-ctr-ctr {
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-ctr-btm {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fx-rt-ctr {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fx-space-between {
+  justify-content: space-between;
+}
+*/

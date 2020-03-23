@@ -1,0 +1,22 @@
+@charset "UTF-8"; /* CSS Document */
+
+/* === SECTION 000: CURRENT SECTION === */
+
+section {
+  border: 1px solid black;
+}
+
+.panel {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+svg {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+}
+
+
+/* === SECTION 00: NAVIGATION === */
+
+/* === SECTION 01: HERO === */
