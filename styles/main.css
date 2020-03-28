@@ -1,22 +1,327 @@
 @charset "UTF-8"; /* CSS Document */
 
+
+
+
+
+
+
+
 /* === SECTION 000: CURRENT SECTION === */
 
-section {
+
+
+/* === SECTION 01: HEADER/NAVIGATION === */
+
+header {
+  padding: 0 2em;
+  background-color: var(--clr-dark-primary);
+  border-bottom: 5px solid #D68A2A;
+}
+
+.nav_logo {
+  xposition: absolute;
+  border: 10px solid green;
+  border-radius: 100%;
+}
+
+.nav > li {
+  xdisplay: block;
+  padding: 1em 1em;
+  xbackground-color: red;
+  xborder: 1px solid red;
+}
+
+.nav li > a {
+  color: #FFF;
+}
+
+/* === SECTION 02: SYNOPSIS HERO === */
+
+.case-study-synopsis svg {
+  xheight: auto;
+  width: 50px;
+}
+
+.case-study-synopsis .container-half {
+  padding: 0 0em;
+  xbackground-color: orange;
+}
+
+.case-study-synopsis .row-01,
+.case-study-synopsis .row-03 {
+  text-align: center;
+  xbackground-color: orange;
+}
+
+.case-study-synopsis .row-02 {
+  margin: 3em 0;
+}
+
+/* === SECTION 03: SPECIFICATION === */
+
+.case-study-specification .row-02 {
+  padding-top: 2em;
+}
+
+.case-study-specification .container-third {
+  xmargin: 0 2em;
+  padding: 0 6em;
   border: 1px solid black;
 }
 
+.case-study-specification {
+  xpadding: 0em 6em;
+}
+
+.case-study-specification h3 {
+  padding-bottom: .3em;
+  border-bottom: 2px solid #1A1A1A;
+  xbackground-color: red;
+}
+
+/* === SECTION 04: OVERVIEW === */
+
+.case-study-overview {
+  xheight: 70vh;
+  xflex-basis: 55%;
+  background-color: #E8E1CE;
+  background-image: url(../images/foodle/Photo-Produce.jpg);
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid black;
+}
+
+.case-study-overview h2,
+.case-study-overview h3,
+.case-study-overview p {
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* === SECTION 05: PROBLEM SOLUTION === */
+
+section.case-study-problem-solution {
+  padding: 2em 2em;
+  xmargin: 0 0;
+  xbackground-color: red;
+}
+
+.case-study-problem,
+.case-study-solution {
+  margin: 0 2em;
+}
+
+.case-study-problem-solution .panel {
+  padding: 6em 6em;
+  xbackground-color: red;
+}
+
+/* === SECTION 07: DESIGN PROCESS === */
+
+.case-study-design-process .panel-image {
+  background-color: white;
+  padding: 2em 2em;
+  border: 1px solid #BFBFBF;
+}
+
+.case-study-design-process .panel {
+  margin: 0 .5em;
+}
+
+.case-study-design-process h4 {
+  padding: .75em 0;
+  text-align: center;
+}
+
+/* === SECTION 09: PROJECT BRIEF === */
+
+.case-study-project-brief h4 {
+  padding-bottom: .3em;
+  border-bottom: 2px solid #1A1A1A;
+  xbackground-color: red;
+}
+
+
+
+
+
+/* === SECTION 03: SPECIFICATION === */
+
+/* === SECTION 03: SPECIFICATION === */
+
+
+
+
+
+
+/* === GENERAL/COMMON FORMATTING === */
+
+.container-full {
+  width: 100%;
+  border: 1px solid purple;
+}
+
+.container-half {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.container-third {
+  width: 33.33%;
+  border: 1px solid brown;
+}
+
+.container-fifth {
+  width: 20%;
+  border: 1px solid green;
+}
+
+.focus {
+  border: 3px solid blue;
+}
+
 .panel {
-  background-color: rgba(255, 0, 0, 0.25);
+  background-color: #F2F2F2;
+  border: 1px solid #BFBFBF;
+  padding: 2em 2em;
+}
+
+section.section-divider {
+  padding: 0 0;
+}
+
+.section-category {
+  Xpadding: .5em .5em;
+  text-align: center;
+  color: white;
+  background-color: #2F496D;
+}
+
+.sec-hero {
+  xheight: 80vh;
+  background: rgb(2,0,36);
+background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(0,212,255,1) 100%);
+}
+
+.sec-image-placeholder {
+  height: 600px;
+  width: 100%;
+  background-color: green;
+}
+
+.sec-bkg-01 {
+  background-color: #FFFFFF;
+  xbackground-color: #FBBCA5;
+  border: 1px solid #E6E6E6;
+} /*  PURE WHITE  */
+
+.sec-bkg-02 {
+  background-color: #FAFAFA;
+  xbackground-color: #F88961;
+  border: 1px solid #E6E6E6;
+} /*  OFF WHITE  */
+
+.section-header {
+  text-align: center;
+}
+
+/* === BASE FORMATTING === */
+
+:root {
+  --clr-light-primary: #A1B0C9;
+  --clr-medium-primary: #2F496D;
+  --clr-dark-primary: #042149;
+  --clr-light-accent: #F9C686;
+  --clr-dark-accent: #D68A2A;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+img {
 }
 
 svg {
-  height: 150px;
-  width: 150px;
-  background-color: blue;
 }
 
+button {
+  xmargin: 0 auto;
+  xdisplay: block;
+  background: #D68A2A;
+  border: 2px solid #737373;
+  border-radius: 15px;
+  color: white;
+  padding: 1em 1em;
+  width: 400px;
+}
 
-/* === SECTION 00: NAVIGATION === */
+button:active {
+}
 
-/* === SECTION 01: HERO === */
+a:link {
+}
+
+section {
+  padding: 0em 3em;
+}
+
+/* === FLEX FORMATTING === */
+
+.flex {
+  display: flex;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-ctr {
+  align-items: center;
+}
+
+.flex-test {
+  text-align: center;
+}
+
+.fx-ctr-rt {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fx-rt {
+  justify-content: flex-end;
+}
+
+.fx-ctr-ctr {
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-ctr-btm {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fx-rt-ctr {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fx-space-between {
+  justify-content: space-between;
+}

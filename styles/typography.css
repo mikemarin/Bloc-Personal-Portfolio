@@ -1,0 +1,251 @@
+@charset "UTF-8"; /* CSS Document */
+
+/* === BASE FORMATTING === */
+
+:root {
+  --clr-light-text: #FFF;
+  --clr-dark-text: #1A1A1A;
+}
+
+/* === TYPOGRAPHY === */
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+
+h1, h2, h3, h4, p, a, li, button {
+  color: var(--clr-dark-text);
+}
+
+/*  Main Headline  */
+
+h1 {
+  font-size: 5.16rem; /* 82.56px */
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  xletter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+/*  Section Headline  */
+
+h2 {
+  font-size: 3.583rem; /* 57.33px */
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1em;
+  xmargin-bottom: .25em;
+  xletter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+/*  Section SubHeadline  */
+
+h3 {
+  xposition: relative;
+  font-size: 2.074rem ; /* 33.18px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: .5em;
+  xline-height: 1;
+  xwidth: 60%;
+  xborder-bottom: 1px solid black;
+}
+
+/*
+h3:after {
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 220px;
+}
+*/
+
+/*  Panel Headline  */
+
+h4 {
+  font-size: 1.44rem; /* 23.04px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  xline-height: 1;
+  text-transform: uppercase;
+}
+
+/*  Persona Name  */
+
+h5 {
+  font-size: 2.074rem; /* 33.18px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  xline-height: 1;
+}
+
+/*  Main Paragraph  */
+
+p.paragraph-01 {
+  font-size: 1.728rem; /* 27.65px */
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  color: white;
+}
+
+/*
+p.paragraph-01 {
+  font-size: 2.074rem;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  color: white;
+} */
+
+/*  Section Paragraph  */
+
+p.paragraph-02 {
+  font-size: 1.728rem; /* 27.65px */
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 1em;
+}
+
+/*  Small Panel  */
+
+p.paragraph-03 {
+  font-size: 1rem; /* 16px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*  Large Panel  */
+
+p.paragraph-04 {
+  font-size: 1.2rem; /* 19.20px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p.paragraph-05 {
+  font-size: 1.2rem; /* 19.20px */
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p.section-category {
+  font-size: 1.44rem; /* 23.04px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: white;
+}
+
+p.section-category span {
+  font-size: 1.44rem; /* 23.04px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: 1.2rem; /* 119.20x */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul.list-items-01 {
+  font-size: 1.2rem; /* 19.20px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75;
+  color: blue;
+}
+
+ul.list-items-02 {
+  font-size: 1.2rem; /* 19.20px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #FF0000;
+}
+
+button {
+  font-size: 1.2rem; /* 19.20px */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*
+
+li {
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 300;
+  padding-bottom: .75em;
+}
+
+li span {
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+
+
+.small {
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 0.5em;
+}
+
+*/
+
+/* === TYPE SCALE === */
+
+/*
+16px base, 1.200 minor third
+
+6.192em (99.07px)
+5.16em (82.56px)
+4.3em (68.80px)
+3.583em (57.33px)
+2.986em (47.78px)
+2.488em (39.81px)
+2.074em (33.18px)
+1.728em (27.65px)
+1.44em (23.04px)
+1.2em (19.20px)
+1em (16.00px)
+0.833em (13.33px)
+0.694em (11.11px)
+0.579em (9.26px)
+*/

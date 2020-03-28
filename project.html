@@ -9,27 +9,24 @@
   <title>Case Study | Foodle iOS App</title>
 
   <!-- Metadata -->
-  <!-- <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here"> -->
+  <meta name="author" content="Mike Marin">
+  <meta name="description" content="Hi. You've found my portfolio. Please take a look.">
+  <meta name="keywords" content="bloc, ux, user experience">
 
   <!-- Favicon -->
-  <!-- <link rel="apple-icon-180x180" size="180x180" href="apple-icon-180x180.png" type="image/vnd.microsoft.icon">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"> -->
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
   <!-- Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Oswald:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
-
-  <!-- Font Awesome -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet"> -->
 
   <!-- CSS Styles -->
   <!-- <link rel="stylesheet" href="styles/reset.css"> -->
-  <!-- <link rel="stylesheet" href="styles/base.css"> -->
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
   <!-- <link rel="stylesheet" href="styles/typography.css"> -->
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
   <!-- <link rel="stylesheet" href="styles/media-queries-sm.css"> -->
   <!-- <link rel="stylesheet" href="styles/media-queries-med.css"> -->
 
@@ -37,46 +34,73 @@
 
 <body>
 
-    <div class="page_container">
+  <div class="page_container">
 
-      <header>
+    <!-- ####### 01 Header/Navigation ####### -->
 
-        <div class="nav_logo">
-          <img src="#" aria-label="SVG" class="placeholder-img" />
+    <header class="flex fx-ctr fx-space-between">
+
+      <div class="nav_logo">
+        <img src="images/foodle/Logo-MikeMarin-Reverse.svg" />
+      </div>
+
+      <nav>
+        <ul class="nav flex">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header><!-- ##### header ##### -->
+
+    <main>
+
+      <!-- ####### 02 Synopsis Hero ####### -->
+
+      <section class="case-study-synopsis sec-hero flex">
+
+        <div class="container-half flex fx-column fx-ctr-ctr">
+
+          <div class="row-01">
+
+            <svg viewBox="0 0 250 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M61.8056 73.6199C47.6197 73.6199 36.0814 85.0799 36.0814 99.1697C36.0814 113.259 47.6197 124.719 61.8056 124.719C75.9916 124.719 87.5299 113.259 87.5299 99.1697C87.5299 85.0799 75.9916 73.6199 61.8056 73.6199ZM61.8056 110.398C55.5757 110.398 50.501 105.357 50.501 99.1697C50.501 92.9821 55.5757 87.9417 61.8056 87.9417C68.0355 87.9417 73.1103 92.9821 73.1103 99.1697C73.1232 105.357 68.0485 110.398 61.8056 110.398ZM39.2353 35.0246H18.2743V18.1504H53.6549V0H0V129.386H18.2743V53.175H39.2353V35.0246ZM75.5763 18.0473C61.3903 18.0473 49.852 29.5073 49.852 43.597C49.852 57.6868 61.3903 69.1468 75.5763 69.1468C89.7622 69.1468 101.3 57.6868 101.3 43.597C101.288 29.5073 89.7492 18.0473 75.5763 18.0473ZM75.5763 54.8121C69.3464 54.8121 64.2716 49.7718 64.2716 43.5841C64.2716 37.3965 69.3464 32.3562 75.5763 32.3562C81.8061 32.3562 86.8809 37.3965 86.8809 43.5841C86.8809 49.7718 81.8061 54.8121 75.5763 54.8121ZM126.622 0C126.493 0 126.35 0 126.22 0.0128909V0H107.946V129.386H126.22V129.373C126.35 129.373 126.493 129.386 126.622 129.386C151.503 129.386 170.997 100.974 170.997 64.6865C170.997 28.3987 151.503 0 126.622 0ZM126.622 110.411C126.493 110.411 126.35 110.398 126.22 110.385V18.9883C126.35 18.9883 126.493 18.9625 126.622 18.9625C138.407 18.9625 151.542 37.7317 151.542 64.6865C151.542 91.6414 138.407 110.411 126.622 110.411ZM250 18.1504V0.0128909H208.13V101.799H226.404H250V83.6491H226.404V53.175H236.736V35.0246H226.404V18.1504H250ZM198.474 0H180.199V129.386H235.022V111.236H198.474V0Z" fill="white"/>
+            </svg>
+
+
+          </div>
+
+          <div class="row-02">
+
+            <p class="paragraph-01">
+              Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the world.
+            </p>
+
+          </div>
+
+          <div class="row-03">
+
+            <a href="#" class="button-01" target="_blank">MVP Prototype</a>
+
+          </div>
+
         </div>
 
-        <nav>
-          <a href="index.html">Work</a>
-          <a href="resume.html">Resume</a>
-          <a href="about">About</a>
-          <a href="#">Contact</a>
-        </nav>
+        <div class="container-half">&nbsp;</div>
 
-      </header><!-- ##### header ##### -->
+      </section>
 
-      <main>
+      <!-- ####### 03 Specification ####### -->
 
-        <section aria-label="section-01" class="case-study-synopsis">
+      <section class="case-study-specification sec-bkg-02 flex">
 
-          <img src="#" aria-label="SVG" class="placeholder-img" />
+        <div class="container-third">
 
-          <p class="paragraph-01">
-            Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the world.
-          </p>
+          <div class="row-01">
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">MVP Prototype</button>
-          </form>
-
-          <img src="#" aria-label="Background-Image" class="placeholder-img" />
-
-        </section>
-
-        <section aria-label="section-02" class="case-study-specification">
-
-          <div class="column">
-
-            <article>
+            <div>
               <h3>Roles</h3>
               <ul class="list-items-01">
                 <li>UX Strategist</li>
@@ -85,256 +109,347 @@
                 <li>Information Architect</li>
                 <li>UI Designer</li>
               </ul>
-            </article>
+            </div>
 
-            <article>
+          </div>
+
+          <div class="row-02">
+
+            <div>
               <h3>Duration</h3>
               <ul class="list-items-01">
                 <li>8 Weeks</li>
               </ul>
-            </article>
+            </div>
 
           </div>
 
-          <div class="column">
+        </div>
 
-            <article>
-              <h3>Deliverbles</h3>
-              <ul class="list-items-01">
-                <li>User Survey</li>
-                <li>User Personas</li>
-                <li>User Stories</li>
-                <li>User Flows</li>
-                <li>Content Strategy</li>
-                <li>Low-Fi Wireframes</li>
-                <li>Brand Identity</li>
-                <li>Style Guide</li>
-                <li>High Fidelity Mockups</li>
-                <li>Preference Testing</li>
-                <li>Usability Testing</li>
-              </ul>
-            </article>
+        <div class="container-third">
 
+          <div>
+            <h3>Deliverables</h3>
+            <ul class="list-items-01">
+              <li>User Survey</li>
+              <li>User Personas</li>
+              <li>User Stories</li>
+              <li>User Flows</li>
+              <li>Content Strategy</li>
+              <li>Low-Fi Wireframes</li>
+              <li>Brand Identity</li>
+              <li>Style Guide</li>
+              <li>High Fidelity Mockups</li>
+              <li>Preference Testing</li>
+              <li>Usability Testing</li>
+            </ul>
           </div>
 
-          <div class="column">
+        </div>
 
-            <article>
-              <h3>Software</h3>
-              <ul class="list-items-01">
-                <li>Figma</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>UsabilityHub</li>
-                <li>Google Forms</li>
-                <li>Google Docs</li>
-                <li>Google Sheets</li>
-                <li>OmniGraffle</li>
-              </ul>
-            </article>
+        <div class="container-third">
 
+          <div>
+            <h3>Software</h3>
+            <ul class="list-items-01">
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>UsabilityHub</li>
+              <li>Google Forms</li>
+              <li>Google Docs</li>
+              <li>Google Sheets</li>
+              <li>OmniGraffle</li>
+            </ul>
           </div>
 
-        </section>
+        </div>
 
-        <section aria-label="section-03" class="case-study-overview">
+      </section>
 
+      <!-- ####### 04 Overview ####### -->
+
+      <section class="case-study-overview">
+
+        <div class="container-full section-header">
           <h2>Overview</h2>
           <h3>The Concept of Foodle</h3>
-          <p class="paragraph-03">
-            As a society, we've evolved from hunting and gathering food on our own to ordering food through the drive thru at our local eatery. The old time tradition of preparing and eating healthy food has been mostly put aside for the sake of convenience. But at what cost?<br />
-            What Foodle sets out to achieve is to present its users with the ability to plan what they'd like to eat ahead of time for the week, month, etc. Users will be able to search and select recipes from a database born of collaboration with online sources as well as personal contributions from other users. They will also have the ability to rate their favorite recipes, photograph their food creations, and post those creations for their followers and community to view.
+        </div>
+
+        <p class="paragraph-02">
+          As a society, we've evolved from hunting and gathering food on our own to ordering food through the drive thru at our local eatery. The old time tradition of preparing and eating healthy food has been mostly put aside for the sake of
+          convenience. But at what cost?
+        </p>
+        <p class="paragraph-02">
+          What Foodle sets out to achieve is to present its users with the ability to plan what they'd like to eat ahead of time for the week, month, etc. Users will be able to search and select recipes from a database born of collaboration with
+          online sources as well as personal contributions from other users. They will also have the ability to rate their favorite recipes, photograph their food creations, and post those creations for their followers and community to view.
+        </p>
+
+        <img src="#" alt="Background-Image" class="placeholder-img" />
+
+      </section>
+
+      <!-- ####### 05 Problem Solution ####### -->
+
+      <section class="case-study-problem-solution sec-bkg-01 flex">
+
+        <div class="case-study-problem container-half panel">
+
+          <div class="container-full section-header">
+            <h2>Problem</h2>
+            <h3>Ideas Without a Direction</h3>
+          </div>
+
+          <p class="paragraph-02">
+            Our client had the idea of creating a new application that would be able to fit in under the broad umbrella of online content storage and organization with a focus on content creation, organization and collaboration. The app needed to be
+            able to leverage the “network effect” to ensure positive growth so collaboration was a big focus. With this in mind I knew that a social sharing application could have a strong foundation to build on. With this as my starting point, I
+            started thinking about what people of all types might have in common.
           </p>
+        </div>
 
-          <img src="#" aria-label="Background-Image" class="placeholder-img" />
+        <div class="case-study-solution container-half panel">
 
-        </section>
+          <div class="container-full section-header">
+            <h2>Solution</h2>
+            <h3>Finding a Niche Market</h3>
+          </div>
 
-        <section aria-label="section-04" class="case-study-problem">
-          <h2>Problem</h2>
-          <h3>Ideas Without a Direction</h3>
-          <p class="paragraph-03">
-            Our client had the idea of creating a new application that would be able to fit in under the broad umbrella of online content storage and organization with a focus on content creation, organization and collaboration. The app needed to be able to leverage the “network effect” to ensure positive growth so collaboration was a big focus. With this in mind I knew that a social sharing application could have a strong foundation to build on. With this as my starting point, I started thinking about what people of all types might have in common.
+          <p class="paragraph-02">
+            The solution I proposed was to explore the idea of food as a unifying concept that could incorporate sharing, content creation and collaboration. These were the biggest deliverables our client requested and following this approach allowed
+            for more creative exploration in a niche area not over-saturated by a multitude of similar applications.
           </p>
-        </section>
-
-        <section aria-label="section-05" class="case-study-solution">
-          <h2>Solution</h2>
-          <h3>Finding a Niche Market</h3>
-          <p class="paragraph-03">
-            The solution I proposed was to explore the idea of food as a unifying concept that could incorporate sharing, content creation and collaboration. These were the biggest deliverables our client requested and following this approach allowed for more creative exploration in a niche area not over-saturated by a multitude of similar applications.<br  />
+          <p class="paragraph-02">
             After reviewing this list again, I saw this as sort of a recipe with each of the requirements as ingredients, and that’s how the idea of Foodle was born.
           </p>
-        </section>
+        </div>
 
-        <section aria-label="section-06" class="case-study-section-image">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-        </section>
+      </section>
 
-        <section aria-label="section-07" class="case-study-design-process">
+      <!-- ####### 06 Image Placeholder ####### -->
+
+      <section class="case-study-section-image sec-image-placeholder">
+        <img src="#" alt="Image" class="placeholder-img" />
+      </section>
+
+      <!-- ####### 07 Design Process ####### -->
+
+      <section class="case-study-design-process sec-bkg-02">
+
+        <div class="container-full section-header">
           <h2>Design Process</h2>
           <h3>Sequential Steps to Foodle</h3>
-          <p class="paragraph-03">
-            There were a number of different steps I worked with that led to conceptualizing and developing the idea that would lead to Foodle.
-          </p>
+        </div>
 
-          <article class="panel">
+        <p class="paragraph-02">
+          There were a number of different steps I worked with that led to conceptualizing and developing the idea that would lead to Foodle.
+        </p>
+
+        <div class="container-full flex fx-sxpace-between">
+
+          <div class="panel container-fifth">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="images/foodle/Icon-01-Discovery-Process.svg" alt="SVG" class="placeholder-img" />
             </div>
             <h4>Discovery</h4>
             <p class="paragraph-04">
               These processes reviewed the requirements given by the client and checked to see if those were good enough to proceed with, or could some of them work in a more interesting direction for the project.
             </p>
-          </article>
+          </div>
 
-          <article class="panel">
+          <div class="panel container-fifth">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="images/foodle/Icon-02-Strategy-Process.svg" alt="SVG" class="placeholder-img" />
             </div>
             <h4>Strategy</h4>
             <p class="paragraph-04">
               Next step took the information collected from the previous step and started to work with it to produce a more detailed direction.
             </p>
-          </article>
+          </div>
 
-          <article class="panel">
+          <div class="panel container-fifth">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="images/foodle/Icon-03-InformationArchitecture-Process.svg" alt="SVG" class="placeholder-img" />
             </div>
             <h4>Information Architecture</h4>
             <p class="paragraph-04">
-              Visuals were created and applied to the bones of the previous steps to bring the wireframes to life. A brand identity was conceptualized and created along with documentation showing guidelines and proper use of color, type, iconography and imagery.
+              Visuals were created and applied to the bones of the previous steps to bring the wireframes to life. A brand identity was conceptualized and created along with documentation showing guidelines and proper use of color, type, iconography
+              and imagery.
             </p>
-          </article>
+          </div>
 
-          <article class="panel">
+          <div class="panel container-fifth">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="images/foodle/Icon-04-Visual-Process.svg" alt="SVG" class="placeholder-img" />
             </div>
             <h4>Visual Design</h4>
             <p class="paragraph-04">
               This was reached after all feedback and design changes had been corrected. All created assets and documentation was packaged for future developers of the project.
             </p>
-          </article>
+          </div>
 
-          <article class="panel">
+          <div class="panel container-fifth">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="images/foodle/Icon-05-Development-Process.svg" alt="SVG" class="placeholder-img" />
             </div>
             <h4>Developer Handoff</h4>
             <p class="paragraph-04">
               To assist with bringing the idea to the public, a case study was written on the entire project from start to finish.
             </p>
-          </article>
-        </section>
+          </div>
 
-        <section aria-label="section-08" class="section-divider">
-          <p class="section-divider">
-            <strong>Discovery:</strong> What Problems Are We Solving?
-          </p>
-        </section>
+        </div>
 
-        <section aria-label="section-09" class="case-study-project-brief">
+      </section>
+
+      <!-- ####### 08 Image Placeholder ####### -->
+
+      <section class="section-divider">
+        <p class="section-category">
+          <span>Discovery:</span> What Problems Are We Solving?
+        </p>
+      </section>
+
+      <!-- ####### 09 Project Brief ####### -->
+
+      <section class="case-study-project-brief sec-bkg-01">
+
+        <div class="container-full section-header">
           <h2>Project Brief</h2>
           <h3>Client Requirements List</h3>
-          <p class="paragraph-03">
-            The client for this project had a number of feature ideas that they'd like to have seen in an app that was directed toward the cloud storage and organizational market. On review of the design brief, there were two main feature groups I classified the ideas that were presented.
-          </p>
+        </div>
 
-          <article class="panel">
+        <div class="container-full flex">
 
-            <div>
-              <h4>General</h4>
-              <ul class="list-items-02">
-                <li>Saving online web content</li>
-                <li>Organizing content into categories, tags, groups, and/or folders</li>
-                <li>Creating content</li>
-                <li>Uploading files</li>
-              </ul>
+          <div class="container-half">
+
+            <p class="paragraph-02">
+              The client for this project had a number of feature ideas that they'd like to have seen in an app that was directed toward the cloud storage and organizational market. On review of the design brief, there were two main feature groups I
+              classified the ideas that were presented.
+            </p>
+
+            <div class="container-full flex">
+
+              <div class="container-half">
+
+                <div class="panel">
+                  <h4>General</h4>
+                  <ul class="list-items-02">
+                    <li>Saving online web content</li>
+                    <li>Organizing content into categories, tags, groups, and/or folders</li>
+                    <li>Creating content</li>
+                    <li>Uploading files</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="container-half">
+
+                <div class="panel">
+                  <h4>Collaboration</h4>
+                  <ul class="list-items-02">
+                    <li>Sharing content with other users</li>
+                    <li>Connecting and collaborating with other users within the app</li>
+                  </ul>
+                </div>
+
+              </div>
+
             </div>
 
-            <div>
-              <h4>Collaboration</h4>
-              <ul>
-                <li>Sharing content with other users</li>
-                <li>Connecting and collaborating with other users within the app</li>
-              </ul>
-            </div>
+          </div>
 
-          </article>
+          <div class="container-half">
 
-            <p class="paragraph-03">
-              At this point, the more I looked at the features, the more it shaped into a variation of Dropbox, Google Drive, or other similar apps. I wanted to challenge myself by taking the requirements given and looking into different ways they could be achieved.<br />
+            <p class="paragraph-02">
+              At this point, the more I looked at the features, the more it shaped into a variation of Dropbox, Google Drive, or other similar apps. I wanted to challenge myself by taking the requirements given and looking into different ways they could
+              be achieved.
+            </p>
+
+            <p class="paragraph-02">
               The topic of food was chosen as a direction I could take this app idea instead of a vanilla cloud storage app with similar features amongst its competitors.
             </p>
 
-            <form>
-              <button type="submit" formaction="#" formtarget="_blank">Project Introduction</button>
-            </form>
+            <a href="#" class="button-01" target="_blank">Project Introduction</a>
 
+          </div>
 
-        </section>
+        </div>
 
-        <section aria-label="section-10" class="case-study-competitive-analysis">
-          <h2>Competitive Analysis</h2>
-          <h3>Seeking Out Competition</h3>
-          <p class="paragraph-03">
-            The creation of the Competitive Analysis started as the foundation for this project. Here, I aimed to identify three different competitors that had features similar to what the client was requesting.
-          </p>
+      </section>
 
-          <article class="panel">
+      <!-- ####### 10 Competitive Analysis ####### -->
 
-            <div>
-              <div class="panel-image">
-                <img src="#" aria-label="Image" class="placeholder-img" />
-              </div>
-              <h4>The Feed Feed</h4>
+      <section class="case-study-competitive-analysis sec-bkg-02">
+        <h2>Competitive Analysis</h2>
+        <h3>Seeking Out Competition</h3>
+        <p class="paragraph-02">
+          The creation of the Competitive Analysis started as the foundation for this project. Here, I aimed to identify three different competitors that had features similar to what the client was requesting.
+        </p>
+
+        <div class="panel flex">
+
+          <div class="container-third">
+            <div class="panel-image">
+              <img src="#" alt="Image" class="placeholder-img" />
             </div>
+            <h4>The Feed Feed</h4>
+          </div>
 
-            <div>
-              <div class="panel-image">
-                <img src="#" aria-label="Image" class="placeholder-img" />
-              </div>
-              <h4>Pinterest</h4>
+          <div class="container-third">
+            <div class="panel-image">
+              <img src="#" alt="Image" class="placeholder-img" />
             </div>
+            <h4>Pinterest</h4>
+          </div>
 
-            <div>
-              <div class="panel-image">
-                <img src="#" aria-label="Image" class="placeholder-img" />
-              </div>
-              <h4>Instagram</h4>
+          <div class="container-third">
+            <div class="panel-image">
+              <img src="#" alt="Image" class="placeholder-img" />
             </div>
+            <h4>Instagram</h4>
+          </div>
 
-          </article>
+        </div>
 
-          <p class="paragraph-03">
-            The initial direction was for the app to follow the lines of a file sharing & storage application. However, with the idea of tailoring it towards food, I was able to find and research competitors with similar features that also fit the topic. The three options I chose were TheFeedFeed.com, Pinterest and Instagram.<br />
-            I learned that each competitor utilizes food as a topic, either partially or fully, and offer users different ways to interact with the platform.<br />
-            However, each platform uses different features and no one platform contains all the features requested by the client. I also put together flow charts showing how these platforms handled common tasks and also served as a reference for similar implementation.
-          </p>
+        <p class="paragraph-02">
+          The initial direction was for the app to follow the lines of a file sharing & storage application. However, with the idea of tailoring it towards food, I was able to find and research competitors with similar features that also fit the
+          topic. The three options I chose were TheFeedFeed.com, Pinterest and Instagram.
+        </p>
+        <p class="paragraph-02">
+          I learned that each competitor utilizes food as a topic, either partially or fully, and offer users different ways to interact with the platform.
+        </p>
+        <p class="paragraph-02">
+          However, each platform uses different features and no one platform contains all the features requested by the client. I also put together flow charts showing how these platforms handled common tasks and also served as a reference for
+          similar implementation.
+        </p>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Research</button>
-            <button type="submit" formaction="#" formtarget="_blank">Flowcharts</button>
-          </form>
+        <a href="#" class="button-01" target="_blank">Research</a>
+        <a href="#" class="button-01" target="_blank">Flowcharts</a>
 
-        </section>
+      </section>
 
-        <section aria-label="section-11" class="section-divider">
-          <p class="section-divider">
-            <strong>Strategy:</strong>How Should We Solve These Problems, and Why Solve Them That Way?
-          </p>
-        </section>
+      <!-- ####### 11 Image Placeholder ####### -->
 
-        <section aria-label="section-12" class="case-study-user-survey">
-          <h2>User Survey</h2>
-          <h3>Shaping the Idea Through User Input</h3>
-          <p class="paragraph-03">
-            After researching and gaining an understanding of the features competitors were implementing, I started this step by creating a list of questions that were meant to discover further information about my target audience. I wanted to figure out why users would be interested in using my proposed app and what types of features they would like to see within. The survey was taken by 18 participants in 48 hours.
-          </p>
+      <section class="section-divider">
+        <p class="section-category">
+          <span>Strategy:</span>How Should We Solve These Problems, and Why Solve Them That Way?
+        </p>
+      </section>
 
-          <article class="panel">
+      <!-- ####### 12 User Survey ####### -->
+
+      <section class="case-study-user-survey sec-bkg-01">
+        <h2>User Survey</h2>
+        <h3>Shaping the Idea Through User Input</h3>
+        <p class="paragraph-02">
+          After researching and gaining an understanding of the features competitors were implementing, I started this step by creating a list of questions that were meant to discover further information about my target audience. I wanted to figure
+          out why users would be interested in using my proposed app and what types of features they would like to see within. The survey was taken by 18 participants in 48 hours.
+        </p>
+
+        <div class="container-full flex">
+
+          <div class="panel container-half">
             <h4>I structured the questions to learn:</h4>
             <ul class="list-items-02">
               <li>A general sense of user technical aptitude</li>
@@ -347,9 +462,9 @@
               <li>What types of content do they share?</li>
               <li>How receptive they were to early feature ideas of the app</li>
             </ul>
-          </article>
+          </div>
 
-          <article class="panel">
+          <div class="panel container-half">
             <h4>Some key data points were:</h4>
             <ul class="list-items-02">
               <li><strong>44%</strong> of users were moderate tech users that relied on a few key apps throughout their day</li>
@@ -360,37 +475,43 @@
               <li><strong>87.5%</strong> of people shared what they ate with their social group usually in the form of message posts</li>
               <li>The majority <strong>38.9%</strong> of users surveyed were between the ages of 25-35</li>
             </ul>
-          </article>
-
-          <div class="case-study-user-survey-graph">
-            <img src="#" aria-label="SVG" class="placeholder-img" />
-            <img src="#" aria-label="SVG" class="placeholder-img" />
-            <img src="#" aria-label="SVG" class="placeholder-img" />
-            <img src="#" aria-label="SVG" class="placeholder-img" />
           </div>
 
-          <p class="paragraph-03">
-            While the purpose of this survey was to gauge general information from a potential user base, it also was meant to propose feature ideas for my future app. I learned that people generally used collaboration in professional settings and not so much in personal ones. They also tended to share quite a bit online with those in their social groups, whether it be recipes or images of the food they consumed.
-          </p>
+        </div>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Questions</button>
-            <button type="submit" formaction="#" formtarget="_blank">Answers</button>
-            <button type="submit" formaction="#" formtarget="_blank">Results Analysis</button>
-          </form>
+        <div class="case-study-user-survey-graph">
+          <img src="#" alt="SVG" class="placeholder-img" />
+          <img src="#" alt="SVG" class="placeholder-img" />
+          <img src="#" alt="SVG" class="placeholder-img" />
+          <img src="#" alt="SVG" class="placeholder-img" />
+        </div>
 
-        </section>
+        <p class="paragraph-02">
+          While the purpose of this survey was to gauge general information from a potential user base, it also was meant to propose feature ideas for my future app. I learned that people generally used collaboration in professional settings and not
+          so much in personal ones. They also tended to share quite a bit online with those in their social groups, whether it be recipes or images of the food they consumed.
+        </p>
 
-        <section class="case-study-user-personas">
-          <h2>User Personas</h2>
-          <h3>Deciphering my Target Audience</h3>
-          <p class="paragraph-03">
-            Of those surveyed, the two biggest age groups were ages 25-35 (38.9%) and 18-25 (22.2%). Of those two demographics, two main types of people were more readily apparent; students and professionals. Filtering down the data into these two different personas gave me some insight on what types of features I should be considering.
-          </p>
+        <a href="#" class="button-01" target="_blank">Questions</a>
+        <a href="#" class="button-01" target="_blank">Answers</a>
+        <a href="#" class="button-01" target="_blank">Results Analysis</a>
 
-          <article aria-label="persona-01"class="panel">
+      </section>
+
+      <!-- ####### 13 User Personas ####### -->
+
+      <section class="case-study-user-personas sec-bkg-02">
+        <h2>User Personas</h2>
+        <h3>Deciphering my Target Audience</h3>
+        <p class="paragraph-02">
+          Of those surveyed, the two biggest age groups were ages 25-35 (38.9%) and 18-25 (22.2%). Of those two demographics, two main types of people were more readily apparent; students and professionals. Filtering down the data into these two
+          different personas gave me some insight on what types of features I should be considering.
+        </p>
+
+        <div class="container-full flex">
+
+          <div alt="persona-01" class="panel container-half">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="#" alt="SVG" class="placeholder-img" />
             </div>
             <h5>Terry R.</h5>
             <h4>Trendsetting Millennial</h4>
@@ -400,7 +521,9 @@
             </p>
             <h4>Motivation:</h4>
             <p class="paragraph-04">
-              Terry loves to look at various online repositories that feature images of food. She looks at many different sites, but has no way to catalog them effectively. She has used apps like Pinterest and Evernote, but they didn’t offer tagging features or searchable ways to find the images she was looking for easily. She finds inspiration in her photos by looking at other people just like her that do the same thing she does. She finds calm in browsing photos and wishes there was an easy way to bookmark all the content in one place.
+              Terry loves to look at various online repositories that feature images of food. She looks at many different sites, but has no way to catalog them effectively. She has used apps like Pinterest and Evernote, but they didn’t offer tagging
+              features or searchable ways to find the images she was looking for easily. She finds inspiration in her photos by looking at other people just like her that do the same thing she does. She finds calm in browsing photos and wishes there
+              was an easy way to bookmark all the content in one place.
             </p>
             <h4>Frustrations:</h4>
             <ul class="list-items-02">
@@ -412,11 +535,11 @@
             <p class="paragraph-04">
               "If only we could take pictures of morning coffees with custom tree designs in the milk all the time! There would be no war in the world."
             </p>
-          </article>
+          </div>
 
-          <article aria-label="persona-02" class="panel">
+          <div alt="persona-02" class="panel container-half">
             <div class="panel-image">
-              <img src="#" aria-label="SVG" class="placeholder-img" />
+              <img src="#" alt="SVG" class="placeholder-img" />
             </div>
             <h5>Hunter S.</h5>
             <h4>Busy Professional</h4>
@@ -426,7 +549,9 @@
             </p>
             <h4>Motivation:</h4>
             <p class="paragraph-04">
-              Hunter loves his family, and wants them to be happy. He knows that good food is prepared with love and caring in the home, and knows that his family appreciates all that he has done for them. Hunter also likes to be in control of everything. He just can’t stand those quick easy trips to fast food restaurants down the street, and is very stern with anyone who would take his family to such places. He wishes he could use an app that could be easy to catalog recipes, as well as adapt to his lifestyle of preparing meals for his family.
+              Hunter loves his family, and wants them to be happy. He knows that good food is prepared with love and caring in the home, and knows that his family appreciates all that he has done for them. Hunter also likes to be in control of
+              everything. He just can’t stand those quick easy trips to fast food restaurants down the street, and is very stern with anyone who would take his family to such places. He wishes he could use an app that could be easy to catalog
+              recipes, as well as adapt to his lifestyle of preparing meals for his family.
             </p>
             <h4>Frustrations:</h4>
             <ul class="list-items-02">
@@ -438,376 +563,504 @@
             <p class="paragraph-04">
               "Meal prepping gives my soul inner peace in a way that three kids, a wife, and a mortgage never could."
             </p>
-          </article>
-
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">User Personas</button>
-          </form>
-
-        </section>
-
-        <section aria-label="section-##" class="section-divider">
-          <p class="section-divider">
-            <strong>Information Architecture</strong> What the Foundation of our Solution Looks Like.
-          </p>
-        </section>
-
-        <section class="case-study-user-stories">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <h2>User Stories</h2>
-          <h3>Seeking Out Competition</h3>
-          <p class="paragraph-03">
-            After reviewing the results of the user survey I performed earlier as well as the new personas, I listed out my feature ideas and user tasks that could be used in the app. From my point of view of each persona, I also envisioned the subject matter on each screen that the users would be interacting with, and put together tasks based on the data collected and grouped them not only by new or returning users, but priority as well.<br  />
-            I created 24 user stories sorted by priority to help me choose what tasks were more important to include in the app MVP.<br  />
-            Some of these tasks include:
-          </p>
-
-          <article class="panel">
-            <h4>As a new user...</h4>
-            <ul class="list-items-02">
-              <li>...I want to be able to log in with a username and password so that I can return to the app at any time and view my personal configurations and settings</li>
-              <li>...I'd like to be able to use the app with basic functionality as a guest user without signing in so that I can at least try out without providing personal information.</li>
-              <li>...I want to be able to see a visual onboarding process so that I can understand how to work within the app.</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h4>As a returning user...</h4>
-            <ul class="list-items-02">
-              <li>...I want to be able to search for something on any screen I interact with so I can find what I'm looking for easily.</li>
-              <li>...I want to be able to speak to Siri or comparable mobile AI to ask questions, get recipes, look up ingredients, etc so that if my hands are busy, I can still use the app.</li>
-              <li>...To have a user participate in contests, or streaks where I collect badges, coupons for completion so that I can have some positive reinforcement that I'm making good food decisions.</li>
-            </ul>
-          </article>
-
-          <p class="paragraph-03">
-            Doing this step in the process allowed for more creativity in what features I wanted to explore. Assigning priority also provided a way to differentiate a general nice to have feature, a standard feature, and a critical need feature.
-          </p>
-
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">User Stories</button>
-          </form>
-
-        </section>
-
-        <section aria-label="section-06" class="case-study-section-image">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-        </section>
-
-        <section class="case-study-user-flows">
-          <h2>User Flows</h2>
-          <h3>Visualizing User Task Paths</h3>
-          <p class="paragraph-03">
-            Considering the amount of tasks that were initially considered for the app, after assigning priority in the previous exercise I began the work of planning how to go about completing each task by mapping out user flows. I also chose to develop the app MVP as an iOS application instead of a web application as I wanted to leverage some of the hardware of the mobile device.<br />
-            Here are the 13 user flows that I chose to work with in.
-          </p>
-
-          <article class="panel">
-
-            <ul class="list-items-02">
-              <li>Log in with a username and password</li>
-              <li>Use the app with basic functionality as a guest user</li>
-              <li>See a visual on boarding process.</li>
-              <li>Access and view my settings at all times.</li>
-              <li>Link my social media accounts to the app.</li>
-              <li>See my feed showing different posts, recipes of the day.</li>
-              <li>Use the mobile device camera.</li>
-              <li>Tag my photographs.</li>
-              <li>Select individual recipes based on different criteria.</li>
-              <li>Share the recipes I find via text, tweet, or email.</li>
-              <li>View a recipe, and scale the ingredients up or down.</li>
-              <li>Dump all ingredients to a list.</li>
-              <li>Create a meal planning calendar.</li>
-            </ul>
-
-          </article>
-
-          <p class="paragraph-03">
-            Getting my user flows down on paper gave me a good start as to how many steps users would take to get to the end of the task. It also allowed me to get to visualize how those steps would need to be connected to other steps.
-          </p>
-
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Sketches</button>
-            <button type="submit" formaction="#" formtarget="_blank">Diagrams</button>
-          </form>
-
-        </section>
-
-        <section class="case-study-content-strategy-container">
-
-          <div class="case-study-content-strategy-image">
-            <img src="#" aria-label="Image" class="placeholder-img" />
           </div>
 
-          <section class="case-study-content-strategy">
-            <h2>Content Strategy</h2>
-            <h3>Finding Direction for Future Visuals</h3>
-            <p class="paragraph-03">
-              With the user flows finished, my thinking started on how to start thinking about content and actions on a more granular level. Aside from the screens, I had to determine what actions I wanted to have on each screen and drawing up an outline really helped with consolidating what would go where. Doing some work on color schemes and imagery gave me a good idea on where I wanted to take the app design in later stages. Even though the app's design changed from initial conception, this was an important step to take as I was able to reference what I did here to see what worked and what I needed to improve on.<br />
-              I also began to work out how the tasks would be logically organized within the app by creating a sitemap. This was very helpful in laying out and sorting where I wanted information to be accessed from within the app.
-            </p>
+        </div>
 
-            <form>
-              <button type="submit" formaction="#" formtarget="_blank">Early Direction</button>
-              <button type="submit" formaction="#" formtarget="_blank">Site Map</button>
-            </form>
+        <a href="#" class="button-01" target="_blank">User Personas</a>
 
-          </section>
+      </section>
+
+      <!-- ####### 14 Image Placeholder ####### -->
+
+      <section class="section-divider">
+        <p class="section-category">
+          <span>Information Architecture</span> What the Foundation of our Solution Looks Like.
+        </p>
+      </section>
+
+      <!-- ####### 15 User Stories ####### -->
+
+      <section class="case-study-user-stories sec-bkg-01">
+        <img src="#" alt="Image" class="placeholder-img" />
+        <h2>User Stories</h2>
+        <h3>Seeking Out Competition</h3>
+        <p class="paragraph-02">
+          After reviewing the results of the user survey I performed earlier as well as the new personas, I listed out my feature ideas and user tasks that could be used in the app. From my point of view of each persona, I also envisioned the subject
+          matter on each screen that the users would be interacting with, and put together tasks based on the data collected and grouped them not only by new or returning users, but priority as well.
+        </p>
+        <p class="paragraph-02">
+          I created 24 user stories sorted by priority to help me choose what tasks were more important to include in the app MVP.
+        </p>
+        <p class="paragraph-02">
+          Some of these tasks include:
+        </p>
+
+        <div class="container-full flex">
+
+          <div class="panel container-half">
+            <h4>As a new user...</h4>
+            <ul class="list-items-02">
+              <li>&#8230;I want to be able to log in with a username and password so that I can return to the app at any time and view my personal configurations and settings</li>
+              <li>&#8230;I'd like to be able to use the app with basic functionality as a guest user without signing in so that I can at least try out without providing personal information.</li>
+              <li>&#8230;I want to be able to see a visual onboarding process so that I can understand how to work within the app.</li>
+            </ul>
+          </div>
+
+          <div class="panel container-half">
+            <h4>As a returning user...</h4>
+            <ul class="list-items-02">
+              <li>&#8230;I want to be able to search for something on any screen I interact with so I can find what I'm looking for easily.</li>
+              <li>&#8230;I want to be able to speak to Siri or comparable mobile AI to ask questions, get recipes, look up ingredients, etc so that if my hands are busy, I can still use the app.</li>
+              <li>&#8230;To have a user participate in contests, or streaks where I collect badges, coupons for completion so that I can have some positive reinforcement that I'm making good food decisions.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="paragraph-02">
+          Doing this step in the process allowed for more creativity in what features I wanted to explore. Assigning priority also provided a way to differentiate a general nice to have feature, a standard feature, and a critical need feature.
+        </p>
+
+        <a href="#" class="button-01" target="_blank">User Stories</a>
+
+      </section>
+
+      <!-- ####### 16 Image Placeholder ####### -->
+
+      <section class="case-study-section-image">
+        <img src="#" alt="Image" class="placeholder-img" />
+      </section>
+
+      <!-- ####### 17 User Flows ####### -->
+
+      <section class="case-study-user-flows">
+        <h2>User Flows</h2>
+        <h3>Visualizing User Task Paths</h3>
+        <p class="paragraph-02">
+          Considering the amount of tasks that were initially considered for the app, after assigning priority in the previous exercise I began the work of planning how to go about completing each task by mapping out user flows. I also chose to
+          develop the app MVP as an iOS application instead of a web application as I wanted to leverage some of the hardware of the mobile device.
+        </p>
+        <p class="paragraph-02">
+          Here are the 13 user flows that I chose to work with in.
+        </p>
+
+        <div class="panel flex">
+
+          <ul class="list-items-02">
+            <li>Log in with a username and password</li>
+            <li>Use the app with basic functionality as a guest user</li>
+            <li>See a visual on boarding process.</li>
+            <li>Access and view my settings at all times.</li>
+            <li>Link my social media accounts to the app.</li>
+            <li>See my feed showing different posts, recipes of the day.</li>
+            <li>Use the mobile device camera.</li>
+          </ul>
+
+          <ul class="list-items-02">
+            <li>Tag my photographs.</li>
+            <li>Select individual recipes based on different criteria.</li>
+            <li>Share the recipes I find via text, tweet, or email.</li>
+            <li>View a recipe, and scale the ingredients up or down.</li>
+            <li>Dump all ingredients to a list.</li>
+            <li>Create a meal planning calendar.</li>
+          </ul>
+
+        </div>
+
+        <p class="paragraph-02">
+          Getting my user flows down on paper gave me a good start as to how many steps users would take to get to the end of the task. It also allowed me to get to visualize how those steps would need to be connected to other steps.
+        </p>
+
+        <a href="#" class="button-01" target="_blank">Sketches</a>
+        <a href="#" class="button-01" target="_blank">Diagrams</a>
+
+      </section>
+
+      <!-- ####### 18 Content Strategy ####### -->
+
+      <section class="case-study-content-strategy-container flex">
+
+        <div class="case-study-content-strategy-image container-half">
+          <img src="#" alt="Image" class="placeholder-img" />
+        </div>
+
+        <section class="case-study-content-strategy container-half">
+          <h2>Content Strategy</h2>
+          <h3>Finding Direction for Future Visuals</h3>
+          <p class="paragraph-02">
+            With the user flows finished, my thinking started on how to start thinking about content and actions on a more granular level. Aside from the screens, I had to determine what actions I wanted to have on each screen and drawing up an
+            outline really helped with consolidating what would go where. Doing some work on color schemes and imagery gave me a good idea on where I wanted to take the app design in later stages. Even though the app's design changed from initial
+            conception, this was an important step to take as I was able to reference what I did here to see what worked and what I needed to improve on.
+          </p>
+
+          <p class="paragraph-02">
+            I also began to work out how the tasks would be logically organized within the app by creating a sitemap. This was very helpful in laying out and sorting where I wanted information to be accessed from within the app.
+          </p>
+
+          <a href="#" class="button-01" target="_blank">Early Direction</a>
+          <a href="#" class="button-01" target="_blank">Site Map</a>
 
         </section>
 
-        <section class="case-study-sketches-wireframes">
-          <img src="#" aria-label="Image" class="placeholder-img" />
+      </section>
+
+      <!-- ####### 19 Sketches Wireframes ####### -->
+
+      <section class="case-study-sketches-wireframes-container flex">
+
+        <section class="case-study-sketches-wireframes container-half">
+
           <h2>Sketches/Wireframes</h2>
           <h3>Laying out the Bones</h3>
-          <p class="paragraph-03">
-            Using the information provided by the sitemap, I started to work out how I wanted information to be shown on each screen of the app. On paper I drew what I believed would be a rough representation of the screens that I would show in each feature. At the stage, I wasn’t worried about content or detail and just put the thoughts to paper. Creating wireframes this way helped me work out different layout ideas from screen to screen, as well as assisted in broader thinking of other screens that I hadn't accounted for in my sitemap such as confirmation and error screens.<br />
+          <p class="paragraph-02">
+            Using the information provided by the sitemap, I started to work out how I wanted information to be shown on each screen of the app. On paper I drew what I believed would be a rough representation of the screens that I would show in each
+            feature. At the stage, I wasn’t worried about content or detail and just put the thoughts to paper. Creating wireframes this way helped me work out different layout ideas from screen to screen, as well as assisted in broader thinking of
+            other screens that I hadn't accounted for in my sitemap such as confirmation and error screens.
+          </p>
+
+          <p class="paragraph-02">
             Once I was satisfied with the arrangement of the elements on each app screen, I proceeded to create low fidelity wireframes in Figma and prepared the screens for my first usability test.
           </p>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Sketches</button>
-            <button type="submit" formaction="#" formtarget="_blank">Wireframes</button>
-          </form>
+          <a href="#" class="button-01" target="_blank">Sketches</a>
+          <a href="#" class="button-01" target="_blank">Wireframes</a>
 
         </section>
 
-        <section class="case-study-usability-test-01">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <h2>Usability Test 01</h2>
-          <h3>Testing Wireframe User Flows</h3>
-          <p class="paragraph-03">
-            For my first round of testing I chose testers that represented the demographics that my personas were built on and let them have a go at the prototype. These initial tests were done with two in a personal setting and one remotely. While I worked well with the two that were done in the same room, the one done remotely was a bit challenging  since I wasn’t able to read the body language of test subject like the other two.<br />
-            Working with the test subjects in person, I was able to listen to them as they worked through the scenarios that I provided them. They all had familiar working with mobile apps before and we didn’t have a moment where they were stumped, however they did provide some valuable insight on what I could improve upon in later testing, since this was only showing plain wireframes.
-          </p>
+        <div class="case-study-sketches-wireframes container-half">
+          <img src="#" alt="Image" class="placeholder-img" />
+        </div>
 
-          <p class="paragraph-03">
-            One thing I learned in these tests was how privacy was a concern amongst these users. I learned that users wanted to try out the app prior to providing their personal info, just in case they didn't want to commit fully to the app. Adding another place to sign in after bypassing the welcome / login screens was what I thinking to solve this problem.<br />
-            Adding confirmation screens and user feedback screens were also requested as when users where interacting with the wireframe prototype, they were expecting more details to be shown on screen other than the basics of each screen.<br />
-            Provided below is the script that I followed with my test subjects, the notes that I took during our sessions, and the prototype that I used within those sessions.
-          </p>
+      </section>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Interview Script</button>
-            <button type="submit" formaction="#" formtarget="_blank">Interview Notes</button>
-            <button type="submit" formaction="#" formtarget="_blank">Figma Low Fidelity Prototype</button>
-          </form>
+      <!-- ####### 20 Usability Test 01 ####### -->
 
-        </section>
+      <section class="case-study-usability-test-01">
+        <img src="#" alt="Image" class="placeholder-img" />
+        <h2>Usability Test 01</h2>
+        <h3>Testing Wireframe User Flows</h3>
+        <p class="paragraph-02">
+          For my first round of testing I chose testers that represented the demographics that my personas were built on and let them have a go at the prototype. These initial tests were done with two in a personal setting and one remotely. While I
+          worked well with the two that were done in the same room, the one done remotely was a bit challenging since I wasn’t able to read the body language of test subject like the other two.
+        </p>
 
-        <section aria-label="section-##" class="section-divider">
-          <p class="section-divider">
-            <strong>Visual Design</strong> Layer on the Details of our Solution
-          </p>
-        </section>
+        <p class="paragraph-02">
+          Working with the test subjects in person, I was able to listen to them as they worked through the scenarios that I provided them. They all had familiar working with mobile apps before and we didn’t have a moment where they were stumped,
+          however they did provide some valuable insight on what I could improve upon in later testing, since this was only showing plain wireframes.
+        </p>
 
-        <section class="case-study-brand-identity">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <h2>Brand Identity</h2>
-          <h3>Shaping the Visual Identity</h3>
-          <p class="paragraph-03">
-            In thinking about the visual approach to this app, I first had to establish a name for it. The idea came through using both a mind mapping and list making exercise where I wrote down everything I could regarding my thoughts and feelings towards this idea. With tossing around different names, I came up with the unusual but fun name of Foodle.<br  />
-            Sketches were created to stylize the name into a logo that I felt represented what I had in mind for the brand. The moodboards served as a place where I placed visuals and design elements that I wanted to retain and draw inspiration from in later designs.
-          </p>
+        <p class="paragraph-02">
+          One thing I learned in these tests was how privacy was a concern amongst these users. I learned that users wanted to try out the app prior to providing their personal info, just in case they didn't want to commit fully to the app. Adding
+          another place to sign in after bypassing the welcome / login screens was what I thinking to solve this problem.
+        </p>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Brand Summary</button>
-            <button type="submit" formaction="#" formtarget="_blank">Mind Maps</button>
-            <button type="submit" formaction="#" formtarget="_blank">Sketches</button>
-            <button type="submit" formaction="#" formtarget="_blank">Mood Boards</button>
-          </form>
+        <p class="paragraph-02">
+          Adding confirmation screens and user feedback screens were also requested as when users where interacting with the wireframe prototype, they were expecting more details to be shown on screen other than the basics of each screen.
+        </p>
 
-        </section>
+        <p class="paragraph-02">
+          Provided below is the script that I followed with my test subjects, the notes that I took during our sessions, and the prototype that I used within those sessions.
+        </p>
 
-        <section class="case-study-style-guide">
-          <h2>Style Guide</h2>
-          <h3>Guidelines for the Brand</h3>
-          <p class="paragraph-03">
-            Reviewing other references along with the moodboard choices put me in a good position to start working on a draft of Foodle’s style guide. This allowed me to further narrow down specific imagery, colors, and typography usages to assist with future styling needs. This formal style guide was meant to aid future developers and marketers on how to utilize the Foodle brand.
-          </p>
+        <a href="#" class="button-01" target="_blank">Interview Script</a>
+        <a href="#" class="button-01" target="_blank">Interview Notes</a>
+        <a href="#" class="button-01" target="_blank">Figma Low Fidelity Prototype<</a>
 
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <img src="#" aria-label="Image" class="placeholder-img" />
+      </section>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Style Guide</button>
-          </form>
+      <!-- ####### Brand Identity ####### -->
 
-        </section>
+      <section class="section-divider">
 
-        <section class="case-study-high-fidelity-mockup">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <h2>High Fidelity Mockup</h2>
-          <h3>Adding Meat to Foodles Bones</h3>
-          <p class="paragraph-03">
-            Referencing the ideas that I had that came from the logo, color swatches, photos, and iconography, I began to refine the low fidelity wireframes into these mockups. I continued the same fun colors scheme and worked within the established iOS guidelines to work out the proportions of for this MVP. Utilizing the component system of Figma made working with instances of each unique occurrence a breeze, and helped with the consistency of the finished product.
-          </p>
+        <p class="section-category">
+          <span>Visual Design</span> Layer on the Details of our Solution
+        </p>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Mockups</button>
-          </form>
+      </section>
 
-        </section>
+      <section class="case-study-brand-identity">
+        <img src="#" alt="Image" class="placeholder-img" />
+        <h2>Brand Identity</h2>
+        <h3>Shaping the Visual Identity</h3>
+        <p class="paragraph-02">
+          In thinking about the visual approach to this app, I first had to establish a name for it. The idea came through using both a mind mapping and list making exercise where I wrote down everything I could regarding my thoughts and feelings
+          towards this idea. With tossing around different names, I came up with the unusual but fun name of Foodle.
+        </p>
 
-        <section class="case-study-preference-testing">
-          <h2>Preference Testing</h2>
-          <h3>Testing Design Concepts</h3>
-          <p class="paragraph-03">
-            After establishing a concise direction for the art style of the MVP, there were a few times where I went back and forth about including a specific style of an element. Adding Preference Testing to this project allowed for testers to remark whether they liked one different style or another. I found this quite useful as I was looking for more immediate snap reactions other than long drawn out reasons why they liked one or another. Testing was done via link provided through Slack and other messaging apps, and subjects were friends and other peers from Bloc. While the test was active, I had a total of 20 participants that gave their opinions.
-          </p>
+        <p class="paragraph-02">
+          Sketches were created to stylize the name into a logo that I felt represented what I had in mind for the brand. The moodboards served as a place where I placed visuals and design elements that I wanted to retain and draw inspiration from in
+          later designs.
+        </p>
 
-          <article class="panel">
+        <a href="#" class="button-01" target="_blank">Brand Summary</a>
+        <a href="#" class="button-01" target="_blank">Mind Maps / Sketches</a>
+        <a href="#" class="button-01" target="_blank">Mood Boards</a>
+
+      </section>
+
+      <!-- ####### Style Guide ####### -->
+
+      <section class="case-study-style-guide">
+        <h2>Style Guide</h2>
+        <h3>Guidelines for the Brand</h3>
+        <p class="paragraph-02">
+          Reviewing other references along with the moodboard choices put me in a good position to start working on a draft of Foodle’s style guide. This allowed me to further narrow down specific imagery, colors, and typography usages to assist with
+          future styling needs. This formal style guide was meant to aid future developers and marketers on how to utilize the Foodle brand.
+        </p>
+
+        <img src="#" alt="Image" class="placeholder-img" />
+        <img src="#" alt="Image" class="placeholder-img" />
+        <img src="#" alt="Image" class="placeholder-img" />
+
+        <a href="#" class="button-01" target="_blank">Style Guide</a>
+
+      </section>
+
+      <!-- ####### High Fidelity Mockup ####### -->
+
+      <section class="case-study-high-fidelity-mockup">
+        <img src="#" alt="Image" class="placeholder-img" />
+        <h2>High Fidelity Mockup</h2>
+        <h3>Adding Meat to Foodles Bones</h3>
+        <p class="paragraph-02">
+          Referencing the ideas that I had that came from the logo, color swatches, photos, and iconography, I began to refine the low fidelity wireframes into these mockups. I continued the same fun colors scheme and worked within the established
+          iOS guidelines to work out the proportions of for this MVP. Utilizing the component system of Figma made working with instances of each unique occurrence a breeze, and helped with the consistency of the finished product.
+        </p>
+
+        <a href="#" class="button-01" target="_blank">Mockups</a>
+
+      </section>
+
+      <!-- ####### Preference Testing ####### -->
+
+      <section class="case-study-preference-testing">
+
+        <h2>Preference Testing</h2>
+        <h3>Testing Design Concepts</h3>
+        <p class="paragraph-02">
+          After establishing a concise direction for the art style of the MVP, there were a few times where I went back and forth about including a specific style of an element. Adding Preference Testing to this project allowed for testers to remark
+          whether they liked one different style or another. I found this quite useful as I was looking for more immediate snap reactions other than long drawn out reasons why they liked one or another. Testing was done via link provided through
+          Slack and other messaging apps, and subjects were friends and other peers from Bloc. While the test was active, I had a total of 20 participants that gave their opinions.
+        </p>
+
+        <div class="panel flex">
+
+          <div class="container-half">
+
             <h3>Test 01</h3>
             <h4>Which Tab Bar Design Do You Prefer?</h4>
             <p class="paragraph-04">
-              Since Foodle was meant to provide users to photograph their content to share with other users, I wanted to have a dedicated camera button for users to easily tap to access this feature. My first attempt to address this was to have it as an icon on the Tab Bar with its name below. While it conveyed the message, another approach I wanted to go with was having a circular button in the center of the bar. This was similar to the shutter button on iOS and I believed users would relate to this one more. I was correct in that assumption, however, what I found was the protruding arch at the top of the button was covering content, and I found that problematic when scrolling through content. I took the idea of B and confined it to the height of the Tab Bar. The final solution looked much cleaner and still was easy to understand.
+              Since Foodle was meant to provide users to photograph their content to share with other users, I wanted to have a dedicated camera button for users to easily tap to access this feature. My first attempt to address this was to have it as
+              an icon on the Tab Bar with its name below. While it conveyed the message, another approach I wanted to go with was having a circular button in the center of the bar. This was similar to the shutter button on iOS and I believed users
+              would relate to this one more. I was correct in that assumption, however, what I found was the protruding arch at the top of the button was covering content, and I found that problematic when scrolling through content. I took the idea
+              of B and confined it to the height of the Tab Bar. The final solution looked much cleaner and still was easy to understand.
             </p>
 
-            <img src="#" aria-label="Image" class="placeholder-img" />
-            <img src="#" aria-label="Image" class="placeholder-img" />
+          </div>
+
+          <div class="container-half">
+
+            <img src="#" alt="Image" class="placeholder-img" />
+            <img src="#" alt="Image" class="placeholder-img" />
 
             <h4>85% of Testers Chose B</h4>
 
-          </article>
+          </div>
 
-          <article class="panel">
+        </div>
+
+        <div class="panel flex">
+
+          <div class="container-half">
+
             <h3>Test 02</h3>
             <h4>Which icon styling do you prefer?</h4>
             <p class="paragraph-04">
-              I wanted to give users the option to delete their selected meal plans and chose to present this with a persistent button on each item. No swiping actions or hidden gestures, just tap to delete the item. I wanted to see how this would translate without the color background and just adding the icon along with a dark gradient. The users tested found option A to be more visually appealing than B.
+              I wanted to give users the option to delete their selected meal plans and chose to present this with a persistent button on each item. No swiping actions or hidden gestures, just tap to delete the item. I wanted to see how this would
+              translate without the color background and just adding the icon along with a dark gradient. The users tested found option A to be more visually appealing than B.
             </p>
 
-            <img src="#" aria-label="Image" class="placeholder-img" />
-            <img src="#" aria-label="Image" class="placeholder-img" />
+          </div>
+
+          <div class="container-half">
+
+            <img src="#" alt="Image" class="placeholder-img" />
+            <img src="#" alt="Image" class="placeholder-img" />
 
             <h4>90% of Testers Chose A</h4>
 
-          </article>
+          </div>
 
-          <article class="panel">
+        </div>
+
+        <div class="panel flex">
+
+          <div class="container-half">
+
             <h3>Test 03</h3>
-            <h4>Which  button styling do you prefer?</h4>
+            <h4>Which button styling do you prefer?</h4>
             <p class="paragraph-04">
-              For this test I was looking for feedback on a style of button that persisted on the screen as the user scrolled through the content. I had used the pattern shown in option A before on the recipe screen, and thought it would work well on the recipe card screen as well. I also thought of using a floating button that had the same persistent on screen behavior. My initial feeling on B was that it was too similar a design to the 'meal plan' button at the top of the card. Testers felt the same and agreed option A would be the winner.
+              For this test I was looking for feedback on a style of button that persisted on the screen as the user scrolled through the content. I had used the pattern shown in option A before on the recipe screen, and thought it would work well on
+              the recipe card screen as well. I also thought of using a floating button that had the same persistent on screen behavior. My initial feeling on B was that it was too similar a design to the 'meal plan' button at the top of the card.
+              Testers felt the same and agreed option A would be the winner.
             </p>
 
-            <img src="#" aria-label="Image" class="placeholder-img" />
-            <img src="#" aria-label="Image" class="placeholder-img" />
+          </div>
+
+          <div class="container-half">
+
+            <img src="#" alt="Image" class="placeholder-img" />
+            <img src="#" alt="Image" class="placeholder-img" />
 
             <h4>80% of Testers Chose A</h4>
 
-          </article>
+          </div>
 
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Results</button>
-            <button type="submit" formaction="#" formtarget="_blank">Analysis</button>
-          </form>
-
-        </section>
-
-        <section class="case-study-usability-test-02">
-          <img src="#" aria-label="Image" class="placeholder-img" />
-          <h2>Usability Test 02</h2>
-          <h3>Testing Mockup MVP</h3>
-          <p class="paragraph-03">
-            With the second round of testing, I went a different approach and did these tests all remotely. I received some valuable feedback that allowed my prototypes to be more expressive in the future, along with the benefit for getting better feedback as well. However, using this method caused my time spent working with my prototype to balloon more than expected. Instead of testing linear user flows like before, I prototyped all the screens together in a comprehensive prototype. While time consuming to put together, I learned this method would allow complete immersion of the user in the app, and other than a fully functional HTML prototype, this was the next best thing.<br />
-            In this prototype, I categorized two sets of screens between the user signing in or not.. This took the testers to different screens and even though the testing was done over cellular, they were impressed with the level of thought and detail that was put into the prototypes. The feedback given by the users was more visual than interaction based, and I made sure that most of it was implemented it in the final version of Foodle's MVP.
-          </p>
-
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Interview Script</button>
-            <button type="submit" formaction="#" formtarget="_blank">Interview Notes</button>
-            <button type="submit" formaction="#" formtarget="_blank">Figma High Fidelity Prototype</button>
-          </form>
-
-        </section>
-
-        <section aria-label="section-##" class="section-divider">
-          <p class="section-divider">
-            <strong>Developer</strong> Asset Information and Documentation
-          </p>
-        </section>
-
-        <section class="case-study-developer-handoff">
-          <h2>Developer Handoff</h2>
-          <h3>Keep Consistency with Final Design</h3>
-          <p class="paragraph-03">
-            As part of the finishing touches of this project, a document highlighting usage of assets was created and meant to be distributed to future developers. It provides links to the finished MVP prototype, the layered design file, as well as static assets such as images and iconography. It also provides a link to the style guide along with all associated assets.
-          </p>
-
-          <img src="#" aria-label="Image" class="placeholder-img" />
-
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Foodle Asset Usage</button>
-          </form>
-
-        </section>
-
-        <section aria-label="section-06" class="case-study-section-image">
-          <img src="#" aria-label="Background-Image" class="placeholder-img" />
-        </section>
-
-        <section class="case-study-conclusion">
-          <h2>Conclusion</h2>
-          <h3>My Thoughts on the Foodle Project</h3>
-
-          <article class="panel">
-            <h4>What Worked?</h4>
-            <p class="paragraph-04">
-              I think the idea to solve the client requirements was done fairly adequately. I purposely didn’t want to go to another Dropbox clone, and I believe the attempt to take the idea I came up with and work it to meet the client feature requirement worked out fairly well. I’m happy with the feedback that I’ve received from testers regarding the visuals of this project, and glad they add to the final polished look of the MVP. The idea of this app was fairly solid and I received a good bit of feedback on how it could be used by people in the future if it was expanded upon and created.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h4>What Didn't</h4>
-            <p class="paragraph-04">
-              I think in the current technological era there are so many things grabbing for your attention, people take for granted on how those things actually came into existence. Not many people find it fascinating to see the early steps of how something came to be, they just want to see the finished product. Feedback is important and necessary to keep a project progressing, and if the feedback is more towards the end result instead of the step that you’re at, the progression stagnates a bit. Asking questions and following up is a key factor I learned to help keep pushing progress forward.
-            </p>
-          </article>
-
-          <article class="panel">
-            <h4>What Surprised You?</h4>
-            <p class="paragraph-04">
-              The level of detail that I went through going into the usability testing. Not only did I have to coordinate with others, but I provided a great amount of detail about each encounter. Since this has been done before, I did the same amount of note taking as done previously, but it’s hard to see how a good majority of it was beneficial as it wasn’t leveraged in the revisions. Maybe with more testing in the future, my approach will become more concise instead of trying to distill the whole scene onto paper.
-            </p>
-          </article>
-
-          <h2>Bottom Line Takeaway</h2>
-          <p class="paragraph-03">
-            Gauging the time needed to do a thorough project is something that is hard to visualize in the beginning. Having a great idea and giving yourself time to do the research beforehand will save you a lot of time in the future.
-          </p>
-
-          <form>
-            <button type="submit" formaction="#" formtarget="_blank">Return to Homepage</button>
-          </form>
-
-        </section>
-
-      </main><!-- ##### main ##### -->
-
-      <footer>
-
-        <h1>Get in Touch</h1>
-        <p class="paragraph-01">
-          Thank you for stopping by. I hope you enjoyed what I have to show. <br />
-          Have any questions or comments? Feel free to connect with me.
-        </p>
-
-        <div class="footer-social-icons">
-          <i aria-label="Email" class="fas fa-envelope"></i>
-          <i aria-label="LinkedIn" class="fab fa-linkedin-in"></i>
-          <i aria-label="Dribble" class="fab fa-dribbble"></i>
-          <i aria-label="Dribble" class="fab fa-github"></i>
         </div>
 
-        <p class="caption">
-          Copyright &copy; 2020   Mike Marin.   All Rights Reserved.
+        <a href="#" class="button-01" target="_blank">Results</a>
+        <a href="#" class="button-01" target="_blank">Analysis</a>
+
+      </section>
+
+      <!-- ####### Usability Test 02 ####### -->
+
+      <section class="case-study-usability-test-02">
+        <img src="#" alt="Image" class="placeholder-img" />
+        <h2>Usability Test 02</h2>
+        <h3>Testing Mockup MVP</h3>
+        <p class="paragraph-02">
+          With the second round of testing, I went a different approach and did these tests all remotely. I received some valuable feedback that allowed my prototypes to be more expressive in the future, along with the benefit for getting better
+          feedback as well. However, using this method caused my time spent working with my prototype to balloon more than expected. Instead of testing linear user flows like before, I prototyped all the screens together in a comprehensive prototype.
+          While time consuming to put together, I learned this method would allow complete immersion of the user in the app, and other than a fully functional HTML prototype, this was the next best thing.
+        </p>
+        <p class="paragraph-02">
+          In this prototype, I categorized two sets of screens between the user signing in or not.. This took the testers to different screens and even though the testing was done over cellular, they were impressed with the level of thought and
+          detail that was put into the prototypes. The feedback given by the users was more visual than interaction based, and I made sure that most of it was implemented it in the final version of Foodle's MVP.
         </p>
 
-      </footer><!-- ##### footer ##### -->
+        <a href="#" class="button-01" target="_blank">Interview Script</a>
+        <a href="#" class="button-01" target="_blank">Interview Notes</a>
+        <a href="#" class="button-01" target="_blank">Figma High Fidelity Prototype</a>
 
-    </div><!-- ##### .page_container ##### -->
+      </section>
+
+      <!-- ####### DIVIDER ####### -->
+
+      <section class="section-divider">
+        <p class="section-category">
+          <span>Developer</span> Asset Information and Documentation
+        </p>
+      </section>
+
+      <!-- ####### Developer Handoff ####### -->
+
+      <section class="case-study-developer-handoff">
+
+        <div class="container-full flex">
+
+          <div class="container-half">
+
+            <h2>Developer Handoff</h2>
+            <h3>Keep Consistency with Final Design</h3>
+            <p class="paragraph-02">
+              As part of the finishing touches of this project, a document highlighting usage of assets was created and meant to be distributed to future developers. It provides links to the finished MVP prototype, the layered design file, as well as
+              static assets such as images and iconography. It also provides a link to the style guide along with all associated assets.
+            </p>
+
+          </div>
+
+          <div class="container-half">
+
+            <img src="#" alt="Image" class="placeholder-img" />
+
+          </div>
+
+        </div>
+
+        <a href="#" class="button-01" target="_blank">Foodle Asset Usage</a>
+
+      </section>
+
+      <!-- ####### DIVIDER ####### -->
+
+      <section class="case-study-section-image">
+        <img src="#" alt="Background-Image" class="placeholder-img" />
+      </section>
+
+      <!-- ####### Conclusion ####### -->
+
+      <section class="case-study-conclusion">
+        <h2>Conclusion</h2>
+        <h3>My Thoughts on the Foodle Project</h3>
+
+        <div class="container-full flex">
+
+          <div class="panel container-third">
+            <h4>What Worked?</h4>
+            <p class="paragraph-03">
+              I think the idea to solve the client requirements was done fairly adequately. I purposely didn’t want to go to another Dropbox clone, and I believe the attempt to take the idea I came up with and work it to meet the client feature
+              requirement worked out fairly well. I’m happy with the feedback that I’ve received from testers regarding the visuals of this project, and glad they add to the final polished look of the MVP. The idea of this app was fairly solid and I
+              received a good bit of feedback on how it could be used by people in the future if it was expanded upon and created.
+            </p>
+          </div>
+
+          <div class="panel container-third">
+            <h4>What Didn't</h4>
+            <p class="paragraph-03">
+              I think in the current technological era there are so many things grabbing for your attention, people take for granted on how those things actually came into existence. Not many people find it fascinating to see the early steps of how
+              something came to be, they just want to see the finished product. Feedback is important and necessary to keep a project progressing, and if the feedback is more towards the end result instead of the step that you’re at, the progression
+              stagnates a bit. Asking questions and following up is a key factor I learned to help keep pushing progress forward.
+            </p>
+          </div>
+
+          <div class="panel container-third">
+            <h4>What Surprised You?</h4>
+            <p class="paragraph-03">
+              The level of detail that I went through going into the usability testing. Not only did I have to coordinate with others, but I provided a great amount of detail about each encounter. Since this has been done before, I did the same
+              amount of note taking as done previously, but it’s hard to see how a good majority of it was beneficial as it wasn’t leveraged in the revisions. Maybe with more testing in the future, my approach will become more concise instead of
+              trying to distill the whole scene onto paper.
+            </p>
+          </div>
+
+        </div>
+
+
+
+        <h2>Bottom Line Takeaway</h2>
+        <p class="paragraph-02">
+          Gauging the time needed to do a thorough project is something that is hard to visualize in the beginning. Having a great idea and giving yourself time to do the research beforehand will save you a lot of time in the future.
+        </p>
+
+        <a href="#" class="button-01" target="_blank">Return to Homepage</a>
+
+      </section>
+
+    </main><!-- ##### main ##### -->
+
+    <footer>
+
+      <h1>Get in Touch</h1>
+      <p class="paragraph-01">
+        Thank you for stopping by. I hope you enjoyed what I have to show. <br />
+        Have any questions or comments? Feel free to connect with me.
+      </p>
+
+      <div class="footer-social-icons">
+        <i alt="Email" class="fas fa-envelope"></i>
+        <i alt="LinkedIn" class="fab fa-linkedin-in"></i>
+        <i alt="Dribble" class="fab fa-dribbble"></i>
+        <i alt="Dribble" class="fab fa-github"></i>
+      </div>
+
+      <p class="caption">
+        Copyright &copy; 2020 Mike Marin. All Rights Reserved.
+      </p>
+
+    </footer><!-- ##### footer ##### -->
+
+  </div><!-- ##### .page_container ##### -->
 
 </body>
 
