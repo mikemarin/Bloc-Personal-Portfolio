@@ -1,0 +1,394 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/* === GENERAL ELEMENT FORMATTING === */
+
+body {
+  xbackground-color: red;
+}
+
+.page_container {
+  position: relative;
+  background-color: var(--clr-bkg-white);
+  margin: 0 auto;
+  xwidth: 70%;
+}
+
+.container-full {
+  width: 100%;
+  border: 1px solid red;
+}
+
+.container-half {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.container-third {
+  width: 33.33%;
+  border: 1px solid red;
+}
+
+.container-quarter {
+  width: 25%;
+  border: 1px solid red;
+}
+
+.container-fifth {
+  width: 20%;
+  border: 1px solid red;
+}
+
+.margin-left {
+  margin-right: 1.5em;
+}
+
+.margin-right {
+  margin-left: 1.5em;
+}
+
+.margin-lr-01 {
+  margin: 0 1em;
+}
+
+.margin-lr-02 {
+  margin: 0 2em;
+}
+
+.margin-tb-01 {
+  margin: 1.5em 0;
+}
+
+
+/* === PANEL PADDING & STYLING === */
+
+.panel {
+  background-color: var(--clr-bkg-panel);
+  border: 1px solid var(--clr-bkg-panelborder);
+  padding: 2em 3em 1.5em 3em;
+} /* Bias Left Side 1em */
+
+.panel-tb {
+  margin: 2em 0;
+}
+
+.panel-t {
+  margin-top: 2em;
+}
+
+.panel-b {
+  margin-bottom: 2em;
+}
+
+/* === BUTTON PADDING & STYLING === */
+
+.button-01 {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--clr-dark-accent);
+  border: 2px solid var(--clr-btn-outline);
+  border-radius: 15px;
+  color: var(--clr-light-text);
+  padding: .75em 0;
+  width: 250px;
+  margin: 0 .5em;
+}
+
+.button-top {
+  margin-top: 2em;
+}
+
+/* === SECTION DIVIDERS === */
+
+.section-divider {
+  text-align: center;
+  padding: .5em 0;
+  background-color: var(--clr-medium-primary);
+}
+
+/* === SECTION MARGINS & BACKGROUNDS === */
+
+section {
+  padding: 6em 10em;
+  border: 1px solid var(--clr-bkg-secborder);
+} /* Section Padding Default */
+
+.sect-marg-01 {
+  padding: 0 0;
+} /* Section Padding Zeroed */
+
+.sect-marg-02 {
+  padding: 4rem 10rem;
+} /* Section Padding Specifications */
+
+.sect-marg-03 {
+  padding: 2rem 2rem;
+} /* Section Padding Problem-Solution */
+
+.sect-marg-04 {
+  padding: 6rem 3rem;
+} /* Section Padding Design Process */
+
+.sect-marg-05 {
+  padding: 3rem 3rem;
+} /* Section Padding Half Sections */
+
+.sect-marg-06 {
+  padding: 4rem 2rem;
+} /* Footer Padding */
+
+.sect-marg-07 {
+  padding: 5rem 8rem;
+} /* About Me Padding */
+
+.sec-bkg-01 {
+  background-color: var(--clr-bkg-white);
+} /* White BKG / Grey Outline */
+
+.sec-bkg-02 {
+  background-color: var(--clr-bkg-offwhite);
+} /* Off-White BKG / Grey Outline */
+
+.sec-bkg-03 {
+  background-color: var(--clr-bkg-placeholder);
+} /* Temp Image Placeholder */
+
+
+/* === BASE FORMATTING === */
+
+:root {
+  --clr-light-primary: #A1B0C9;
+  --clr-medium-primary: #2F496D;
+  --clr-dark-primary: #042149;
+  --clr-light-accent: #F9C686;
+  --clr-dark-accent: #D68A2A;
+  --clr-btn-outline: #737373;
+  --clr-bkg-white: #FFFFFF;
+  --clr-bkg-offwhite: #FAFAFA;
+  --clr-bkg-secborder: #E6E6E6;
+  --clr-bkg-panel: #F2F2F2;
+  --clr-bkg-panelborder: #BFBFBF;
+  --clr-bkg-placeholder: #70a7bf;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* === FLEX FORMATTING === */
+
+.flex {
+  display: flex;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-btm {
+  align-items: flex-end;
+}
+
+.fx-ctr {
+  justify-content: center;
+}
+
+.fx-ctr-ctr {
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-space-between {
+  justify-content: space-between;
+}
+
+/* === TEMPORARY === */
+
+.border {
+  1px solid black;
+}
+
+.temp-01 {
+  background-color: #FFA02E;
+}
+
+.temp-02 {
+  background-color: #F8977E;
+}
+
+.temp-03 {
+  background-color: green;
+}
+
+.hide {
+  display: none;
+  xvisibility: hidden;
+}
+
+/* === BACKGROUND IMAGES === */
+
+/* PORTFOLIO - MAIN PAGE */
+
+.main-hero {
+  height: 55vh;
+  background-image: url("../images/portfolio/backgrounds/BKG-Gipetto-Logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-project-01 {
+  background-image: url("../images/portfolio/backgrounds/BKG-Project-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-project-02 {
+  background-image: url("../images/portfolio/backgrounds/BKG-Project-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-project-03 {
+  background-image: url("../images/portfolio/backgrounds/BKG-Project-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* PORTFOLIO - GALLERY */
+
+.xmain-gallery-01 {
+  background-image: url("../images/portfolio/gallery/BKG-Gallery-01.png");
+  xbackground-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  xbackground-size: cover;
+  background-size: 85% auto;
+}
+
+/* PORTFOLIO - ABOUT ME */
+
+.about-hero {
+  height: 55vh;
+  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-01-image {
+  xheight: 55vh;
+  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-02-image {
+  xheight: 55vh;
+  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* CASE STUDY */
+
+.cs-synopsis {
+  height: 55vh;
+  background-image: url("../images/foodle/backgrounds/BKG-Foodle-AppHero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-overview {
+  background-image: url("../images/foodle/backgrounds/BKG-Overview.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-section-image-01 {
+  height: 35vh;
+  background-image: url("../images/foodle/backgrounds/BKG-SectionImage-01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-section-image-02 {
+  height: 20vh;
+  background-image: url("../images/foodle/backgrounds/BKG-SectionImage-02.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-user-flows-image {
+  height: 35vh;
+  background-image: url("../images/foodle/diagrams/Diagram-FlowCharts.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-content-strategy-image {
+  xheight: 35vh;
+  background-image: url("../images/foodle/diagrams/Diagram-Moodboard.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-sketches-wireframes-image {
+  xheight: 35vh;
+  background-image: url("../images/foodle/backgrounds/BKG-Sketches-Wireframes.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-usability-test-01-image {
+  height: 35vh;
+  background-image: url("../images/foodle/backgrounds/BKG-UsabilityTest-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-brand-identity-image {
+  height: 35vh;
+  background-image: url("../images/foodle/backgrounds/BKG-BrandIdentity.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-high-fidelity-mockup-image {
+  height: 35vh;
+  background-image: url("../images/foodle/backgrounds/BKG-HighFidelityMockups.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-usability-test-02-image {
+  height: 35vh;
+  background-image: url("../images/foodle/backgrounds/BKG-UsabilityTest-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

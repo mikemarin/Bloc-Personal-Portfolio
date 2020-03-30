@@ -21,13 +21,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
   <!-- Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <!-- These fonts will be reduced when coding is finished. -->
+
 
   <!-- CSS Styles -->
   <!-- <link rel="stylesheet" href="styles/reset.css"> -->
   <!-- <link rel="stylesheet" href="styles/typography.css"> -->
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
-  <!-- <link rel="stylesheet" href="styles/typography.css"> -->
+  <!-- <link rel="stylesheet" href="styles/base.css"> -->
+  <!-- <link rel="stylesheet" href="styles/sections.css"> -->
   <!-- <link rel="stylesheet" href="styles/media-queries-sm.css"> -->
   <!-- <link rel="stylesheet" href="styles/media-queries-med.css"> -->
 
@@ -37,10 +39,12 @@
 
     <div class="page_container">
 
+      <!-- ####### SECTION 00: HEADER/NAVIGATION ####### -->
+
       <header>
 
         <div class="nav_logo">
-          <img src="#" alt="SVG" class="placeholder-img" />
+          <img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" />
         </div>
 
         <nav>
@@ -54,7 +58,9 @@
 
       <main>
 
-        <section class="section-hero">
+        <!-- ####### SECTION 00: HEADER/NAVIGATION ####### -->
+
+        <section class="about-hero">
           <h1>Listening, learning and growing is what I'm about.</h1>
           <p class="paragraph-01">
             Hi! You’ve stumbled into the section where I share a bit about myself, personally.<br />
@@ -62,44 +68,83 @@
           </p>
         </section>
 
-        <section class="section-image-full"></section>
+        <!-- ####### SECTION 01: ABOUT 01 ####### -->
 
-        <section class="about-paragraph">
-          <p class="paragraph-02">
-            My first real inspiration for becoming a designer came when I was working at a local sign shop. We had a client that could come print these wonderfully designed banners and signs for his church. Each design would evoke such strong feelings of warmth, togetherness and faith in me and unconsciously made me want to be a part of this community. All the elements worked together to create such a strong feeling and I wanted to learn how I could create and harness those emotions in my work. I was inspired. Shortly after, I began my formal education in graphic and web design and the rest is history.
-          </p>
+        <section class="about-01 container-full sect-marg-01 flex">
 
-          <p>
-            Nowadays, I have found my happy place working as a Visual Design in UX and I’ve learned even more about how design can bring out a wide range of emotions. I’ve gained skills in graphic design, web design, and did a small stint with motion design. Building on my skills as a UX Designer has allowed me to utilize data research, strategy, user needs and empathy to help direct my design methods. As a techie at heart I’m excited to see advancing technologies and how they can be utilized to help shape my next project.
-          </p>
+          <div class="container-half">
 
-          <p class="emphasis">
-            Interested in working together?
-          </p>
+            <p class="paragraph-02 p-02-last sect-marg-07">
+              My first real inspiration for becoming a designer came when I was working at a local sign shop. We had a client that could come print these wonderfully designed banners and signs for his church. Each design would evoke such strong feelings of warmth, togetherness and faith in me and unconsciously made me want to be a part of this community. All the elements worked together to create such a strong feeling and I wanted to learn how I could create and harness those emotions in my work. I was inspired. Shortly after, I began my formal education in graphic and web design and the rest is history.
+            </p>
+
+          </div>
+
+          <div class="container-half about-01-image"></div>
 
         </section>
 
-        <section class="section-image-half"></section>
+        <!-- ####### SECTION 00: ABOUT 02 ####### -->
+
+        <section class="about-02 container-full sect-marg-01 flex">
+
+          <div class="container-half about-02-image"></div>
+
+          <div class="container-half sect-marg-07">
+
+            <p class="paragraph-02">
+              Nowadays, I have found my happy place working as a Visual Design in UX and I’ve learned even more about how design can bring out a wide range of emotions. I’ve gained skills in graphic design, web design, and did a small stint with motion design. Building on my skills as a UX Designer has allowed me to utilize data research, strategy, user needs and empathy to help direct my design methods. As a techie at heart I’m excited to see advancing technologies and how they can be utilized to help shape my next project.
+            </p>
+
+            <p class="paragraph-02 p-02-last">
+              Interested in working together?
+            </p>
+
+          </div>
+
+        </section>
 
       </main><!-- ##### main ##### -->
 
-      <footer>
+      <!-- ####### SECTION 00: FOOTER ####### -->
 
-        <h1>Get in Touch</h1>
-        <p class="paragraph-01">
-          Thank you for stopping by. I hope you enjoyed what I have to show. <br />
-          Have any questions or comments? Feel free to connect with me.
-        </p>
+      <footer class="sect-marg-06">
 
-        <div class="footer-social-icons">
-          <i alt="Email" class="fas fa-envelope"></i>
-          <i alt="LinkedIn" class="fab fa-linkedin-in"></i>
-          <i alt="Dribble" class="fab fa-dribbble"></i>
-          <i alt="Dribble" class="fab fa-github"></i>
+        <div class="container-full sec-head">
+          <h1>Get in Touch</h1>
         </div>
 
-        <p class="caption">
-          Copyright &copy; 2020   Mike Marin.   All Rights Reserved.
+        <div class="container-full sec-head">
+          <p class="paragraph-01">
+            Thank you for stopping by. I hope you enjoyed what I have to show.
+          </p>
+
+          <p class="paragraph-01 p-01-last">
+            Have any questions or comments? Feel free to connect with me.
+          </p>
+        </div>
+
+        <div class="social-icons margin-tb-01 flex fx-ctr-ctr">
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+
+        </div>
+
+        <p class="copyright flex fx-ctr-ctr">
+          Copyright &copy; 2020 Mike Marin. All Rights Reserved.
         </p>
 
       </footer><!-- ##### footer ##### -->
@@ -108,6 +153,6 @@
 
 </body>
 
-<!-- <script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous"></script>
 
 </html>
