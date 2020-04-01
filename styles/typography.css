@@ -54,12 +54,8 @@ h5 {
   font-style: normal;
   font-weight: 400;
   line-height: 1.35;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 } /* 23.04px */ /* Desk-P-01 | Hero-Landing */
-
-.p-01-last {
-  margin-bottom: 0;
-}
 
 .paragraph-02 {
   font-size: 1.44rem;
@@ -69,10 +65,6 @@ h5 {
   line-height: 1.35;
   margin-bottom: 1em;
 } /* 23.04px */ /* Desk-P-02 | Main-Body */
-
-.p-02-last {
-  margin-bottom: 0;
-}
 
 .paragraph-03 {
   font-size: 1rem; /* 16px */
@@ -98,9 +90,13 @@ h5 {
   line-height: 1.5;
 }
 
+.p-last {
+  margin-bottom: 0;
+}
+
 /* ======================== */
 
-.category {
+.process {
   font-size: 1.44rem; /* 23.04px */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
@@ -111,7 +107,7 @@ h5 {
   color: var(--clr-light-text);
 }
 
-.category span {
+.process span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.44rem; /* 23.04px */
   font-style: normal;
@@ -153,14 +149,22 @@ ul.list-items-02 {
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
-  color: #FF0000;
   list-style: disc outside none;
 } /* 19.20px */ /* Desk-Li-02 | Panel */
+
 
 /* === TYPE VARIABLES === */
 
 .sans-serif {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.txt-ctr {
+  text-align: center;
+}
+
+.txt-rt {
+  text-align: right;
 }
 
 .u-line {
@@ -178,8 +182,17 @@ ul.list-items-02 {
   margin-bottom: 1.5em;
 }
 
-.emphasis {
+.set-solid {
+  line-height: 1;
 }
+
+.emphasis {
+  font-size: 1.44rem;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 700;
+}
+
 
 /* === BASE FORMATTING === */
 

@@ -21,15 +21,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-  <!-- These fonts will be reduced when coding is finished. -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
 
 
   <!-- CSS Styles -->
-  <!-- <link rel="stylesheet" href="styles/reset.css"> -->
-  <!-- <link rel="stylesheet" href="styles/typography.css"> -->
-  <!-- <link rel="stylesheet" href="styles/base.css"> -->
-  <!-- <link rel="stylesheet" href="styles/sections.css"> -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/typography.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/main.css">
   <!-- <link rel="stylesheet" href="styles/media-queries-sm.css"> -->
   <!-- <link rel="stylesheet" href="styles/media-queries-med.css"> -->
 
@@ -44,7 +43,7 @@
       <header>
 
         <div class="nav_logo">
-          <img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" />
+          <a href="index.html"><img src="../images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
         </div>
 
         <nav>
@@ -57,7 +56,7 @@
       </header><!-- ##### header ##### -->
 
       <main>
-        
+
 <!--
         Michael Marin
 
@@ -163,44 +162,48 @@
 
       <!-- ####### SECTION 00: FOOTER ####### -->
 
-      <footer class="sect-marg-06">
+      <footer>
 
-        <div class="container-full sec-head">
-          <h1>Get in Touch</h1>
+        <div class="wrapper">
+
+          <div class="container-heading txt-ctr">
+            <h1>Get in Touch</h1>
+          </div>
+
+          <div class="container-paragraph margin-top-3em txt-ctr">
+            <p class="paragraph-01">
+              Thank you for stopping by. I hope you enjoyed what I have to show.
+            </p>
+            <p class="paragraph-01 p-last">
+              Have any questions or comments? Feel free to connect with me.
+            </p>
+          </div>
+
+          <div class="container-graphic margin-tb-2em flex fx-ctr-ctr">
+            <div class="icon-circle flex fx-ctr-ctr">
+              <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="icon-circle flex fx-ctr-ctr">
+              <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="icon-circle flex fx-ctr-ctr">
+              <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
+            </div>
+
+            <div class="icon-circle flex fx-ctr-ctr">
+              <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="container-footer">
+            <p class="copyright flex fx-ctr-ctr">
+              Copyright &copy; 2020 Mike Marin. All Rights Reserved.
+            </p>
+          </div>
+
         </div>
-
-        <div class="container-full sec-head">
-          <p class="paragraph-01">
-            Thank you for stopping by. I hope you enjoyed what I have to show.
-          </p>
-
-          <p class="paragraph-01 p-01-last">
-            Have any questions or comments? Feel free to connect with me.
-          </p>
-        </div>
-
-        <div class="social-icons margin-tb-01 flex fx-ctr-ctr">
-          <div class="icon-circle flex fx-ctr-ctr">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-          </div>
-
-          <div class="icon-circle flex fx-ctr-ctr">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-
-          <div class="icon-circle flex fx-ctr-ctr">
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-          </div>
-
-          <div class="icon-circle flex fx-ctr-ctr">
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
-
-        </div>
-
-        <p class="copyright flex fx-ctr-ctr">
-          Copyright &copy; 2020 Mike Marin. All Rights Reserved.
-        </p>
 
       </footer><!-- ##### footer ##### -->
 

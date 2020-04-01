@@ -1,0 +1,235 @@
+@charset "UTF-8"; /* CSS Document */
+
+/*
+Name: Layout CSS Styles
+Created: April 1, 2020
+Updated:
+Author: Mike Marin
+*/
+
+/* ===== GENERAL ELEMENT FORMATTING ===== */
+
+.container-full {
+  width: 100%;
+  xborder: 1px solid red;
+}
+
+.container-half {
+  width: 50%;
+  xborder: 1px solid red;
+}
+
+.container-half-a {
+  width: 50%;
+  xborder: 1px solid red;
+}
+
+.container-half-b {
+  width: 50%;
+  xborder: 1px solid red;
+}
+
+.container-third {
+  width: 33.33%;
+  xborder: 1px solid red;
+}
+
+.container-quarter {
+  width: 25%;
+  xborder: 1px solid red;
+}
+
+.container-fifth {
+  width: 20%;
+  xborder: 1px solid red;
+}
+
+
+/* ===== MARGIN NUDGES ===== */
+
+.margin-top-1em {
+  margin-top: 1em;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+
+.margin-top-3em {
+  margin-top: 3em;
+}
+
+.margin-top-4em {
+  margin-top: 4em;
+}
+
+.margin-btm-05em {
+  margin-bottom: .5em;
+}
+
+.margin-btm-1em {
+  margin-bottom: 1em;
+}
+
+.margin-btm-2em {
+  margin-bottom: 2em;
+}
+
+.margin-btm-3em {
+  margin-bottom: 3em;
+}
+
+.margin-btm-4em {
+  margin-bottom: 4em;
+}
+
+.margin-tb-1em {
+  margin: 1em 0;
+}
+
+.margin-tb-2em {
+  margin: 2em 0;
+}
+
+.margin-tb-3em {
+  margin: 3em 0;
+}
+
+.margin-tb-4em {
+  margin: 4em 0;
+}
+
+.margin-lr-05em {
+  margin: 0 .5em;
+}
+
+.margin-lr-1em {
+  margin: 0 1em;
+}
+
+.margin-lr-3em {
+  margin: 0 3em;
+}
+
+.margin-in-lf-1em {
+  margin-right: 1em;
+} /* Inside Left Column */
+
+.margin-in-rt-1em {
+  margin-left: 1em;
+} /* Inside Right Column */
+
+.margin-in-lf-15em {
+  margin-right: 1.5em;
+} /* Inside Left Column */
+
+.margin-in-rt-15em {
+  margin-left: 1.5em;
+} /* Inside Right Column */
+
+.margin-in-lf-2em {
+  margin-right: 2em;
+} /* Inside Left Column */
+
+.margin-in-rt-2em {
+  margin-left: 2em;
+} /* Inside Right Column */
+
+
+/* ===== FLEX FORMATTING ===== */
+
+.flex {
+  display: flex;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-ctr {
+  justify-content: center;
+}
+
+.fx-ctr-ctr {
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-ctr-btm {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fx-btm {
+  align-items: flex-end;
+}
+
+.fx-rt {
+  justify-content: flex-end;
+}
+
+.fx-rt-ctr {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fx-space-between {
+  justify-content: space-between;
+}
+
+/* ===== CONTAINER ORGANIZATION ===== */
+
+<div class="container-heading margin-btm-1em txt-ctr">
+</div>
+
+<div class="container-paragraph margin-btm-2em">
+</div>
+
+<div class="container-graphic">
+</div>
+
+<div class="container-image">
+</div>
+
+<div class="container-group">
+</div><!-- ##### container-group ##### -->
+
+<div class="container-list">
+</div>
+
+<div class="container-footer">
+</div>
+
+<div class="panel-group">
+</div><!-- ##### panel-group ##### -->
+
+<div class="panel-heading">
+</div>
+
+<div class="panel-image">
+</div>
+
+<div class="panel-paragraph">
+</div>
+
+<div class="panel-list">
+</div>
+
+<div class="wrapper">
+</div><!-- ##### wrapper ##### -->
+
+<div class="container-full">
+</div><!-- ##### container-full ##### -->
+
+<div class="container-half">
+</div><!-- ##### container-half ##### -->
+
+<div class="container-third">
+</div><!-- ##### container-third ##### -->
+
+<div class="container-fifth">
+</div><!-- ##### container-fifth ##### -->
