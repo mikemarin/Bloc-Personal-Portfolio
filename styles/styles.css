@@ -1,5 +1,455 @@
 @charset "UTF-8"; /* CSS Document */
 
+/*  Compiled List of CSS Styles for Portfolio Main / About Me / Case Study Pages  */
+
+/* ===== TYPOGRAPHY.CSS ===== */
+
+/*
+Name: Typography CSS Styles
+Created: March 30, 2020
+Updated: April 2, 2020
+Author: Mike Marin
+*/
+
+/* === TYPOGRAPHY === */
+
+h1 {
+  font-size: 4.3rem;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  /* xletter-spacing: 0.3em; */
+  text-transform: uppercase;
+} /* 68.80px */ /* Desk-H-01 | Hero-Head */
+
+h2 {
+  font-size: 3.583rem;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1em;
+  /* xmargin-bottom: .25em; */
+  /* xletter-spacing: -0.05em; */
+  text-transform: uppercase;
+} /* 57.33px */ /* Desk-H-02 | Section-Head */
+
+h3 {
+  font-size: 1.728rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+} /* 27.65px */ /* Desk-H-03 | SubHead */
+
+h4 {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  /* xline-height: 1; */
+} /* 19.20px */ /* Desk-H-04 | Panel-Head */
+
+h5 {
+  font-size: 2.074rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  /* xline-height: 1; */
+} /* 33.18px */ /* Desk-H-05 | Persona-Name */
+
+/* ======================== */
+
+.paragraph-01  {
+  font-size: 1.44rem;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: .5em;
+} /* 23.04px */ /* Desk-P-01 | Hero-Landing */
+
+.paragraph-02 {
+  /* font-size: 1.44rem; */
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 1em;
+} /* 19.20px */ /* Desk-P-02 | Main-Body */
+
+.paragraph-03 {
+  font-size: 1rem; /* 16px */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.paragraph-04 {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+} /* 19.20px */ /* Desk-P-04 | Panel-Small */
+
+.paragraph-05 {
+  font-size: 1.2rem; /* 19.20px */
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.p-last {
+  margin-bottom: 0;
+}
+
+/* ======================== */
+
+.process {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* xline-height: 1.5; */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--clr-light-text);
+} /* 16px */
+
+.process span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem; /* 23.04px */
+  font-style: normal;
+  font-weight: 900;
+  /* xline-height: 1.5; */
+  text-transform: uppercase;
+  color: var(--clr-light-text);
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+} /* 19.20px */ /* Desk-P-06 | Copyright */
+
+/* ======================== */
+
+a {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+} /* 19.20px */ /* Desk-Mobi-A-01 | Button */
+
+ul.list-items-01 {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+} /* 19.20px */ /* Desk-Li-01 | Specs */
+
+ul.list-items-02 {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  list-style: disc outside none;
+} /* 19.20px */ /* Desk-Li-02 | Panel */
+
+
+/* === TYPE VARIABLES === */
+
+.sans-serif {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.txt-ctr {
+  text-align: center;
+}
+
+.txt-rt {
+  text-align: right;
+}
+
+.u-line {
+  width: 70%;
+  margin-bottom: .3em;
+  border-bottom: 1px solid #1A1A1A;
+}
+
+.u-case {
+  text-transform: uppercase;
+}
+
+.sec-head {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.set-solid {
+  line-height: 1;
+}
+
+.emphasis {
+  font-size: 1.44rem;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+/* === BASE FORMATTING === */
+
+:root {
+  --clr-light-text: #FFFFFF;
+  --clr-medium-text: #888888;
+  --clr-dark-text: #1A1A1A;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1, h2, h3, h4, p, a, li, button {
+  color: var(--clr-dark-text);
+}
+
+li {
+  margin-bottom: .3em;
+}
+
+li span {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* === TYPE SCALE === */
+
+/*
+16px base, 1.200 minor third
+
+6.192em (99.07px)
+5.16em (82.56px)
+4.3em (68.80px)
+3.583em (57.33px)
+2.986em (47.78px)
+2.488em (39.81px)
+2.074em (33.18px)
+1.728em (27.65px)
+1.44em (23.04px)
+1.2em (19.20px)
+1em (16.00px)
+0.833em (13.33px)
+0.694em (11.11px)
+0.579em (9.26px)
+*/
+
+/* ===== LAYOUT.CSS ===== */
+
+/*
+Name: Layout CSS Styles
+Created: April 1, 2020
+Updated: April 2, 2020
+Author: Mike Marin
+*/
+
+/* ===== GENERAL ELEMENT FORMATTING ===== */
+
+.container-full {
+  width: 100%;
+  /* xborder: 1px solid red; */
+}
+
+.container-half {
+  width: 50%;
+  /* xborder: 1px solid red; */
+}
+
+.container-half-a {
+  width: 50%;
+  /* xborder: 1px solid red; */
+}
+
+.container-half-b {
+  width: 50%;
+  /* xborder: 1px solid red; */
+}
+
+.container-third {
+  width: 33.33%;
+  /* xborder: 1px solid red; */
+}
+
+.container-quarter {
+  width: 25%;
+  /* xborder: 1px solid red; */
+}
+
+.container-fifth {
+  width: 20%;
+  /* xborder: 1px solid red; */
+}
+
+
+/* ===== MARGIN NUDGES ===== */
+
+.margin-top-1em {
+  margin-top: 1em;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+
+.margin-top-3em {
+  margin-top: 3em;
+}
+
+.margin-top-4em {
+  margin-top: 4em;
+}
+
+.margin-btm-05em {
+  margin-bottom: .5em;
+}
+
+.margin-btm-1em {
+  margin-bottom: 1em;
+}
+
+.margin-btm-2em {
+  margin-bottom: 2em;
+}
+
+.margin-btm-3em {
+  margin-bottom: 3em;
+}
+
+.margin-btm-4em {
+  margin-bottom: 4em;
+}
+
+.margin-tb-1em {
+  margin: 1em 0;
+}
+
+.margin-tb-2em {
+  margin: 2em 0;
+}
+
+.margin-tb-3em {
+  margin: 3em 0;
+}
+
+.margin-tb-4em {
+  margin: 4em 0;
+}
+
+.margin-lr-05em {
+  margin: 0 .5em;
+}
+
+.margin-lr-1em {
+  margin: 0 1em;
+}
+
+.margin-lr-3em {
+  margin: 0 3em;
+}
+
+.margin-in-lf-1em {
+  margin-right: 1em;
+} /* Inside Left Column */
+
+.margin-in-rt-1em {
+  margin-left: 1em;
+} /* Inside Right Column */
+
+.margin-in-lf-15em {
+  margin-right: 1.5em;
+} /* Inside Left Column */
+
+.margin-in-rt-15em {
+  margin-left: 1.5em;
+} /* Inside Right Column */
+
+.margin-in-lf-2em {
+  margin-right: 2em;
+} /* Inside Left Column */
+
+.margin-in-rt-2em {
+  margin-left: 2em;
+} /* Inside Right Column */
+
+
+/* ===== FLEX FORMATTING ===== */
+
+.flex {
+  display: flex;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-ctr {
+  justify-content: center;
+}
+
+.fx-ctr-ctr {
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-ctr-btm {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fx-btm {
+  align-items: flex-end;
+}
+
+.fx-rt {
+  justify-content: flex-end;
+}
+
+.fx-rt-ctr {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fx-space-between {
+  justify-content: space-between;
+}
+
+/* ===== MAIN.CSS ===== */
+
+@charset "UTF-8"; /* CSS Document */
+
 /*
 Name: Main CSS Styles
 Created: March 30, 2020
@@ -68,7 +518,7 @@ section.cs-design-process, section.cs-competitive-analysis, section.cs-user-pers
 
 .cs-synopsis {
   height: 55vh;
-  background-image: url('../images/foodle/backgrounds/BKG-Foodle-AppHero-min.jpg');
+  background-image: url("../images/foodle/backgrounds/BKG-Foodle-AppHero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -102,7 +552,7 @@ section.cs-overview .wrapper {
 }
 
 .cs-overview {
-  background-image: url('../images/foodle/backgrounds/BKG-Overview-min.jpg');
+  background-image: url("../images/foodle/backgrounds/BKG-Overview.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -124,7 +574,7 @@ section.cs-problem-solution .wrapper {
 
 .cs-section-image-01 {
   height: 30vh;
-  background-image: url('../images/foodle/backgrounds/BKG-SectionImage-01-min.png');
+  background-image: url("../images/foodle/backgrounds/BKG-SectionImage-01.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -212,7 +662,7 @@ section.cs-user-stories .wrapper {
 
 .cs-user-flows-image {
   height: 35vh;
-  background-image: url('../images/foodle/diagrams/Diagram-FlowCharts-min.png');
+  background-image: url("../images/foodle/diagrams/Diagram-FlowCharts.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -245,7 +695,7 @@ section.cs-content-strategy .wrapper {
 
 .cs-content-strategy-image {
   /* xheight: 35vh; */
-  background-image: url('../images/foodle/diagrams/Diagram-Moodboard-min.png');
+  background-image: url("../images/foodle/diagrams/Diagram-Moodboard.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -264,7 +714,7 @@ section.cs-sketches-wireframes .wrapper {
 
 .cs-sketches-wireframes-image {
   /* xheight: 35vh; */
-  background-image: url('../images/foodle/backgrounds/BKG-Sketches-Wireframes-min.jpg');
+  background-image: url("../images/foodle/backgrounds/BKG-Sketches-Wireframes.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,7 +724,7 @@ section.cs-sketches-wireframes .wrapper {
 
 .cs-usability-test-01-image {
   height: 35vh;
-  background-image: url('../images/foodle/backgrounds/BKG-UsabilityTest-01-min.jpg');
+  background-image: url("../images/foodle/backgrounds/BKG-UsabilityTest-01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -291,7 +741,7 @@ section.cs-usability-test-01 .wrapper {
 
 .cs-brand-identity-image {
   height: 35vh;
-  background-image: url('../images/foodle/backgrounds/BKG-BrandIdentity-min.png');
+  background-image: url("../images/foodle/backgrounds/BKG-BrandIdentity.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -325,7 +775,7 @@ section.cs-style-guide .wrapper {
 
 .cs-high-fidelity-mockup-image {
   height: 35vh;
-  background-image: url('../images/foodle/backgrounds/BKG-HighFidelityMockups-min.png');
+  background-image: url("../images/foodle/backgrounds/BKG-HighFidelityMockups.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -376,7 +826,7 @@ section.cs-usability-test-02 .wrapper {
 
 .cs-usability-test-02-image {
   height: 35vh;
-  background-image: url('../images/foodle/backgrounds/BKG-UsabilityTest-02-min.jpg');
+  background-image: url("../images/foodle/backgrounds/BKG-UsabilityTest-02.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -399,7 +849,7 @@ section.cs-developer-handoff .wrapper {
 
 .cs-section-image-02 {
   height: 20vh;
-  background-image: url('../images/foodle/backgrounds/BKG-SectionImage-02-min.png');
+  background-image: url("../images/foodle/backgrounds/BKG-SectionImage-02.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -458,9 +908,11 @@ section.about-hero .wrapper {
 /* -- 01: MAIN HERO -- */
 
 
+
+
 .main-hero {
   height: 55vh;
-  background-image: url('../images/portfolio/backgrounds/BKG-Gipetto-Hero-min.jpg');
+  background-image: url("../images/portfolio/backgrounds/BKG-Gipetto-Logo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -491,21 +943,21 @@ section.main-project {
 } /* Panel Case-Study Styling */
 
 .main-project-01 {
-  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-01-min.jpg');
+  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-01.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-project-02 {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-02-min.jpg');
+  background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-02.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-project-03 {
-  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-03-min.jpg');
+  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-03.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -559,11 +1011,10 @@ section.main-past-works .wrapper {
 
 .about-hero {
   height: 55vh;
-  background-image: url('../images/portfolio/backgrounds/BKG-AboutMe-Hero-min.jpg');
+  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom: 5px solid var(--clr-dark-accent);
 }
 
 .about-01 .container-paragraph,
@@ -576,7 +1027,7 @@ section.main-past-works .wrapper {
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('../images/portfolio/backgrounds/BKG-AboutMe-01-min.jpg')
+  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe-01.jpg")
 }
 
 .about-02-image {
@@ -584,7 +1035,7 @@ section.main-past-works .wrapper {
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('../images/portfolio/backgrounds/BKG-AboutMe-02-min.jpg')
+  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe-02.jpg")
 }
 
 
