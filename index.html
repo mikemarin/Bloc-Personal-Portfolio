@@ -29,39 +29,77 @@
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/main.css">
   <!-- <link rel="stylesheet" href="styles/styles.css"> -->
-  <!-- <link rel="stylesheet" href="styles/media-queries-sml.css"> -->
+  <link rel="stylesheet" href="styles/media-queries-sml.css">
   <!-- <link rel="stylesheet" href="styles/media-queries-med.css"> -->
+  <!-- <link rel="stylesheet" href="styles/media-queries-lrg.css"> -->
+  <!-- <link rel="stylesheet" href="styles/media-queries-xlrg.css"> -->
 
 </head>
 
 <body>
 
-    <div class="page_container">
+  <div class="page_container">
 
-      <!-- ####### SECTION 00: HEADER/NAVIGATION ####### -->
+    <!-- <div class="content-desktop"></div> -->
+    <div class="content-mobile">
+
+      <!-- ### SCROLL TO TOP: MOBILE ### -->
+
+      <div class="BacktoTop">
+        <a href="#0" onclick="topFunction()" id="BacktoTop" title="Back to Top"><img src="images/portfolio/icons/Icon-CircleArrow-Up.svg" alt="Image" /></a>
+      </div>
+
+      <!-- ### MENU: MOBILE ### -->
+
+      <div class="mobile-menu modal" id="myModal">
+
+        <div class="modal-content modal-bkg">
+          <div class="wrapper">
+            <div class="modal-close">
+              <span class="close"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="modal-items margin-top-4em txt-ctr">
+              <a href="#0"><h2 class="u-case">home</h2></a>
+              <a href="about.html"><h2 class="u-case">about</h2></a>
+              <a href="resume.html"><h2 class="u-case">resume</h2></a>
+              <a href="project-01.html"><h2 class="u-case">project-01</h2></a>
+            </div>
+
+          </div><!-- ### wrapper ### -->
+        </div>
+
+      </div>
+
+      <!-- ### HEADER/NAVIGATION: MOBILE ### -->
 
       <header>
 
-        <div class="wrapper">
+        <div class="container-nav">
 
-          <div class="nav_logo">
-            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
-          </div>
+          <div class="wrapper">
 
-          <nav>
-            <a href="index.html">Work</a>
-            <a href="resume.html">Resume</a>
-            <a href="about.html">About</a>
-            <a href="#">Contact</a>
-          </nav>
+            <div class="nav_logo">
+              <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+            </div>
 
-        </div>
+            <div class="mobile-menu-icon txt-rt">
+              <a href="#0" onclick="myFunction02()" id="myBtn"><i class="fas fa-bars"></i></a>
+            </div>
 
-      </header><!-- ##### header ##### -->
+            <nav class="nav-mobile txt-rt">
+
+            </nav><!-- ### nav-mobile ### -->
+
+          </div><!-- ### wrapper ### -->
+        </div><!-- ### container-nav ### -->
+
+      </header><!-- ### header ### -->
+
+      <!-- ### MAIN: MOBILE ### -->
 
       <main>
 
-        <!-- ####### SECTION 01: MAIN HERO ####### -->
+        <!-- ### MOBILE 01: MAIN HERO ### -->
 
         <section class="main-hero">
 
@@ -71,7 +109,9 @@
 
             <div class="row-02">
               <div class="container-heading txt-ctr">
-                <h1>Mike Marin | UX Designer</h1>
+                <h1>Mike Marin <span class="mobile-hide">| </span>
+                  <br/>
+                UX Designer</h1>
               </div>
             </div>
 
@@ -87,179 +127,205 @@
             </div>
 
             <div class="row-04 flex fx-ctr-ctr">
-              <div class="container-footer">
-                <img src="images/portfolio/icons/Icon-CircleArrow-Down.svg" alt="SVG" />
-
-              </div>
+              <a href="#main-projects">
+                <div class="container-graphic">
+                  <img src="images/portfolio/icons/Icon-CircleArrow-Down.svg" alt="SVG" />
+                </div>
+              </a>
             </div>
 
-          </div>
+          </div><!-- ### wrapper ### -->
 
         </section>
 
-        <!-- ####### SECTION 02: MAIN PROJECTS ####### -->
+        <!-- ### MOBILE 02: MAIN PROJECTS ### -->
+
+        <a id="main-projects"></a>
 
         <section class="main-projects">
 
-          <div class="wrapper">
+          <div class="panel-group one panel-main">
 
-            <section class="main-project main-project-01 margin-btm-2em">
-              <div class="panel-main">
+            <div class="panel-image one"></div>
 
-                <div class="container-heading margin-btm-2em">
-                  <h2>Foodle</h2>
-                </div>
+            <div class="wrapper">
 
-                <div class="container-paragraph">
-                  <p class="paragraph-02 p-last">
-                    Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the world.
-                  </p>
-                </div>
-
-                <div class="container-footer margin-top-3em">
-                  <a href="project-01.html" class="button-01">View Case Study</a>
-                </div>
-
+              <div class="panel-heading margin-btm-1em">
+                <h2>Foodle</h2>
               </div>
-            </section>
 
-            <section class="main-project main-project-02 margin-btm-2em flex fx-rt">
-              <div class="panel-main">
-
-                <div class="container-heading margin-btm-2em">
-                  <h2>BusyBus</h2>
-                </div>
-
-                <div class="container-paragraph">
-                  <p class="paragraph-02 p-last">
-                    BusyBus is a conceptual app idea that explored how a city bus transit system would handle congestion on overlapping service lines. The solution was to be explored completely using the design process to document the proposed solution.
-                  </p>
-                </div>
-
-                <div class="container-footer margin-top-3em">
-                  <a href="#" class="button-01">View Case Study</a>
-                </div>
-
+              <div class="panel-paragraph">
+                <p class="paragraph-02 p-last">
+                  Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the
+                  world.
+                </p>
               </div>
-            </section>
 
-            <section class="main-project main-project-03">
-              <div class="panel-main">
-
-                <div class="container-heading margin-btm-2em">
-                  <h2>HOA App</h2>
-                </div>
-
-                <div class="container-paragraph">
-                  <p class="paragraph-02 p-last">
-                    This is placeholder text of an upcoming web app that I’m doing for my solo project. It’s purpose is meant to be an online reference for those purchasing a home in an HOA community as well as prospective future buyers.
-                  </p>
-                </div>
-
-                <div class="container-footer margin-top-3em">
-                  <a href="#" class="button-01">View Case Study</a>
-                </div>
-
+              <div class="panel-button margin-top-2em">
+                <a href="project-01.html" class="button-01">View Case Study</a>
               </div>
-            </section>
 
-          </div>
+            </div><!-- ### wrapper ### -->
+
+          </div><!-- ### panel-group ### -->
+
+          <div class="panel-group two panel-main">
+
+            <div class="panel-image two"></div>
+
+            <div class="wrapper">
+
+              <div class="panel-heading margin-btm-1em">
+                <h2>BusyBus</h2>
+              </div>
+
+              <div class="panel-paragraph">
+                <p class="paragraph-02 p-last">
+                  BusyBus is a conceptual app idea that explored how a city bus transit system would handle congestion on overlapping service lines. The solution was to be explored completely using the design process to document the proposed
+                  solution.
+                </p>
+              </div>
+
+              <div class="panel-button margin-top-2em">
+                <a href="#0" class="button-01">View Case Study</a>
+              </div>
+
+            </div><!-- ### wrapper ### -->
+
+          </div><!-- ### panel-group ### -->
+
+          <div class="panel-group three panel-main">
+
+            <div class="panel-image three"></div>
+
+            <div class="wrapper">
+
+              <div class="panel-heading margin-btm-1em">
+                <h2>HOA App</h2>
+              </div>
+
+              <div class="panel-paragraph">
+                <p class="paragraph-02 p-last">
+                  This is placeholder text of an upcoming web app that I’m doing for my solo project. It’s purpose is meant to be an online reference for those purchasing a home in an HOA community as well as prospective future buyers.
+                </p>
+              </div>
+
+              <div class="panel-button margin-top-2em">
+                <a href="#0" class="button-01">View Case Study</a>
+              </div>
+
+            </div><!-- ### wrapper ### -->
+
+          </div><!-- ### panel-group ### -->
 
         </section>
 
-        <!-- ####### SECTION 03: MAIN PAST WORKS ####### -->
+        <!-- ### MOBILE 03: MAIN PAST WORKS ### -->
 
         <section class="main-past-works">
 
-          <div class="wrapper">
+          <div class="container-full">
 
-            <div class="container-heading txt-ctr">
-              <h1>Past Works</h1>
-            </div>
+            <div class="panel-group panel-main">
 
-            <div class="container-paragraph margin-top-3em txt-ctr">
-              <p class="paragraph-01 p-last">
-                The projects featured here are part of my portfolio from the Art Institute. I have put quite a bit of time and effort into them and feel that they demonstrate my proficiency in the use of Graphic Design, Web Design, Photography & Videography.
-              </p>
-            </div>
+              <div class="wrapper">
 
-          </div>
+                <div class="panel-heading margin-btm-2em txt-ctr">
+                  <h1>Past Works</h1>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-02 p-last">
+                    The projects featured here are part of my portfolio from the Art Institute. I have put quite a bit of time and effort into them and feel that they demonstrate my proficiency in the use of Graphic Design, Web Design, Photography & Videography.
+                  </p>
+                </div>
+
+              </div><!-- ### wrapper ### -->
+
+            </div><!-- ### panel-group ### -->
+
+          </div><!-- ### container-full ### -->
 
         </section>
 
-        <!-- ####### SECTION 04: MAIN GALLERY ####### -->
+        <!-- ### MOBILE 04: MAIN GALLERY ### -->
 
         <section class="main-gallery">
 
           <div class="wrapper">
 
-            <div class="container-full flex">
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-01-min.png" alt="Image" />
+            <div class="main-gallery-shown">
 
-                <div class="main-gallery-single-overlay"></div>
+              <div class="main-gallery-single one">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-01-min.jpg" class="image" alt="Image" />
+                </a>
               </div>
 
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-02-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
+              <div class="main-gallery-single two">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-02-min.jpg" alt="Image" />
+                </a>
               </div>
 
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-03-min.png" alt="Image" />
+              <div class="main-gallery-single three">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-03-min.jpg" alt="Image" />
+                </a>
+              </div>
 
-                <div class="main-gallery-single-overlay"></div>
+              <div class="main-gallery-single four">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-04-min.jpg" alt="Image" />
+                </a>
+              </div>
+
+              <div class="main-gallery-single five">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-05-min.jpg" alt="Image" />
+                </a>
+              </div>
+
+            </div><!-- ### main-gallery-shown ### -->
+
+            <div class="main-gallery-link txt-ctr u-case">
+              <a href="#0" onclick="myFunction()">&#8230;See More Projects</a>
+            </div>
+
+            <div class="main-gallery-hide" id="showGallery">
+
+              <div class="main-gallery-single six">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-06-min.jpg" alt="Image" />
+                </a>
+              </div>
+
+              <div class="main-gallery-single seven">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-07-min.jpg" alt="Image" />
+                </a>
+              </div>
+
+              <div class="main-gallery-single eight">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-08-min.jpg" alt="Image" />
+                </a>
+              </div>
+
+              <div class="main-gallery-single nine">
+                <a href="#0">
+                  <img src="images/portfolio/gallery/BKG-Gallery-09-min.jpg" alt="Image" />
+                </a>
               </div>
             </div>
 
-            <div class="container-full flex">
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-04-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
-              </div>
-
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-05-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
-              </div>
-
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-06-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
-              </div>
-            </div>
-
-            <div class="container-full flex">
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-07-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
-              </div>
-
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-08-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
-              </div>
-
-              <div class="main-gallery-single">
-                <img src="images/portfolio/gallery/BKG-Gallery-09-min.jpg" alt="Image" />
-
-                <div class="main-gallery-single-overlay"></div>
-              </div>
-            </div>
-
-          </div>
+          </div><!-- ### wrapper ### -->
 
         </section>
 
-      </main><!-- ##### main ##### -->
+      </main><!-- ### main ### -->
 
-      <!-- ####### SECTION 00: FOOTER ####### -->
+      <!-- ### FOOTER: MOBILE ### -->
 
       <footer>
 
@@ -269,9 +335,10 @@
             <h1>Get in Touch</h1>
           </div>
 
-          <div class="container-paragraph margin-top-3em txt-ctr">
+          <div class="container-paragraph margin-top-2em txt-ctr">
             <p class="paragraph-01">
-              Thank you for stopping by. I hope you enjoyed what I have to show.
+              Thank you for stopping by.<br />
+              I hope you enjoyed what I have to show.
             </p>
             <p class="paragraph-01 p-last">
               Have any questions or comments? Feel free to connect with me.
@@ -296,20 +363,25 @@
             </div>
           </div>
 
-          <div class="container-footer">
-            <p class="copyright flex fx-ctr-ctr">
-              Copyright &copy; 2020 Mike Marin. All Rights Reserved.
+          <div class="container-footer set-solid txt-ctr">
+            <p class="copyright">
+              Copyright &copy; 2020 Mike Marin.<br />All Rights Reserved.
             </p>
           </div>
 
-        </div>
+        </div><!-- ### wrapper ### -->
 
-      </footer><!-- ##### footer ##### -->
+      </footer><!-- ### footer ### -->
 
-    </div><!-- ##### .page_container ##### -->
+    </div><!-- ### content-mobile ### -->
+
+  </div><!-- ### page_container ### -->
 
 </body>
 
 <script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous"></script>
+<script src="scripts/MenuModal.js"></script>
+<script src="scripts/ShowMore.js"></script>
+<script src="scripts/ScrollTop.js"></script>
 
 </html>

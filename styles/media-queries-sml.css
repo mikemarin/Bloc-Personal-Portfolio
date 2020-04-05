@@ -1,296 +1,661 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* CSS Document */
 
-/* CSS Document */
+
 /* Small devices  */
 @media (min-width: 375px) and (max-width: 767px) {
 
-  /* ===== CASE STUDY - PROJECT 01 ===== */
+  .content-desktop {
+    display: none;
+  }
 
-  /* -- 01: SYNOPSIS HERO -- */
-
-  /* -- 02: SPECIFICATION -- */
-
-  /* -- 03: OVERVIEW -- */
-
-  /* -- 04: PROBLEM SOLUTION -- */
-
-  /* -- 05: IMAGE BANNER 01 -- */
-
-  /* -- 06: DESIGN PROCESS -- */
-
-  /* -- 07: PROJECT BRIEF -- */
-
-  /* -- 08: COMPETITIVE ANALYSIS -- */
-
-  /* -- 09: USER SURVEY -- */
-
-  /* -- 10: USER PERSONAS -- */
-
-  /* -- 11: USER STORIES -- */
-
-  /* -- 12: USER FLOWS IMAGE BANNER -- */
-
-  /* -- 13: USER FLOWS -- */
-
-  /* -- 14: CONTENT STRATEGY -- */
-
-  /* -- 15: SKETCHES WIREFRAMES -- */
-
-  /* -- 16: USABILITY TEST 01 IMAGE BANNER -- */
-
-  /* -- 17: USABILITY TEST 01 -- */
-
-  /* -- 18: BRAND IDENTITY IMAGE BANNER -- */
-
-  /* -- 19: BRAND IDENTITY -- */
-
-  /* -- 20: STYLE GUIDE -- */
-
-  /* -- 21: HIGH FIDELITY MOCKUP IMAGE BANNER -- */
-
-  /* -- 22: HIGH FIDELITY MOCKUP -- */
-
-  /* -- 23: PREFERENCE TESTING -- */
-
-  /* -- 24: USABILITY TEST 02 IMAGE BANNER -- */
-
-  /* -- 25: USABILITY TEST 02 -- */
-
-  /* -- 26: DEVELOPER HANDOFF -- */
-
-  /* -- 27: IMAGE BANNER 02 -- */
-
-  /* -- 28: CONCLUSION -- */
+  .nav-desktop {
+    display: none;
+  }
 
 
+  /* == HEADER - NAVIGATION == */
 
-  /* ===== PORTFOLIO ===== */
+  header .wrapper {
+    padding: 0 1.25em;
+  }
 
-  /* -- 00: MAIN / ABOUT ME -- */
+  header {
+    padding: .75em 0;
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .nav_logo {
+    top: .75em;
+    width: 60px;
+    height: 60px;
+  }
+
+  nav a {
+    /* border: 1px solid red; */
+  }
+
+  .mobile-menu .wrapper {
+    xpadding: 2em 2em;
+  }
+
+  .mobile-menu-icon i,
+  .mobile-menu i {
+    color: white;
+  }
+
+  .mobile-menu .modal-items a {
+    margin: 1em;
+  }
+
+  .mobile-menu h2 {
+    color: var(--clr-light-text);
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(161,176,201);
+    background: radial-gradient(circle, rgba(161,176,201,1) 0%, rgba(4,33,73,1) 100%);
+  }
+
+  .modal-close {
+    text-align: right;
+    padding-right: .5em;
+    padding-top: .5em;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+
+  /* == PORTFOLIO == */
+
+  /* -- 00: MAIN - ABOUT ME -- */
+
+  section.main-hero .wrapper,
+  section.about-hero .wrapper {
+    height: 80vh;
+    padding: 0 2em;
+  }
+
+  .main-hero, .about-hero {
+    height: 85vh;
+  } /* Hero Background Image */
+
+  .main-hero, .about-hero {
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img,
+  .about-hero img {
+    height: 40px;
+  }
+
 
   /* -- 01: MAIN HERO -- */
 
+  .main-hero .mobile-hide {
+    display: none;
+  }
+
+  .main-hero .row-01 {
+    height: 5%;
+  }
+
+  .main-hero .row-02 {
+    height: 30%;
+  }
+
+  .main-hero .row-03 {
+    height: 55%;
+  }
+
+  .main-hero .row-04 {
+    height: 10%;
+  }
+
+
   /* -- 02: MAIN PROJECTS -- */
+
+  section.main-projects {
+    background-color: var(--clr-dark-primary);
+  }
+
+  section.main-projects .wrapper {
+    padding: 3em 2em;
+  }
+
+  .main-projects .panel-image.one {
+    height: 40vh;
+    background-image: url('../images/portfolio/backgrounds/BKG-Project-01M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);  }
+
+  .main-projects .panel-image.two {
+    height: 35vh;
+    background-image: url('../images/portfolio/backgrounds/BKG-Project-02M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .main-projects .panel-image.three {
+    height: 35vh;
+    background-image: url('../images/portfolio/backgrounds/BKG-Project-03M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
 
   /* -- 03: PAST WORKS -- */
 
+  section.main-past-works .wrapper {
+    padding: 3em 2em;
+  }
+
+  .main-past-works {
+    background-color: var(--clr-dark-primary);
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
   /* -- 04: MAIN GALLERY -- */
 
+  .main-gallery-link {
+    padding: .75em 0;
+  }
+
+  .main-gallery-hide {
+    display: none;
+  }
 
 
-  /* ===== ABOUT ME ===== */
+  /* == ABOUT ME == */
+
+  .about-01 .container-paragraph,
+  .about-02 .container-paragraph {
+    padding: 0 0;
+  }
+
+  section.about-01 .wrapper, section.about-02 .wrapper {
+    padding: 3em 2em;
+  }
+
+  .about-hero .row-01 {
+    height: 10%;
+  }
+
+  .about-hero .row-02 {
+    height: 37%;
+  }
+
+  .about-hero .row-03 {
+    height: 43%;
+  }
+
+  .about-hero .row-04 {
+    height: 10%;
+  }
+
 
   /* -- 01: ABOUT ME SECTION -- */
 
+  .about-hero h1 {
+    font-size: 2.488em;
+  }
+
+  .about-01-image {
+    height: 50vh;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
   /* -- 02: ABOUT ME SECTION -- */
 
+  .about-02-image {
+    height: 50vh;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
 
 
-  /* ===== HEADER/NAVIGATION ===== */
+  /* == FOOTER == */
 
-  /* ===== FOOTER ===== */
+  footer {
+    border-top: 3px solid var(--clr-dark-accent);
+  }
+
+  footer .wrapper {
+    padding: 3em 2em;
+  }
+
+  footer a {
+    font-size: 1em;
+  }
+
+  /* == CASE STUDY - PROJECT 01 == */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .wrapper {
+    padding: 2em 2em;
+  }
+
+  .cs-synopsis {
+    background-image: none;
+    background-color: #FFC003;
+  }
+
+  .cs-synopsis img {
+    width: 250px;
+  }
+
+  .cs-synopsis svg {
+    width: 160px;
+  }
+
+  .cs-synopsis .line-divider {
+    padding: 1em 0;
+    border-bottom: 1px solid var(--clr-dark-text);
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  section.cs-specification .wrapper {
+    padding: 3em 4em;
+  } /* Section Padding Specifications */
+
+  /* -- 03: OVERVIEW -- */
+
+  section.cs-overview .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+  .cs-overview {
+    background-image: url('../images/foodle/backgrounds/BKG-Overview-01M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  section.cs-problem-solution .wrapper {
+    padding: 1.5em 1.5em;
+  } /* Section Padding Specifications */
+
+  .panel-case {
+    padding: 1.5em 1.5em;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+    height: 40vh;
+  }
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  section.cs-design-process .wrapper.master {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+  section.cs-design-process .wrapper.one {
+    padding: 0em 2em;
+  } /* Section Padding Specifications */
+
+  .cs-design-process img {
+    width: 10em;
+  } /* Foodle Logo Size */
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  section.cs-project-brief .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  section.cs-competitive-analysis .wrapper.master {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+  section.cs-competitive-analysis .wrapper.one {
+    padding: 2em 3em;
+  } /* Section Padding Specifications */
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+  }
+
+  .cs-competitive-analysis h4 {
+    padding: .25em 0;
+  }
+
+
+  /* -- 09: USER SURVEY -- */
+
+  section.cs-user-survey .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+  section.cs-user-survey .paragraph-02 {
+    letter-spacing: -0.05em;
+  }
+
+
+  /* -- 10: USER PERSONAS -- */
+
+  section.cs-user-personas .wrapper {
+    padding: 3em 2em;
+  }
+
+
+  /* -- 11: USER STORIES -- */
+
+  section.cs-user-stories .wrapper {
+    padding: 3em 2em;
+  }
+
+  section.cs-user-stories .paragraph-02 {
+    letter-spacing: -0.05em;
+  }
+
+  .cs-user-stories .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+  }
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 40vh;
+  }
+
+  /* -- 13: USER FLOWS -- */
+
+  section.cs-user-flows .wrapper {
+    padding: 3em 2em;
+  }
 
 
 
+  /* -- 14: CONTENT STRATEGY -- */
+
+  section.cs-content-strategy .wrapper {
+    padding: 3em 2em;
+  }
+
+  .cs-content-strategy-image {
+    height: 40vh;
+    background-position: top -70px center;
+  }
 
 
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  section.cs-sketches-wireframes .wrapper {
+    padding: 3em 2em;
+  }
 
 
+  .cs-sketches-wireframes-image {
+    height: 40vh;
+  }
 
 
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 40vh;
+  }
 
 
+  /* -- 17: USABILITY TEST 01 -- */
+
+  section.cs-usability-test-01 .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
 
 
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 40vh;
+  }
 
 
+  /* -- 19: BRAND IDENTITY -- */
 
-  /* === BASE FORMATTING === */
+  section.cs-brand-identity .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  section.cs-style-guide .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 40vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  section.cs-high-fidelity-mockup .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  section.cs-preference-testing .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 40vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  section.cs-usability-test-02 .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  section.cs-developer-handoff .wrapper {
+    padding: 3em 2em;
+  } /* Section Padding Specifications */
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 30vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  section.cs-conclusion .wrapper {
+    padding: 3em 2em;
+  }
+
+
+  /* == BUTTON PADDING & STYLING == */
+
+  .button-01 {
+    margin: 0 0;
+    width: 100%;
+  }
+
+
+  /* == PANEL PADDING & STYLING == */
+
+  .panel-case {
+    background-color: var(--clr-bkg-panel);
+    border: 1px solid var(--clr-bkg-panelborder);
+  } /* Panel Case-Study Styling */
+
+  .panel-bullets {
+    padding: 0 0 0 1.25em;
+  } /* Panel Bullets Padding */
+
+  .panel-main {
+    background-color: var(--clr-dark-primary);
+    border: none;
+  } /* Panel Case-Study Styling */
+
+
+  /* == GLOBAL STYLING == */
+
+  /* -- TYPOGRAPHY -- */
 
   h1 {
-    font-size: 275%;
+    font-size: 3.5em;
   }
 
   h2 {
-    font-size: 220%;
+    font-size: 2em;
   }
 
   h3 {
-    font-size: 155%;
+    font-size: 1.2em;
   }
 
   h4 {
-    font-size: 100%;
+    font-size: 1.2em;
   }
 
-  p {
-    font-size: 140%;
-    line-height: 1.5em;
+  h5 {
+    font-size: 2.074em;
   }
 
-  button {
-    width: 100%;
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.1em;
   }
 
-  button span {
-    font-size: 175%;
-  }
-
-  .page_container {
-    width: 100%;
-  }
-
-  .inner_padding {
-    padding: 2em 1em;
-  }
-
-  /*
-  .hero_image {
-    height: 53vh;
-    flex-basis: 100%;
-    xborder: 3px solid black;
-  }
-
-  .hero_title {
-    height: 20vh;
-    flex-basis: 100%;
-  }
-
-  .hero_title h1 {
-    margin-left: .5em;
-    margin-bottom: .6em;
-  }
-
-  .hero_awards_ctn {
-    background-color: var(--clr-light-primary);
-  }
-
-  .hero_awards_left {
-    display: none;
-  }
-
-  .hero_awards_right {
-    flex-basis: 100%;
-  }
-
-  .hero_awards_deauville svg,
-  .hero_awards_tribeca svg {
-    width: 5em;
-    margin: 1em 1em;
-  }
-
-  .info_summary {
-    flex-basis: 100%;
-    padding-right: 0em;
-  }
-
-  .info_summary p {
-    font-size: 120%;
+  .paragraph-02 {
+    font-size: 1.2em;
     line-height: 1.5;
+
   }
 
-  .info_specs {
-    flex-basis: 100%;
+  .paragraph-03 {
+    font-size: 1em;
   }
 
-  .tickets_section {
-    background-color: var(--clr-light-accent);
-    flex-basis: 100%;
+  .paragraph-04 {
+    font-size: 1.2em;
+    line-height: 1.35;
   }
 
-  .tickets_summary p {
-    margin-bottom: 1em;
+  .paragraph-05 {
+    font-size: 1.2em;
   }
 
-  .tickets_search_bar {
-    width: 100%;
+  /* ======== */
+
+  .process {
+    font-size: 1.44em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 
-  .tickets_link button {
-    margin-top: 2em;
-    text-align: center;
+  .copyright {
+    font-size: 1.2em;
   }
 
-  .tickets_search_button {
-    width: 100%;
-    margin: 0em 0em;
+  /* ======== */
+
+  a {
+    font-size: 1.44em;
   }
 
-  .filler_image-01 {
-    display: none;
+  ul.list-items-01 {
+    font-size: 1.2em;
   }
 
-  .filler_image-01 {
-    flex-basis: 100%;
-    background-image: url(../images/Photo-01.jpg);
-    background-repeat: no-repeat;
-    background-position: right 50%;
-    background-size: 220%;
+  ul.list-items-02 {
+    font-size: 1.2em;
   }
 
-  .cast_00-box {
-    width: 8.8em;
-    padding: 1em 1em;
-  }
-
-  .cast_02-image img {
-    border: .2em solid #0F97A6;
-  }
-
-  .reviews_ctn {
-    flex: none;
-  }
-
-  .reviews_00-box {
-    padding: 1em 1em;
-    margin: 1em 0;
-    vertical-align: center;
-  }
-
-  .reviews_header {
-    width: 100%;
-    flex: none;
-    vertical-align: center;
-  }
-
-  .reviews_02-rating {
-    padding-left: 24em;
-    xflex-basis: 100%;
-    vertical-align: center;
-    padding: 0 0;
-    margin: 0 0;
-  }
-
-  .reviews-04-quote {
-    padding: 1em .5em;
-  }
-
-  .reviews-04-quote p {
-    font-size: 100%;
-    line-height: 1.75;
-  }
-
-  .reviews_05-name-title {
-    padding: 1em 2em;
-    text-align: center;
+  li {
+    margin-bottom: .3em;
   }
 
 
-  .filler_image-03 {
-    height: 35vh;
+  /* == TEMPORARY == */
+
+  .mobile-top-01 {
+    height: 70px;
   }
 
-  .awards_deauville svg,
-  .awards_tribeca svg {
-    width: 8em;
-    margin: 1em 1em;
+  .mobile-top-02 {
+    height: 39px;
   }
 
-  .copyright p {
-    font-size: 120%;
-    line-height: 1.25;
-    text-align: center;
+  .mobile-top-02-fixed {
+    z-index: 1000;
+    position: fixed;
+    height: 39px;
+    top: 0px;
   }
- */
 
-} /* ##### viewport: small ##### */
+  .mobile-bottom {
+    z-index: 1000;
+    position: fixed;
+    height: 44px;
+    top: 623px;
+  }
+
+} /* #### viewport: small #### */
