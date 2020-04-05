@@ -4,17 +4,25 @@
 
 /* ===== TYPOGRAPHY.CSS ===== */
 
-/*
-Name: Typography CSS Styles
-Created: March 30, 2020
-Updated: April 2, 2020
-Author: Mike Marin
-*/
+/* == TYPOGRAPHY == */
 
-/* === TYPOGRAPHY === */
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1, h2, h3, h4, p, a, li, button {
+  color: var(--clr-dark-text);
+}
+
+/* ======== */
 
 h1 {
-  font-size: 4.3rem;
+  /* font-size: 4.3em; */
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -24,7 +32,7 @@ h1 {
 } /* 68.80px */ /* Desk-H-01 | Hero-Head */
 
 h2 {
-  font-size: 3.583rem;
+  /* font-size: 3.583em; */
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -35,14 +43,14 @@ h2 {
 } /* 57.33px */ /* Desk-H-02 | Section-Head */
 
 h3 {
-  font-size: 1.728rem;
+  /* font-size: 1.728em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 900;
 } /* 27.65px */ /* Desk-H-03 | SubHead */
 
 h4 {
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -50,17 +58,17 @@ h4 {
 } /* 19.20px */ /* Desk-H-04 | Panel-Head */
 
 h5 {
-  font-size: 2.074rem;
+  /* font-size: 2.074em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 900;
   /* xline-height: 1; */
 } /* 33.18px */ /* Desk-H-05 | Persona-Name */
 
-/* ======================== */
+/* ======== */
 
 .paragraph-01  {
-  font-size: 1.44rem;
+  /* font-size: 1.44em; */
   font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 400;
@@ -69,8 +77,7 @@ h5 {
 } /* 23.04px */ /* Desk-P-01 | Hero-Landing */
 
 .paragraph-02 {
-  /* font-size: 1.44rem; */
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 400;
@@ -79,68 +86,66 @@ h5 {
 } /* 19.20px */ /* Desk-P-02 | Main-Body */
 
 .paragraph-03 {
-  font-size: 1rem; /* 16px */
+  /* font-size: 1em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-}
+} /* 16px */
 
 .paragraph-04 {
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+
 } /* 19.20px */ /* Desk-P-04 | Panel-Small */
 
 .paragraph-05 {
-  font-size: 1.2rem; /* 19.20px */
+  /* font-size: 1.2em; */
   font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-}
+} /* 19.20px */
 
 .p-last {
   margin-bottom: 0;
 }
 
-/* ======================== */
+/* ======== */
 
 .process {
-  font-size: 1rem;
+  /* font-size: 1em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
-  /* xline-height: 1.5; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--clr-light-text);
 } /* 16px */
 
 .process span {
+  /* font-size: 1em; */
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem; /* 23.04px */
   font-style: normal;
   font-weight: 900;
   /* xline-height: 1.5; */
   text-transform: uppercase;
-  color: var(--clr-light-text);
 }
 
 .copyright {
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
 } /* 19.20px */ /* Desk-P-06 | Copyright */
 
-/* ======================== */
+/* ======== */
 
 a {
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -150,22 +155,36 @@ a {
 } /* 19.20px */ /* Desk-Mobi-A-01 | Button */
 
 ul.list-items-01 {
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
 } /* 19.20px */ /* Desk-Li-01 | Specs */
 
 ul.list-items-02 {
-  font-size: 1.2rem;
+  /* font-size: 1.2em; */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 600;
   list-style: disc outside none;
 } /* 19.20px */ /* Desk-Li-02 | Panel */
 
+li {
+  margin-bottom: .5em;
+}
 
-/* === TYPE VARIABLES === */
+li span {
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* == TYPE VARIABLES == */
 
 .sans-serif {
   font-family: 'Source Sans Pro', sans-serif;
@@ -205,8 +224,11 @@ ul.list-items-02 {
   font-weight: 700;
 }
 
+.disabled {
+  color: var(--clr-medium-text);
+}
 
-/* === BASE FORMATTING === */
+/* == BASE FORMATTING == */
 
 :root {
   --clr-light-text: #FFFFFF;
@@ -214,35 +236,7 @@ ul.list-items-02 {
   --clr-dark-text: #1A1A1A;
 }
 
-html, html a {
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-}
-
-html {
-  font-size: 100%;
-} /* 16px */
-
-h1, h2, h3, h4, p, a, li, button {
-  color: var(--clr-dark-text);
-}
-
-li {
-  margin-bottom: .3em;
-}
-
-li span {
-  font-size: 1.2rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-}
-
-li:last-of-type {
-  margin-bottom: 0;
-}
-
-/* === TYPE SCALE === */
+/* == TYPE SCALE == */
 
 /*
 16px base, 1.200 minor third
@@ -263,57 +257,56 @@ li:last-of-type {
 0.579em (9.26px)
 */
 
+
 /* ===== LAYOUT.CSS ===== */
 
-/*
-Name: Layout CSS Styles
-Created: April 1, 2020
-Updated: April 2, 2020
-Author: Mike Marin
-*/
+/* == GENERAL ELEMENT FORMATTING == */
 
-/* ===== GENERAL ELEMENT FORMATTING ===== */
 
 .container-full {
   width: 100%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 .container-half {
   width: 50%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 .container-half-a {
   width: 50%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 .container-half-b {
   width: 50%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 .container-third {
   width: 33.33%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 .container-quarter {
   width: 25%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 .container-fifth {
   width: 20%;
-  /* xborder: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 
-/* ===== MARGIN NUDGES ===== */
+/* == MARGIN NUDGES == */
 
 .margin-top-1em {
   margin-top: 1em;
+}
+
+.margin-top-15em {
+  margin-top: 1.5em;
 }
 
 .margin-top-2em {
@@ -334,6 +327,10 @@ Author: Mike Marin
 
 .margin-btm-1em {
   margin-bottom: 1em;
+}
+
+.margin-btm-15em {
+  margin-bottom: 1.5em;
 }
 
 .margin-btm-2em {
@@ -401,7 +398,7 @@ Author: Mike Marin
 } /* Inside Right Column */
 
 
-/* ===== FLEX FORMATTING ===== */
+/* == FLEX FORMATTING == */
 
 .flex {
   display: flex;
@@ -417,6 +414,10 @@ Author: Mike Marin
 
 .fx-ctr {
   justify-content: center;
+}
+
+.fx-v-ctr {
+  align-items: center;
 }
 
 .fx-ctr-ctr {
@@ -446,473 +447,63 @@ Author: Mike Marin
   justify-content: space-between;
 }
 
+
 /* ===== MAIN.CSS ===== */
 
-@charset "UTF-8"; /* CSS Document */
+/* == HEADER/NAVIGATION == */
 
-/*
-Name: Main CSS Styles
-Created: March 30, 2020
-Updated: April 2, 2020
-Author: Mike Marin
-*/
-
-/* ===== BUTTON PADDING & STYLING ===== */
-
-.button-01 {
-  display: inline-block;
-  text-align: center;
-  background-color: var(--clr-dark-accent);
-  border: 2px solid var(--clr-btn-outline);
-  border-radius: 15px;
-  color: var(--clr-light-text);
-  padding: .75em 0;
-  margin: 0 .5em;
-  width: 250px;
-}
-
-/* ===== SECTION DIVIDERS ===== */
-
-.section-divider {
-  text-align: center;
-  padding: .5em 0;
-  background-color: var(--clr-medium-primary);
-}
-
-/* ===== PANEL PADDING & STYLING ===== */
-
-.panel-case {
-  background-color: var(--clr-bkg-panel);
-  border: 1px solid var(--clr-bkg-panelborder);
-} /* Panel Case-Study Styling */
-
-.panel-bullets {
-  padding: 1.5em 1.25em 1.5em 2.25em;
-} /* Panel Bullets Padding*/
-
-/* ===== SECTION STYLING ===== */
-
-section.cs-specification, section.cs-problem-solution, section.cs-project-brief, section.cs-user-survey, section.cs-user-stories, section.cs-content-strategy, section.cs-usability-test-01, section.cs-style-guide, section.cs-preference-testing, section.cs-developer-handoff {
-  background-color: var(--clr-bkg-white);
-  border: 1px solid var(--clr-bkg-secborder);
-} /* White BKG / Grey Outline */
-
-section.cs-design-process, section.cs-competitive-analysis, section.cs-user-personas, section.cs-user-flows, section.cs-sketches-wireframes, section.cs-brand-identity, section.cs-high-fidelity-mockup, section.cs-usability-test-02, section.cs-conclusion {
-  background-color: var(--clr-bkg-offwhite);
-  border: 1px solid var(--clr-bkg-secborder);
-} /* Off-White BKG / Grey Outline */
-
-.cs-section-image-01, .cs-user-flows-image, .cs-content-strategy-image, .cs-sketches-wireframes-image, .cs-usability-test-01-image, .cs-brand-identity-image, .cs-high-fidelity-mockup-image, .cs-usability-test-02-image, .cs-section-image-02 {
-  border: 1px solid var(--clr-bkg-secborder);
-} /* BORDER ON BANNER IMAGES */
-
-
-/* ===== CASE STUDY - PROJECT 01 ===== */
-
-
-/* -- 01: SYNOPSIS HERO -- */
-
-.cs-synopsis img {
-  width: 275px;
-} /* Foodle Logo Size */
-
-.cs-synopsis {
-  height: 55vh;
-  background-image: url("../images/foodle/backgrounds/BKG-Foodle-AppHero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} /* Foodle BKG Hero */
-
-.cs-synopsis .container-half-a,
-.cs-synopsis .container-half-b {
-  height: 53vh;
-}
-
-
-/* -- 02: SPECIFICATION -- */
-
-section.cs-specification .wrapper {
-  padding: 3em 6em;
-}/* Section Padding Specifications */
-
-.cs-specification .container-third {
-  width: 15em;
-}
-
-
-/* -- 03: OVERVIEW -- */
-
-section.cs-overview .wrapper {
-  padding: 4em 10em;
-}/* Section Padding Specifications */
-
-.cs-overview .inner {
-  padding-left: 10em;
-}
-
-.cs-overview {
-  background-image: url("../images/foodle/backgrounds/BKG-Overview.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-
-/* -- 04: PROBLEM SOLUTION -- */
-
-section.cs-problem-solution .wrapper {
-  padding: 2em 0;
-}/* Section Padding Specifications */
-
-.cs-problem, .cs-solution {
-  padding: 2em 2em;
-}
-
-
-/* -- 05: IMAGE BANNER 01 -- */
-
-.cs-section-image-01 {
-  height: 30vh;
-  background-image: url("../images/foodle/backgrounds/BKG-SectionImage-01.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-
-/* -- 06: DESIGN PROCESS -- */
-
-section.cs-design-process .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-design-process img {
-  height: 100px;
-} /* Foodle Logo Size */
-
-.cs-design-process .panel-heading {
-  height: 4em;
-}
-
-
-/* -- 07: PROJECT BRIEF -- */
-
-section.cs-project-brief .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-
-/* -- 08: COMPETITIVE ANALYSIS -- */
-
-section.cs-competitive-analysis .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-competitive-analysis .panel-image {
-  padding: 1em 0;
-  background-color: var(--clr-bkg-white);
-  border: 1px solid var(--clr-bkg-panelborder);
-}
-
-.cs-competitive-analysis h4 {
-  padding: .25em 0;
-}
-
-.cs-competitive-analysis .panel-group {
-  width: 37em;
-  padding: 1.5em 1.5em;
-}
-
-.cs-competitive-analysis img {
-  height: 100px;
-  object-fit: contain;
-}
-
-
-/* -- 09: USER SURVEY -- */
-
-section.cs-user-survey .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-
-/* -- 10: USER PERSONAS -- */
-
-section.cs-user-personas .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-user-personas .panel-case {
-  padding: 2em 2em;
-}
-
-
-/* -- 11: USER STORIES -- */
-
-section.cs-user-stories .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-user-stories .container-paragraph-b {
-  padding-right: 3em;
-}
-
-/* -- 12: USER FLOWS IMAGE BANNER -- */
-
-.cs-user-flows-image {
-  height: 35vh;
-  background-image: url("../images/foodle/diagrams/Diagram-FlowCharts.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* -- 13: USER FLOWS -- */
-
-section.cs-user-flows .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-user-flows .container-paragraph-b {
-  padding-right: 3em;
-}
-
-section.cs-user-flows .panel-case {
-  width: 45em;
-}
-
-
-/* -- 14: CONTENT STRATEGY -- */
-
-section.cs-content-strategy .wrapper {
-  padding: 0em 0em;
-} /* Section Padding Specifications */
-
-.cs-content-strategy .container-half-b {
-  padding: 2em 2em;
-}
-
-.cs-content-strategy-image {
-  /* xheight: 35vh; */
-  background-image: url("../images/foodle/diagrams/Diagram-Moodboard.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-
-/* -- 15: SKETCHES WIREFRAMES -- */
-
-section.cs-sketches-wireframes .wrapper {
-  padding: 0em 0em;
-} /* Section Padding Specifications */
-
-.cs-sketches-wireframes .container-half-a {
-  padding: 2em 2em;
-}
-
-.cs-sketches-wireframes-image {
-  /* xheight: 35vh; */
-  background-image: url("../images/foodle/backgrounds/BKG-Sketches-Wireframes.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* -- 16: USABILITY TEST 01 IMAGE BANNER -- */
-
-.cs-usability-test-01-image {
-  height: 35vh;
-  background-image: url("../images/foodle/backgrounds/BKG-UsabilityTest-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* -- 17: USABILITY TEST 01 -- */
-
-section.cs-usability-test-01 .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-
-/* -- 18: BRAND IDENTITY IMAGE BANNER -- */
-
-.cs-brand-identity-image {
-  height: 35vh;
-  background-image: url("../images/foodle/backgrounds/BKG-BrandIdentity.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* -- 19: BRAND IDENTITY -- */
-
-section.cs-brand-identity .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-
-/* -- 20: STYLE GUIDE -- */
-
-section.cs-style-guide .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-/*
-.cs-style-guide img {
-  height: 380px;
-  border: 1px solid black;
-}
-*/
-
-.cs-style-guide .container-graphic-a {
-  display: none;
-}
-
-/* -- 21: HIGH FIDELITY MOCKUP IMAGE BANNER -- */
-
-.cs-high-fidelity-mockup-image {
-  height: 35vh;
-  background-image: url("../images/foodle/backgrounds/BKG-HighFidelityMockups.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* -- 22: HIGH FIDELITY MOCKUP -- */
-
-section.cs-high-fidelity-mockup .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-
-
-
-/* -- 23: PREFERENCE TESTING -- */
-
-section.cs-preference-testing .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-preference-testing .panel-case {
-  padding: 2em 2em;
-}
-
-.cs-preference-testing .test-results h3 {
-  color: white;
-}
-
-.cs-preference-testing img {
-  border: 1px solid var(--clr-bkg-panelborder);
-}
-
-.test-results {
+header {
   background-color: var(--clr-dark-primary);
-  padding: .5em;
+  border-bottom: 5px solid var(--clr-dark-accent);
 }
 
-/* -- 24: USABILITY TEST 02 IMAGE BANNER -- */
-
-
-
-/* -- 25: USABILITY TEST 02 -- */
-
-section.cs-usability-test-02 .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-
-.cs-usability-test-02-image {
-  height: 35vh;
-  background-image: url("../images/foodle/backgrounds/BKG-UsabilityTest-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.container-nav {
+  position: relative;
 }
 
+.nav_logo {
+  position: absolute;
+  z-index: 10;
+}
 
-/* -- 26: DEVELOPER HANDOFF -- */
+nav a:hover {
+  color: var(--clr-medium-text);
+}
 
-section.cs-developer-handoff .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-developer-handoff img {
-  height: 375px;
-  object-fit: contain;
+nav a:active {
+  color: var(--clr-light-accent);
 }
 
 
-/* -- 27: IMAGE BANNER 02 -- */
-
-.cs-section-image-02 {
-  height: 20vh;
-  background-image: url("../images/foodle/backgrounds/BKG-SectionImage-02.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-
-/* -- 28: CONCLUSION -- */
-
-section.cs-conclusion .wrapper {
-  padding: 4em 0em;
-} /* Section Padding Specifications */
-
-.cs-conclusion .panel-case {
-  padding: 2em 2em;
-}
-
-/* ===== PORTFOLIO ===== */
+/* == PORTFOLIO == */
 
 /* -- 00: MAIN / ABOUT ME -- */
 
-section.main-hero .wrapper,
-section.about-hero .wrapper {
-  height: 53vh;
-  padding: 0 5em;
-} /* Section Padding Default */
-
 .main-hero .row-01,
 .about-hero .row-01 {
-  height: 35%;
-  /* xbackground-color: rgba(255, 0, 0, .25); */
+  /* background-color: rgba(255, 0, 0, .25); */
 }
 
 .main-hero .row-02,
 .about-hero .row-02 {
-  height: 20%;
-  /* xbackground-color: rgba(255, 133, 0, .25); */
+  /* background-color: rgba(255, 133, 0, .25); */
 }
 
 .main-hero .row-03,
 .about-hero .row-03 {
-  height: 35%;
-  /* xbackground-color: rgba(255, 202, 139, .25); */
+  /* background-color: rgba(255, 202, 139, .25); */
 }
 
 .main-hero .row-04,
 .about-hero .row-04 {
-  height: 10%;
-  /* xbackground-color: rgba(0, 0, 255, .5); */
+  /* background-color: rgba(0, 0, 255, .5); */
 }
 
-.main-hero img,
-.about-hero img {
-  height: 50px;
-}
 
 /* -- 01: MAIN HERO -- */
 
-
-
-
 .main-hero {
-  height: 55vh;
-  background-image: url("../images/portfolio/backgrounds/BKG-Gipetto-Logo.jpg");
+  background-image: url('../images/portfolio/backgrounds/BKG-Gipetto-Hero-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -926,48 +517,33 @@ section.main-projects {
   background-color: var(--clr-bkg-offwhite);
 }
 
-section.main-projects .wrapper {
-  padding: 2em 2em;
-} /* Section Padding Default */
-
 section.main-project {
-  padding: 2em 2em;
   border: 1px solid var(--clr-bkg-panelborder);
 } /* Section Padding Default */
-
-.panel-main {
-  width: 25em;
-  padding: 2em 2em;
-  background-color: rgba(4, 33, 73, .75);
-  border: 1px solid var(--clr-bkg-panelborder);
-} /* Panel Case-Study Styling */
 
 .main-project-01 {
-  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-01.jpg');
+  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-project-02 {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-02.jpg');
+  background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-02-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-project-03 {
-  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-03.jpg');
+  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.5) 100%), url('../images/portfolio/backgrounds/BKG-Project-03-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* -- 03: PAST WORKS -- */
 
-section.main-past-works .wrapper {
-  padding: 3em 8em;
-} /* Section Padding Default */
+/* -- 03: PAST WORKS -- */
 
 .main-past-works {
   background-color: var(--clr-dark-primary);
@@ -975,128 +551,58 @@ section.main-past-works .wrapper {
   border-bottom: 5px solid var(--clr-dark-accent);
 }
 
+
 /* -- 04: MAIN GALLERY -- */
 
+section.main-gallery {
+  background-color: var(--clr-medium-primary);
+}
+
 .main-gallery-single {
-  /* xwidth: 25em; */
-  object-fit: contain;
-  background-color: red;
-  border: 3px solid #BFBFBF
+  width: 375px;
+  height: 375px;
+  border: 2px solid var(--clr-bkg-panelborder);
+  object-fit: cover;
 }
 
-.main-gallery-single:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
-/*
-.xmain-gallery-single-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.xcontainer:hover .overlay {
-  opacity: 1;
-}
- */
-
-/* ===== ABOUT ME ===== */
+/* == ABOUT ME == */
 
 .about-hero {
-  height: 55vh;
-  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe.jpg");
+  background-image: url('../images/portfolio/backgrounds/BKG-AboutMe-Hero-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.about-01 .container-paragraph,
-.about-02 .container-paragraph {
-  padding: 3em 3em;
-}
+/* -- 01: ABOUT ME SECTION -- */
 
 .about-01-image {
-  height: 100%;
-  width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe-01.jpg")
+  background-image: url('../images/portfolio/backgrounds/BKG-AboutMe-01-min.jpg')
 }
+
+
+/* -- 02: ABOUT ME SECTION -- */
 
 .about-02-image {
-  height: 100%;
-  width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/portfolio/backgrounds/BKG-AboutMe-02.jpg")
+  background-image: url('../images/portfolio/backgrounds/BKG-AboutMe-02-min.jpg')
 }
 
 
-/* ===== HEADER/NAVIGATION ===== */
-
-nav a,
-.main-hero h1, .main-hero p,
-.main-projects h2, .main-projects p,
-.main-past-works h1, .main-past-works p,
-footer h1, footer p,
-.about-hero h1, .about-hero p {
-  color: var(--clr-light-text);
-}
-
-header {
-  background-color: var(--clr-dark-primary);
-  border-bottom: 5px solid var(--clr-dark-accent);
-}
-
-.nav_logo {
-  position: absolute;
-  top: 1em;
-  margin-left: 1em;
-  width: 80px;
-  height: 80px;
-}
-
-nav {
-  text-align: right;
-  padding: 1em 0;
-  margin-right: 1em;
-}
-
-nav a {
-  padding: 0 .7em;
-}
-
-nav a:hover {
-  color: var(--clr-medium-text);
-}
-
-nav a:active {
-  color: var(--clr-light-accent);
-}
-
-
-/* ===== FOOTER ===== */
+/* == FOOTER == */
 
 footer {
   background-color: var(--clr-dark-primary);
-  border-top: 5px solid var(--clr-dark-accent);
-}
-
-footer .wrapper {
-  padding: 3em 8em;
 }
 
 .icon-circle {
   width: 3.2em;
   height: 3.2em;
-  margin: 0 1em;
+  margin: 0 .5em;
   border-radius: 50%;
   background-color: var(--clr-dark-accent);
 }
@@ -1115,7 +621,189 @@ footer .wrapper {
 }
 
 
-/* ===== BASE FORMATTING ===== */
+/* == CASE STUDY - PROJECT 01 == */
+
+/* -- 01: SYNOPSIS HERO -- */
+
+.cs-synopsis {
+  background-image: url('../images/foodle/backgrounds/BKG-Foodle-AppHero-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} /* Foodle BKG Hero */
+
+.cs-synopsis-image {
+  background-image: url('../images/foodle/backgrounds/BKG-Foodle-AppHero-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cs-synopsis svg {
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+/* -- 03: OVERVIEW -- */
+
+.cs-overview {
+  background-image: url('../images/foodle/backgrounds/BKG-Overview-01-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 05: IMG BAN 01 -- */
+
+.cs-section-image-01 {
+  background-image: url('../images/foodle/backgrounds/BKG-SectionImage-01-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 06: DESIGN PROCESS -- */
+
+.cs-design-process img {
+  /* width: 10em; */
+} /* Foodle Logo Size */
+
+
+/* -- 08: COMPETITIVE ANALYSIS -- */
+
+.cs-competitive-analysis img {
+  height: 100px;
+  object-fit: contain;
+}
+
+
+/* -- 09: USER SURVEY -- */
+
+section.cs-user-survey .wrapper {
+  padding: 4em 0em;
+} /* Section Padding Specifications */
+
+
+/* -- 10: USER PERSONAS -- */
+
+.cs-user-personas .persona-name {
+  background-color: var(--clr-dark-accent);
+}
+
+.cs-user-personas h5 {
+  color: white;
+  padding-left: .25em;
+}
+
+
+/* -- 12: USER FLOWS IMG BAN -- */
+
+.cs-user-flows-image {
+  background-image: url('../images/foodle/diagrams/Diagram-FlowCharts-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 14: CONTENT STRATEGY -- */
+
+.cs-content-strategy-image {
+  /* xheight: 35vh; */
+  background-image: url('../images/foodle/diagrams/Diagram-Moodboard-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 15: SKETCHES WIREFRAMES -- */
+
+.cs-sketches-wireframes-image {
+  background-image: url('../images/foodle/backgrounds/BKG-Sketches-Wireframes-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+.cs-usability-test-01-image {
+  background-image: url('../images/foodle/backgrounds/BKG-UsabilityTest-01-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 18: BRAND IDENTITY IMG BAN -- */
+
+.cs-brand-identity-image {
+  background-image: url('../images/foodle/backgrounds/BKG-BrandIdentity-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+.cs-high-fidelity-mockup-image {
+  background-image: url('../images/foodle/backgrounds/BKG-HighFidelityMockups-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 23: PREFERENCE TESTING -- */
+
+.cs-preference-testing .panel-option h3,
+.cs-preference-testing .panel-results h3 {
+  color: white;
+}
+
+.cs-preference-testing img {
+  border: 1px solid var(--clr-bkg-panelborder);
+}
+
+.cs-preference-testing .panel-results {
+  background-color: var(--clr-dark-primary);
+  padding: .5em;
+}
+
+
+/* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+.cs-usability-test-02-image {
+  background-image: url('../images/foodle/backgrounds/BKG-UsabilityTest-02-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* -- 26: DEVELOPER HANDOFF -- */
+
+.cs-developer-handoff img {
+  height: 200px;
+  object-fit: contain;
+}
+
+
+/* -- 27: IMG BAN 02 -- */
+
+.cs-section-image-02 {
+  background-image: url('../images/foodle/backgrounds/BKG-SectionImage-02-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* == GLOBAL STYLING == */
 
 :root {
   --clr-light-primary: #A1B0C9;
@@ -1140,27 +828,109 @@ html {
   box-sizing: border-box;
 }
 
-/*
 img {
   width: 100%;
-} */
+}
+
+/* ======== */
 
 .page_container {
   position: relative;
-  /* xbackground-color: var(--clr-bkg-white); */
   margin: 0 auto;
-  /* xwidth: 50%; */
 }
 
 .wrapper {
-  position: relative;
   margin: 0 auto;
-  /* xwidth: 70%; */
-  width: 90%;
-  /* xborder: 1px solid DeepPink; */
-} /* 90 */
+  /* border: 1px solid DeepPink; */
+  /* background-color: rgba(255, 133, 0, .20); */
+  /* background-color: rgba(255, 202, 139, .20); */
+  /* background-color: rgba(255, 0, 0, .20); */
+  /* background-color: rgba(0, 0, 255, .25); */
+  background-clip: content-box;
+}
 
-/* ===== TEMPORARY ===== */
+nav a,
+.main-hero h1, .main-hero p,
+.main-projects h2, .main-projects p,
+.main-past-works h1, .main-past-works p,
+.main-gallery a, .about-hero h1, .about-hero p, footer h1, footer p {
+  color: var(--clr-light-text);
+}
+
+
+/* == BUTTON PADDING & STYLING == */
+
+.button-01 {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--clr-dark-accent);
+  border: 2px solid var(--clr-btn-outline);
+  border-radius: 15px;
+  color: var(--clr-light-text);
+  padding: .75em 0;
+  margin: 0 .5em;
+  width: 250px;
+}
+
+.BacktoTop img {
+  width: 60px;
+  opacity: .75;
+}
+
+#BacktoTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  opacity: 0.6;
+}
+
+
+/* == PANEL PADDING & STYLING == */
+
+.panel-case {
+  background-color: var(--clr-bkg-panel);
+  border: 1px solid var(--clr-bkg-panelborder);
+} /* Panel Case-Study Styling */
+
+.panel-bullets {
+  padding: 1.5em 1.25em 1.5em 2.25em;
+} /* Panel Bullets Padding*/
+
+.panel-main {
+  background-color: rgba(4, 33, 73, .75);
+  border: 1px solid var(--clr-bkg-panelborder);
+} /* Panel Case-Study Styling */
+
+
+/* == SECTION DIVIDERS == */
+
+.section-divider {
+  text-align: center;
+  padding: .5em 0;
+  background-color: var(--clr-medium-primary);
+}
+
+
+/* == SECTION STYLING == */
+
+section.cs-specification, section.cs-problem-solution, section.cs-project-brief, section.cs-user-survey, section.cs-user-stories, section.cs-content-strategy, section.cs-usability-test-01, section.cs-style-guide, section.cs-preference-testing, section.cs-developer-handoff {
+  background-color: var(--clr-bkg-white);
+  border: 1px solid var(--clr-bkg-secborder);
+} /* White BKG / Grey Outline */
+
+section.cs-design-process, section.cs-competitive-analysis, section.cs-user-personas, section.cs-user-flows, section.cs-sketches-wireframes, section.cs-brand-identity, section.cs-high-fidelity-mockup, section.cs-usability-test-02, section.cs-conclusion {
+  background-color: var(--clr-bkg-offwhite);
+  border: 1px solid var(--clr-bkg-secborder);
+} /* Off-White BKG / Grey Outline */
+
+.cs-section-image-01, .cs-user-flows-image, .cs-content-strategy-image, .cs-sketches-wireframes-image, .cs-usability-test-01-image, .cs-brand-identity-image, .cs-high-fidelity-mockup-image, .cs-usability-test-02-image, .cs-section-image-02 {
+  border: 1px solid var(--clr-bkg-secborder);
+} /* BORDER ON BANNER IMAGES */
+
+
+/* == TEMPORARY == */
 
 .border {
   border: 1px solid MediumVioletRed;
