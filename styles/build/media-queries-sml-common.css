@@ -1,0 +1,449 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/* Small devices  */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  * .desktop {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ MOBILE - MENU +++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .mobile-menu-icon i,
+  .mobile-menu i {
+    color: white;
+  }
+
+  .mobile-menu h2 {
+    color: var(--clr-light-text);
+    margin-bottom: .5em;
+  }
+
+  .mobile-menu h2.disabled {
+    color: #888;
+    text-shadow: 0px 1px 1px #1A1A1A;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(161,176,201);
+    background: radial-gradient(circle, rgba(161,176,201,1) 0%, rgba(4,33,73,1) 100%);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: .75em;
+    right: .75em;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  header {
+    padding: .75em 0;
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .nav_logo {
+    top: .75em;
+    width: 3.75em;
+    height: 3.75em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  footer {
+    border-top: 3px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 3em 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 1.75em;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects {
+    background-color: var(--clr-dark-primary);
+  }
+
+  .main-projects .panel-component.one .panel-image.one {
+    background-image: url('../../images/portfolio/backgrounds/BKG-Project-01M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  } /* Mobile */
+
+  .main-projects .panel-component.one .panel-image.two {
+    background-image: url('../../images/portfolio/backgrounds/BKG-Project-02M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
+  .main-projects .panel-component.one .panel-image.three {
+    background-image: url('../../images/portfolio/backgrounds/BKG-Project-03M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 3em 2em;
+  }
+
+  .main-past-works {
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery-link {
+    padding: .75em 0;
+  }
+
+  .main-gallery .main-gallery-hide {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 1.75em;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5em;
+  }
+
+  .aboutarea-01 .about-01-image,
+  .aboutarea-02 .about-02-image {
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  /* -- 02: ABOUT ME 01 -- */
+  /* -- 03: ABOUT ME 02 -- */
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 2em 2em;
+  }
+
+  .cs-synopsis {
+    background-image: none;
+    background-color: #FFC003;
+  }
+
+  .cs-synopsis .line-divider {
+    padding: 1em 0;
+    border-bottom: 1px solid var(--clr-dark-text);
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification h3 {
+    margin-bottom: .5em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview {
+    background-image: url('../../images/foodle/backgrounds/BKG-Overview-01M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .button-01 {
+    margin: 0 0;
+    width: 100%;
+    padding: .75em .25em;
+  }
+
+  .BacktoTop img {
+    width: 2.5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: .75em;
+    right: .75em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+  .CaseStudyMenu img {
+    width: 2.5em;
+  }
+
+  .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .panel-pad {
+    padding: 1.5em 1.5em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1.25em;
+  } /* Panel Bullets Padding */
+
+  .panel-main {
+    background-color: var(--clr-dark-primary);
+    border: none;
+  } /* Panel Case-Study Styling */
+
+  .panel-case {
+    margin-bottom: 2em;
+  }
+
+  .panel-case:last-child {
+    margin-bottom: 0;
+  }
+
+  .panel-system {
+    margin-bottom: 1em;
+  }
+
+  .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 3.5em;
+    /* font-size: 15vw; */
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.1em;
+    /* font-size: 5vw; */
+  }
+
+  .paragraph-02 {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1.2em;
+    line-height: 1.35;
+  }
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    display: none;
+  }
+
+  .process {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1.44em;
+  }
+
+  .list-items-01 {
+    font-size: 1.2em;
+  }
+
+  .list-items-01 li {
+    margin-bottom: .5em;
+  }
+
+  .list-items-02 {
+    font-size: 1.2em;
+  }
+
+  .list-items-03 {
+    font-size: 1.2em;
+  }
+
+  li {
+    margin-bottom: .2em;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++ TEMPORARY +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .mobile-top-01 {
+    height: 70px;
+  }
+
+  .mobile-top-02 {
+    height: 39px;
+  }
+
+  .mobile-top-02-fixed {
+    z-index: 1000;
+    position: fixed;
+    height: 39px;
+    top: 0px;
+  }
+
+  .mobile-bottom {
+    z-index: 1000;
+    position: fixed;
+    height: 44px;
+    top: 623px;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  main {
+    position: relative;
+  } /* Orientation Test */
+
+}

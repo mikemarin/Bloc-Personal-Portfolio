@@ -1,12 +1,15 @@
+
+<!-- IN PRODUCTION. WILL WORK ON AFTER COURSE CHECKPOINT -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
-  <title>Resume | Mike Marin</title>
+  <title>Personal Portfolio | Mike Marin</title>
 
   <!-- Metadata -->
   <meta name="author" content="Mike Marin">
@@ -25,126 +28,291 @@
 
   <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/reset.css">
-  <!-- <link rel="stylesheet" href="styles/typography.css"> -->
-  <!-- <link rel="stylesheet" href="styles/layout.css"> -->
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <link rel="stylesheet" href="styles/build/typography.css">
+  <link rel="stylesheet" href="styles/build/layout.css">
+  <link rel="stylesheet" href="styles/build/main.css">
+  <link rel="stylesheet" href="styles/build/media-queries-sml-common.css">
+  <link rel="stylesheet" href="styles/build/media-queries-sml-portrait.css">
+  <link rel="stylesheet" href="styles/build/media-queries-sml-landscape.css">
+  <link rel="stylesheet" href="styles/build/media-queries-med-common.css">
+  <link rel="stylesheet" href="styles/build/media-queries-med-portrait.css">
+  <link rel="stylesheet" href="styles/build/media-queries-med-landscape.css">
+  <link rel="stylesheet" href="styles/build/media-queries-lrg-common.css">
+  <link rel="stylesheet" href="styles/build/media-queries-lrg-landscape.css">
+  <link rel="stylesheet" href="styles/build/media-queries-xlrg-common.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/media-queries-sml.css">
-  <!-- <link rel="stylesheet" href="styles/media-queries-med.css"> -->
-  <!-- <link rel="stylesheet" href="styles/media-queries-lrg.css"> -->
-  <!-- <link rel="stylesheet" href="styles/media-queries-xlrg.css"> -->
+  <link rel="stylesheet" href="styles/media-queries.css">
 
 </head>
 
 <body>
 
-  <div class="page_container">
+  <div class="page-container">
 
-    <!-- ### SCROLL TO TOP: DESKTOP/MOBILE ### -->
+    <!-- ### CONTROLS ### -->
 
-    <div class="BacktoTop">
-      <a href="#0" onclick="topFunction()" id="BacktoTop" title="Back to Top"><img src="images/portfolio/icons/Icon-CircleArrow-Up.svg" alt="Image" /></a>
-    </div>
+    <div class="controls">
 
-    <div class="content-mobile">
+      <!-- ### SCROLL TO TOP ### -->
 
-      <!-- ### MENU: MOBILE ### -->
+      <div class="BacktoTop">
+        <a href="#0" onclick="topFunction()" id="BacktoTop" title="Back to Top"><img src="images/portfolio/icons/Icon-CircleArrow-Up.svg" alt="Image" /></a>
+      </div>
 
-      <div class="mobile-menu modal" id="myModal">
+    </div><!-- ### controls ### -->
 
-        <div class="modal-content modal-bkg">
-          <div class="wrapper">
+    <!-- ### MOBILE MENUS ### -->
+
+    <div class="mobile menus">
+
+      <div class="mobile-menu one modal" id="myModal-01">
+
+        <div class="modal-content flex fx-ctr-ctr">
+          <div class="box-padding">
             <div class="modal-close">
               <span class="close"><i class="fas fa-times"></i></span>
             </div>
-            <div class="modal-items margin-top-4em txt-ctr">
-              <a href="index.html"><h2 class="u-case">home</h2></a>
-              <a href="about.html"><h2 class="u-case">about</h2></a>
-              <a href="#0"><h2 class="u-case">resume</h2></a>
-              <a href="project-01.html"><h2 class="u-case">project-01</h2></a>
-            </div>
+            <div class="modal-items txt-ctr">
 
-          </div><!-- ### wrapper ### -->
+              <div class="panel-system">
+                <div class="panel-component-group one border">
+
+                  <div class="panel-component one">
+                    <a href="index.html">
+                      <h2 class="u-case">home</h2>
+                    </a>
+                    <a href="index.html#main-projects-anchor">
+                      <h2 class="u-case">main projects</h2>
+                    </a>
+                    <a href="index.html#main-past-works-anchor">
+                      <h2 class="u-case">past works</h2>
+                    </a>
+                  </div><!-- ### panel-component.one ### -->
+
+                </div><!-- ### panel-component-group.one ### -->
+
+                <div class="panel-component-group two border">
+
+                    <div class="panel-component two">
+                      <a href="#0">
+                        <h2 class="u-case disabled">resume</h2>
+                      </a>
+                      <a href="about.html">
+                        <h2 class="u-case">about</h2>
+                      </a>
+                      <a href="#0">
+                        <h2 class="u-case disabled">contact</h2>
+                      </a>
+
+                  </div><!-- ### panel-component-group.two ### -->
+
+                </div><!-- ### panel-component.two ### -->
+              </div><!-- ### panel-system ### -->
+
+            </div><!-- ### modal-items ### -->
+
+          </div><!-- ### box-padding ### -->
+        </div><!-- ### modal-content ### -->
+
+      </div><!-- ### mobile-menu.one modal ### -->
+
+    </div><!-- ### menus ### -->
+
+    <!-- ### HEADER/NAVIGATION ### -->
+
+    <header class="mobile">
+      <div class="container-nav">
+        <div class="box-padding">
+
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+          <div class="mobile-menu-icon txt-rt">
+            <a href="#0" onclick="myFunction02()" id="myBtn-01"><i class="fas fa-bars"></i></a>
+          </div>
+          <nav class="nav-mobile txt-rt">
+          </nav><!-- ### nav-mobile ### -->
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.mobile ### -->
+
+    <header class="desktop">
+      <div class="container-nav">
+        <div class="box-padding">
+
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+
+          <nav class="nav-desktop">
+            <a href="index.html#main-projects-anchor">Work</a>
+            <a href="#0">Resume</a>
+            <!-- <a href="resume.html">Resume</a> -->
+            <a href="about.html">About</a>
+            <a href="#0">Contact</a>
+          </nav><!-- ### nav-desktop ### -->
+
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.desktop ### -->
+
+    <!-- ### MAIN ### -->
+
+    <main>
+
+      <div class="orientation"></div>
+
+      Michael Marin
+
+      PORTFOLIO
+      www.mw-design.me
+
+      EMAIL
+      mike.w.marin@gmail.com
+
+      PHONE
+      713.820.5825
+
+      LINKEDIN
+      .../in/mikewmarin
+
+      PROFILE
+
+      Working with a Graphic and Web Design foundation, I am a Houston based UX Designer interested in understanding design problems and using experience, resourcefulness, and empathy to design helpful user experiences.
+
+      WORK EXPERIENCE
+
+      AlphaGraphics
+
+      GRAPHIC DESIGNER
+      2018 Ð 2019
+
+      Participated in daily standups to review current and incoming work and provided feedback to help work progress.
+      Created layouts for newsletters, calendars, brochures, booklets and signage creatively within client direction.
+      Reviewed, accepted, rejected, modified or replaced provided client assets to ensure finished product quality was the highest possible.
+
+      IHS Energy
+
+      VISUAL DESIGNER
+      2014 Ð 2016
+
+      Created deliverables including visual mockups, iconography, interaction prototypes, feature and component style guides, and specification w/ documents to help support and maintain IHS products.
+      Collaborated with Product Managers, Developers, Interaction Designers and User Researchers during the design process to ensure what was delivered met user expectations as well as IHS quality requirements.
+      Produced aesthetically pleasing designs that kept consistent with evolving company branding specifications.
+      Communicated daily progress and activities with domestic and international teams using RallyDev / CA Technologies software as well as in daily Scrum meetings while following Agile best practices.
+      Maintained a library of visual components within the UX team that helped standardize appearances for use in prototyping and responsive design templates.
+
+      Seebridge Media
+
+      MEDIA DESIGNER
+      2012 Ð 2013
+
+      Designed and managed graphic assets and collateral for all new and existing clients.
+      Conceptualized, coded, and distributed company email newsletters to clients as well as employees.
+      Integrated videography and motion graphic services to complement current company offerings.
+      Applied skills in photography to create content for both internal and external company use.
+
+      Blindspot Tactical
+
+      WEB / GRAPHIC DESIGNER
+      2011 Ð 2013
+
+      Developed collateral and photography shoots for company website and promotional advertisements.
+      Designed, coded and deployed company website as well as implemented online registration and newsletters.
+      Directed, produced and edited all videography content for website usage.
+
+      EDUCATION
+
+      Certification
+
+      Bloc
+      User Experience Design Program
+
+      DESIGNER TRACK
+      FINISHED
+      SPRING 2020
+
+      Diploma
+
+      The Art Institute of Austin
+      Awarded Best in Show - Portfolio
+
+      WEB DESIGN & DEV.
+      GRADUATED
+      FALL 2012
+
+      Bachelor of Fine Arts
+
+      The Art Institute of Houston
+
+      GRAPHIC DESIGN
+      GRADUATED
+      SUMMER 2010
+
+      TECHNICAL SKILLS
+
+
+      Proficiencies / Expertise
+
+      Graphics/Layout: Photoshop, Illustrator, InDesign
+      Prototyping: Figma, Sketch, Axure RP
+      Coding: HTML/CSS, Coda, Atom, Github, Browser Dev Tools
+      Video/Audio: Premiere, After Effects, Audition, Prelude
+      Communication Tools: Slack, Zoom, WebEx, Skype, Lync
+      Business Tools: CA RallyDev, Lync, MS Office Suite
+      Operating Systems: MS Windows, MacOS and iOS
+
+    </main><!-- ### main ### -->
+
+    <!-- ### FOOTER ### -->
+
+    <footer>
+
+      <div class="box-padding">
+
+        <div class="container-heading txt-ctr">
+          <h1>Get in Touch</h1>
         </div>
 
-      </div>
+        <div class="container-paragraph margin-top-2em txt-ctr">
+          <p class="paragraph-01">
+            Thank you for stopping by.<br />
+            I hope you enjoyed what I have to show.
+          </p>
+          <p class="paragraph-01 p-last">
+            Have any questions or comments? Feel free to connect with me.
+          </p>
+        </div>
 
-      <!-- ### HEADER/NAVIGATION: MOBILE ### -->
-
-      <header>
-
-        <div class="container-nav">
-
-          <div class="wrapper">
-
-            <div class="nav_logo">
-              <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
-            </div>
-
-            <div class="mobile-menu-icon txt-rt">
-              <a href="#0" onclick="myFunction02()" id="myBtn"><i class="fas fa-bars"></i></a>
-            </div>
-
-            <nav class="nav-mobile txt-rt">
-
-            </nav><!-- ### nav-mobile ### -->
-
-          </div><!-- ### wrapper ### -->
-        </div><!-- ### container-nav ### -->
-
-      </header><!-- ### header ### -->
-
-      <!-- ### FOOTER: MOBILE ### -->
-
-      <footer>
-
-        <div class="wrapper visual">
-
-          <div class="container-heading txt-ctr">
-            <h1>Get in Touch</h1>
+        <div class="container-image margin-tb-2em flex fx-ctr-ctr">
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
           </div>
 
-          <div class="container-paragraph margin-top-2em txt-ctr">
-            <p class="paragraph-01">
-              Thank you for stopping by.<br />
-              I hope you enjoyed what I have to show.
-            </p>
-            <p class="paragraph-01 p-last">
-              Have any questions or comments? Feel free to connect with me.
-            </p>
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
 
-          <div class="container-graphic margin-tb-2em flex fx-ctr-ctr">
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
-            </div>
-
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
-            </div>
-
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
           </div>
 
-          <div class="container-footer set-solid txt-ctr">
-            <p class="copyright">
-              Copyright &copy; 2020 Mike Marin.<br />All Rights Reserved.
-            </p>
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
           </div>
+        </div>
 
-        </div><!-- ### wrapper ### -->
+        <div class="container-footer set-solid txt-ctr">
+          <p class="copyright">
+            Copyright &copy; 2020 Mike Marin.<br />All Rights Reserved.
+          </p>
+        </div>
 
-      </footer><!-- ### footer ### -->
+      </div><!-- ### box-padding ### -->
 
-    </div><!-- ### content-mobile ### -->
+    </footer><!-- ### footer ### -->
 
-  </div><!-- ### page_container ### -->
+  </div><!-- ### page-container ### -->
 
 </body>
 

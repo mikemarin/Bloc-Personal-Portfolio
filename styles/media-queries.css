@@ -1,0 +1,4853 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/*  Compiled List of Media Query Styles for Portfolio Main / About Me / Case Study Pages  */
+/* Updated April 9, 2020 */
+
+/* ##### MOBILE VIEWPORTS ##### */
+
+/* Small devices  */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+  * .desktop {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ MOBILE - MENU +++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .mobile-menu-icon i,
+  .mobile-menu i {
+    color: white;
+  }
+
+  .mobile-menu h2 {
+    color: var(--clr-light-text);
+    margin-bottom: .5em;
+  }
+
+  .mobile-menu h2.disabled {
+    color: #888;
+    text-shadow: 0px 1px 1px #1A1A1A;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(161,176,201);
+    background: radial-gradient(circle, rgba(161,176,201,1) 0%, rgba(4,33,73,1) 100%);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: .75em;
+    right: .75em;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  header {
+    padding: .75em 0;
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .nav_logo {
+    top: .75em;
+    width: 3.75em;
+    height: 3.75em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  footer {
+    border-top: 3px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 3em 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 1.75em;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects {
+    background-color: var(--clr-dark-primary);
+  }
+
+  .main-projects .panel-component.one .panel-image.one {
+    background-image: url('../../images/portfolio/backgrounds/BKG-Project-01M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  } /* Mobile */
+
+  .main-projects .panel-component.one .panel-image.two {
+    background-image: url('../../images/portfolio/backgrounds/BKG-Project-02M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
+  .main-projects .panel-component.one .panel-image.three {
+    background-image: url('../../images/portfolio/backgrounds/BKG-Project-03M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 3em 2em;
+  }
+
+  .main-past-works {
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery-link {
+    padding: .75em 0;
+  }
+
+  .main-gallery .main-gallery-hide {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 1.75em;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5em;
+  }
+
+  .aboutarea-01 .about-01-image,
+  .aboutarea-02 .about-02-image {
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  /* -- 02: ABOUT ME 01 -- */
+  /* -- 03: ABOUT ME 02 -- */
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 2em 2em;
+  }
+
+  .cs-synopsis {
+    background-image: none;
+    background-color: #FFC003;
+  }
+
+  .cs-synopsis .line-divider {
+    padding: 1em 0;
+    border-bottom: 1px solid var(--clr-dark-text);
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification h3 {
+    margin-bottom: .5em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview {
+    background-image: url('../../images/foodle/backgrounds/BKG-Overview-01M-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .button-01 {
+    margin: 0 0;
+    width: 100%;
+    padding: .75em .25em;
+  }
+
+  .BacktoTop img {
+    width: 2.5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: .75em;
+    right: .75em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+  .CaseStudyMenu img {
+    width: 2.5em;
+  }
+
+  .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .panel-pad {
+    padding: 1.5em 1.5em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1.25em;
+  } /* Panel Bullets Padding */
+
+  .panel-main {
+    background-color: var(--clr-dark-primary);
+    border: none;
+  } /* Panel Case-Study Styling */
+
+  .panel-case {
+    margin-bottom: 2em;
+  }
+
+  .panel-case:last-child {
+    margin-bottom: 0;
+  }
+
+  .panel-system {
+    margin-bottom: 1em;
+  }
+
+  .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 3.5em;
+    /* font-size: 15vw; */
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.1em;
+    /* font-size: 5vw; */
+  }
+
+  .paragraph-02 {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1.2em;
+    line-height: 1.35;
+  }
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    display: none;
+  }
+
+  .process {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1.44em;
+  }
+
+  .list-items-01 {
+    font-size: 1.2em;
+  }
+
+  .list-items-01 li {
+    margin-bottom: .5em;
+  }
+
+  .list-items-02 {
+    font-size: 1.2em;
+  }
+
+  .list-items-03 {
+    font-size: 1.2em;
+  }
+
+  li {
+    margin-bottom: .2em;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++ TEMPORARY +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .mobile-top-01 {
+    height: 70px;
+  }
+
+  .mobile-top-02 {
+    height: 39px;
+  }
+
+  .mobile-top-02-fixed {
+    z-index: 1000;
+    position: fixed;
+    height: 39px;
+    top: 0px;
+  }
+
+  .mobile-bottom {
+    z-index: 1000;
+    position: fixed;
+    height: 44px;
+    top: 623px;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  main {
+    position: relative;
+  } /* Orientation Test */
+
+}
+
+/* Small devices  */
+@media screen and (min-width: 375px) and (max-width: 767px) and (orientation: portrait) {
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero .box-padding {
+    padding: 2em 2em;
+  }
+
+  .main-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .main-hero .container-component.two {
+    margin-bottom: 2em;
+  }
+
+  .main-hero .remove.one,
+  .main-hero .remove.two {
+    display: none;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 3em 2em;
+  }
+
+  .main-projects .panel-image {
+    height: 40vh;
+  }
+
+  .main-projects .panel-system {
+    margin: 0;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .main-gallery-image {
+    height: 50vh;
+    flex-basis: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero .box-padding {
+    padding: 2em 2em;
+  }
+
+  .about-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .about-hero .container-component.two {
+    margin-bottom: 2em;
+  }
+
+
+  /* -- 02: ABOUT ME 01 -- */
+
+
+  .aboutarea-01 .box-padding {
+    padding: 2em 2em;
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 50vh;
+  }
+
+
+  /* -- 03: ABOUT ME 02 -- */
+
+  .aboutarea-02 .box-padding {
+    padding: 2em 2em;
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 50vh;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 2em 2em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    order: 2;
+  }
+
+  .cs-synopsis .container-component.two {
+    order: 1;
+  }
+
+  .cs-synopsis .container-image.one {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .cs-synopsis .container-image.two{
+    text-align: center;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 15em;
+  }
+
+  .cs-synopsis .line-divider {
+    margin-bottom: 1em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 2em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification .box-padding {
+    padding: 3em 4em;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 100%;
+    padding: 1em 0;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 3em 2em;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+    height: 35vh;
+  }
+
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-design-process .container-paragraph.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-design-process .panel-image {
+    text-align: center;
+    margin: 1em;
+  }
+
+  .cs-design-process .panel-image img {
+    width: 50%;
+  }
+
+  .cs-design-process .panel-component {
+    padding: 0 2em;
+  }
+
+  .cs-design-process .panel-heading h3 {
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .cs-design-process .panel-system {
+    margin-bottom: 2em;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-project-brief .container-paragraph.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-project-brief .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-project-brief .panel-bullets {
+    flex-basis: 100%;
+    margin: 1em 0;
+  }
+
+  .cs-project-brief .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-project-brief .container-button {
+    flex-basis: 100%;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-competitive-analysis .container-paragraph.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin: 2em 2em;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+  }
+
+  .cs-competitive-analysis .panel-component {
+    margin-top: 1em;
+  }
+
+  .cs-competitive-analysis .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-survey .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .5em;
+  }
+
+  .cs-user-survey .container-image {
+    flex-basis: 50%;
+    padding: .5em .5em;
+  }
+
+  .cs-user-survey .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-personas .panel-component {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .persona-name {
+    margin-bottom: .5em;
+  }
+
+  .cs-user-personas .persona-description .paragraph-04.one {
+    margin-bottom: .5em;
+  }
+
+  .cs-user-personas .persona-description .paragraph-04.two {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 3em 2em;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 35vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 100%;
+  }
+
+  .cs-user-flows .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-flows .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-content-strategy-image {
+    height: 35vh;
+    background-position: top;
+  }
+
+  .cs-content-strategy .container-button {
+    padding: .5em 0;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-sketches-wireframes-image {
+    height: 35vh;
+  }
+
+  .cs-sketches-wireframes .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 35vh;
+  }
+
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-01 .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 35vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+  .cs-brand-identity .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-brand-identity .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-style-guide .container-image {
+    flex-basis: 100%;
+    padding: 2em 0;
+  }
+
+  .cs-style-guide .container-button {
+    flex-basis: 100%;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 35vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-high-fidelity-mockup .container-button {
+    flex-basis: 100%;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+  .cs-preference-testing .panel-component.two,
+  .cs-preference-testing .panel-component.three {
+    margin-bottom: 1em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-paragraph {
+    margin-bottom: 2em;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 35vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-02 .container-button {
+    flex-basis: 100%;
+    padding: .5em 0;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-developer-handoff .container-button {
+    flex-basis: 100%;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 35vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-conclusion .panel-system {
+    margin: 2em 0;
+  }
+
+  .cs-conclusion .container-button {
+    flex-basis: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  .orientation {
+    z-index: 25;
+    position: fixed;
+    margin-top: 8em;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: red;
+  } /* Orientation Test */
+
+}
+
+/* Small devices  */
+@media screen and (min-width: 375px) and (max-width: 767px) and (orientation: landscape) {
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ MOBILE - MENU +++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  .mobile-menu.one .box-padding {
+    padding: 2em 2em;
+  }
+
+  .mobile-menu.one .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mobile-menu.one .panel-component.one,
+  .mobile-menu.one .panel-component.two {
+    flex-basis: 50%;
+  }
+
+  .mobile-menu.one .panel-component.one {
+    margin-right: 2em;
+  }
+
+  .mobile-menu.one .panel-component.two {
+    margin-left: 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero .box-padding {
+    padding: 1.5em 1.5em;
+  }
+
+  .main-hero .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+
+  .main-hero .container-component.one,
+  .main-hero .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .main-hero .container-component.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-hero .container-component.two {
+    padding: 0 1em;
+  }
+
+  .main-hero .remove.one,
+  .main-hero .remove.two {
+    display: none;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 3em 2em;
+  }
+
+  .main-projects .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+  .main-projects .panel-component.one,
+  .main-projects .panel-component.two {
+    flex-basis: 50%;
+  }
+
+  .main-projects .panel-image {
+    height: 100%;
+  }
+
+  .main-projects .panel-system.two .panel-component.one {
+    order: 2;
+  }
+
+  .main-projects .panel-system.two .panel-component.two {
+    order: 1;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .main-gallery-show {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 80vh;
+    flex-basis: 50%;
+  }
+
+  .main-gallery-hide .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero .box-padding {
+    padding: 1.5em 1.5em;
+  }
+
+  .about-hero .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+
+  .about-hero .container-component.one,
+  .about-hero .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .about-hero .container-component.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-hero .container-component.two {
+    padding: 0 1em;
+  }
+
+
+  /* -- 02: ABOUT ME 01 -- */
+
+  .aboutarea-01 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-01 .container-component.one,
+  .aboutarea-01 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-01 .container-image {
+    height: 100%;
+  }
+
+  .aboutarea-01 .box-padding {
+    padding: 2em 2em;
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 100%;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
+  /* -- 03: ABOUT ME 02 -- */
+
+  .aboutarea-02 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-02 .container-component.one,
+  .aboutarea-02 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+  .aboutarea-02 .container-image {
+    height: 100%;
+  }
+
+  .aboutarea-02 .box-padding {
+    padding: 2em 2em;
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 100%;
+    border-top: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid var(--clr-dark-accent);
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 2em 2em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .cs-synopsis .container-component.two {
+    flex-basis: 50%;
+    order: 1;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 15em;
+  }
+
+  .cs-synopsis .line-divider {
+    display: none;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 1em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 2em;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification .box-padding {
+    padding: 3em 3em;
+  }
+
+  .cs-specification .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 33.333%;
+    padding: 0 1em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 3em 4em;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+    height: 65vh;
+  }
+
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-design-process .container-paragraph.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-design-process .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-design-process .panel-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+  }
+
+  .cs-design-process .panel-component {
+    flex-basis: 75%;
+    padding: 1em 1em;
+  }
+
+  .cs-design-process .panel-image img {
+    width: 75%;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-project-brief .container-paragraph.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-project-brief .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-project-brief .panel-bullets {
+    flex-basis: 50%;
+    padding: 0 1em;
+  }
+
+  .cs-project-brief .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-project-brief .container-button {
+    flex-basis: 50%;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-competitive-analysis .panel-component {
+    flex-basis: 33.33%;
+    padding: 0 .5em;
+  }
+
+  .cs-competitive-analysis .container-paragraph.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin: 2em 0;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+  }
+
+  .cs-competitive-analysis .panel-heading {
+    margin-top: .25em;
+  }
+
+  .cs-competitive-analysis .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-competitive-analysis .container-button {
+    flex-basis: 50%;
+    padding: 0 1em;
+  }
+
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-survey .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .5em;
+  }
+
+  .cs-user-survey .container-image {
+    flex-basis: 25%;
+    padding: .5em .5em;
+  }
+
+  .cs-user-survey .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-survey .container-button {
+    flex-basis: 33.33%;
+    padding: 0 .25em;
+  }
+
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-personas .panel-component-group.one,
+  .cs-user-personas .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component.one {
+    flex-basis: 50%;
+  }
+
+  .cs-user-personas .panel-component.two {
+    flex-basis: 50%;
+    padding-left: 1em;
+  }
+
+  .cs-user-personas .panel-component {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.four {
+    flex-basis: 50%;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.five {
+    flex-basis: 50%;
+    padding-left: 1em;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-user-personas .container-button {
+    flex-basis: 50%;
+  }
+
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-stories .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-user-stories .container-button {
+    flex-basis: 50%;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 65vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-flows .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 50%;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-flows .container-button {
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-content-strategy-image {
+    height: 65vh;
+    background-position: top;
+  }
+
+  .cs-content-strategy .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-content-strategy .container-button {
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-sketches-wireframes-image {
+    height: 65vh;
+  }
+
+  .cs-sketches-wireframes .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-sketches-wireframes .container-button {
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 65vh;
+  }
+
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-01 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-usability-test-01 .container-button {
+    flex-basis: 33.33%;
+    padding: 0 1em;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 65vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+  .cs-brand-identity .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-brand-identity .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-brand-identity .container-button {
+    flex-basis: 33.33%;
+    padding: 0 1em;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-style-guide .container-image {
+    width: 33.33%;
+    padding: 0 1em;
+  }
+
+  .cs-style-guide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-style-guide .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-style-guide .container-button {
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 65vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-high-fidelity-mockup .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-high-fidelity-mockup .container-button {
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-preference-testing .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .cs-preference-testing .panel-component.three,
+  .cs-preference-testing .panel-component.four {
+    flex-basis: 50%;
+  }
+
+  .cs-preference-testing .panel-component.three {
+    padding-right: .75em;
+  }
+
+  .cs-preference-testing .panel-component.four {
+    padding-left: .75em;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .panel-component.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-preference-testing .container-button {
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+
+  .cs-preference-testing .panel-paragraph {
+    margin-bottom: 2em;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 35vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-02 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-usability-test-02 .container-button {
+    flex-basis: 33.33%;
+    padding: 0 1em;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .box-padding.one {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-developer-handoff .container-group.two,
+  .cs-developer-handoff .container-group.three {
+    flex-basis: 50%;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .cs-developer-handoff .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-developer-handoff .container-button {
+    flex-basis: 50%;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 35vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-conclusion .panel-system {
+    margin: 2em 2em;
+  }
+
+  .cs-conclusion .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cs-conclusion .container-button {
+    flex-basis: 50%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  .orientation {
+    z-index: 25;
+    position: fixed;
+    margin-top: 8em;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: blue;
+  } /* Orientation Test */
+
+}
+
+/* ##### TABLET VIEWPORTS ##### */
+
+
+/* Medium devices  */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  * .mobile {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  header {
+    padding: 1em 0;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .nav_logo {
+    top: .5em;
+    width: 3.75em;
+    height: 3.75em;
+  }
+
+  .nav-desktop {
+    text-align: right;
+  }
+
+  .nav-desktop a {
+    padding: 0 .5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  footer {
+    border-top: 5px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 3em 5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .BacktoTop img {
+    width: 3.5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: 1.5em;
+    right: 2em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+
+  /* ============================= */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* ============================= */
+
+  .panel-pad {
+    padding: 1.5em 1.5em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1em;
+  } /* Panel Bullets Padding*/
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 4.3em;
+  }
+
+  h2 {
+    font-size: 3.583em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.44em;
+  }
+
+  .paragraph-02 {
+    font-size: 1.2em;
+    /* line-height: 1.5; */
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1em;
+    line-height: 1.35;
+  } /* Tablet */
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  .list-items-01 {
+    font-size: 1.2em;
+  }
+
+  .list-items-02 {
+    font-size: 1em;
+  }
+
+  .list-items-03 {
+    font-size: 1em;
+  }
+
+  li {
+    margin-bottom: .5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++ TEMPORARY +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  main {
+    position: relative;
+  } /* Orientation Test */
+
+} /* ##### viewport: medium ##### */
+
+
+/* Medium devices  */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 2.5em;
+  }
+
+  .main-hero .box-padding {
+    padding: 3em 5em;
+  }
+
+  .main-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .main-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .main-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .main-hero .remove.one {
+    display: none;
+  }
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-projects .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-button {
+    margin-top: 2em;
+  }
+
+  .main-projects .panel-component {
+    padding: 2em 2em;
+  }
+
+  .main-projects .main-project {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-main {
+    width: 22em;
+  }
+
+  .main-projects .panel-system.two {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 3em 5em;
+  }
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 30vh;
+    flex-basis: 33.33%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT =================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 2.5em;
+  }
+
+  .about-hero .box-padding {
+    padding: 3em 5em;
+  }
+
+  .about-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .about-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .about-hero .container-paragraph {
+    text-align: center;
+  }
+
+
+  /* -- 02: ABOUT ME 01 -- */
+
+  .aboutarea-01 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-01 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-01 .container-component.one,
+  .aboutarea-01 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-01 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 100%;
+  }
+
+  /* -- 03: ABOUT ME 02 -- */
+
+  .aboutarea-02 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-02 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-02 .container-component.one,
+  .aboutarea-02 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+  .aboutarea-02 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 4em 4em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    flex-basis: 50%;
+    padding-right: 1em;
+    order: 1;
+  }
+
+  .cs-synopsis .container-component.two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 12em;
+  }
+
+  .cs-synopsis .container-image.one{
+    display: none;
+  }
+
+  .cs-synopsis .line-divider {
+    display: none;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 2em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification .box-padding {
+    padding: 3em 3em;
+  }
+
+  .cs-specification .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 33.333%;
+    padding: 0 1em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 3em 7em;
+  }
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+  .cs-problem-solution .container-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-problem-solution .cs-problem {
+    margin-bottom: 2em;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+    height: 40vh;
+  }
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 3em 4em;
+  }
+
+  .cs-design-process .container-paragraph.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-design-process .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+
+  .cs-design-process .panel-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+  }
+
+  .cs-design-process .panel-component {
+    flex-basis: 75%;
+    padding: 1em 1em;
+  }
+
+  .cs-design-process .panel-image img {
+    width: 60%;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 3em 3em;
+  }
+
+  .cs-project-brief .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-project-brief .container-component.one,
+  .cs-project-brief .container-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-project-brief .panel-list:first-child {
+    margin-bottom: 1em;
+  }
+
+  .cs-project-brief .container-button-group {
+    margin-top: 2em;
+  }
+
+  .cs-project-brief .container-component.one {
+    padding-right: 2em;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5em;
+  }
+
+  .cs-competitive-analysis .panel-component {
+    flex-basis: 30%;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+    text-align: center;
+  }
+
+  .cs-competitive-analysis .panel-image img {
+    width: 70%;
+  }
+
+  .cs-competitive-analysis .container-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-competitive-analysis .container-component {
+    flex-basis: 48.5%;
+
+  }
+
+  .cs-competitive-analysis .container-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0 0 0;
+  }
+
+  .cs-competitive-analysis .button-01 {
+    width: 10em;
+  }
+
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-survey .panel-system {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-survey .panel-component.one,
+  .cs-user-survey .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-survey .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .cs-user-survey .container-image {
+    flex-basis: 22%;
+  }
+
+  .cs-user-survey .container-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-personas .panel-system.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-user-personas .panel-component-group.one,
+  .cs-user-personas .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component.one {
+    flex-basis: 30%;
+  }
+
+  .cs-user-personas .panel-component.two {
+    flex-basis: 70%;
+    padding-left: 1em;
+  }
+
+  .cs-user-personas .panel-component {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.four {
+    flex-basis: 50%;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.five {
+    flex-basis: 50%;
+    padding-left: 1em;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-stories .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-stories .panel-system {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-stories .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 40vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-flows .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4em 2em 4em;
+    justify-content: space-between;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 8em 0 8em;
+    justify-content: space-between;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-content-strategy-image {
+    height: 40vh;
+    background-position: top;
+  }
+
+  .cs-content-strategy .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 8em 0 8em;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-sketches-wireframes-image {
+    height: 40vh;
+  }
+
+  .cs-sketches-wireframes .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 8em 0 8em;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 40vh;
+  }
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-01 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 40vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+  .cs-brand-identity .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-brand-identity .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-style-guide .container-image {
+    width: 33.33%;
+    padding: 0 1em;
+  }
+
+  .cs-style-guide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-style-guide .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 40vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-high-fidelity-mockup .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.one,
+  .cs-preference-testing .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.three,
+  .cs-preference-testing .panel-component.four {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .panel-component.five {
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 8em 0 8em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 40vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-02 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .box-padding.one {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-developer-handoff .container-group.two,
+  .cs-developer-handoff .container-group.three {
+    flex-basis: 50%;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .cs-developer-handoff .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 30vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-conclusion .panel-system {
+    margin: 2em 2em;
+  }
+
+  .cs-conclusion .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ====================== */
+
+  .orientation {
+    z-index: 25;
+    position: fixed;
+    margin-top: 8em;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: red;
+  } /* Orientation Test */
+
+} /* #### portrait #### */
+
+
+/* Medium devices  */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE ==================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 2.5em;
+  }
+
+  .main-hero .box-padding {
+    padding: 3em 3em;
+  }
+
+  .main-hero .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+  }
+
+  .main-hero .container-component.one,
+  .main-hero .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .main-hero .container-component.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-hero .container-component.two {
+    padding: 0 2em;
+  }
+
+  .main-hero .remove.one {
+    display: none;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-projects .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-button {
+    margin-top: 2em;
+  }
+
+  .main-projects .panel-component {
+    padding: 2em 2em;
+  }
+
+  .main-projects .main-project {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-main {
+    width: 22em;
+  }
+
+  .main-projects .panel-system.two {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 3em 5em;
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 40vh;
+    flex-basis: 33.33%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 2.5em;
+  }
+
+  .about-hero .box-padding {
+    padding: 3em 3em;
+  }
+
+  .about-hero .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+  }
+
+  .about-hero .container-component.one,
+  .about-hero .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .about-hero .container-component.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-hero .container-component.two {
+    padding: 0 2em;
+  }
+
+
+  /* -- 02: ABOUT ME 01 -- */
+
+  .aboutarea-01 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-01 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-01 .container-component.one,
+  .aboutarea-01 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-01 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 100%;
+  }
+
+
+  /* -- 03: ABOUT ME 02 -- */
+
+  .aboutarea-02 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-02 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-02 .container-component.one,
+  .aboutarea-02 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+  .aboutarea-02 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE ==================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 4em 4em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    flex-basis: 50%;
+    padding-right: 5em;
+    order: 1;
+  }
+
+  .cs-synopsis .container-component.two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 15em;
+  }
+
+  .cs-synopsis .container-image.one{
+    display: none;
+  }
+
+  .cs-synopsis .line-divider {
+    display: none;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 3em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+
+  .cs-specification .box-padding {
+    padding: 3em 5em;
+  }
+
+  .cs-specification .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 33.333%;
+    padding: 0 1em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 3em 14em;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+  .cs-problem-solution .container-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-problem-solution .cs-problem,
+  .cs-problem-solution .cs-solution {
+    flex-basis: 48.25%;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+    height: 45vh;
+  }
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-design-process .panel-image {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cs-design-process .panel-image img {
+    height: 80%;
+  }
+
+  .cs-design-process .panel-heading {
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .cs-design-process .panel-system-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cs-design-process .panel-system {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 17%;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 3em 3em;
+  }
+
+  .cs-project-brief .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-project-brief .container-component.one,
+  .cs-project-brief .container-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-project-brief .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-project-brief .panel-list {
+    flex-basis: 50%;
+  }
+
+  .cs-project-brief .container-component.one {
+    padding-right: 2em;
+  }
+
+  .cs-project-brief .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 8em;
+  }
+
+  .cs-competitive-analysis .panel-component {
+    flex-basis: 30%;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+    text-align: center;
+  }
+
+  .cs-competitive-analysis .panel-image img {
+    width: 60%;
+  }
+
+  .cs-competitive-analysis .container-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-competitive-analysis .container-component.one,
+  .cs-competitive-analysis .container-component.two {
+    flex-basis: 48%;
+  }
+
+  .cs-competitive-analysis .container-button-group {
+    display: flex;
+    margin-top: 2em;
+  }
+
+  .cs-competitive-analysis .container-button:first-child {
+    margin-right: 2em;
+  }
+
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-survey .panel-system {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-survey .panel-component.one,
+  .cs-user-survey .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-survey .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .cs-user-survey .container-image {
+    flex-basis: 22%;
+  }
+
+  .cs-user-survey .container-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 7em 0 7em;
+  }
+
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-personas .panel-system.one {
+    margin-bottom: 2em;
+  }
+
+  .cs-user-personas .panel-component-group.one,
+  .cs-user-personas .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component.one {
+    flex-basis: 30%;
+  }
+
+  .cs-user-personas .panel-component.two {
+    flex-basis: 70%;
+    padding-left: 1em;
+  }
+
+  .cs-user-personas .panel-component {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.four {
+    flex-basis: 50%;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.five {
+    flex-basis: 50%;
+    padding-left: 1em;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-stories .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-stories .panel-system {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-stories .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 45vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-user-flows .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4em 2em 4em;
+    justify-content: space-between;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 50%;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 15em 0 15em;
+    justify-content: space-between;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-content-strategy .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-content-strategy .container-component.one,
+  .cs-content-strategy .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-content-strategy .container-image  {
+    height: 100%;
+  }
+
+  .cs-content-strategy .cs-content-strategy-image {
+    height: 100%;
+  }
+
+  .cs-content-strategy .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-sketches-wireframes .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-sketches-wireframes .container-component.one,
+  .cs-sketches-wireframes .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-sketches-wireframes .container-component.one  {
+    order: 2;
+  }
+
+  .cs-sketches-wireframes .container-component.two  {
+    order: 1;
+  }
+
+  .cs-sketches-wireframes .container-image  {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .cs-sketches-wireframes-image {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 45vh;
+  }
+
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-01 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 7em 0 7em;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 45vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+  .cs-brand-identity .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-brand-identity .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 8em 0 8em;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-style-guide .container-image {
+    width: 33.33%;
+    padding: 0 1em;
+  }
+
+  .cs-style-guide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-style-guide .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 45vh;
+  }
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-high-fidelity-mockup .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.one,
+  .cs-preference-testing .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.three,
+  .cs-preference-testing .panel-component.four {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .panel-component.five {
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 15em 0 15em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 45vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-usability-test-02 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 7em 0 7em;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .box-padding.one {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-developer-handoff .container-group.two,
+  .cs-developer-handoff .container-group.three {
+    flex-basis: 50%;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .cs-developer-handoff .container-button-group {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 30vh;
+  }
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 3em 2em;
+  }
+
+  .cs-conclusion .panel-system {
+    margin: 2em 2em;
+  }
+
+  .cs-conclusion .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE ====================== */
+
+  .orientation {
+    z-index: 25;
+    position: fixed;
+    margin-top: 8em;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: blue;
+  } /* Orientation Test */
+
+} /* #### landscape #### */
+
+/* ##### DESKTOP VIEWPORTS ##### */
+
+
+/* Large devices  */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  * .mobile {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* ============================= */
+
+  .nav-desktop {
+    text-align: right;
+    padding: 1em 0;
+  }
+
+  .nav_logo {
+    top: 1.5em;
+    margin-left: 1em;
+    width: 80px;
+    height: 80px;
+  }
+
+  nav a {
+    padding: 0 .7em;
+    font-size: 1.44em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* ============================= */
+
+  footer {
+    border-top: 5px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 5em 12.5em;
+  }
+
+  footer span.remove {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* ============================= */
+
+  .BacktoTop img {
+    width: 5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+
+  /* ============================= */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* ============================= */
+
+  .panel-pad {
+    padding: 2em 2em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1em;
+  } /* Panel Bullets Padding*/
+
+
+  /* ============================= */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* ============================= */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 4.3em;
+  }
+
+  h2 {
+    font-size: 3.583em;
+  }
+
+  h3 {
+    font-size: 1.728em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.728em;
+    line-height: 1.2;
+  }
+
+  .paragraph-02 {
+    font-size: 1.44em;
+    line-height: 1.5;
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1.2em;
+    line-height: 1.35;
+  } /* Tablet */
+
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1.2em;
+  }
+
+  .list-items-01 {
+    font-size: 1.2em;
+  }
+
+  .list-items-02 {
+    font-size: 1.2em;
+  }
+
+  .list-items-03 {
+    font-size: 1.2em;
+  }
+
+  li {
+    margin-bottom: .5em;
+  }
+
+} /* #### viewport: large #### */
+
+
+/* Large devices  */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+
+  /* ============================= */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* ============================= */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    position: relative;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 3.75em;
+  }
+
+  .main-hero .box-padding {
+    padding: 17.5em 15em;
+  }
+
+  .main-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .main-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .main-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .main-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+  }
+
+  .main-hero .remove.two {
+    display: none;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-projects .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-button {
+    margin-top: 3em;
+  }
+
+  .main-projects .panel-component {
+    padding: 2em 2em;
+  }
+
+  .main-projects .main-project {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-main {
+    width: 27em;
+  }
+
+  .main-projects .panel-system.two {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+
+
+  .main-past-works .box-padding {
+    padding: 5em 12.5em;
+  }
+
+  .main-past-works .container-heading {
+    margin-bottom: 3em;
+  }
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 40vh;
+    flex-basis: 33.33%;
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 25vh;
+    flex-basis: 33.33%;
+  }
+
+
+  /* ============================= */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* ============================= */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    position: relative;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 3.75em;
+  }
+
+  .about-hero .box-padding {
+    padding: 17.5em 15em;
+  }
+
+  .about-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .about-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .about-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .about-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+  }
+
+
+  /* -- 01: ABOUT ME 01 -- */
+
+  .aboutarea-01 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-01 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-01 .container-component.one,
+  .aboutarea-01 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-01 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 100%;
+  }
+
+
+  /* -- 02: ABOUT ME 02 -- */
+
+  .aboutarea-02 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-02 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-02 .container-component.one,
+  .aboutarea-02 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+  .aboutarea-02 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 100%;
+  }
+
+
+  /* ============================= */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* ============================= */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 11.5em 8.25em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    flex-basis: 50%;
+    padding-right: 5em;
+    order: 1;
+  }
+
+  .cs-synopsis .container-component.two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 15em;
+  }
+
+  .cs-synopsis .container-image.one{
+    display: none;
+  }
+
+  .cs-synopsis .line-divider {
+    display: none;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 3em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification .box-padding {
+    padding: 4em 16.75em;
+  }
+
+  .cs-specification .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 33.333%;
+    padding: 0 1em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 4em 16em;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+  .cs-problem-solution .panel-pad {
+    padding: 4.75em;
+  }
+
+  .cs-problem-solution .container-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-problem-solution .cs-problem,
+  .cs-problem-solution .cs-solution {
+    flex-basis: 48.25%;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+   height: 40vh;
+  }
+
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 4em 4em;
+  }
+
+  .cs-design-process .panel-image {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cs-design-process .panel-image img {
+    height: 80%;
+  }
+
+  .cs-design-process .panel-heading {
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .cs-design-process .panel-system-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cs-design-process .panel-system {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 17%;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-project-brief .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-project-brief .container-component.one,
+  .cs-project-brief .container-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-project-brief .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-project-brief .panel-list {
+    flex-basis: 50%;
+  }
+
+  .cs-project-brief .container-component.one {
+    padding-right: 2em;
+  }
+
+  .cs-project-brief .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 8em;
+  }
+
+  .cs-competitive-analysis .panel-component {
+    flex-basis: 30%;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+    text-align: center;
+  }
+
+  .cs-competitive-analysis .panel-image img {
+    width: 60%;
+  }
+
+  .cs-competitive-analysis .container-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-competitive-analysis .container-component.one,
+  .cs-competitive-analysis .container-component.two {
+    flex-basis: 48%;
+  }
+
+  .cs-competitive-analysis .container-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-survey .panel-system {
+   display: flex;
+   flex-wrap: flex;
+   justify-content: space-between;
+   margin-bottom: 2em;
+  }
+
+  .cs-user-survey .panel-component.one,
+  .cs-user-survey .panel-component.two {
+   flex-basis: 48.5%;
+  }
+
+  .cs-user-survey .container-image-group {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0 4em 1em 4em;
+  }
+
+  .cs-user-survey .container-image {
+   flex-basis: 20%;
+  }
+
+  .cs-user-survey .container-button-group {
+   display: flex;
+   justify-content: space-between;
+   margin: 2em 9em 0 9em;
+  }
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-personas .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-user-personas .panel-system {
+    flex-basis: 47.5%;
+  }
+
+  .cs-user-personas .panel-case {
+    padding: 4em 4em;
+  }
+
+  .cs-user-personas .container-button-group {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .cs-user-personas .panel-component,
+  .cs-user-personas .persona-name {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .persona-description {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-stories .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-stories .panel-system {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-stories .container-button-group {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 40vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-flows .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4em 2em 4em;
+    justify-content: space-between;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 50%;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 17em 0 17em;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 4em 3em;
+  }
+
+  .cs-content-strategy .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-content-strategy .container-component.one,
+  .cs-content-strategy .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-content-strategy .container-image  {
+    height: 100%;
+  }
+
+  .cs-content-strategy .cs-content-strategy-image {
+    height: 100%;
+  }
+
+  .cs-content-strategy .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 2em 0 2em;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 4em 3em;
+  }
+
+  .cs-sketches-wireframes .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-sketches-wireframes .container-component.one,
+  .cs-sketches-wireframes .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-sketches-wireframes .container-component.one  {
+    order: 2;
+  }
+
+  .cs-sketches-wireframes .container-component.two  {
+    order: 1;
+  }
+
+  .cs-sketches-wireframes .container-image  {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .cs-sketches-wireframes-image {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 2em 0 2em;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 40vh;
+  }
+
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-usability-test-01 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 9em 0 9em;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 40vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+
+  .cs-brand-identity .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-brand-identity .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 9em 0 9em;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-style-guide .container-image {
+    width: 33.33%;
+    padding: 0 1em;
+  }
+
+  .cs-style-guide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-style-guide .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 40vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-high-fidelity-mockup .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.one,
+  .cs-preference-testing .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.three,
+  .cs-preference-testing .panel-component.four {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .panel-component.five {
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 17em 0 17em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 40vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-usability-test-02 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 9em 0 9em;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 4em 10em;
+  }
+
+  .cs-developer-handoff .box-padding.one {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-developer-handoff .container-group.two,
+  .cs-developer-handoff .container-group.three {
+    flex-basis: 50%;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .cs-developer-handoff .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 20vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-conclusion .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5em 4em 5em;
+  }
+
+  .cs-conclusion .panel-system {
+    flex-basis: 30%;
+  }
+
+  .cs-conclusion .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+  }
+
+} /* #### viewport: large #### */

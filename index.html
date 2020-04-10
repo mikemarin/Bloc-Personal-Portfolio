@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   <title>Personal Portfolio | Mike Marin</title>
 
@@ -25,97 +25,131 @@
 
   <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/reset.css">
-  <!-- <link rel="stylesheet" href="styles/typography.css"> -->
-  <!-- <link rel="stylesheet" href="styles/layout.css"> -->
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/media-queries-sml.css">
-  <!-- <link rel="stylesheet" href="styles/media-queries-med.css"> -->
-  <!-- <link rel="stylesheet" href="styles/media-queries-lrg.css"> -->
-  <!-- <link rel="stylesheet" href="styles/media-queries-xlrg.css"> -->
+  <link rel="stylesheet" href="styles/media-queries.css">
 
 </head>
 
 <body>
 
-  <div class="page_container">
+  <div class="page-container">
 
-    <!-- ### SCROLL TO TOP: DESKTOP/MOBILE ### -->
+    <!-- ### CONTROLS ### -->
 
-    <div class="BacktoTop">
-      <a href="#0" onclick="topFunction()" id="BacktoTop" title="Back to Top"><img src="images/portfolio/icons/Icon-CircleArrow-Up.svg" alt="Image" /></a>
-    </div>
+    <div class="controls">
 
-    <div class="content-mobile">
+      <!-- ### SCROLL TO TOP ### -->
 
-      <!-- ### MENU: MOBILE ### -->
+      <div class="BacktoTop">
+        <a href="#0" onclick="topFunction()" id="BacktoTop" title="Back to Top"><img src="images/portfolio/icons/Icon-CircleArrow-Up.svg" alt="Image" /></a>
+      </div>
 
-      <div class="mobile-menu modal" id="myModal">
+    </div><!-- ### controls ### -->
 
-        <div class="modal-content modal-bkg">
-          <div class="wrapper">
+    <!-- ### MOBILE MENUS ### -->
+
+    <div class="mobile menus">
+
+      <div class="mobile-menu one modal" id="myModal-01">
+
+        <div class="modal-content flex fx-ctr-ctr">
+          <div class="box-padding">
             <div class="modal-close">
               <span class="close"><i class="fas fa-times"></i></span>
             </div>
-            <div class="modal-items margin-top-4em txt-ctr">
-              <a href="#0"><h2 class="u-case">home</h2></a>
-              <a href="about.html"><h2 class="u-case">about</h2></a>
-              <a href="resume.html"><h2 class="u-case">resume</h2></a>
-              <a href="project-01.html"><h2 class="u-case">project-01</h2></a>
-            </div>
+            <div class="modal-items txt-ctr">
 
-          </div><!-- ### wrapper ### -->
-        </div>
+              <div class="panel-system">
+                <div class="panel-component-group one">
 
-      </div>
+                  <div class="panel-component one">
+                    <a href="index.html">
+                      <h2 class="u-case">home</h2>
+                    </a>
+                    <a href="#0">
+                      <h2 class="u-case disabled">resume</h2>
+                    </a>
+                    <a href="about.html">
+                      <h2 class="u-case">about</h2>
+                    </a>
+                    <a href="#0">
+                      <h2 class="u-case disabled">contact</h2>
+                    </a>
+                  </div><!-- ### panel-component.one ### -->
 
-      <!-- ### HEADER/NAVIGATION: MOBILE ### -->
+                </div><!-- ### panel-component-group.one ### -->
+              </div><!-- ### panel-system ### -->
 
-      <header>
+            </div><!-- ### modal-items ### -->
 
-        <div class="container-nav">
+          </div><!-- ### box-padding ### -->
+        </div><!-- ### modal-content ### -->
 
-          <div class="wrapper">
+      </div><!-- ### mobile-menu.one modal ### -->
 
-            <div class="nav_logo">
-              <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
-            </div>
+    </div><!-- ### menus ### -->
 
-            <div class="mobile-menu-icon txt-rt">
-              <a href="#0" onclick="myFunction02()" id="myBtn"><i class="fas fa-bars"></i></a>
-            </div>
+    <!-- ### HEADER/NAVIGATION ### -->
 
-            <nav class="nav-mobile txt-rt">
+    <header class="mobile">
+      <div class="container-nav">
+        <div class="box-padding">
 
-            </nav><!-- ### nav-mobile ### -->
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+          <div class="mobile-menu-icon txt-rt">
+            <a href="#0" onclick="myFunction02()" id="myBtn-01"><i class="fas fa-bars"></i></a>
+          </div>
+          <nav class="nav-mobile txt-rt">
+          </nav><!-- ### nav-mobile ### -->
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.mobile ### -->
+    <header class="desktop">
+      <div class="container-nav">
+        <div class="box-padding">
 
-          </div><!-- ### wrapper ### -->
-        </div><!-- ### container-nav ### -->
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
 
-      </header><!-- ### header ### -->
+          <nav class="nav-desktop">
+            <a href="index.html#main-projects-anchor">Work</a>
+            <a href="#0">Resume</a>
+            <!-- <a href="resume.html">Resume</a> -->
+            <a href="about.html">About</a>
+            <a href="#0">Contact</a>
+          </nav><!-- ### nav-desktop ### -->
 
-      <!-- ### MAIN: MOBILE ### -->
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.desktop ### -->
 
-      <main>
+    <!-- ### MAIN ### -->
 
-        <!-- ### MOBILE 01: MAIN HERO ### -->
+    <main>
 
-        <section class="main-hero">
+      <div class="orientation"></div>
 
-          <div class="wrapper">
+      <!-- ### 01: MAIN HERO ### -->
 
-            <div class="row-01"></div>
+      <section class="main-hero">
+        <div class="box-padding">
 
-            <div class="row-02">
-              <div class="container-heading txt-ctr">
-                <h1>Mike Marin <span class="mobile-hide">| </span>
-                  <br/>
-                UX Designer</h1>
+          <div class="container-system">
+            <div class="container-component one">
+
+              <div class="container-heading">
+                <h1>Mike Marin <span class="remove one">| </span>
+                  <span class="remove two"><br /></span>
+                  UX Designer</h1>
               </div>
-            </div>
 
-            <div class="row-03">
-              <div class="container-paragraph txt-ctr">
+            </div><!-- ### container-component.one ### -->
+
+            <div class="container-component two">
+              <div class="container-paragraph">
                 <p class="paragraph-01">
                   Houston based Graphic and Web designer working at expanding my skills in the field of User Experience Design.
                 </p>
@@ -123,258 +157,319 @@
                   I enjoy challenging problems and using my skills & resourcefulness to design intuitive user experiences.
                 </p>
               </div>
-            </div>
+            </div><!-- ### container-component.two ### -->
+          </div><!-- ### container-system ### -->
 
-            <div class="row-04 flex fx-ctr-ctr">
-              <a href="#main-projects">
-                <div class="container-graphic">
-                  <img src="images/portfolio/icons/Icon-CircleArrow-Down.svg" alt="SVG" />
-                </div>
-              </a>
-            </div>
+          <div class="container-image">
+            <a href="#main-projects-anchor">
+              <img src="images/portfolio/icons/Icon-CircleArrow-Down.svg" alt="SVG" />
+            </a>
+          </div>
 
-          </div><!-- ### wrapper ### -->
+        </div><!-- ### box-padding ### -->
+      </section>
 
-        </section>
+      <!-- ### 02: MAIN PROJECTS ### -->
 
-        <!-- ### MOBILE 02: MAIN PROJECTS ### -->
+      <a id="main-projects-anchor"></a>
+      <section class="mobile main-projects">
 
-        <a id="main-projects"></a>
+        <div class="panel-system one panel-main">
 
-        <section class="main-projects">
-
-          <div class="panel-group one panel-main">
-
+          <div class="panel-component one">
             <div class="panel-image one"></div>
+          </div><!-- ### panel-component.one ### -->
 
-            <div class="wrapper">
-
+          <div class="panel-component two">
+            <div class="box-padding">
               <div class="panel-heading margin-btm-1em">
                 <h2>Foodle</h2>
               </div>
-
               <div class="panel-paragraph">
                 <p class="paragraph-02 p-last">
                   Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the
                   world.
                 </p>
               </div>
-
               <div class="panel-button margin-top-2em">
                 <a href="project-01.html" class="button-01">View Case Study</a>
               </div>
+            </div><!-- ### box-padding ### -->
+          </div><!-- ### panel-component.two ### -->
 
-            </div><!-- ### wrapper ### -->
+        </div><!-- ### panel-system.one ### -->
 
-          </div><!-- ### panel-group ### -->
+        <div class="panel-system two panel-main">
 
-          <div class="panel-group two panel-main">
-
+          <div class="panel-component one">
             <div class="panel-image two"></div>
+          </div><!-- ### panel-component.one ### -->
 
-            <div class="wrapper">
-
+          <div class="panel-component two">
+            <div class="box-padding">
               <div class="panel-heading margin-btm-1em">
                 <h2>BusyBus</h2>
               </div>
-
               <div class="panel-paragraph">
                 <p class="paragraph-02 p-last">
                   BusyBus is a conceptual app idea that explored how a city bus transit system would handle congestion on overlapping service lines. The solution was to be explored completely using the design process to document the proposed
                   solution.
                 </p>
               </div>
-
               <div class="panel-button margin-top-2em">
                 <a href="#0" class="button-01">View Case Study</a>
               </div>
+            </div><!-- ### box-padding ### -->
+          </div><!-- ### panel-component.two ### -->
 
-            </div><!-- ### wrapper ### -->
+        </div><!-- ### panel-system.two ### -->
 
-          </div><!-- ### panel-group ### -->
+        <div class="panel-system three panel-main">
 
-          <div class="panel-group three panel-main">
-
+          <div class="panel-component one">
             <div class="panel-image three"></div>
+          </div><!-- ### panel-component.one ### -->
 
-            <div class="wrapper">
-
+          <div class="panel-component two">
+            <div class="box-padding">
               <div class="panel-heading margin-btm-1em">
                 <h2>HOA App</h2>
               </div>
-
               <div class="panel-paragraph">
                 <p class="paragraph-02 p-last">
                   This is placeholder text of an upcoming web app that I’m doing for my solo project. It’s purpose is meant to be an online reference for those purchasing a home in an HOA community as well as prospective future buyers.
                 </p>
               </div>
-
               <div class="panel-button margin-top-2em">
                 <a href="#0" class="button-01">View Case Study</a>
               </div>
+            </div><!-- ### box-padding ### -->
+          </div><!-- ### panel-component.two ### -->
 
-            </div><!-- ### wrapper ### -->
+        </div><!-- ### panel-system.three ### -->
 
-          </div><!-- ### panel-group ### -->
+      </section>
+      <section class="desktop main-projects">
 
-        </section>
+        <div class="box-padding">
 
-        <!-- ### MOBILE 03: MAIN PAST WORKS ### -->
-
-        <section class="main-past-works">
-
-          <div class="container-full">
-
-            <div class="panel-group panel-main">
-
-              <div class="wrapper">
-
-                <div class="panel-heading margin-btm-2em txt-ctr">
-                  <h1>Past Works</h1>
-                </div>
-
-                <div class="panel-paragraph">
+          <div class="panel-system one main-project one">
+            <div class="panel-component panel-main">
+              <div class="panel-heading">
+                <h2>Foodle</h2>
+              </div>
+              <div class="panel-paragraph">
+                <div class="container-paragraph">
                   <p class="paragraph-02 p-last">
-                    The projects featured here are part of my portfolio from the Art Institute. I have put quite a bit of time and effort into them and feel that they demonstrate my proficiency in the use of Graphic Design, Web Design, Photography & Videography.
+                    Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the world.
                   </p>
                 </div>
-
-              </div><!-- ### wrapper ### -->
-
-            </div><!-- ### panel-group ### -->
-
-          </div><!-- ### container-full ### -->
-
-        </section>
-
-        <!-- ### MOBILE 04: MAIN GALLERY ### -->
-
-        <section class="main-gallery">
-
-          <div class="wrapper">
-
-            <div class="main-gallery-shown">
-
-              <div class="main-gallery-single one">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-01-min.jpg" class="image" alt="Image" />
-                </a>
               </div>
-
-              <div class="main-gallery-single two">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-02-min.jpg" alt="Image" />
-                </a>
+              <div class="panel-button">
+                <a href="project-01.html" class="button-01">View Case Study</a>
               </div>
+            </div><!-- ### panel-component ### -->
+          </div><!-- ### panel-system.one ### -->
 
-              <div class="main-gallery-single three">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-03-min.jpg" alt="Image" />
-                </a>
+          <div class="panel-system two main-project two">
+            <div class="panel-component panel-main">
+              <div class="panel-heading">
+                <h2>BusyBus</h2>
               </div>
-
-              <div class="main-gallery-single four">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-04-min.jpg" alt="Image" />
-                </a>
+              <div class="panel-paragraph">
+                <div class="container-paragraph">
+                  <p class="paragraph-02 p-last">
+                    BusyBus is a conceptual app idea that explored how a city bus transit system would handle congestion on overlapping service lines. The solution was to be explored completely using the design process to document the proposed solution.
+                  </p>
+                </div>
               </div>
-
-              <div class="main-gallery-single five">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-05-min.jpg" alt="Image" />
-                </a>
+              <div class="panel-button">
+                <a href="project-01.html" class="button-01">View Case Study</a>
               </div>
+            </div><!-- ### panel-component ### -->
+          </div><!-- ### panel-system.two ### -->
 
-            </div><!-- ### main-gallery-shown ### -->
-
-            <div class="main-gallery-link txt-ctr u-case">
-              <a href="#0" onclick="myFunction()">&#8230;See More Projects</a>
-            </div>
-
-            <div class="main-gallery-hide" id="showGallery">
-
-              <div class="main-gallery-single six">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-06-min.jpg" alt="Image" />
-                </a>
+          <div class="panel-system three main-project three">
+            <div class="panel-component panel-main">
+              <div class="panel-heading">
+                <h2>HOA App</h2>
               </div>
-
-              <div class="main-gallery-single seven">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-07-min.jpg" alt="Image" />
-                </a>
+              <div class="panel-paragraph">
+                <div class="container-paragraph">
+                  <p class="paragraph-02 p-last">
+                    This is placeholder text of an upcoming web app that I’m doing for my solo project. It’s purpose is meant to be an online reference for those purchasing a home in an HOA community as well as prospective future buyers.
+                  </p>
+                </div>
               </div>
-
-              <div class="main-gallery-single eight">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-08-min.jpg" alt="Image" />
-                </a>
+              <div class="panel-button">
+                <a href="project-01.html" class="button-01">View Case Study</a>
               </div>
+            </div><!-- ### panel-component ### -->
+          </div><!-- ### panel-system.three ### -->
 
-              <div class="main-gallery-single nine">
-                <a href="#0">
-                  <img src="images/portfolio/gallery/BKG-Gallery-09-min.jpg" alt="Image" />
-                </a>
-              </div>
-            </div>
+        </div><!-- ### box-padding ### -->
 
-          </div><!-- ### wrapper ### -->
+      </section>
 
-        </section>
+      <!-- ### 03: MAIN PAST WORKS ### -->
 
-      </main><!-- ### main ### -->
+      <a id="main-past-works-anchor"></a>
+      <section class="main-past-works">
 
-      <!-- ### FOOTER: MOBILE ### -->
+        <div class="box-padding">
 
-      <footer>
-
-        <div class="wrapper">
-
-          <div class="container-heading txt-ctr">
-            <h1>Get in Touch</h1>
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h1>Past Works</h1>
           </div>
 
-          <div class="container-paragraph margin-top-2em txt-ctr">
-            <p class="paragraph-01">
-              Thank you for stopping by.<br />
-              I hope you enjoyed what I have to show.
-            </p>
+          <div class="container-paragraph">
             <p class="paragraph-01 p-last">
-              Have any questions or comments? Feel free to connect with me.
+              The projects featured here are part of my portfolio from the Art Institute. I have put quite a bit of time and effort into them and feel that they demonstrate my proficiency in the use of Graphic Design, Web Design, Photography &
+              Videography.
             </p>
           </div>
 
-          <div class="container-graphic margin-tb-2em flex fx-ctr-ctr">
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
-            </div>
+        </div><!-- ### box-padding ### -->
 
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+      </section>
 
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
-            </div>
+      <!-- ### 04: MAIN GALLERY ### -->
 
-            <div class="icon-circle flex fx-ctr-ctr">
-              <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+      <section class="mobile main-gallery">
+
+        <div class="main-gallery-show">
+          <div class="main-gallery-image one">
           </div>
 
-          <div class="container-footer set-solid txt-ctr">
-            <p class="copyright">
-              Copyright &copy; 2020 Mike Marin.<br />All Rights Reserved.
-            </p>
+          <div class="main-gallery-image two">
           </div>
 
-        </div><!-- ### wrapper ### -->
+          <div class="main-gallery-image three">
+          </div>
 
-      </footer><!-- ### footer ### -->
+          <div class="main-gallery-image four">
+          </div>
 
-    </div><!-- ### content-mobile ### -->
+          <div class="main-gallery-image five">
+          </div>
 
-  </div><!-- ### page_container ### -->
+          <div class="main-gallery-image six">
+          </div>
+        </div><!-- ### main-gallery-show ### -->
+
+        <div class="main-gallery-link txt-ctr u-case">
+          <a href="#0" onclick="myFunction()">&#8230;See More Projects</a>
+        </div>
+
+        <div class="main-gallery-hide" id="showGallery">
+
+          <div class="container-group">
+
+            <div class="main-gallery-image seven">
+            </div>
+
+            <div class="main-gallery-image eight">
+            </div>
+
+            <div class="main-gallery-image nine">
+            </div>
+
+            <div class="main-gallery-image ten">
+            </div>
+
+          </div><!-- ### container-group ### -->
+
+        </div><!-- ### main-gallery-hide ### -->
+
+      </section>
+
+      <section class="desktop main-gallery">
+
+        <div class="container-image-group">
+
+          <div class="main-gallery-image one">
+          </div>
+
+          <div class="main-gallery-image two">
+          </div>
+
+          <div class="main-gallery-image three">
+          </div>
+
+          <div class="main-gallery-image four">
+          </div>
+
+          <div class="main-gallery-image five">
+          </div>
+
+          <div class="main-gallery-image six">
+          </div>
+
+          <div class="main-gallery-image seven">
+          </div>
+
+          <div class="main-gallery-image eight">
+          </div>
+
+          <div class="main-gallery-image nine">
+          </div>
+
+        </div><!-- ### container-image-group ### -->
+
+      </section>
+
+
+    </main><!-- ### main ### -->
+
+    <!-- ### FOOTER ### -->
+
+    <footer>
+
+      <div class="box-padding">
+
+        <div class="container-heading txt-ctr">
+          <h1>Get in Touch</h1>
+        </div>
+
+        <div class="container-paragraph margin-top-2em txt-ctr">
+          <p class="paragraph-01">
+            Thank you for stopping by.<br />
+            I hope you enjoyed what I have to show.
+          </p>
+          <p class="paragraph-01 p-last">
+            Have any questions or comments? Feel free to connect with me.
+          </p>
+        </div>
+
+        <div class="container-image margin-tb-2em flex fx-ctr-ctr">
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="container-footer set-solid txt-ctr">
+          <p class="copyright">
+            Copyright &copy; 2020 Mike Marin.<span class="remove"><br /></span> All Rights Reserved.
+          </p>
+        </div>
+
+      </div><!-- ### box-padding ### -->
+
+    </footer><!-- ### footer ### -->
+
+  </div><!-- ### page-container ### -->
 
 </body>
 

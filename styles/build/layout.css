@@ -1,54 +1,41 @@
 @charset "UTF-8"; /* CSS Document */
 
-/*
-Name: Layout CSS Styles
-Created: April 1, 2020
-Updated: April 2, 2020
-Author: Mike Marin
-*/
 
-/* ===== GENERAL ELEMENT FORMATTING ===== */
+/* ============================= */
+/* ++++ CONTAINER VARIABLES ++++ */
+/* ============================= */
 
 .container-full {
   width: 100%;
-  /* xborder: 1px solid red; */
 }
 
 .container-half {
   width: 50%;
-  /* xborder: 1px solid red; */
-}
-
-.container-half-a {
-  width: 50%;
-  /* xborder: 1px solid red; */
-}
-
-.container-half-b {
-  width: 50%;
-  /* xborder: 1px solid red; */
 }
 
 .container-third {
   width: 33.33%;
-  /* xborder: 1px solid red; */
 }
 
 .container-quarter {
   width: 25%;
-  /* xborder: 1px solid red; */
 }
 
 .container-fifth {
   width: 20%;
-  /* xborder: 1px solid red; */
 }
 
 
-/* ===== MARGIN NUDGES ===== */
+/* ============================= */
+/* +++++++ MARGIN NUDGES +++++++ */
+/* ============================= */
 
 .margin-top-1em {
   margin-top: 1em;
+}
+
+.margin-top-15em {
+  margin-top: 1.5em;
 }
 
 .margin-top-2em {
@@ -69,6 +56,10 @@ Author: Mike Marin
 
 .margin-btm-1em {
   margin-bottom: 1em;
+}
+
+.margin-btm-15em {
+  margin-bottom: 1.5em;
 }
 
 .margin-btm-2em {
@@ -136,7 +127,9 @@ Author: Mike Marin
 } /* Inside Right Column */
 
 
-/* ===== FLEX FORMATTING ===== */
+/* ============================= */
+/* ++++++ FLEX FORMATTING ++++++ */
+/* ============================= */
 
 .flex {
   display: flex;
@@ -152,6 +145,10 @@ Author: Mike Marin
 
 .fx-ctr {
   justify-content: center;
+}
+
+.fx-v-ctr {
+  align-items: center;
 }
 
 .fx-ctr-ctr {

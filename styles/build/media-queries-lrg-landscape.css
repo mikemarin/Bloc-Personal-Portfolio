@@ -1,0 +1,881 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/* Large devices  */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+
+  /* ============================= */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* ============================= */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    position: relative;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 3.75em;
+  }
+
+  .main-hero .box-padding {
+    padding: 17.5em 15em;
+  }
+
+  .main-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .main-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .main-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .main-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+  }
+
+  .main-hero .remove.two {
+    display: none;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-projects .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-button {
+    margin-top: 3em;
+  }
+
+  .main-projects .panel-component {
+    padding: 2em 2em;
+  }
+
+  .main-projects .main-project {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-main {
+    width: 27em;
+  }
+
+  .main-projects .panel-system.two {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+
+
+  .main-past-works .box-padding {
+    padding: 5em 12.5em;
+  }
+
+  .main-past-works .container-heading {
+    margin-bottom: 3em;
+  }
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 40vh;
+    flex-basis: 33.33%;
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 25vh;
+    flex-basis: 33.33%;
+  }
+
+
+  /* ============================= */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* ============================= */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    position: relative;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 3.75em;
+  }
+
+  .about-hero .box-padding {
+    padding: 17.5em 15em;
+  }
+
+  .about-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .about-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .about-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .about-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+  }
+
+
+  /* -- 01: ABOUT ME 01 -- */
+
+  .aboutarea-01 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-01 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-01 .container-component.one,
+  .aboutarea-01 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-01 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 100%;
+  }
+
+
+  /* -- 02: ABOUT ME 02 -- */
+
+  .aboutarea-02 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-02 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-02 .container-component.one,
+  .aboutarea-02 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+  .aboutarea-02 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 100%;
+  }
+
+
+  /* ============================= */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* ============================= */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 11.5em 8.25em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    flex-basis: 50%;
+    padding-right: 5em;
+    order: 1;
+  }
+
+  .cs-synopsis .container-component.two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 15em;
+  }
+
+  .cs-synopsis .container-image.one{
+    display: none;
+  }
+
+  .cs-synopsis .line-divider {
+    display: none;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 3em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification .box-padding {
+    padding: 4em 16.75em;
+  }
+
+  .cs-specification .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 33.333%;
+    padding: 0 1em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 4em 16em;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+  .cs-problem-solution .panel-pad {
+    padding: 4.75em;
+  }
+
+  .cs-problem-solution .container-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-problem-solution .cs-problem,
+  .cs-problem-solution .cs-solution {
+    flex-basis: 48.25%;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+   height: 40vh;
+  }
+
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 4em 4em;
+  }
+
+  .cs-design-process .panel-image {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cs-design-process .panel-image img {
+    height: 80%;
+  }
+
+  .cs-design-process .panel-heading {
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .cs-design-process .panel-system-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cs-design-process .panel-system {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 17%;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-project-brief .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-project-brief .container-component.one,
+  .cs-project-brief .container-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-project-brief .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-project-brief .panel-list {
+    flex-basis: 50%;
+  }
+
+  .cs-project-brief .container-component.one {
+    padding-right: 2em;
+  }
+
+  .cs-project-brief .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 8em;
+  }
+
+  .cs-competitive-analysis .panel-component {
+    flex-basis: 30%;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+    text-align: center;
+  }
+
+  .cs-competitive-analysis .panel-image img {
+    width: 60%;
+  }
+
+  .cs-competitive-analysis .container-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-competitive-analysis .container-component.one,
+  .cs-competitive-analysis .container-component.two {
+    flex-basis: 48%;
+  }
+
+  .cs-competitive-analysis .container-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-survey .panel-system {
+   display: flex;
+   flex-wrap: flex;
+   justify-content: space-between;
+   margin-bottom: 2em;
+  }
+
+  .cs-user-survey .panel-component.one,
+  .cs-user-survey .panel-component.two {
+   flex-basis: 48.5%;
+  }
+
+  .cs-user-survey .container-image-group {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0 4em 1em 4em;
+  }
+
+  .cs-user-survey .container-image {
+   flex-basis: 20%;
+  }
+
+  .cs-user-survey .container-button-group {
+   display: flex;
+   justify-content: space-between;
+   margin: 2em 9em 0 9em;
+  }
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-personas .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-user-personas .panel-system {
+    flex-basis: 47.5%;
+  }
+
+  .cs-user-personas .panel-case {
+    padding: 4em 4em;
+  }
+
+  .cs-user-personas .container-button-group {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .cs-user-personas .panel-component,
+  .cs-user-personas .persona-name {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .persona-description {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-stories .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-stories .panel-system {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-stories .container-button-group {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 40vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-flows .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4em 2em 4em;
+    justify-content: space-between;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 50%;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 17em 0 17em;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 4em 3em;
+  }
+
+  .cs-content-strategy .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-content-strategy .container-component.one,
+  .cs-content-strategy .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-content-strategy .container-image  {
+    height: 100%;
+  }
+
+  .cs-content-strategy .cs-content-strategy-image {
+    height: 100%;
+  }
+
+  .cs-content-strategy .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 2em 0 2em;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 4em 3em;
+  }
+
+  .cs-sketches-wireframes .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-sketches-wireframes .container-component.one,
+  .cs-sketches-wireframes .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-sketches-wireframes .container-component.one  {
+    order: 2;
+  }
+
+  .cs-sketches-wireframes .container-component.two  {
+    order: 1;
+  }
+
+  .cs-sketches-wireframes .container-image  {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .cs-sketches-wireframes-image {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 2em 0 2em;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 40vh;
+  }
+
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-usability-test-01 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 9em 0 9em;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 40vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+
+  .cs-brand-identity .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-brand-identity .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 9em 0 9em;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-style-guide .container-image {
+    width: 33.33%;
+    padding: 0 1em;
+  }
+
+  .cs-style-guide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-style-guide .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 40vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-high-fidelity-mockup .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.one,
+  .cs-preference-testing .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.three,
+  .cs-preference-testing .panel-component.four {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .panel-component.five {
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 17em 0 17em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 40vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-usability-test-02 .container-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 9em 0 9em;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 4em 10em;
+  }
+
+  .cs-developer-handoff .box-padding.one {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-developer-handoff .container-group.two,
+  .cs-developer-handoff .container-group.three {
+    flex-basis: 50%;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .cs-developer-handoff .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 20vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-conclusion .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5em 4em 5em;
+  }
+
+  .cs-conclusion .panel-system {
+    flex-basis: 30%;
+  }
+
+  .cs-conclusion .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+  }
+
+} /* #### viewport: large #### */
