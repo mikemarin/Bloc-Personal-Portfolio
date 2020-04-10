@@ -1,8 +1,8 @@
 @charset "UTF-8"; /* CSS Document */
 
 
-/* Large devices  */
-@media screen and (min-width: 1440px) and (max-width: 2560px) {
+/* extra large devices  */
+@media (min-width: 1440px) {
 
   * .mobile {
     display: none;
@@ -47,10 +47,20 @@
     display: none;
   }
 
+  .container-image i {
+    font-size: 1.25em;
+  }
+
 
   /* ============================= */
   /* + BUTTON PADDING & STYLING ++ */
   /* ============================= */
+
+  .button-01 {
+    font-size: 1.2em;
+    padding: 1em 1em;
+    width: 10em;
+  }
 
   .BacktoTop img {
     width: 5em;
@@ -109,12 +119,12 @@
 
   .paragraph-01 {
     font-size: 1.728em;
-    line-height: 1.2;
+    line-height: 1.35;
   }
 
   .paragraph-02 {
     font-size: 1.44em;
-    line-height: 1.5;
+    line-height: 1.35;
   }
 
   .paragraph-03 {
@@ -171,4 +181,4 @@
     margin-bottom: .5em;
   }
 
-} /* #### viewport: large #### */
+} /* #### viewport: extra large #### */

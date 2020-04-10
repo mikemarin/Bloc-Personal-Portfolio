@@ -1,8 +1,8 @@
 @charset "UTF-8"; /* CSS Document */
 
 
-/* Small devices  */
-@media screen and (min-width: 375px) and (max-width: 767px) and (orientation: portrait) {
+/* small devices  */
+@media (min-width: 300px) and (max-width: 667px) and (orientation: portrait) {
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
@@ -30,6 +30,10 @@
     display: none;
   }
 
+  .main-hero .container-paragraph {
+    text-align: center;
+  }
+
 
   /* -- 02: MAIN PROJECTS -- */
 
@@ -49,6 +53,12 @@
 
 
   /* -- 03: PAST WORKS -- */
+
+  .main-past-works .container-paragraph {
+    text-align: center;
+  }
+
+
   /* -- 04: MAIN GALLERY -- */
 
   .main-gallery .main-gallery-image {
@@ -76,6 +86,10 @@
 
   .about-hero .container-component.two {
     margin-bottom: 2em;
+  }
+
+  .about-hero .container-paragraph {
+    text-align: center;
   }
 
 
@@ -338,6 +352,10 @@
 
   .cs-user-stories .box-padding {
     padding: 3em 2em;
+  }
+
+  .cs-user-stories .panel-system-group {
+    margin-bottom: 2em;
   }
 
 

@@ -5,6 +5,8 @@
 
 /* ##### DESKTOP VIEWPORTS ##### */
 
+/* ##### X-LARGE DESKTOP VIEWPORTS ##### */
+
 ========
 
 /* ##### TYPOGRAPHY.CSS ##### */
@@ -50,13 +52,12 @@ margin-top: 2em;
 
 /* two buttons */
 justify-content: space-between;
-margin: 2em 17em 0 17em;
+margin: 2em 10em 0 10em;
 
 /* two buttons column */
 margin: 2em 2em 0 2em;
 
 
 /* three buttons */
-
 justify-content: space-between;
-margin: 2em 9em 0 9em;
+margin: 2em 4em 0 4em;

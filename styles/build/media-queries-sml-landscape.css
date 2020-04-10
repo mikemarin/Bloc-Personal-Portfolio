@@ -1,8 +1,8 @@
 @charset "UTF-8"; /* CSS Document */
 
 
-/* Small devices  */
-@media screen and (min-width: 375px) and (max-width: 767px) and (orientation: landscape) {
+/* small devices  */
+@media (min-width: 300px) and (max-width: 667px) and (orientation: landscape) {
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
@@ -22,10 +22,6 @@
   .mobile-menu.one .panel-component.one,
   .mobile-menu.one .panel-component.two {
     flex-basis: 50%;
-  }
-
-  .mobile-menu.one .panel-component.one {
-    margin-right: 2em;
   }
 
   .mobile-menu.one .panel-component.two {
@@ -106,6 +102,12 @@
 
 
   /* -- 03: PAST WORKS -- */
+
+  .main-past-works .container-paragraph {
+    text-align: center;
+  }
+
+
   /* -- 04: MAIN GALLERY -- */
 
   .main-gallery .main-gallery-show {
@@ -236,15 +238,16 @@
   .cs-synopsis .container-system {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .cs-synopsis .container-component.one {
-    flex-basis: 50%;
+    flex-basis: 48%;
     order: 2;
   }
 
   .cs-synopsis .container-component.two {
-    flex-basis: 50%;
+    flex-basis: 48%;
     order: 1;
   }
 
@@ -802,11 +805,11 @@
     display: flex;
     justify-content: center;
   }
-
+/*
   .cs-developer-handoff .container-button {
     flex-basis: 50%;
   }
-
+ */
 
   /* -- 27: IMG BAN 02 -- */
 

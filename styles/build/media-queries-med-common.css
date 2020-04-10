@@ -1,8 +1,8 @@
 @charset "UTF-8"; /* CSS Document */
 
 
-/* Medium devices  */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* medium devices  */
+@media (min-width: 668px) and (max-width: 1024px) {
 
   * .mobile {
     display: none;
@@ -49,12 +49,26 @@
     padding: 3em 5em;
   }
 
+  footer span.remove {
+    display: none;
+  }
+
+  .container-image i {
+    font-size: 1.5em;
+  }
+
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
   /* + BUTTON PADDING & STYLING ++ */
   /* +++++++++++++++++++++++++++++ */
   /* COMMON ====================== */
+
+  .button-01 {
+    font-size: 1em;
+    padding: 1em 1em;
+    width: 10em;
+  }
 
   .BacktoTop img {
     width: 3.5em;
@@ -114,12 +128,13 @@
   /* ======== */
 
   .paragraph-01 {
-    font-size: 1.44em;
+    font-size: 1.3em;
+    line-height: 1.35;
   }
 
   .paragraph-02 {
-    font-size: 1.2em;
-    /* line-height: 1.5; */
+    font-size: 1.3em;
+    line-height: 1.35;
   }
 
   .paragraph-03 {

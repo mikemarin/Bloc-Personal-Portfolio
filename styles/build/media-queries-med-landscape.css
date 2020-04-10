@@ -1,8 +1,8 @@
 @charset "UTF-8"; /* CSS Document */
 
 
-/* Medium devices  */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* medium devices  */
+@media (min-width: 668px) and (max-width: 1024px) and (orientation: landscape) {
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
@@ -97,6 +97,10 @@
     padding: 3em 5em;
   }
 
+  .main-past-works .container-paragraph {
+    text-align: center;
+  }
+
 
   /* -- 04: MAIN GALLERY -- */
 
@@ -150,6 +154,8 @@
   }
 
   .about-hero .container-component.two {
+    display: flex;
+    align-items: center;
     padding: 0 2em;
   }
 
@@ -359,7 +365,7 @@
   /* -- 07: PROJECT BRIEF -- */
 
   .cs-project-brief .box-padding {
-    padding: 3em 3em;
+    padding: 3em 4em;
   }
 
   .cs-project-brief .container-system {
@@ -394,7 +400,7 @@
   /* -- 08: COMPETITIVE ANALYSIS -- */
 
   .cs-competitive-analysis .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-competitive-analysis .panel-system {
@@ -447,7 +453,7 @@
   /* -- 09: USER SURVEY -- */
 
   .cs-user-survey .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-user-survey .panel-system {
@@ -483,7 +489,7 @@
   /* -- 10: USER PERSONAS -- */
 
   .cs-user-personas .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-user-personas .panel-system.one {
@@ -534,7 +540,7 @@
   /* -- 11: USER STORIES -- */
 
   .cs-user-stories .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-user-stories .panel-system-group {
@@ -565,7 +571,7 @@
   /* -- 13: USER FLOWS -- */
 
   .cs-user-flows .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-user-flows .panel-system {
@@ -669,7 +675,7 @@
   /* -- 17: USABILITY TEST 01 -- */
 
   .cs-usability-test-01 .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-usability-test-01 .container-button-group {
@@ -690,7 +696,7 @@
   /* -- 19: BRAND IDENTITY -- */
 
   .cs-brand-identity .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-brand-identity .container-button-group {
@@ -704,7 +710,7 @@
   /* -- 20: STYLE GUIDE -- */
 
   .cs-style-guide .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-style-guide .container-image {
@@ -733,7 +739,7 @@
   /* -- 22: HIGH FIDELITY MOCKUP -- */
 
   .cs-high-fidelity-mockup .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-high-fidelity-mockup .container-button-group {
@@ -746,7 +752,7 @@
   /* -- 23: PREFERENCE TESTING -- */
 
   .cs-preference-testing .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-preference-testing .panel-component-group.one {
@@ -806,7 +812,7 @@
   /* -- 25: USABILITY TEST 02 -- */
 
   .cs-usability-test-02 .box-padding {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-usability-test-02 .container-button-group {
@@ -820,7 +826,7 @@
   /* -- 26: DEVELOPER HANDOFF -- */
 
   .cs-developer-handoff .box-padding.master {
-    padding: 3em 2em;
+    padding: 3em 4em;
   }
 
   .cs-developer-handoff .box-padding.one {

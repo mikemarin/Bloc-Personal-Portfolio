@@ -33,6 +33,35 @@ nav a:active {
 
 
 /* ============================= */
+/* ++++++++++ FOOTER +++++++++++ */
+/* ============================= */
+
+footer {
+  background-color: var(--clr-dark-primary);
+}
+
+.icon-circle {
+  width: 3.2em;
+  height: 3.2em;
+  margin: 0 .5em;
+  border-radius: 50%;
+  background-color: var(--clr-dark-accent);
+}
+
+.icon-circle:hover {
+  background-color: var(--clr-light-accent);
+}
+
+.icon-circle:active {
+  background-color: var(--clr-medium-text);
+}
+
+.container-image i {
+  color: var(--clr-dark-primary);
+}
+
+
+/* ============================= */
 /* ++++++ PORTFOLIO: MAIN ++++++ */
 /* ============================= */
 
@@ -207,34 +236,6 @@ nav a:active {
 } /* Desktop/Mobile */
 
 
-/* ============================= */
-/* ++++++++++ FOOTER +++++++++++ */
-/* ============================= */
-
-footer {
-  background-color: var(--clr-dark-primary);
-}
-
-.icon-circle {
-  width: 3.2em;
-  height: 3.2em;
-  margin: 0 .5em;
-  border-radius: 50%;
-  background-color: var(--clr-dark-accent);
-}
-
-.icon-circle:hover {
-  background-color: var(--clr-light-accent);
-}
-
-.icon-circle:active {
-  background-color: var(--clr-medium-text);
-}
-
-.container-graphic i {
-  font-size: 1.5em;
-  color: var(--clr-dark-primary);
-}
 
 
 /* ============================= */
@@ -446,11 +447,11 @@ img {
 .wrapper, .wrapper-padding, .box-padding {
   margin: 0 auto;
   /* border: 1px solid DeepPink; */
-  border: 1px solid Beige;
-  /* background-color: rgba(255, 133, 0, .15); */
+  /* border: 1px solid Beige; */
+  /* background-color: rgba(255, 133, 0, .25); */
   /* background-color: rgba(255, 202, 139, .15); */
   /* background-color: rgba(255, 0, 0, .15); */
-  background-color: rgba(0, 0, 255, .15);
+  /* background-color: rgba(0, 0, 255, .15); */
   background-clip: content-box;
 }
 
@@ -460,14 +461,13 @@ img {
 /* ============================= */
 
 .button-01 {
-  display: inline-block;
+  display: block;
   text-align: center;
+  line-height: 1;
   background-color: var(--clr-dark-accent);
   border: 2px solid var(--clr-btn-outline);
   border-radius: .75em;
   color: var(--clr-light-text);
-  padding: 1em .5em;
-  width: 13em;
 }
 
 /*
@@ -508,7 +508,7 @@ img {
 
 .section-divider {
   text-align: center;
-  padding: .5em 0;
+  padding: .75em 0;
   background-color: var(--clr-medium-primary);
 }
 
