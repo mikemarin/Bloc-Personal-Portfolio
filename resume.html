@@ -28,12 +28,53 @@
 
   <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/media-queries.css">
+  <link rel="stylesheet" href="build/typography.css">
+  <link rel="stylesheet" href="build/layout.css">
+  <link rel="stylesheet" href="build/main.css">
+  <link rel="stylesheet" href="build/media-queries-xlrg-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-xlrg-common.css">
+  <link rel="stylesheet" href="build/media-queries-lrg-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-lrg-common.css">
+  <link rel="stylesheet" href="build/media-queries-med-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-med-portrait.css">
+  <link rel="stylesheet" href="build/media-queries-med-common.css">
+  <link rel="stylesheet" href="build/media-queries-sml-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-sml-portrait.css">
+  <link rel="stylesheet" href="build/media-queries-sml-common.css">
 
 </head>
 
 <body>
+
+  <!-- ### HELPERS ### -->
+
+  <div class="helpers">
+
+    <div class="viewport indicator">
+      <div class="portrait">
+        <p>PORTRAIT</p>
+      </div>
+      <div class="landscape">
+        <p>LANDSCAPE</p>
+      </div>
+    </div><!-- ### viewport ### -->
+
+    <div class="orientation indicator">
+      <div class="small">
+        <p>SMALL</p>
+      </div>
+      <div class="medium">
+        <p>MEDIUM</p>
+      </div>
+      <div class="large">
+        <p>LARGE</p>
+      </div>
+      <div class="x-large">
+        <p>X-LARGE</p>
+      </div>
+    </div><!-- ### orientation ### -->
+
+  </div><!-- ### helpers ### -->
 
   <div class="page-container">
 
@@ -63,38 +104,24 @@
             <div class="modal-items txt-ctr">
 
               <div class="panel-system">
-                <div class="panel-component-group one border">
+                <div class="panel-component-group one">
 
                   <div class="panel-component one">
                     <a href="index.html">
-                      <h2 class="u-case">home</h2>
+                      <h2 class="u-case txt-ctr">home</h2>
                     </a>
-                    <a href="index.html#main-projects-anchor">
-                      <h2 class="u-case">main projects</h2>
+                    <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">
+                      <h2 class="u-case txt-ctr">resume</h2>
                     </a>
-                    <a href="index.html#main-past-works-anchor">
-                      <h2 class="u-case">past works</h2>
+                    <a href="about.html">
+                      <h2 class="u-case txt-ctr">about</h2>
+                    </a>
+                    <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">
+                      <h2 class="u-case txt-ctr">contact</h2>
                     </a>
                   </div><!-- ### panel-component.one ### -->
 
                 </div><!-- ### panel-component-group.one ### -->
-
-                <div class="panel-component-group two border">
-
-                    <div class="panel-component two">
-                      <a href="#0">
-                        <h2 class="u-case disabled">resume</h2>
-                      </a>
-                      <a href="about.html">
-                        <h2 class="u-case">about</h2>
-                      </a>
-                      <a href="#0">
-                        <h2 class="u-case disabled">contact</h2>
-                      </a>
-
-                  </div><!-- ### panel-component-group.two ### -->
-
-                </div><!-- ### panel-component.two ### -->
               </div><!-- ### panel-system ### -->
 
             </div><!-- ### modal-items ### -->
@@ -111,7 +138,6 @@
     <header class="mobile">
       <div class="container-nav">
         <div class="box-padding">
-
           <div class="nav_logo">
             <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
           </div>
@@ -123,7 +149,6 @@
         </div><!-- ### box-padding ### -->
       </div><!-- ### container-nav ### -->
     </header><!-- ### header.mobile ### -->
-
     <header class="desktop">
       <div class="container-nav">
         <div class="box-padding">
@@ -134,10 +159,9 @@
 
           <nav class="nav-desktop">
             <a href="index.html#main-projects-anchor">Work</a>
-            <a href="#0">Resume</a>
-            <!-- <a href="resume.html">Resume</a> -->
+            <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">Resume</a>
             <a href="about.html">About</a>
-            <a href="#0">Contact</a>
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">Contact</a>
           </nav><!-- ### nav-desktop ### -->
 
         </div><!-- ### box-padding ### -->
@@ -150,68 +174,105 @@
 
       <!-- <div class="orientation"></div> -->
 
-      Michael Marin
+      <h1>Michael Marin</h1>
 
-      PORTFOLIO
-      www.mw-design.me
+      <h2>PORTFOLIO</h2>
+      <p>www.mw-design.me</p>
 
-      EMAIL
-      mike.w.marin@gmail.com
+      <h2>EMAIL</h2>
+      <p>mike.w.marin@gmail.com</p>
 
-      PHONE
-      713.820.5825
+      <h2>PHONE</h2>
+      <p>713.820.5825</p>
 
-      LINKEDIN
-      .../in/mikewmarin
+      <h2>LINKEDIN</h2>
+      <p>.../in/mikewmarin</p>
 
-      PROFILE
-
+      <h3>PROFILE</h3>
+      <p>
       Working with a Graphic and Web Design foundation, I am a Houston based UX Designer interested in understanding design problems and using experience, resourcefulness, and empathy to design helpful user experiences.
+      </p>
 
-      WORK EXPERIENCE
+      <h3>WORK EXPERIENCE</h3>
 
-      AlphaGraphics
+      <h4>AlphaGraphics</h4>
 
-      GRAPHIC DESIGNER
-      2018 Ð 2019
+      <h5>GRAPHIC DESIGNER</h5>
+      <p>2018 Ð 2019</p>
 
-      Participated in daily standups to review current and incoming work and provided feedback to help work progress.
-      Created layouts for newsletters, calendars, brochures, booklets and signage creatively within client direction.
-      Reviewed, accepted, rejected, modified or replaced provided client assets to ensure finished product quality was the highest possible.
+      <ul>
+        <li>
+          Participated in daily standups to review current and incoming work and provided feedback to help work progress.
+        </li>
+        <li>
+          Created layouts for newsletters, calendars, brochures, booklets and signage creatively within client direction.
+        </li>
+        <li>
+          Reviewed, accepted, rejected, modified or replaced provided client assets to ensure finished product quality was the highest possible.
+        </li>
+      </ul>
 
-      IHS Energy
+      <h4>IHS Energy</h4>
 
-      VISUAL DESIGNER
-      2014 Ð 2016
+      <h5>VISUAL DESIGNER</h5>
+      <p>2014 Ð 2016</p>
 
-      Created deliverables including visual mockups, iconography, interaction prototypes, feature and component style guides, and specification w/ documents to help support and maintain IHS products.
-      Collaborated with Product Managers, Developers, Interaction Designers and User Researchers during the design process to ensure what was delivered met user expectations as well as IHS quality requirements.
-      Produced aesthetically pleasing designs that kept consistent with evolving company branding specifications.
-      Communicated daily progress and activities with domestic and international teams using RallyDev / CA Technologies software as well as in daily Scrum meetings while following Agile best practices.
-      Maintained a library of visual components within the UX team that helped standardize appearances for use in prototyping and responsive design templates.
+      <ul>
+          <li>
+            Created deliverables including visual mockups, iconography, interaction prototypes, feature and component style guides, and specification w/ documents to help support and maintain IHS products.
+          </li>
+          <li>
+            Collaborated with Product Managers, Developers, Interaction Designers and User Researchers during the design process to ensure what was delivered met user expectations as well as IHS quality requirements.
+          </li>
+          <li>
+            Produced aesthetically pleasing designs that kept consistent with evolving company branding specifications.
+            Communicated daily progress and activities with domestic and international teams using RallyDev / CA Technologies software as well as in daily Scrum meetings while following Agile best practices.
+          </li>
+          <li>
+            Maintained a library of visual components within the UX team that helped standardize appearances for use in prototyping and responsive design templates.
+          </li>
+      </ul>
 
-      Seebridge Media
+      <h4>Seebridge Media</h4>
 
-      MEDIA DESIGNER
-      2012 Ð 2013
+      <h5>MEDIA DESIGNER</h5>
+      <p>2012 Ð 2013</p>
 
-      Designed and managed graphic assets and collateral for all new and existing clients.
-      Conceptualized, coded, and distributed company email newsletters to clients as well as employees.
-      Integrated videography and motion graphic services to complement current company offerings.
-      Applied skills in photography to create content for both internal and external company use.
+          <ul>
+            <li>
+              Designed and managed graphic assets and collateral for all new and existing clients.
+            </li>
+            <li>
+              Conceptualized, coded, and distributed company email newsletters to clients as well as employees.
+            </li>
+            <li>
+              Integrated videography and motion graphic services to complement current company offerings.
+            </li>
+            <li>
+              Applied skills in photography to create content for both internal and external company use.
+            </li>
+          </ul>
 
-      Blindspot Tactical
+      <h4>Blindspot Tactical</h4>
 
-      WEB / GRAPHIC DESIGNER
-      2011 Ð 2013
+      <h5>WEB / GRAPHIC DESIGNER</h5>
+      <p>2011 Ð 2013</p>
 
-      Developed collateral and photography shoots for company website and promotional advertisements.
-      Designed, coded and deployed company website as well as implemented online registration and newsletters.
-      Directed, produced and edited all videography content for website usage.
+      <ul>
+        <li>
+          Developed collateral and photography shoots for company website and promotional advertisements.
+        </li>
+        <li>
+          Designed, coded and deployed company website as well as implemented online registration and newsletters.
+        </li>
+        <li>
+          Directed, produced and edited all videography content for website usage.
+        </li>
+      </ul>
 
-      EDUCATION
+      <h3>EDUCATION</h3>
 
-      Certification
+      <h4>Certification</h4>
 
       Bloc
       User Experience Design Program
@@ -312,10 +373,15 @@
   gtag('config', 'UA-163302580-1');
 </script>
 
-</body>
+<!-- Font Awesome JS -->
+<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous" rel="noreferrer"></script>
 
-<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous"></script>
+<!-- Small Viewport Menu Modal -->
 <script src="scripts/MenuModal.js"></script>
+
+<!-- Scroll Back to Top Button -->
 <script src="scripts/ScrollTop.js"></script>
+
+</body>
 
 </html>

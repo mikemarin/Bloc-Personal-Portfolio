@@ -1,0 +1,139 @@
+@charset "UTF-8"; /* CSS Document */
+
+/*  Compiled List of Media Query Styles for Portfolio Main / About Me / Case Study Pages  */
+/* Updated April 13, 2020 */
+
+/* ##### MOBILE VIEWPORTS ##### */
+
+/* ##### TABLET VIEWPORTS ##### */
+
+/* ##### DESKTOP VIEWPORTS ##### */
+
+/* ##### X-LARGE DESKTOP VIEWPORTS ##### */
+
+========
+
+/*  Compiled List of CSS Styles for Portfolio Main / About Me / Case Study Pages  */
+/* Updated April 13, 2020 */
+
+/* ##### TYPOGRAPHY.CSS ##### */
+
+/* ##### LAYOUT.CSS ##### */
+
+/* ##### MAIN.CSS ##### */
+
+=========================
+
+
+/* ============================= */
+/* ++++++++ TYPE SCALE +++++++++ */
+/* ============================= */
+
+/*
+16px base, 1.200 minor third
+
+6.192em (99.07px)
+5.16em (82.56px)
+4.3em (68.80px)
+3.583em (57.33px)
+2.986em (47.78px)
+2.488em (39.81px)
+2.074em (33.18px)
+1.728em (27.65px)
+1.44em (23.04px)
+1.2em (19.20px)
+1em (16.00px)
+0.833em (13.33px)
+0.694em (11.11px)
+0.579em (9.26px)
+*/
+
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.main-gallery-single:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Large */
+/* one button */
+text-align: center;
+margin-top: 2em;
+
+/* two buttons */
+justify-content: space-between;
+margin: 2em 10em 0 10em;
+
+/* two buttons column */
+margin: 2em 2em 0 2em;
+
+
+/* three buttons */
+justify-content: space-between;
+margin: 2em 4em 0 4em;
+
+
+=========================
+
+<span class="remove one">
+
+<span class="remove two">
+
+
+
+
+/*
+  SMALL rgba(95, 158, 160, 0.5)
+  MEDIUM rgba(102, 51, 153, 0.6)
+  LARGE rgba(255, 105, 180, 0.6)
+  X-LARGE rgba(165, 42, 42, 0.6)
+
+  PORTRAIT rgba(255, 0, 0, 0.5)
+  LANDSCAPE rgba(0, 0, 255, 0.5)
+*/
+
+/*
+
+z-index
+  nav_logo 10
+  CaseStudyMenu 20
+  indicator 25
+  header 30
+  modal 40
+  #BacktoTop 15
+  mobile-top-02-fixed 1000
+  mobile-bottom 1000
+ */
+
+ <script>
+ 			AOS.init({
+ 				easing: 'ease-out-back',
+ 				duration: 1000
+ 			});
+ 		</script>
+
+ <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+ 				Scroll down <br>
+ 				<i class="chevron bottom"></i>
+ 			</span>
+
+ <a href="http://github.com/michalsnik/aos" target="_blank" class="octocat aos-init aos-animate" data-aos="zoom-out" data-aos-delay="1500">
+				<img src="img/github_octocat.png" alt="">
+			</a>

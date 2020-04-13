@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/media-queries.css">
+  <!-- STYLE SHEETS WILL BE OPTIMIZED AND MINIFIED AFTER ASSESSMENT -->
 
 </head>
 
@@ -66,14 +67,14 @@
                     <a href="index.html">
                       <h2 class="u-case txt-ctr">home</h2>
                     </a>
-                    <a href="#0">
-                      <h2 class="u-case txt-ctr disabled">resume</h2>
+                    <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">
+                      <h2 class="u-case txt-ctr">resume</h2>
                     </a>
                     <a href="about.html">
                       <h2 class="u-case txt-ctr">about</h2>
                     </a>
-                    <a href="#0">
-                      <h2 class="u-case txt-ctr disabled">contact</h2>
+                    <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">
+                      <h2 class="u-case txt-ctr">contact</h2>
                     </a>
                   </div><!-- ### panel-component.one ### -->
 
@@ -116,10 +117,9 @@
 
           <nav class="nav-desktop">
             <a href="index.html#main-projects-anchor">Work</a>
-            <a href="#0">Resume</a>
-            <!-- <a href="resume.html">Resume</a> -->
+            <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">Resume</a>
             <a href="about.html">About</a>
-            <a href="#0">Contact</a>
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">Contact</a>
           </nav><!-- ### nav-desktop ### -->
 
         </div><!-- ### box-padding ### -->
@@ -130,8 +130,6 @@
 
     <main>
 
-      <!-- <div class="orientation"></div> -->
-
       <!-- ### 01: MAIN HERO ### -->
 
       <section class="main-hero">
@@ -141,9 +139,7 @@
             <div class="container-component one">
 
               <div class="container-heading">
-                <h1>Mike Marin <span class="remove one">| </span>
-                  <span class="remove two"><br /></span>
-                  UX Designer</h1>
+                <h1>Mike Marin<span class="remove one"> | </span><span class="remove two"><br /></span>UX Designer</h1>
               </div>
 
             </div><!-- ### container-component.one ### -->
@@ -217,7 +213,7 @@
                 </p>
               </div>
               <div class="panel-button margin-top-2em">
-                <a href="#0" class="button-01">View Case Study</a>
+                <a href="#0" class="button-01 btn-disabled">View Case Study</a>
               </div>
             </div><!-- ### box-padding ### -->
           </div><!-- ### panel-component.two ### -->
@@ -241,7 +237,7 @@
                 </p>
               </div>
               <div class="panel-button margin-top-2em">
-                <a href="#0" class="button-01">View Case Study</a>
+                <a href="#0" class="button-01 btn-disabled">View Case Study</a>
               </div>
             </div><!-- ### box-padding ### -->
           </div><!-- ### panel-component.two ### -->
@@ -254,7 +250,7 @@
         <div class="box-padding">
 
           <div class="panel-system one main-project one">
-            <div class="panel-component panel-main">
+            <div data-aos="fade-right" class="panel-component panel-main">
               <div class="panel-heading">
                 <h2>Foodle</h2>
               </div>
@@ -272,25 +268,25 @@
           </div><!-- ### panel-system.one ### -->
 
           <div class="panel-system two main-project two">
-            <div class="panel-component panel-main">
+            <div data-aos="fade-left" class="panel-component panel-main">
               <div class="panel-heading">
                 <h2>BusyBus</h2>
               </div>
               <div class="panel-paragraph">
                 <div class="container-paragraph">
                   <p class="paragraph-02 p-last">
-                    BusyBus is a conceptual app idea that explored how a city bus transit system would handle congestion on overlapping service lines. The solution was to be explored completely using the design process to document the proposed solution.
+                    BusyBus is a conceptual app idea that explored how a city bus transit system would handle congestion on service lines that overlap. The solution was to be explored completely using the design process to document the proposed solution.
                   </p>
                 </div>
               </div>
               <div class="panel-button">
-                <a href="project-01.html" class="button-01">View Case Study</a>
+                <a href="#0" class="button-01 btn-disabled">View Case Study</a>
               </div>
             </div><!-- ### panel-component ### -->
           </div><!-- ### panel-system.two ### -->
 
           <div class="panel-system three main-project three">
-            <div class="panel-component panel-main">
+            <div data-aos="fade-right" class="panel-component panel-main">
               <div class="panel-heading">
                 <h2>HOA App</h2>
               </div>
@@ -302,7 +298,7 @@
                 </div>
               </div>
               <div class="panel-button">
-                <a href="project-01.html" class="button-01">View Case Study</a>
+                <a href="#0" class="button-01 btn-disabled">View Case Study</a>
               </div>
             </div><!-- ### panel-component ### -->
           </div><!-- ### panel-system.three ### -->
@@ -333,49 +329,185 @@
 
       </section>
 
-      <!-- ### 04: MAIN GALLERY: THESE WILL BE FUNCTIONAL WHEN I FIGURE THAT CODING OUT ### -->
+      <!-- ### 04: MAIN GALLERY ### -->
 
       <section class="mobile main-gallery">
 
         <div class="main-gallery-show">
-          <div class="main-gallery-image one">
-          </div>
 
-          <div class="main-gallery-image two">
-          </div>
+          <div class="container-image one">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    export modals
+                  </p>
+                  <p class="skill">
+                    ux/visual design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image one"></div>
+          </div><!-- ### container-image.one ### -->
 
-          <div class="main-gallery-image three">
-          </div>
+          <div class="container-image two">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    blindspot tactical site
+                  </p>
+                  <p class="skill">
+                    web design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image two"></div>
+          </div><!-- ### container-image.two ### -->
 
-          <div class="main-gallery-image four">
-          </div>
+          <div class="container-image three">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    citizen kane poster
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image three"></div>
+          </div><!-- ### container-image.three ### -->
 
-          <div class="main-gallery-image five">
-          </div>
+          <div class="container-image four">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    concept iconography
+                  </p>
+                  <p class="skill">
+                    ux/visual design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image four"></div>
+          </div><!-- ### container-image.four ### -->
 
-          <div class="main-gallery-image six">
-          </div>
+          <div class="container-image five">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    bst email design
+                  </p>
+                  <p class="skill">
+                    web design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image five"></div>
+          </div><!-- ### container-image.five ### -->
+
+          <div class="container-image six">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    type museum brochure
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image six"></div>
+          </div><!-- ### container-image.six ### -->
+
+
+
         </div><!-- ### main-gallery-show ### -->
 
-        <div class="main-gallery-link txt-ctr u-case">
-          <a href="#0" onclick="myFunction()">&#8230;See More Projects</a>
-        </div>
+        <a href="#0" onclick="myFunction()">
+          <div class="main-gallery-link txt-ctr u-case">
+            <p>&#8230;See More Projects</p>
+          </div>
+        </a>
 
         <div class="main-gallery-hide" id="showGallery">
 
           <div class="container-group">
 
-            <div class="main-gallery-image seven">
-            </div>
+            <div class="container-image seven">
+              <a href="#0">
+                <div class="overlay">
+                  <div class="text">
+                    <p class="description">
+                      funeral museum collateral
+                    </p>
+                    <p class="skill">
+                      graphic design
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <div class="main-gallery-image seven"></div>
+            </div><!-- ### container-image.seven ### -->
 
-            <div class="main-gallery-image eight">
-            </div>
+            <div class="container-image eight">
+              <a href="#0">
+                <div class="overlay">
+                  <div class="text">
+                    <p class="description">
+                      dynamic calculations mockups
+                    </p>
+                    <p class="skill">
+                      ux/visual design
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <div class="main-gallery-image eight"></div>
+            </div><!-- ### container-image.eight ### -->
 
-            <div class="main-gallery-image nine">
-            </div>
+            <div class="container-image nine">
+              <a href="#0">
+                <div class="overlay">
+                  <div class="text">
+                    <p class="description">
+                      fish place collateral
+                    </p>
+                    <p class="skill">
+                      graphic design
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <div class="main-gallery-image nine"></div>
+            </div><!-- ### container-image.nine ### -->
 
-            <div class="main-gallery-image ten">
-            </div>
+            <div class="container-image ten">
+              <a href="#0">
+                <div class="overlay">
+                  <div class="text">
+                    <p class="description">
+                      bluewave collateral
+                    </p>
+                    <p class="skill">
+                      graphic design
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <div class="main-gallery-image ten"></div>
+            </div><!-- ### container-image.ten ### -->
 
           </div><!-- ### container-group ### -->
 
@@ -386,32 +518,165 @@
 
         <div class="container-image-group">
 
-          <div class="main-gallery-image one">
-          </div>
+          <div class="container-image one">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    export modals
+                  </p>
+                  <p class="skill">
+                    ux/visual design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image one"></div>
+          </div><!-- ### container-image.one ### -->
 
-          <div class="main-gallery-image two">
-          </div>
+          <div class="container-image two">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    blindspot tactical site
+                  </p>
+                  <p class="skill">
+                    web design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image two"></div>
+          </div><!-- ### container-image.two ### -->
 
-          <div class="main-gallery-image three">
-          </div>
+          <div class="container-image three">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    citizen kane poster
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image three"></div>
+          </div><!-- ### container-image.three ### -->
 
-          <div class="main-gallery-image four">
-          </div>
+          <div class="container-image four">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    concept iconography
+                  </p>
+                  <p class="skill">
+                    ux/visual design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image four"></div>
+          </div><!-- ### container-image.four ### -->
 
-          <div class="main-gallery-image five">
-          </div>
+          <div class="container-image five">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    bst email design
+                  </p>
+                  <p class="skill">
+                    web design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image five"></div>
+          </div><!-- ### container-image.five ### -->
 
-          <div class="main-gallery-image six">
-          </div>
+          <div class="container-image six">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    type museum brochure
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image six"></div>
+          </div><!-- ### container-image.six ### -->
 
-          <div class="main-gallery-image seven">
-          </div>
+          <div class="container-image seven">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    funeral museum collateral
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image seven"></div>
+          </div><!-- ### container-image.seven ### -->
 
-          <div class="main-gallery-image eight">
-          </div>
+          <div class="container-image eight">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    dynamic calculations mockups
+                  </p>
+                  <p class="skill">
+                    ux/visual design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image eight"></div>
+          </div><!-- ### container-image.eight ### -->
 
-          <div class="main-gallery-image nine">
-          </div>
+          <div class="container-image nine">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    fish place collateral
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image nine"></div>
+          </div><!-- ### container-image.nine ### -->
+
+          <div class="container-image ten">
+            <a href="#0">
+              <div class="overlay">
+                <div class="text">
+                  <p class="description">
+                    bluewave collateral
+                  </p>
+                  <p class="skill">
+                    graphic design
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="main-gallery-image ten"></div>
+          </div><!-- ### container-image.ten ### -->
 
         </div><!-- ### container-image-group ### -->
 
@@ -479,11 +744,21 @@
   gtag('config', 'UA-163302580-1');
 </script>
 
-</body>
-
+<!-- <script src="scripts/jquery-3.5.0.min.js"></script> -->
 <script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous"></script>
+
+<!-- Font Awesome JS -->
+<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous" rel="noreferrer"></script>
+
+<!-- Small Viewport Menu Modal -->
 <script src="scripts/MenuModal.js"></script>
-<script src="scripts/ShowMore.js"></script>
+
+<!-- Scroll Back to Top Button -->
 <script src="scripts/ScrollTop.js"></script>
+
+<!-- Show More Button -->
+<script src="scripts/ShowMore.js"></script>
+
+</body>
 
 </html>

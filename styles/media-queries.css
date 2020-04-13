@@ -2,8 +2,7 @@
 
 
 /*  Compiled List of Media Query Styles for Portfolio Main / About Me / Case Study Pages  */
-/* Updated April 9, 2020 */
-
+/* Updated April 13, 2020 */
 
 /* ##### MOBILE VIEWPORTS ##### */
 
@@ -40,9 +39,10 @@
   .modal {
     display: none;
     position: fixed;
-    z-index: 20;
+    z-index: 40;
     width: 100%;
     height: 100%;
+    margin-top: -3.45em
   }
 
   .modal-content {
@@ -55,8 +55,8 @@
 
   .modal-close {
     position: absolute;
-    top: .75em;
-    right: .75em;
+    top: .5em;
+    right: .5em;
     font-size: 2.5em;
     font-weight: bold;
   }
@@ -91,7 +91,7 @@
   }
 
   footer .box-padding {
-    padding: 3em 2em;
+    padding: 3em 3em;
   }
 
   .container-image i {
@@ -123,21 +123,21 @@
   }
 
   .main-projects .panel-component.one .panel-image.one {
-    background-image: url('../../images/portfolio/backgrounds/BKG-Project-01M-min.jpg');
+    background-image: url('../images/portfolio/mockups/Mockup-Project-01M-min.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
   } /* Mobile */
 
   .main-projects .panel-component.one .panel-image.two {
-    background-image: url('../../images/portfolio/backgrounds/BKG-Project-02M-min.jpg');
+    background-image: url('../images/portfolio/mockups/Mockup-Project-02M-min.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   } /* Mobile */
 
   .main-projects .panel-component.one .panel-image.three {
-    background-image: url('../../images/portfolio/backgrounds/BKG-Project-03M-min.jpg');
+    background-image: url('../images/portfolio/mockups/Mockup-Project-03M-min.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,23 +147,44 @@
   /* -- 03: PAST WORKS -- */
 
   .main-past-works .box-padding {
-    padding: 3em 2em;
+    padding: 3em 3em;
   }
 
   .main-past-works {
-    border-top: 3px solid var(--clr-dark-accent);
     border-bottom: 3px solid var(--clr-dark-accent);
   }
 
 
   /* -- 04: MAIN GALLERY -- */
 
-  .main-gallery-link {
+  .main-gallery-link p {
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    color: white;
     padding: .75em 0;
   }
 
   .main-gallery .main-gallery-hide {
     display: none;
+  }
+
+  .main-gallery-image {
+    border: 2px solid var(--clr-bkg-panelborder);
+  }
+
+  .main-gallery .description {
+    font-size: 1.1rem;
+  }
+
+  .main-gallery .skill {
+    font-size: 1.1rem;
+  }
+
+  .copyright {
+    font-size: 1.2em;
   }
 
 
@@ -185,12 +206,6 @@
 
   .about-hero h1 {
     font-size: 2.5em;
-  }
-
-  .aboutarea-01 .about-01-image,
-  .aboutarea-02 .about-02-image {
-    border-top: 3px solid var(--clr-dark-accent);
-    border-bottom: 3px solid var(--clr-dark-accent);
   }
 
   /* -- 02: ABOUT ME 01 -- */
@@ -219,6 +234,13 @@
     border-bottom: 1px solid var(--clr-dark-text);
   }
 
+  .cs-synopsis-image {
+    background-image: url('../images/foodle/mockups/BKG-Foodle-AppHero-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } /* Mobile */
+
 
   /* -- 02: SPECIFICATION -- */
 
@@ -234,7 +256,7 @@
   /* -- 03: OVERVIEW -- */
 
   .cs-overview {
-    background-image: url('../../images/foodle/backgrounds/BKG-Overview-01M-min.jpg');
+    background-image: url('../images/foodle/backgrounds/BKG-Overview-01M-min.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -248,7 +270,7 @@
   /* COMMON ====================== */
 
   .button-01 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 1em 1em;
     width: 100%;
   }
@@ -459,13 +481,11 @@
   /* +++++++++++++++++++++++++++++ */
   /* COMMON ====================== */
 
-  main {
-    position: relative;
-  } /* Orientation Test */
+  .orientation {
+    background-color: rgba(95, 158, 160, 0.85);
+  }
 
 }
-
-@charset "UTF-8"; /* CSS Document */
 
 
 /* small devices  */
@@ -480,7 +500,7 @@
   /* -- 01: MAIN HERO -- */
 
   .main-hero .box-padding {
-    padding: 2em 2em;
+    padding: 2em 2.75em;
   }
 
   .main-hero .container-component.one {
@@ -492,12 +512,12 @@
     margin-bottom: 2em;
   }
 
-  .main-hero .remove.one,
-  .main-hero .remove.two {
+  .main-hero .remove.one {
     display: none;
   }
 
-  .main-hero .container-paragraph {
+  .main-hero .container-paragraph,
+  .main-hero .container-heading {
     text-align: center;
   }
 
@@ -514,18 +534,10 @@
 
   .main-projects .panel-system {
     margin: 0;
-    border-top: 3px solid var(--clr-dark-accent);
-    border-bottom: 3px solid var(--clr-dark-accent);
   }
 
 
   /* -- 03: PAST WORKS -- */
-
-  .main-past-works .container-paragraph {
-    text-align: center;
-  }
-
-
   /* -- 04: MAIN GALLERY -- */
 
   .main-gallery .main-gallery-image {
@@ -543,7 +555,7 @@
   /* -- 01: ABOUT ME HERO -- */
 
   .about-hero .box-padding {
-    padding: 2em 2em;
+    padding: 2em 2.75em;
   }
 
   .about-hero .container-component.one {
@@ -569,6 +581,10 @@
 
   .aboutarea-01 .about-01-image {
     height: 50vh;
+  }
+
+  .aboutarea-01 {
+    border-bottom: 3px solid var(--clr-dark-accent);
   }
 
 
@@ -746,7 +762,11 @@
   }
 
   .cs-competitive-analysis .panel-system {
-    margin: 2em 2em;
+    margin: 0 2em;
+  }
+
+  .cs-competitive-analysis .panel-system-group {
+    margin-bottom: 2em;
   }
 
   .cs-competitive-analysis .panel-image {
@@ -1054,18 +1074,20 @@
   /* +++++++++++++++++++++++++++++ */
   /* PORTRAIT ==================== */
 
-  .orientation {
-    z-index: 25;
-    position: fixed;
-    margin-top: 8em;
-    height: 2.5em;
-    width: 2.5em;
-    background-color: red;
-  } /* Orientation Test */
+
+  .viewport {
+    background-color: rgba(255, 0, 0, 0.75);
+  }
+
+  .viewport .landscape p {
+    display: none;
+  }
+
+  .orientation .medium p, .orientation .large p, .orientation .x-large p {
+    display: none;
+  }
 
 }
-
-@charset "UTF-8"; /* CSS Document */
 
 
 /* small devices  */
@@ -1130,9 +1152,12 @@
     padding: 0 1em;
   }
 
-  .main-hero .remove.one,
-  .main-hero .remove.two {
+  .main-hero .remove.one {
     display: none;
+  }
+
+  .main-hero .container-heading {
+    text-align: center;
   }
 
 
@@ -1146,7 +1171,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    border-top: 3px solid var(--clr-dark-accent);
     border-bottom: 3px solid var(--clr-dark-accent);
   }
 
@@ -1169,12 +1193,6 @@
 
 
   /* -- 03: PAST WORKS -- */
-
-  .main-past-works .container-paragraph {
-    text-align: center;
-  }
-
-
   /* -- 04: MAIN GALLERY -- */
 
   .main-gallery .main-gallery-show {
@@ -1182,14 +1200,22 @@
     flex-wrap: wrap;
   }
 
-  .main-gallery .main-gallery-image {
-    height: 80vh;
+  .main-gallery .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery-hide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .container-image {
     flex-basis: 50%;
   }
 
-  .main-gallery-hide .container-group {
-    display: flex;
-    flex-wrap: wrap;
+  .main-gallery .main-gallery-image {
+    height: 60vh;
   }
 
 
@@ -1250,7 +1276,9 @@
 
   .aboutarea-01 .about-01-image {
     height: 100%;
-    border-top: 3px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-01 {
     border-bottom: 3px solid var(--clr-dark-accent);
   }
 
@@ -1285,8 +1313,6 @@
 
   .aboutarea-02 .about-02-image {
     height: 100%;
-    border-top: 3px solid var(--clr-dark-accent);
-    border-bottom: 3px solid var(--clr-dark-accent);
   }
 
 
@@ -1314,12 +1340,15 @@
   }
 
   .cs-synopsis .container-component.two {
+    display: flex;
+    align-items: center;
     flex-basis: 48%;
     order: 1;
   }
 
-  .cs-synopsis .container-image.two svg{
-    width: 15em;
+  .cs-synopsis .container-image.two svg {
+    height: 100%;
+    width: 10em;
   }
 
   .cs-synopsis .line-divider {
@@ -1467,6 +1496,10 @@
     margin: 2em 0;
   }
 
+  .cs-competitive-analysis .panel-system-group {
+    margin-bottom: 2em;
+  }
+
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
     background-color: var(--clr-bkg-white);
@@ -1576,6 +1609,10 @@
   .cs-user-stories .container-button-group {
     display: flex;
     justify-content: center;
+  }
+
+  .cs-user-stories .panel-system-group {
+    margin-bottom: 2em;
   }
 
   .cs-user-stories .container-button {
@@ -1700,6 +1737,7 @@
   .cs-brand-identity .container-button-group {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .cs-brand-identity .container-button {
@@ -1911,22 +1949,23 @@
   /* +++++++++++++++++++++++++++++ */
   /* LANDSCAPE =================== */
 
-  .orientation {
-    z-index: 25;
-    position: fixed;
-    margin-top: 8em;
-    height: 2.5em;
-    width: 2.5em;
-    background-color: blue;
-  } /* Orientation Test */
+  .viewport {
+    background-color: rgba(0, 0, 255, 0.75);
+  }
+
+  .viewport .portrait p {
+    display: none;
+  }
+
+  .orientation .medium p, .orientation .large p, .orientation .x-large p {
+    display: none;
+  }
+
 
 }
 
 
 /* ##### TABLET VIEWPORTS ##### */
-
-@charset "UTF-8"; /* CSS Document */
-
 
 /* medium devices  */
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -1973,7 +2012,7 @@
   }
 
   footer .box-padding {
-    padding: 3em 5em;
+    padding: 3em 6em;
   }
 
   footer span.remove {
@@ -1987,6 +2026,103 @@
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    position: relative;
+  }
+
+  .main-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 2em;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-project.one {
+    background-position: 65% 75%;
+    background-size: cover;
+  }
+
+  .main-project.two {
+    background-position: 35% 75%;
+    background-size: cover;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 3em 6em;
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .description {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .skill {
+    font-size: 1.1em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .container-image.ten {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    position: relative;
+  }
+
+  .about-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .button-01 {
+    margin: 0;
+  }
+
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
   /* + BUTTON PADDING & STYLING ++ */
   /* +++++++++++++++++++++++++++++ */
   /* COMMON ====================== */
@@ -1994,6 +2130,7 @@
   .button-01 {
     font-size: 1em;
     padding: 1em 1em;
+    margin: 0 .5em;
     width: 10em;
   }
 
@@ -2004,7 +2141,7 @@
   #BacktoTop {
     display: none;
     position: fixed;
-    bottom: 1.5em;
+    bottom: 2em;
     right: 2em;
     z-index: 15;
     opacity: 0.8;
@@ -2055,12 +2192,12 @@
   /* ======== */
 
   .paragraph-01 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.35;
   }
 
   .paragraph-02 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.35;
   }
 
@@ -2103,7 +2240,7 @@
   }
 
   .list-items-01 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .list-items-02 {
@@ -2121,27 +2258,15 @@
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
-  /* +++++++++ TEMPORARY +++++++++ */
-  /* +++++++++++++++++++++++++++++ */
-  /* COMMON ====================== */
-
-
-
-
-  /* ============================= */
-  /* +++++++++++++++++++++++++++++ */
   /* ++++++++++ TESTING ++++++++++ */
   /* +++++++++++++++++++++++++++++ */
   /* COMMON ====================== */
 
-  main {
-    position: relative;
-  } /* Orientation Test */
+  .orientation {
+    background-color: rgba(102, 51, 153, 0.6);
+  }
 
 } /* ##### viewport: medium ##### */
-
-@charset "UTF-8"; /* CSS Document */
-
 
 /* medium devices  */
 @media (min-width: 668px) and (max-width: 1024px) and (orientation: portrait) {
@@ -2163,7 +2288,7 @@
   }
 
   .main-hero .box-padding {
-    padding: 3em 5em;
+    padding: 5em 8em;
   }
 
   .main-hero .container-component.one {
@@ -2222,12 +2347,8 @@
     justify-content: flex-end;
   }
 
+
   /* -- 03: PAST WORKS -- */
-
-  .main-past-works .box-padding {
-    padding: 3em 5em;
-  }
-
   /* -- 04: MAIN GALLERY -- */
 
   .main-gallery .container-image-group {
@@ -2235,9 +2356,12 @@
     flex-wrap: wrap;
   }
 
+  .main-gallery .container-image {
+    flex-basis: 33.33%;
+  }
+
   .main-gallery .main-gallery-image {
     height: 30vh;
-    flex-basis: 33.33%;
   }
 
 
@@ -2258,7 +2382,7 @@
   }
 
   .about-hero .box-padding {
-    padding: 3em 5em;
+    padding: 5em 8em;
   }
 
   .about-hero .container-component.one {
@@ -2293,13 +2417,16 @@
 
   .aboutarea-01 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-01 .about-01-image {
     height: 100%;
   }
+
+  .aboutarea-01 {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
 
   /* -- 03: ABOUT ME 02 -- */
 
@@ -2327,8 +2454,6 @@
 
   .aboutarea-02 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-02 .about-02-image {
@@ -2368,6 +2493,10 @@
 
   .cs-synopsis .container-image.two svg{
     width: 12em;
+  }
+
+  .cs-synopsis .container-image.one {
+    display: none;
   }
 
   .cs-synopsis .line-divider {
@@ -2410,6 +2539,7 @@
     padding: 3em 7em;
   }
 
+
   /* -- 04: PROBLEM SOLUTION -- */
 
   .cs-problem-solution .box-padding {
@@ -2432,6 +2562,7 @@
   .cs-section-image-01 {
     height: 40vh;
   }
+
 
   /* -- 06: DESIGN PROCESS -- */
 
@@ -2540,8 +2671,8 @@
 
   .cs-competitive-analysis .container-button-group {
     display: flex;
-    justify-content: space-between;
-    margin: 2em 0 0 0;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -2576,8 +2707,8 @@
 
   .cs-user-survey .container-button-group {
     display: flex;
-    justify-content: space-between;
-    margin: 2em 4em 0 4em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -2684,8 +2815,8 @@
   .cs-user-flows .container-button-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 10em 0 10em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -2702,9 +2833,8 @@
 
   .cs-content-strategy .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 10em 0 10em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -2720,9 +2850,8 @@
 
   .cs-sketches-wireframes .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 10em 0 10em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -2732,6 +2861,7 @@
     height: 40vh;
   }
 
+
   /* -- 17: USABILITY TEST 01 -- */
 
   .cs-usability-test-01 .box-padding {
@@ -2740,9 +2870,9 @@
 
   .cs-usability-test-01 .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 4em 0 4em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -2761,9 +2891,9 @@
 
   .cs-brand-identity .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 4em 0 4em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -2847,13 +2977,6 @@
     margin-top: 1em;
   }
 
-  .cs-preference-testing .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 10em 0 10em;
-  }
-
   .cs-preference-testing .panel-system {
     margin-bottom: 2em;
   }
@@ -2869,6 +2992,12 @@
     height: 40vh;
   }
 
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
 
   /* -- 25: USABILITY TEST 02 -- */
 
@@ -2878,9 +3007,9 @@
 
   .cs-usability-test-02 .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 4em 0 4em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -2914,6 +3043,7 @@
   .cs-developer-handoff .container-button-group {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -2947,19 +3077,19 @@
   /* +++++++++++++++++++++++++++++ */
   /* PORTRAIT ====================== */
 
-  .orientation {
-    z-index: 25;
-    position: fixed;
-    margin-top: 8em;
-    height: 2.5em;
-    width: 2.5em;
-    background-color: red;
-  } /* Orientation Test */
+  .viewport {
+    background-color: rgba(255, 0, 0, 0.75);
+  }
+
+  .viewport .landscape p {
+    display: none;
+  }
+
+  .orientation .small p, .orientation .large p, .orientation .x-large p {
+    display: none;
+  }
 
 } /* #### portrait #### */
-
-@charset "UTF-8"; /* CSS Document */
-
 
 /* medium devices  */
 @media (min-width: 668px) and (max-width: 1024px) and (orientation: landscape) {
@@ -2981,7 +3111,7 @@
   }
 
   .main-hero .box-padding {
-    padding: 3em 3em;
+    padding: 5em 8em;
   }
 
   .main-hero .container-system {
@@ -3052,16 +3182,6 @@
 
 
   /* -- 03: PAST WORKS -- */
-
-  .main-past-works .box-padding {
-    padding: 3em 5em;
-  }
-
-  .main-past-works .container-paragraph {
-    text-align: center;
-  }
-
-
   /* -- 04: MAIN GALLERY -- */
 
   .main-gallery .container-image-group {
@@ -3069,9 +3189,12 @@
     flex-wrap: wrap;
   }
 
+  .main-gallery .container-image {
+    flex-basis: 33.33%;
+  }
+
   .main-gallery .main-gallery-image {
     height: 40vh;
-    flex-basis: 33.33%;
   }
 
 
@@ -3092,7 +3215,7 @@
   }
 
   .about-hero .box-padding {
-    padding: 3em 3em;
+    padding: 5em 4em;
   }
 
   .about-hero .container-system {
@@ -3138,12 +3261,14 @@
 
   .aboutarea-01 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-01 .about-01-image {
     height: 100%;
+  }
+
+  .aboutarea-01 {
+    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
 
@@ -3173,8 +3298,6 @@
 
   .aboutarea-02 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-02 .about-02-image {
@@ -3402,11 +3525,8 @@
 
   .cs-competitive-analysis .container-button-group {
     display: flex;
+    justify-content: center;
     margin-top: 2em;
-  }
-
-  .cs-competitive-analysis .container-button:first-child {
-    margin-right: 2em;
   }
 
 
@@ -3430,19 +3550,19 @@
 
   .cs-user-survey .container-image-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 1em;
   }
 
   .cs-user-survey .container-image {
-    flex-basis: 22%;
+    flex-basis: 20%;
+    margin: 0 1em;
   }
 
   .cs-user-survey .container-button-group {
     display: flex;
-    justify-content: space-between;
-    margin: 2em 7em 0 7em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -3547,9 +3667,8 @@
 
   .cs-user-flows .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    margin: 2em 15em 0 15em;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -3579,8 +3698,7 @@
 
   .cs-content-strategy .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 2em;
   }
 
@@ -3619,8 +3737,7 @@
 
   .cs-sketches-wireframes .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 2em;
   }
 
@@ -3640,9 +3757,9 @@
 
   .cs-usability-test-01 .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 7em 0 7em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -3661,9 +3778,9 @@
 
   .cs-brand-identity .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 8em 0 8em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -3746,19 +3863,18 @@
     margin-top: 1em;
   }
 
-  .cs-preference-testing .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 15em 0 15em;
-  }
-
   .cs-preference-testing .panel-system {
     margin-bottom: 2em;
   }
 
   .cs-preference-testing .panel-system:last-child {
     margin-bottom: 0;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -3777,9 +3893,9 @@
 
   .cs-usability-test-02 .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 7em 0 7em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -3813,6 +3929,7 @@
   .cs-developer-handoff .container-button-group {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -3821,6 +3938,7 @@
   .cs-section-image-02 {
     height: 30vh;
   }
+
 
   /* -- 28: CONCLUSION -- */
 
@@ -3839,6 +3957,1133 @@
   }
 
 
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE ====================== */
+
+  .viewport {
+    background-color: rgba(0, 0, 255, 0.75);
+  }
+
+  .viewport .portrait p {
+    display: none;
+  }
+
+  .orientation .small p, .orientation .large p, .orientation .x-large p {
+    display: none;
+  }
+
+} /* #### landscape #### */
+
+
+/* ##### DESKTOP VIEWPORTS ##### */
+
+/* large devices  */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  * .mobile {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* ============================= */
+
+  header {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .nav-desktop {
+    text-align: right;
+    padding: 1em 0;
+  }
+
+  .nav_logo {
+    top: 1.5em;
+    margin-left: 1em;
+    width: 80px;
+    height: 80px;
+  }
+
+  nav a {
+    padding: 0 .7em;
+    font-size: 1.2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* ============================= */
+
+  footer {
+    border-top: 5px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 5em 12.5em;
+  }
+
+  footer span.remove {
+    display: none;
+  }
+
+  .container-image i {
+    font-size: 1.25em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .description {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .skill {
+    font-size: 1.1em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .container-image.ten {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* ============================= */
+
+  .button-01 {
+    font-size: 1.2em;
+    padding: 1em 1em;
+    margin: 0 .5em;
+    width: 10em;
+  }
+
+  .BacktoTop img {
+    width: 3.5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+
+  /* ============================= */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* ============================= */
+
+  .panel-pad {
+    padding: 2em 2em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1em;
+  } /* Panel Bullets Padding*/
+
+
+  /* ============================= */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* ============================= */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 4.7em;
+  }
+
+  h2 {
+    font-size: 3.583em;
+  }
+
+  h3 {
+    font-size: 1.728em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.44em;
+    line-height: 1.35;
+  }
+
+  .paragraph-02 {
+    font-size: 1.44em;
+    line-height: 1.35;
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1.2em;
+    line-height: 1.35;
+  } /* Tablet */
+
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1.2em;
+  }
+
+  .list-items-01 {
+    font-size: 1.2em;
+  }
+
+  .list-items-02 {
+    font-size: 1.2em;
+  }
+
+  .list-items-03 {
+    font-size: 1.2em;
+  }
+
+  li {
+    margin-bottom: .5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .orientation {
+    background-color: rgba(255, 105, 180, 0.6);
+  }
+
+} /* #### viewport: large #### */
+
+/* large devices  */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  /* ============================= */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* ============================= */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    position: relative;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .main-hero img {
+    height: 3em;
+  }
+
+  .main-hero .box-padding {
+    padding: 13em 16em;
+  }
+
+  .main-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .main-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .main-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .main-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+  }
+
+  .main-hero .remove.two {
+    display: none;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-projects .box-padding {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-projects .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .main-projects .panel-button {
+    margin-top: 3em;
+  }
+
+  .main-projects .panel-component {
+    padding: 2em 2em;
+  }
+
+  .main-projects .main-project {
+    padding: 2em 2em;
+  }
+
+  .main-projects .panel-main {
+    width: 27em;
+  }
+
+  .main-projects .panel-system.two {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-project.one {
+    background-position: 65% 95%;
+    background-size: cover;
+  }
+
+  .main-project.two {
+    background-position: 35% 75%;
+    background-size: cover;
+  }
+
+  .main-project.three {
+    background-position: 35% 25%;
+    background-size: cover;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 5em 12.5em;
+  }
+
+  .main-past-works .container-heading {
+    margin-bottom: 3em;
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-gallery .container-image {
+    flex-basis: 33.33%;
+  }
+
+  .main-gallery .main-gallery-image {
+    height: 40vh;
+  }
+
+
+  /* ============================= */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* ============================= */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    position: relative;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .about-hero img {
+    height: 3em;
+  }
+
+  .about-hero .box-padding {
+    padding: 13em 16em;
+  }
+
+  .about-hero .container-component.one {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .about-hero .container-component.two {
+    margin-bottom: 5em;
+  }
+
+  .about-hero .container-paragraph {
+    text-align: center;
+  }
+
+  .about-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+  }
+
+
+  /* -- 01: ABOUT ME 01 -- */
+
+  .aboutarea-01 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-01 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-01 .container-component.one,
+  .aboutarea-01 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-01 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-01 .about-01-image {
+    height: 100%;
+  }
+
+
+  /* -- 02: ABOUT ME 02 -- */
+
+  .aboutarea-02 .box-padding {
+    padding: 3em 3em;
+  }
+
+  .aboutarea-02 .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aboutarea-02 .container-component.one,
+  .aboutarea-02 .container-component.two {
+    flex-basis: 50%;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 2;
+  }
+
+  .aboutarea-02 .container-component.one {
+    order: 1;
+  }
+
+  .aboutarea-02 .container-image {
+    height: 100%;
+    border-top: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .aboutarea-02 .about-02-image {
+    height: 100%;
+  }
+
+
+  /* ============================= */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* ============================= */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .box-padding.master {
+    padding: 11.5em 8.25em;
+  }
+
+  .cs-synopsis .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-synopsis .container-component.one {
+    flex-basis: 50%;
+    padding-right: 5em;
+    order: 1;
+  }
+
+  .cs-synopsis .container-component.two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  .cs-synopsis .container-image.two svg{
+    width: 15em;
+  }
+
+  .cs-synopsis .container-image.one{
+    display: none;
+  }
+
+  .cs-synopsis .line-divider {
+    display: none;
+  }
+
+  .cs-synopsis .container-image.two {
+    margin-bottom: 2em;
+  }
+
+  .cs-synopsis .container-button {
+    margin-top: 3em;
+  }
+
+
+  /* -- 02: SPECIFICATION -- */
+
+  .cs-specification .box-padding {
+    padding: 4em 16.75em;
+  }
+
+  .cs-specification .container-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-specification .container-list {
+    flex-basis: 33.333%;
+    padding: 0 1em;
+  }
+
+  .cs-specification .row.one {
+    margin-bottom: 1em;
+  }
+
+
+  /* -- 03: OVERVIEW -- */
+
+  .cs-overview .box-padding {
+    padding: 4em 16em;
+  }
+
+
+  /* -- 04: PROBLEM SOLUTION -- */
+
+  .cs-problem-solution .box-padding {
+    padding: 2em 2em;
+  }
+
+  .cs-problem-solution .panel-pad {
+    padding: 4.75em;
+  }
+
+  .cs-problem-solution .container-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-problem-solution .cs-problem,
+  .cs-problem-solution .cs-solution {
+    flex-basis: 48.25%;
+  }
+
+
+  /* -- 05: IMG BAN 01 -- */
+
+  .cs-section-image-01 {
+   height: 40vh;
+  }
+
+
+  /* -- 06: DESIGN PROCESS -- */
+
+  .cs-design-process .box-padding {
+    padding: 4em 4em;
+  }
+
+  .cs-design-process .panel-image {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cs-design-process .panel-image img {
+    height: 80%;
+  }
+
+  .cs-design-process .panel-heading {
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .5em;
+  }
+
+  .cs-design-process .panel-system-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cs-design-process .panel-system {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 17%;
+  }
+
+
+  /* -- 07: PROJECT BRIEF -- */
+
+  .cs-project-brief .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-project-brief .container-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-project-brief .container-component.one,
+  .cs-project-brief .container-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-project-brief .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-project-brief .panel-list {
+    flex-basis: 50%;
+  }
+
+  .cs-project-brief .container-component.one {
+    padding-right: 2em;
+  }
+
+  .cs-project-brief .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 08: COMPETITIVE ANALYSIS -- */
+
+  .cs-competitive-analysis .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 8em;
+  }
+
+  .cs-competitive-analysis .panel-component {
+    flex-basis: 30%;
+  }
+
+  .cs-competitive-analysis .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-competitive-analysis .panel-image {
+    padding: 1em 0;
+    background-color: var(--clr-bkg-white);
+    border: 1px solid var(--clr-bkg-panelborder);
+    text-align: center;
+  }
+
+  .cs-competitive-analysis .panel-image img {
+    width: 60%;
+  }
+
+  .cs-competitive-analysis .container-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-competitive-analysis .container-component.one,
+  .cs-competitive-analysis .container-component.two {
+    flex-basis: 48%;
+  }
+
+  .cs-competitive-analysis .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  /* -- 09: USER SURVEY -- */
+
+  .cs-user-survey .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-survey .panel-system {
+   display: flex;
+   flex-wrap: flex;
+   justify-content: space-between;
+   margin-bottom: 2em;
+  }
+
+  .cs-user-survey .panel-component.one,
+  .cs-user-survey .panel-component.two {
+   flex-basis: 48.5%;
+  }
+
+  .cs-user-survey .container-image-group {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0 4em 1em 4em;
+  }
+
+  .cs-user-survey .container-image {
+   flex-basis: 20%;
+  }
+
+  .cs-user-survey .container-button-group {
+   display: flex;
+   justify-content: center;
+   margin-top: 2em;
+  }
+
+  /* -- 10: USER PERSONAS -- */
+
+  .cs-user-personas .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-personas .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-user-personas .panel-system {
+    flex-basis: 47.5%;
+  }
+
+  .cs-user-personas .panel-case {
+    padding: 4em 4em;
+  }
+
+  .cs-user-personas .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  .cs-user-personas .panel-component,
+  .cs-user-personas .persona-name {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .persona-description {
+    margin-bottom: 1em;
+  }
+
+  .cs-user-personas .panel-component:last-child {
+    margin-bottom: 0;
+  }
+
+  /* -- 11: USER STORIES -- */
+
+  .cs-user-stories .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-stories .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .cs-user-stories .panel-system {
+    flex-basis: 48.5%;
+  }
+
+  .cs-user-stories .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 12: USER FLOWS IMG BAN -- */
+
+  .cs-user-flows-image {
+    height: 40vh;
+  }
+
+
+  /* -- 13: USER FLOWS -- */
+
+  .cs-user-flows .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-user-flows .panel-system {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4em 2em 4em;
+    justify-content: space-between;
+  }
+
+  .cs-user-flows .panel-bullets {
+    flex-basis: 50%;
+  }
+
+  .cs-user-flows .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 14: CONTENT STRATEGY -- */
+
+  .cs-content-strategy .box-padding {
+    padding: 4em 3em;
+  }
+
+  .cs-content-strategy .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-content-strategy .container-component.one,
+  .cs-content-strategy .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-content-strategy .container-image  {
+    height: 100%;
+  }
+
+  .cs-content-strategy .cs-content-strategy-image {
+    height: 100%;
+  }
+
+  .cs-content-strategy .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 15: SKETCHES WIREFRAMES -- */
+
+  .cs-sketches-wireframes .box-padding {
+    padding: 4em 3em;
+  }
+
+  .cs-sketches-wireframes .container-system {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-sketches-wireframes .container-component.one,
+  .cs-sketches-wireframes .container-component.two  {
+    flex-basis: 50%;
+  }
+
+  .cs-sketches-wireframes .container-component.one  {
+    order: 2;
+  }
+
+  .cs-sketches-wireframes .container-component.two  {
+    order: 1;
+  }
+
+  .cs-sketches-wireframes .container-image  {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .cs-sketches-wireframes-image {
+    height: 100%;
+  }
+
+  .cs-sketches-wireframes .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 16: USABILITY TEST 01 IMG BAN -- */
+
+  .cs-usability-test-01-image {
+    height: 40vh;
+  }
+
+
+  /* -- 17: USABILITY TEST 01 -- */
+
+  .cs-usability-test-01 .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-usability-test-01 .container-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 18: BRAND IDENTITY IMG BAN -- */
+
+  .cs-brand-identity-image {
+    height: 40vh;
+  }
+
+
+  /* -- 19: BRAND IDENTITY -- */
+
+
+  .cs-brand-identity .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-brand-identity .container-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 20: STYLE GUIDE -- */
+
+  .cs-style-guide .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-style-guide .container-image {
+    width: 33.33%;
+    padding: 0 1em;
+  }
+
+  .cs-style-guide .container-image-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-style-guide .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
+
+  .cs-high-fidelity-mockup-image {
+    height: 40vh;
+  }
+
+
+  /* -- 22: HIGH FIDELITY MOCKUP -- */
+
+  .cs-high-fidelity-mockup .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-high-fidelity-mockup .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 23: PREFERENCE TESTING -- */
+
+  .cs-preference-testing .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.one,
+  .cs-preference-testing .panel-component.two {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cs-preference-testing .panel-component.three,
+  .cs-preference-testing .panel-component.four {
+    flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-option {
+    padding: .5em 0;
+    background-color: var(--clr-dark-primary);
+  }
+
+  .cs-preference-testing .panel-component.five {
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .panel-system {
+    margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 24: USABILITY TEST 02 IMG BAN -- */
+
+  .cs-usability-test-02-image {
+    height: 40vh;
+  }
+
+
+  /* -- 25: USABILITY TEST 02 -- */
+
+  .cs-usability-test-02 .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-usability-test-02 .container-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+
+  /* -- 26: DEVELOPER HANDOFF -- */
+
+  .cs-developer-handoff .box-padding.master {
+    padding: 4em 10em;
+  }
+
+  .cs-developer-handoff .box-padding.one {
+    padding: 3em 2em;
+  }
+
+  .cs-developer-handoff .container-group.one {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cs-developer-handoff .container-group.two,
+  .cs-developer-handoff .container-group.three {
+    flex-basis: 50%;
+  }
+
+  .cs-developer-handoff .container-group.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .cs-developer-handoff .container-button-group {
+    margin-top: 2em;
+  }
+
+
+  /* -- 27: IMG BAN 02 -- */
+
+  .cs-section-image-02 {
+    height: 20vh;
+  }
+
+
+  /* -- 28: CONCLUSION -- */
+
+  .cs-conclusion .box-padding {
+    padding: 4em 10em;
+  }
+
+  .cs-conclusion .panel-system-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5em 4em 5em;
+  }
+
+  .cs-conclusion .panel-system {
+    flex-basis: 30%;
+  }
+
+  .cs-conclusion .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+  }
+
 
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
@@ -3846,1079 +5091,16 @@
   /* +++++++++++++++++++++++++++++ */
   /* LANDSCAPE ====================== */
 
-  .orientation {
-    z-index: 25;
-    position: fixed;
-    margin-top: 8em;
-    height: 2.5em;
-    width: 2.5em;
-    background-color: blue;
-  } /* Orientation Test */
+  .viewport {
+    background-color: rgba(0, 0, 255, 0.75);
+  }
 
-} /* #### landscape #### */
-
-
-/* ##### DESKTOP VIEWPORTS ##### */
-
-@charset "UTF-8"; /* CSS Document */
-
-
-/* large devices  */
-@media (min-width: 1025px) and (max-width: 1440px) {
-
-  * .mobile {
+  .viewport .portrait p {
     display: none;
   }
 
-
-  /* ============================= */
-  /* ++++ HEADER / NAVIGATION ++++ */
-  /* ============================= */
-
-  .nav-desktop {
-    text-align: right;
-    padding: 1em 0;
-  }
-
-  .nav_logo {
-    top: 1.5em;
-    margin-left: 1em;
-    width: 80px;
-    height: 80px;
-  }
-
-  nav a {
-    padding: 0 .7em;
-    font-size: 1.44em;
-  }
-
-
-  /* ============================= */
-  /* +++++++++++ FOOTER ++++++++++ */
-  /* ============================= */
-
-  footer {
-    border-top: 5px solid var(--clr-dark-accent);
-  }
-
-  footer .box-padding {
-    padding: 5em 12.5em;
-  }
-
-  footer span.remove {
+  .orientation .small p, .orientation .medium p, .orientation .x-large p {
     display: none;
-  }
-
-  .container-image i {
-    font-size: 1.25em;
-  }
-
-
-  /* ============================= */
-  /* + BUTTON PADDING & STYLING ++ */
-  /* ============================= */
-
-  .button-01 {
-    font-size: 1.2em;
-    padding: 1em 1em;
-    width: 10em;
-  }
-
-  .BacktoTop img {
-    width: 5em;
-  }
-
-  #BacktoTop {
-    display: none;
-    position: fixed;
-    bottom: 2em;
-    right: 3em;
-    z-index: 15;
-    opacity: 0.8;
-  }
-
-
-  /* ============================= */
-  /* ++ PANEL PADDING & STYLING ++ */
-  /* ============================= */
-
-  .panel-pad {
-    padding: 2em 2em;
-  }
-
-  .panel-bullets {
-    padding: 0 1em 0 1em;
-  } /* Panel Bullets Padding*/
-
-
-  /* ============================= */
-  /* +++++++ GLOBAL STYLING ++++++ */
-  /* ============================= */
-
-  /* -- TYPOGRAPHY -- */
-
-  h1 {
-    font-size: 4.3em;
-  }
-
-  h2 {
-    font-size: 3.583em;
-  }
-
-  h3 {
-    font-size: 1.728em;
-  }
-
-  h4 {
-    font-size: 1.2em;
-  }
-
-  h5 {
-    font-size: 2.074em;
-  }
-
-  /* ======== */
-
-  .paragraph-01 {
-    font-size: 1.728em;
-    line-height: 1.35;
-  }
-
-  .paragraph-02 {
-    font-size: 1.44em;
-    line-height: 1.35;
-  }
-
-  .paragraph-03 {
-    font-size: 1em;
-  }
-
-  .paragraph-04 {
-    font-size: 1.2em;
-    line-height: 1.35;
-  } /* Tablet */
-
-
-  .paragraph-05 {
-    font-size: 1.2em;
-  }
-
-  /* ======== */
-
-  .process span.divider-bold {
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-
-  .process span.divider-hide {
-    font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-  }
-
-  .copyright {
-    font-size: 1.2em;
-  }
-
-  /* ======== */
-
-  a {
-    font-size: 1.2em;
-  }
-
-  .list-items-01 {
-    font-size: 1.2em;
-  }
-
-  .list-items-02 {
-    font-size: 1.2em;
-  }
-
-  .list-items-03 {
-    font-size: 1.2em;
-  }
-
-  li {
-    margin-bottom: .5em;
-  }
-
-} /* #### viewport: large #### */
-
-@charset "UTF-8"; /* CSS Document */
-
-
-/* large devices  */
-@media (min-width: 1025px) and (max-width: 1440px) {
-
-
-  /* ============================= */
-  /* ++++++ PORTFOLIO: MAIN ++++++ */
-  /* ============================= */
-
-  /* -- 01: MAIN HERO -- */
-
-  .main-hero {
-    position: relative;
-    border-bottom: 5px solid var(--clr-dark-accent);
-  }
-
-  .main-hero img {
-    height: 3.75em;
-  }
-
-  .main-hero .box-padding {
-    padding: 17.5em 15em;
-  }
-
-  .main-hero .container-component.one {
-    text-align: center;
-    margin-bottom: 3.75em;
-  }
-
-  .main-hero .container-component.two {
-    margin-bottom: 5em;
-  }
-
-  .main-hero .container-paragraph {
-    text-align: center;
-  }
-
-  .main-hero .container-image {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 3em;
-  }
-
-  .main-hero .remove.two {
-    display: none;
-  }
-
-
-  /* -- 02: MAIN PROJECTS -- */
-
-  .main-projects .box-padding {
-    padding: 2em 2em;
-  }
-
-  .main-projects .panel-system {
-    margin-bottom: 2em;
-  }
-
-  .main-projects .panel-system:last-child {
-    margin-bottom: 0;
-  }
-
-  .main-projects .panel-heading {
-    margin-bottom: 2em;
-  }
-
-  .main-projects .panel-button {
-    margin-top: 3em;
-  }
-
-  .main-projects .panel-component {
-    padding: 2em 2em;
-  }
-
-  .main-projects .main-project {
-    padding: 2em 2em;
-  }
-
-  .main-projects .panel-main {
-    width: 27em;
-  }
-
-  .main-projects .panel-system.two {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  /* -- 03: PAST WORKS -- */
-
-
-  .main-past-works .box-padding {
-    padding: 5em 12.5em;
-  }
-
-  .main-past-works .container-heading {
-    margin-bottom: 3em;
-  }
-
-  .main-past-works .container-paragraph {
-    text-align: center;
-  }
-
-
-  /* -- 04: MAIN GALLERY -- */
-
-  .main-gallery .container-image-group {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main-gallery .main-gallery-image {
-    height: 35vh;
-    flex-basis: 33.33%;
-  }
-
-
-  /* ============================= */
-  /* ++++ PORTFOLIO: ABOUT ME ++++ */
-  /* ============================= */
-
-  /* -- 01: ABOUT ME HERO -- */
-
-  .about-hero {
-    position: relative;
-    border-bottom: 5px solid var(--clr-dark-accent);
-  }
-
-  .about-hero img {
-    height: 3.75em;
-  }
-
-  .about-hero .box-padding {
-    padding: 17.5em 15em;
-  }
-
-  .about-hero .container-component.one {
-    text-align: center;
-    margin-bottom: 3.75em;
-  }
-
-  .about-hero .container-component.two {
-    margin-bottom: 5em;
-  }
-
-  .about-hero .container-paragraph {
-    text-align: center;
-  }
-
-  .about-hero .container-image {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 3em;
-  }
-
-
-  /* -- 01: ABOUT ME 01 -- */
-
-  .aboutarea-01 .box-padding {
-    padding: 3em 3em;
-  }
-
-  .aboutarea-01 .container-system {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .aboutarea-01 .container-component.one,
-  .aboutarea-01 .container-component.two {
-    flex-basis: 50%;
-  }
-
-  .aboutarea-01 .container-image {
-    height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
-  }
-
-  .aboutarea-01 .about-01-image {
-    height: 100%;
-  }
-
-
-  /* -- 02: ABOUT ME 02 -- */
-
-  .aboutarea-02 .box-padding {
-    padding: 3em 3em;
-  }
-
-  .aboutarea-02 .container-system {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .aboutarea-02 .container-component.one,
-  .aboutarea-02 .container-component.two {
-    flex-basis: 50%;
-  }
-
-  .aboutarea-02 .container-component.one {
-    order: 2;
-  }
-
-  .aboutarea-02 .container-component.one {
-    order: 1;
-  }
-
-  .aboutarea-02 .container-image {
-    height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
-  }
-
-  .aboutarea-02 .about-02-image {
-    height: 100%;
-  }
-
-
-  /* ============================= */
-  /* ++ CASE STUDY - PROJECT 01 ++ */
-  /* ============================= */
-
-  /* -- 01: SYNOPSIS HERO -- */
-
-  .cs-synopsis .box-padding.master {
-    padding: 11.5em 8.25em;
-  }
-
-  .cs-synopsis .container-system {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-synopsis .container-component.one {
-    flex-basis: 50%;
-    padding-right: 5em;
-    order: 1;
-  }
-
-  .cs-synopsis .container-component.two {
-    flex-basis: 50%;
-    order: 2;
-  }
-
-  .cs-synopsis .container-image.two svg{
-    width: 15em;
-  }
-
-  .cs-synopsis .container-image.one{
-    display: none;
-  }
-
-  .cs-synopsis .line-divider {
-    display: none;
-  }
-
-  .cs-synopsis .container-image.two {
-    margin-bottom: 2em;
-  }
-
-  .cs-synopsis .container-button {
-    margin-top: 3em;
-  }
-
-
-  /* -- 02: SPECIFICATION -- */
-
-  .cs-specification .box-padding {
-    padding: 4em 16.75em;
-  }
-
-  .cs-specification .container-group {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-specification .container-list {
-    flex-basis: 33.333%;
-    padding: 0 1em;
-  }
-
-  .cs-specification .row.one {
-    margin-bottom: 1em;
-  }
-
-
-  /* -- 03: OVERVIEW -- */
-
-  .cs-overview .box-padding {
-    padding: 4em 16em;
-  }
-
-
-  /* -- 04: PROBLEM SOLUTION -- */
-
-  .cs-problem-solution .box-padding {
-    padding: 2em 2em;
-  }
-
-  .cs-problem-solution .panel-pad {
-    padding: 4.75em;
-  }
-
-  .cs-problem-solution .container-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .cs-problem-solution .cs-problem,
-  .cs-problem-solution .cs-solution {
-    flex-basis: 48.25%;
-  }
-
-
-  /* -- 05: IMG BAN 01 -- */
-
-  .cs-section-image-01 {
-   height: 40vh;
-  }
-
-
-  /* -- 06: DESIGN PROCESS -- */
-
-  .cs-design-process .box-padding {
-    padding: 4em 4em;
-  }
-
-  .cs-design-process .panel-image {
-    height: 8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .cs-design-process .panel-image img {
-    height: 80%;
-  }
-
-  .cs-design-process .panel-heading {
-    height: 2.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: .5em;
-  }
-
-  .cs-design-process .panel-system-group {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .cs-design-process .panel-system {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 17%;
-  }
-
-
-  /* -- 07: PROJECT BRIEF -- */
-
-  .cs-project-brief .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-project-brief .container-system {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .cs-project-brief .container-component.one,
-  .cs-project-brief .container-component.two {
-    flex-basis: 48.5%;
-  }
-
-  .cs-project-brief .panel-system {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-project-brief .panel-list {
-    flex-basis: 50%;
-  }
-
-  .cs-project-brief .container-component.one {
-    padding-right: 2em;
-  }
-
-  .cs-project-brief .container-button-group {
-    margin-top: 2em;
-  }
-
-
-  /* -- 08: COMPETITIVE ANALYSIS -- */
-
-  .cs-competitive-analysis .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-competitive-analysis .panel-system {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 8em;
-  }
-
-  .cs-competitive-analysis .panel-component {
-    flex-basis: 30%;
-  }
-
-  .cs-competitive-analysis .panel-system {
-    margin-bottom: 2em;
-  }
-
-  .cs-competitive-analysis .panel-image {
-    padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
-    text-align: center;
-  }
-
-  .cs-competitive-analysis .panel-image img {
-    width: 60%;
-  }
-
-  .cs-competitive-analysis .container-system-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .cs-competitive-analysis .container-component.one,
-  .cs-competitive-analysis .container-component.two {
-    flex-basis: 48%;
-  }
-
-  .cs-competitive-analysis .container-button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2em;
-  }
-
-  /* -- 09: USER SURVEY -- */
-
-  .cs-user-survey .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-user-survey .panel-system {
-   display: flex;
-   flex-wrap: flex;
-   justify-content: space-between;
-   margin-bottom: 2em;
-  }
-
-  .cs-user-survey .panel-component.one,
-  .cs-user-survey .panel-component.two {
-   flex-basis: 48.5%;
-  }
-
-  .cs-user-survey .container-image-group {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin: 0 4em 1em 4em;
-  }
-
-  .cs-user-survey .container-image {
-   flex-basis: 20%;
-  }
-
-  .cs-user-survey .container-button-group {
-   display: flex;
-   justify-content: space-between;
-   margin: 2em 9em 0 9em;
-  }
-
-  /* -- 10: USER PERSONAS -- */
-
-  .cs-user-personas .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-user-personas .panel-system-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .cs-user-personas .panel-system {
-    flex-basis: 47.5%;
-  }
-
-  .cs-user-personas .panel-case {
-    padding: 4em 4em;
-  }
-
-  .cs-user-personas .container-button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-  }
-
-  .cs-user-personas .panel-component,
-  .cs-user-personas .persona-name {
-    margin-bottom: 1em;
-  }
-
-  .cs-user-personas .persona-description {
-    margin-bottom: 1em;
-  }
-
-  .cs-user-personas .panel-component:last-child {
-    margin-bottom: 0;
-  }
-
-  /* -- 11: USER STORIES -- */
-
-  .cs-user-stories .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-user-stories .panel-system-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 2em;
-  }
-
-  .cs-user-stories .panel-system {
-    flex-basis: 48.5%;
-  }
-
-  .cs-user-stories .container-button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-  }
-
-
-  /* -- 12: USER FLOWS IMG BAN -- */
-
-  .cs-user-flows-image {
-    height: 40vh;
-  }
-
-
-  /* -- 13: USER FLOWS -- */
-
-  .cs-user-flows .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-user-flows .panel-system {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 4em 2em 4em;
-    justify-content: space-between;
-  }
-
-  .cs-user-flows .panel-bullets {
-    flex-basis: 50%;
-  }
-
-  .cs-user-flows .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 17em 0 17em;
-  }
-
-
-  /* -- 14: CONTENT STRATEGY -- */
-
-  .cs-content-strategy .box-padding {
-    padding: 4em 3em;
-  }
-
-  .cs-content-strategy .container-system {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-content-strategy .container-component.one,
-  .cs-content-strategy .container-component.two  {
-    flex-basis: 50%;
-  }
-
-  .cs-content-strategy .container-image  {
-    height: 100%;
-  }
-
-  .cs-content-strategy .cs-content-strategy-image {
-    height: 100%;
-  }
-
-  .cs-content-strategy .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 2em 0 2em;
-  }
-
-
-  /* -- 15: SKETCHES WIREFRAMES -- */
-
-  .cs-sketches-wireframes .box-padding {
-    padding: 4em 3em;
-  }
-
-  .cs-sketches-wireframes .container-system {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-sketches-wireframes .container-component.one,
-  .cs-sketches-wireframes .container-component.two  {
-    flex-basis: 50%;
-  }
-
-  .cs-sketches-wireframes .container-component.one  {
-    order: 2;
-  }
-
-  .cs-sketches-wireframes .container-component.two  {
-    order: 1;
-  }
-
-  .cs-sketches-wireframes .container-image  {
-    height: 100%;
-  }
-
-  .cs-sketches-wireframes .cs-sketches-wireframes-image {
-    height: 100%;
-  }
-
-  .cs-sketches-wireframes .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 2em 0 2em;
-  }
-
-
-  /* -- 16: USABILITY TEST 01 IMG BAN -- */
-
-  .cs-usability-test-01-image {
-    height: 40vh;
-  }
-
-
-  /* -- 17: USABILITY TEST 01 -- */
-
-  .cs-usability-test-01 .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-usability-test-01 .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 9em 0 9em;
-  }
-
-
-  /* -- 18: BRAND IDENTITY IMG BAN -- */
-
-  .cs-brand-identity-image {
-    height: 40vh;
-  }
-
-
-  /* -- 19: BRAND IDENTITY -- */
-
-
-  .cs-brand-identity .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-brand-identity .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 9em 0 9em;
-  }
-
-
-  /* -- 20: STYLE GUIDE -- */
-
-  .cs-style-guide .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-style-guide .container-image {
-    width: 33.33%;
-    padding: 0 1em;
-  }
-
-  .cs-style-guide .container-image-group {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-style-guide .container-button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-  }
-
-
-  /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
-
-  .cs-high-fidelity-mockup-image {
-    height: 40vh;
-  }
-
-
-  /* -- 22: HIGH FIDELITY MOCKUP -- */
-
-  .cs-high-fidelity-mockup .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-high-fidelity-mockup .container-button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-  }
-
-
-  /* -- 23: PREFERENCE TESTING -- */
-
-  .cs-preference-testing .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-preference-testing .panel-component-group.one {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .cs-preference-testing .panel-component.one,
-  .cs-preference-testing .panel-component.two {
-    flex-basis: 48.5%;
-  }
-
-  .cs-preference-testing .panel-component-group.two {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
-    flex-basis: 48.5%;
-  }
-
-  .cs-preference-testing .panel-option {
-    padding: .5em 0;
-    background-color: var(--clr-dark-primary);
-  }
-
-  .cs-preference-testing .panel-component.five {
-    margin-top: 1em;
-  }
-
-  .cs-preference-testing .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 17em 0 17em;
-  }
-
-  .cs-preference-testing .panel-system {
-    margin-bottom: 2em;
-  }
-
-  .cs-preference-testing .panel-system:last-child {
-    margin-bottom: 0;
-  }
-
-
-  /* -- 24: USABILITY TEST 02 IMG BAN -- */
-
-  .cs-usability-test-02-image {
-    height: 40vh;
-  }
-
-
-  /* -- 25: USABILITY TEST 02 -- */
-
-  .cs-usability-test-02 .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-usability-test-02 .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 9em 0 9em;
-  }
-
-
-  /* -- 26: DEVELOPER HANDOFF -- */
-
-  .cs-developer-handoff .box-padding.master {
-    padding: 4em 10em;
-  }
-
-  .cs-developer-handoff .box-padding.one {
-    padding: 3em 2em;
-  }
-
-  .cs-developer-handoff .container-group.one {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cs-developer-handoff .container-group.two,
-  .cs-developer-handoff .container-group.three {
-    flex-basis: 50%;
-  }
-
-  .cs-developer-handoff .container-group.two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1em;
-  }
-
-  .cs-developer-handoff .container-button-group {
-    margin-top: 2em;
-  }
-
-
-  /* -- 27: IMG BAN 02 -- */
-
-  .cs-section-image-02 {
-    height: 20vh;
-  }
-
-
-  /* -- 28: CONCLUSION -- */
-
-  .cs-conclusion .box-padding {
-    padding: 4em 10em;
-  }
-
-  .cs-conclusion .panel-system-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 5em 4em 5em;
-  }
-
-  .cs-conclusion .panel-system {
-    flex-basis: 30%;
-  }
-
-  .cs-conclusion .container-button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 4em;
   }
 
 } /* #### viewport: large #### */
@@ -4926,11 +5108,8 @@
 
 /* ##### X-LARGE DESKTOP VIEWPORTS ##### */
 
-@charset "UTF-8"; /* CSS Document */
-
-
 /* extra large devices  */
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
 
   * .mobile {
     display: none;
@@ -4940,6 +5119,10 @@
   /* ============================= */
   /* ++++ HEADER / NAVIGATION ++++ */
   /* ============================= */
+
+  header {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
 
   .nav-desktop {
     text-align: right;
@@ -4955,7 +5138,7 @@
 
   nav a {
     padding: 0 .7em;
-    font-size: 1.44em;
+    font-size: 1.2em;
   }
 
 
@@ -4981,17 +5164,43 @@
 
 
   /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .description {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .skill {
+    font-size: 1.1em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .container-image.ten {
+    display: none;
+  }
+
+
+  /* ============================= */
   /* + BUTTON PADDING & STYLING ++ */
   /* ============================= */
 
   .button-01 {
     font-size: 1.2em;
     padding: 1em 1em;
+    margin: 0 .5em;
     width: 10em;
   }
 
   .BacktoTop img {
-    width: 5em;
+    width: 3.5em;
   }
 
   #BacktoTop {
@@ -5024,7 +5233,7 @@
   /* -- TYPOGRAPHY -- */
 
   h1 {
-    font-size: 4.3em;
+    font-size: 4.7em;
   }
 
   h2 {
@@ -5046,7 +5255,7 @@
   /* ======== */
 
   .paragraph-01 {
-    font-size: 1.728em;
+    font-size: 1.44em;
     line-height: 1.35;
   }
 
@@ -5109,6 +5318,22 @@
     margin-bottom: .5em;
   }
 
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .orientation {
+    background-color: rgba(165, 42, 42, 0.6);
+  }
+
+} /* #### viewport: extra large #### */
+
+/* extra large devices  */
+@media (min-width: 1441px) {
+
   /* ============================= */
   /* ++++++ PORTFOLIO: MAIN ++++++ */
   /* ============================= */
@@ -5117,15 +5342,16 @@
 
   .main-hero {
     position: relative;
+    height: 70vh;
     border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .main-hero img {
-    height: 3.75em;
+    height: 3em;
   }
 
   .main-hero .box-padding {
-    padding: 17.5em 15em;
+    padding: 13em 20em;
   }
 
   .main-hero .container-component.one {
@@ -5194,20 +5420,30 @@
     justify-content: flex-end;
   }
 
+  .main-project.one {
+    background-position: 65% 95%;
+    background-size: cover;
+  }
+
+  .main-project.two {
+    background-position: 35% 75%;
+    background-size: cover;
+  }
+
+  .main-project.three {
+    background-position: 35% 25%;
+    background-size: cover;
+  }
+
 
   /* -- 03: PAST WORKS -- */
 
-
   .main-past-works .box-padding {
-    padding: 5em 12.5em;
+    padding: 5em 15em;
   }
 
   .main-past-works .container-heading {
     margin-bottom: 3em;
-  }
-
-  .main-past-works .container-paragraph {
-    text-align: center;
   }
 
 
@@ -5218,9 +5454,12 @@
     flex-wrap: wrap;
   }
 
+  .main-gallery .container-image {
+    flex-basis: 33.33%;
+  }
+
   .main-gallery .main-gallery-image {
     height: 35vh;
-    flex-basis: 33.33%;
   }
 
 
@@ -5236,11 +5475,11 @@
   }
 
   .about-hero img {
-    height: 3.75em;
+    height: 3em;
   }
 
   .about-hero .box-padding {
-    padding: 17.5em 15em;
+    padding: 13em 16em;
   }
 
   .about-hero .container-component.one {
@@ -5550,7 +5789,7 @@
 
   .cs-competitive-analysis .container-button-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 2em;
   }
 
@@ -5585,8 +5824,8 @@
 
   .cs-user-survey .container-button-group {
    display: flex;
-   justify-content: space-between;
-   margin: 2em 9em 0 9em;
+   justify-content: center;
+   margin-top: 2em;
   }
 
   /* -- 10: USER PERSONAS -- */
@@ -5678,9 +5917,8 @@
 
   .cs-user-flows .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 17em 0 17em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -5710,9 +5948,8 @@
 
   .cs-content-strategy .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 2em 0 2em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -5750,9 +5987,8 @@
 
   .cs-sketches-wireframes .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 2em 0 2em;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -5771,9 +6007,9 @@
 
   .cs-usability-test-01 .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 9em 0 9em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -5793,9 +6029,9 @@
 
   .cs-brand-identity .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 9em 0 9em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -5879,19 +6115,18 @@
     margin-top: 1em;
   }
 
-  .cs-preference-testing .container-button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 17em 0 17em;
-  }
-
   .cs-preference-testing .panel-system {
     margin-bottom: 2em;
   }
 
   .cs-preference-testing .panel-system:last-child {
     margin-bottom: 0;
+  }
+
+  .cs-preference-testing .container-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
   }
 
 
@@ -5910,9 +6145,9 @@
 
   .cs-usability-test-02 .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2em 9em 0 9em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 
 
@@ -5976,6 +6211,25 @@
     display: flex;
     justify-content: center;
     margin-top: 4em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE ====================== */
+
+  .viewport {
+    background-color: rgba(0, 0, 255, 0.75);
+  }
+
+  .viewport .portrait p {
+    display: none;
+  }
+
+  .orientation .small p, .orientation .medium p, .orientation .large p {
+    display: none;
   }
 
 } /* #### viewport: extra large #### */

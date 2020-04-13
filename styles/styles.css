@@ -1,10 +1,10 @@
 @charset "UTF-8"; /* CSS Document */
 
+
 /*  Compiled List of CSS Styles for Portfolio Main / About Me / Case Study Pages  */
-/* Updated April 9, 2020 */
+/* Updated April 13, 2020 */
 
 /* ##### TYPOGRAPHY.CSS ##### */
-
 
 /* ============================= */
 /* ++++++++ TYPOGRAPHY +++++++++ */
@@ -238,6 +238,15 @@ li {
   color: var(--clr-medium-text);
 }
 
+.viewport p, .orientation p {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
 
 /* ============================= */
 /* +++++ BASE FORMATTING +++++++ */
@@ -249,32 +258,8 @@ li {
   --clr-dark-text: #1A1A1A;
 }
 
-/* ============================= */
-/* ++++++++ TYPE SCALE +++++++++ */
-/* ============================= */
-
-/*
-16px base, 1.200 minor third
-
-6.192em (99.07px)
-5.16em (82.56px)
-4.3em (68.80px)
-3.583em (57.33px)
-2.986em (47.78px)
-2.488em (39.81px)
-2.074em (33.18px)
-1.728em (27.65px)
-1.44em (23.04px)
-1.2em (19.20px)
-1em (16.00px)
-0.833em (13.33px)
-0.694em (11.11px)
-0.579em (9.26px)
-*/
-
 
 /* ##### LAYOUT.CSS ##### */
-
 
 /* ============================= */
 /* ++++ CONTAINER VARIABLES ++++ */
@@ -456,14 +441,19 @@ li {
 
 /* ##### MAIN.CSS ##### */
 
-
 /* ============================= */
 /* +++++ HEADER/NAVIGATION +++++ */
 /* ============================= */
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
   background-color: var(--clr-dark-primary);
   border-bottom: 5px solid var(--clr-dark-accent);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+  z-index: 30;
 }
 
 header .box-padding {
@@ -518,13 +508,22 @@ footer {
 
 
 /* ============================= */
+/* +++++++++++ MAIN ++++++++++++ */
+/* ============================= */
+
+main {
+  margin-top: 3.45em;
+}
+
+
+/* ============================= */
 /* ++++++ PORTFOLIO: MAIN ++++++ */
 /* ============================= */
 
 /* -- 01: MAIN HERO -- */
 
 .main-hero {
-  background-image: url('../../images/portfolio/backgrounds/BKG-Gipetto-Hero-min.jpg');
+  background-image: url('../images/portfolio/backgrounds/BKG-Gipetto-Hero-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -534,6 +533,7 @@ footer {
 .main-hero {
   width: 100%;
 }
+
 
 /* -- 02: MAIN PROJECTS -- */
 
@@ -546,21 +546,21 @@ footer {
 } /* Section Padding Default */
 
 .main-project.one {
-  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../../images/portfolio/backgrounds/BKG-Project-01-min.jpg');
+  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../images/portfolio/mockups/Mockup-Project-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 } /* Desktop */
 
 .main-project.two {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../../images/portfolio/backgrounds/BKG-Project-02-min.jpg');
+  background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../images/portfolio/mockups/Mockup-Project-02-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 } /* Desktop */
 
 .main-project.three {
-  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../../images/portfolio/backgrounds/BKG-Project-03-min.jpg');
+  background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../images/portfolio/mockups/Mockup-Project-03-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -570,7 +570,13 @@ footer {
 /* -- 03: PAST WORKS -- */
 
 .main-past-works {
-  background-color: var(--clr-dark-primary);
+  background-color: var(--clr-medium-primary);
+  border-top: 5px solid var(--clr-dark-accent);
+  border-bottom: 5px solid var(--clr-dark-accent);
+}
+
+.main-past-works .container-paragraph {
+  text-align: center;
 }
 
 
@@ -580,75 +586,125 @@ footer {
   background-color: var(--clr-medium-primary);
 }
 
-.main-gallery-image {
+.main-gallery a {
+  text-transform: initial;
+  line-height: initial;
+}
+
+.main-gallery .overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(4, 33, 73, .85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.text {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.main-gallery .description {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  color: white;
+}
+
+.main-gallery .skill {
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.main-gallery .container-image:hover .overlay {
+  height: 25%;
+  border-top: 1px solid #666;
+}
+
+.main-gallery .container-image {
+  position: relative;
   border: 3px solid var(--clr-bkg-panelborder);
 }
 
 .main-gallery-image.one {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-01-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.two {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-02-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-02-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.three {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-03-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-03-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.four {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-04-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-04-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.five {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-05-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-05-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.six {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-06-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-06-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.seven {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-07-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-07-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.eight {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-08-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-08-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.nine {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-09-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-09-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .main-gallery-image.ten {
-  background-image: url('../../images/portfolio/gallery/BKG-Gallery-10-min.jpg');
+  background-image: url('../images/portfolio/gallery/Gallery-10-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -662,7 +718,7 @@ footer {
 /* -- 01: ABOUT ME HERO -- */
 
 .about-hero {
-  background: url('../../images/portfolio/backgrounds/BKG-AboutMe-Hero-min.jpg');
+  background: url('../images/portfolio/backgrounds/BKG-AboutMe-Hero-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -672,10 +728,11 @@ footer {
   width: 100%;
 }
 
+
 /* -- 02: ABOUT ME 01 -- */
 
 .about-01-image {
-  background: url('../../images/portfolio/backgrounds/BKG-AboutMe-01-min.jpg');
+  background: url('../images/portfolio/backgrounds/BKG-AboutMe-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -685,13 +742,11 @@ footer {
 /* -- 03: ABOUT ME 02 -- */
 
 .about-02-image {
-  background: url('../../images/portfolio/backgrounds/BKG-AboutMe-02-min.jpg');
+  background: url('../images/portfolio/backgrounds/BKG-AboutMe-02-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 } /* Desktop/Mobile */
-
-
 
 
 /* ============================= */
@@ -701,27 +756,21 @@ footer {
 /* -- 01: SYNOPSIS HERO -- */
 
 .cs-synopsis {
-  background-image: url('../../images/foodle/backgrounds/BKG-Foodle-AppHero-min.jpg');
+  background-image: url('../images/foodle/mockups/Mockup-Foodle-AppHero-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 } /* Desktop */
 
-.cs-synopsis-image {
-  background-image: url('../../images/foodle/backgrounds/BKG-Foodle-AppHero-min.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} /* Mobile */
-
 .cs-synopsis svg {
   filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
+
 /* -- 03: OVERVIEW -- */
 
 .cs-overview {
-  background-image: url('../../images/foodle/backgrounds/BKG-Overview-01-min.jpg');
+  background-image: url('../images/foodle/backgrounds/BKG-Overview-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -731,7 +780,7 @@ footer {
 /* -- 05: IMG BAN 01 -- */
 
 .cs-section-image-01 {
-  background-image: url('../../images/foodle/backgrounds/BKG-SectionImage-01-min.png');
+  background-image: url('../images/foodle/mockups/Mockup-SectionImage-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -741,7 +790,7 @@ footer {
 /* -- 06: DESIGN PROCESS -- */
 
 .cs-design-process img {
-  /* width: 10em; */
+  width: 7em;
 }
 
 
@@ -751,6 +800,7 @@ footer {
   height: 6.25em;
   object-fit: contain;
 }
+
 
 /* -- 09: USER SURVEY -- */
 /* -- 10: USER PERSONAS -- */
@@ -768,7 +818,7 @@ footer {
 /* -- 12: USER FLOWS IMG BAN -- */
 
 .cs-user-flows-image {
-  background-image: url('../../images/foodle/diagrams/Diagram-FlowCharts-min.png');
+  background-image: url('../images/foodle/diagrams/Diagram-FlowCharts-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -778,7 +828,7 @@ footer {
 /* -- 14: CONTENT STRATEGY -- */
 
 .cs-content-strategy-image {
-  background-image: url('../../images/foodle/diagrams/Diagram-Moodboard-min.png');
+  background-image: url('../images/foodle/diagrams/Diagram-Moodboard-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -788,7 +838,7 @@ footer {
 /* -- 15: SKETCHES WIREFRAMES -- */
 
 .cs-sketches-wireframes-image {
-  background-image: url('../../images/foodle/backgrounds/BKG-Sketches-Wireframes-min.jpg');
+  background-image: url('../images/foodle/backgrounds/BKG-Sketches-Wireframes-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -798,7 +848,7 @@ footer {
 /* -- 16: USABILITY TEST 01 IMG BAN -- */
 
 .cs-usability-test-01-image {
-  background-image: url('../../images/foodle/backgrounds/BKG-UsabilityTest-01-min.jpg');
+  background-image: url('../images/foodle/backgrounds/BKG-UsabilityTest-01-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -808,7 +858,7 @@ footer {
 /* -- 18: BRAND IDENTITY IMG BAN -- */
 
 .cs-brand-identity-image {
-  background-image: url('../../images/foodle/backgrounds/BKG-BrandIdentity-min.png');
+  background-image: url('../images/foodle/backgrounds/BKG-BrandIdentity-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -818,7 +868,7 @@ footer {
 /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
 
 .cs-high-fidelity-mockup-image {
-  background-image: url('../../images/foodle/backgrounds/BKG-HighFidelityMockups-min.png');
+  background-image: url('../images/foodle/backgrounds/BKG-HighFidelityMockups-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -845,7 +895,7 @@ footer {
 /* -- 24: USABILITY TEST 02 IMG BAN -- */
 
 .cs-usability-test-02-image {
-  background-image: url('../../images/foodle/backgrounds/BKG-UsabilityTest-02-min.jpg');
+  background-image: url('../images/foodle/backgrounds/BKG-UsabilityTest-02-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -855,7 +905,7 @@ footer {
 /* -- 27: IMG BAN 02 -- */
 
 .cs-section-image-02 {
-  background-image: url('../../images/foodle/backgrounds/BKG-SectionImage-02-min.png');
+  background-image: url('../images/foodle/backgrounds/BKG-SectionImage-02-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -887,6 +937,8 @@ footer {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 img {
@@ -926,6 +978,16 @@ img {
   color: var(--clr-light-text);
 }
 
+.btn-disabled {
+  background-color: var(--clr-medium-text);
+  border: 2px solid var(--clr-btn-outline);
+}
+
+.BacktoTop img {
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+  border-radius: 50%;
+}
+
 /*
 #CaseStudyMenu {
   display: none;
@@ -941,6 +1003,8 @@ img {
   background-color: var(--clr-bkg-white);
   border: 1px solid var(--clr-bkg-panelborder);
 }
+
+
 
 
 /* ============================= */
@@ -1043,4 +1107,32 @@ nav a,
 
 .hide {
   display: none;
+}
+
+
+/* ============================= */
+/* +++++++++++++++++++++++++++++ */
+/* ++++++++++ TESTING ++++++++++ */
+/* +++++++++++++++++++++++++++++ */
+/* COMMON ====================== */
+
+.helpers {
+  position: relative;
+}
+
+.indicator {
+  z-index: 25;
+  position: fixed;
+  height: 2em;
+  width: 7em;
+  padding: .25em 0;
+  text-align: center;
+}
+
+.viewport {
+  margin-top: 3em;
+}
+
+.orientation {
+  margin-top: 5em;
 }
