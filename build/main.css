@@ -9,7 +9,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: 0.2s;
   background-color: var(--clr-dark-primary);
   border-bottom: 5px solid var(--clr-dark-accent);
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
@@ -64,15 +63,6 @@ footer {
 
 .container-image i {
   color: var(--clr-dark-primary);
-}
-
-
-/* ============================= */
-/* +++++++++++ MAIN ++++++++++++ */
-/* ============================= */
-
-main {
-  margin-top: 3.45em;
 }
 
 
@@ -298,6 +288,10 @@ main {
   background-size: cover;
 } /* Desktop/Mobile */
 
+.aboutarea-01 .container-component.two {
+  background-color: white;
+}
+
 
 /* -- 03: ABOUT ME 02 -- */
 
@@ -307,6 +301,10 @@ main {
   background-position: center;
   background-size: cover;
 } /* Desktop/Mobile */
+
+.aboutarea-02 .container-component.two {
+  background-color: white;
+}
 
 
 /* ============================= */
@@ -499,6 +497,11 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+}
+
+main {
+  margin-top: 3.45em;
+  position: relative;
 }
 
 img {
