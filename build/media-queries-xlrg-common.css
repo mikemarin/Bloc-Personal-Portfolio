@@ -14,7 +14,7 @@
   /* ============================= */
 
   header {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .nav-desktop {
@@ -40,7 +40,7 @@
   /* ============================= */
 
   footer {
-    border-top: 5px solid var(--clr-dark-accent);
+    border-top: 5px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -53,6 +53,14 @@
 
   .container-image i {
     font-size: 1.25em;
+  }
+
+  footer.mini .box-padding {
+    padding: 1em 12.5em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 12.5em;
   }
 
 
@@ -80,6 +88,64 @@
     display: none;
   }
 
+
+  /* ============================= */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* ============================= */
+
+  .contact-form .box-padding.master {
+    padding: 20em 23em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 3em 3em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 48%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form h2 {
+    font-size: 3em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
+  }
+
+
   /* ============================= */
   /* +++++++ GLOBAL STYLING ++++++ */
   /* ============================= */
@@ -89,17 +155,16 @@
   }
 
   body {
-    background: rgb(17,17,17);
-    background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(51,51,51,1) 100%);
+    background: url('../images/portfolio/backgrounds/BKG-Noise-500x500x45-min.png') repeat 0 0, linear-gradient(93deg, rgba(51,51,51,1) 0%, rgba(17,17,17,1) 40%, rgba(17,17,17,1) 60%, rgba(51,51,51,1) 100%);
   }
 
   .page-container {
     width: 1440px;
-    border: 1px solid #444;
+    border: 1px solid #333;
     position: relative;
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
   }
 
 
@@ -156,7 +221,7 @@
   }
 
   h3 {
-    font-size: 1.728em;
+    font-size: 1.5em;
   }
 
   h4 {
@@ -175,8 +240,8 @@
   }
 
   .paragraph-02 {
-    font-size: 1.44em;
-    line-height: 1.35;
+    font-size: 1.2em;
+    line-height: 1.45;
   }
 
   .paragraph-03 {
@@ -186,8 +251,8 @@
   .paragraph-04 {
     font-size: 1.2em;
     line-height: 1.35;
-  } /* Tablet */
-
+    letter-spacing: -.015em;
+  }
 
   .paragraph-05 {
     font-size: 1.2em;

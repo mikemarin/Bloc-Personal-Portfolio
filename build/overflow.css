@@ -1,4 +1,3 @@
-@charset "UTF-8"; /* CSS Document */
 
 /*  Compiled List of Media Query Styles for Portfolio Main / About Me / Case Study Pages  */
 /* Updated April 13, 2020 */
@@ -48,55 +47,7 @@
 0.579em (9.26px)
 */
 
-
-
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.main-gallery-single:hover .overlay {
-  opacity: 1;
-}
-
-
-/* Large */
-/* one button */
-text-align: center;
-margin-top: 2em;
-
-/* two buttons */
-justify-content: space-between;
-margin: 2em 10em 0 10em;
-
-/* two buttons column */
-margin: 2em 2em 0 2em;
-
-
-/* three buttons */
-justify-content: space-between;
-margin: 2em 4em 0 4em;
-
-
 =========================
-
-<span class="remove one">
-
-<span class="remove two">
-
-
 
 
 /*
@@ -122,67 +73,23 @@ z-index
   mobile-bottom 1000
  */
 
- <script>
- 			AOS.init({
- 				easing: 'ease-out-back',
- 				duration: 1000
- 			});
- 		</script>
+ :root {
+   var(--clr-light-text): #FFFFFF;
+   var(--clr-medium-text): #888888;
+   var(--clr-dark-text): #1A1A1A;
+ }
 
- <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
- 				Scroll down <br>
- 				<i class="chevron bottom"></i>
- 			</span>
-
- <a href="http://github.com/michalsnik/aos" target="_blank" class="octocat aos-init aos-animate" data-aos="zoom-out" data-aos-delay="1500">
-				<img src="img/github_octocat.png" alt="">
-			</a>
-
-
-
-
-      .page-container {
-        width: 1440px;
-      }
-
-
-      background-color:#999;
-      background-image: linear-gradient(red 2px, transparent 2px),
-      linear-gradient(90deg, red 2px, transparent 2px),
-      linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
-      background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-      background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
-
-
-
-
-
-
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-
-      .page-container-outer {
-        margin: 0 auto;
-        width: 1520px;
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: #EEE;
-      }
-
-      .page-container-inner {
-        margin: 0 auto;
-        width: 1480px;
-        padding-left: 10px;
-        padding-right: 10px;
-        xpadding: 0 20px;
-        background-color: #EEE;
-        margin-top: -3.45em;
-        xborder: 1px solid black;
-
-        xborder: 1px solid black;
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-      }
+ :root {
+   var(--clr-light-primary): #A1B0C9;
+   var(--clr-medium-primary): #2F496D;
+   var(--clr-dark-primary): #042149;
+   var(--clr-light-accent): #F9C686;
+   var(--clr-dark-accent): #D68A2A;
+   var(--clr-btn-outline): #737373;
+   var(--clr-bkg-white): #FFFFFF;
+   var(--clr-bkg-offwhite): #FAFAFA;
+   var(--clr-bkg-secborder): #E6E6E6;
+   var(--clr-bkg-panel): #F2F2F2;
+   var(--clr-bkg-panelborder): #BFBFBF;
+   var(--clr-bkg-placeholder): #70a7bf;
+ }

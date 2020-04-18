@@ -1,0 +1,304 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/* medium devices  */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+  * .mobile {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  header {
+    padding: 1em 0;
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .nav_logo {
+    top: .5em;
+    width: 3.75em;
+    height: 3.75em;
+  }
+
+  .nav-desktop {
+    text-align: right;
+  }
+
+  .nav-desktop a {
+    padding: 0 .5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  footer {
+    border-top: 5px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 3em 6em;
+  }
+
+  footer span.remove {
+    display: none;
+  }
+
+  .container-image i {
+    font-size: 1.5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: MAIN HERO -- */
+
+  .main-hero {
+    position: relative;
+  }
+
+  .main-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 2em;
+  }
+
+
+  /* -- 02: MAIN PROJECTS -- */
+
+  .main-project.one {
+    background-position: 65% 75%;
+    background-size: cover;
+  }
+
+  .main-project.two {
+    background-position: 35% 75%;
+    background-size: cover;
+  }
+
+
+  /* -- 03: PAST WORKS -- */
+
+  .main-past-works .box-padding {
+    padding: 3em 6em;
+  }
+
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .description {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .skill {
+    font-size: 1.1em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .container-image.ten {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++ PORTFOLIO: ABOUT ME ++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 01: ABOUT ME HERO -- */
+
+  .about-hero {
+    position: relative;
+  }
+
+  .about-hero .container-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++ CASE STUDY - PROJECT 01 ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  /* -- 01: SYNOPSIS HERO -- */
+
+  .cs-synopsis .button-01 {
+    margin: 0;
+  }
+
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .button-01 {
+    font-size: 1em;
+    padding: 1em 1em;
+    margin: 0 .5em;
+    width: 10em;
+  }
+
+  .BacktoTop img {
+    width: 3.5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+
+  /* ============================= */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* ============================= */
+
+  .panel-pad {
+    padding: 1.5em 1.5em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1em;
+  } /* Panel Bullets Padding*/
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 4.3em;
+  }
+
+  h2 {
+    font-size: 3.583em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.2em;
+    line-height: 1.35;
+  }
+
+  .paragraph-02 {
+    font-size: 1.2em;
+    line-height: 1.35;
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1em;
+    line-height: 1.35;
+    letter-spacing: -.015em;
+  }
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  .list-items-01 {
+    font-size: 1.1em;
+  }
+
+  .list-items-02 {
+    font-size: 1em;
+  }
+
+  .list-items-03 {
+    font-size: 1em;
+  }
+
+  li {
+    margin-bottom: .5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .orientation {
+    background-color: rgba(102, 51, 153, 0.6);
+  }
+
+} /* ##### viewport: medium ##### */

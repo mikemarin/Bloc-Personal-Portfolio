@@ -14,7 +14,7 @@
   /* ============================= */
 
   header {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .nav-desktop {
@@ -40,7 +40,7 @@
   /* ============================= */
 
   footer {
-    border-top: 5px solid var(--clr-dark-accent);
+    border-top: 5px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -55,12 +55,18 @@
     font-size: 1.25em;
   }
 
+  footer.mini .box-padding {
+    padding: 1em 12.5em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 12.5em;
+  }
+
 
   /* ============================= */
-  /* +++++++++++++++++++++++++++++ */
   /* ++++++ PORTFOLIO: MAIN ++++++ */
-  /* +++++++++++++++++++++++++++++ */
-  /* COMMON ====================== */
+  /* ============================= */
 
   /* -- 04: MAIN GALLERY -- */
 
@@ -78,6 +84,59 @@
 
   .main-gallery .container-image.ten {
     display: none;
+  }
+
+
+  /* ============================= */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* ============================= */
+
+  .contact-form .box-padding.master {
+    padding: 20em 15em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 3em 3em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 47%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
   }
 
 
@@ -134,7 +193,7 @@
   }
 
   h3 {
-    font-size: 1.728em;
+    font-size: 1.5em;
   }
 
   h4 {
@@ -153,8 +212,8 @@
   }
 
   .paragraph-02 {
-    font-size: 1.44em;
-    line-height: 1.35;
+    font-size: 1.2em;
+    line-height: 1.45;
   }
 
   .paragraph-03 {
@@ -164,8 +223,8 @@
   .paragraph-04 {
     font-size: 1.2em;
     line-height: 1.35;
-  } /* Tablet */
-
+    letter-spacing: -.015em;
+  }
 
   .paragraph-05 {
     font-size: 1.2em;
@@ -210,6 +269,8 @@
   li {
     margin-bottom: .5em;
   }
+
+
 
 
   /* ============================= */

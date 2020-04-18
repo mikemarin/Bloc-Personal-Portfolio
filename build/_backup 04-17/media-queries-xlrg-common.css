@@ -1,0 +1,246 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/* extra large devices  */
+@media (min-width: 1441px) {
+
+  * .mobile {
+    display: none;
+  }
+
+
+  /* ============================= */
+  /* ++++ HEADER / NAVIGATION ++++ */
+  /* ============================= */
+
+  header {
+    border-bottom: 5px solid var(--clr-dark-accent);
+  }
+
+  .nav-desktop {
+    text-align: right;
+    padding: 1em 0;
+  }
+
+  .nav_logo {
+    top: 1.5em;
+    margin-left: 1em;
+    width: 80px;
+    height: 80px;
+  }
+
+  nav a {
+    padding: 0 .7em;
+    font-size: 1.2em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++ FOOTER ++++++++++ */
+  /* ============================= */
+
+  footer {
+    border-top: 5px solid var(--clr-dark-accent);
+  }
+
+  footer .box-padding {
+    padding: 5em 12.5em;
+  }
+
+  footer span.remove {
+    display: none;
+  }
+
+  .container-image i {
+    font-size: 1.25em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++ PORTFOLIO: MAIN ++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  /* -- 04: MAIN GALLERY -- */
+
+  .main-gallery .description {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .skill {
+    font-size: 1.1em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .main-gallery .container-image.ten {
+    display: none;
+  }
+
+  /* ============================= */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* ============================= */
+
+  header {
+    width: 1438px;
+  }
+
+  body {
+    background: url('../images/portfolio/backgrounds/BKG-Noise-500x500x45-min.png') repeat 0 0, linear-gradient(93deg, rgba(51,51,51,1) 0%, rgba(17,17,17,1) 40%, rgba(17,17,17,1) 60%, rgba(51,51,51,1) 100%);
+  }
+
+  .page-container {
+    width: 1440px;
+    border: 1px solid #333;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+  }
+
+
+  /* ============================= */
+  /* + BUTTON PADDING & STYLING ++ */
+  /* ============================= */
+
+  .button-01 {
+    font-size: 1.2em;
+    padding: 1em 1em;
+    margin: 0 .5em;
+    width: 10em;
+  }
+
+  .BacktoTop img {
+    width: 3.5em;
+  }
+
+  #BacktoTop {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    z-index: 15;
+    opacity: 0.8;
+  }
+
+
+  /* ============================= */
+  /* ++ PANEL PADDING & STYLING ++ */
+  /* ============================= */
+
+  .panel-pad {
+    padding: 2em 2em;
+  }
+
+  .panel-bullets {
+    padding: 0 1em 0 1em;
+  } /* Panel Bullets Padding*/
+
+
+  /* ============================= */
+  /* +++++++ GLOBAL STYLING ++++++ */
+  /* ============================= */
+
+  /* -- TYPOGRAPHY -- */
+
+  h1 {
+    font-size: 4.7em;
+  }
+
+  h2 {
+    font-size: 3.583em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 2.074em;
+  }
+
+  /* ======== */
+
+  .paragraph-01 {
+    font-size: 1.44em;
+    line-height: 1.35;
+  }
+
+  .paragraph-02 {
+    font-size: 1.2em;
+    line-height: 1.45;
+  }
+
+  .paragraph-03 {
+    font-size: 1em;
+  }
+
+  .paragraph-04 {
+    font-size: 1.2em;
+    line-height: 1.35;
+    letter-spacing: -.015em;
+  }
+
+  .paragraph-05 {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  .process span.divider-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .process span.divider-hide {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  /* ======== */
+
+  a {
+    font-size: 1.2em;
+  }
+
+  .list-items-01 {
+    font-size: 1.2em;
+  }
+
+  .list-items-02 {
+    font-size: 1.2em;
+  }
+
+  .list-items-03 {
+    font-size: 1.2em;
+  }
+
+  li {
+    margin-bottom: .5em;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++++ TESTING ++++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* COMMON ====================== */
+
+  .orientation {
+    background-color: rgba(165, 42, 42, 0.6);
+  }
+
+} /* #### viewport: extra large #### */

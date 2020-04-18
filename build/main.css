@@ -6,12 +6,12 @@
 /* ============================= */
 
 header {
+  background-color: #042149;
+  border-bottom: 5px solid #D68A2A;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.35);
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--clr-dark-primary);
-  border-bottom: 5px solid var(--clr-dark-accent);
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
   z-index: 30;
 }
 
@@ -29,11 +29,11 @@ header .box-padding {
 }
 
 nav a:hover {
-  color: var(--clr-medium-text);
+  color: #888888;
 }
 
 nav a:active {
-  color: var(--clr-light-accent);
+  color: #F9C686;
 }
 
 
@@ -42,27 +42,27 @@ nav a:active {
 /* ============================= */
 
 footer {
-  background-color: var(--clr-dark-primary);
+  background-color: #042149;
 }
 
 .icon-circle {
-  width: 3.2em;
+  background-color: #D68A2A;
+  border-radius: 50%;
   height: 3.2em;
   margin: 0 .5em;
-  border-radius: 50%;
-  background-color: var(--clr-dark-accent);
+  width: 3.2em;
 }
 
 .icon-circle:hover {
-  background-color: var(--clr-light-accent);
+  background-color: #F9C686;
 }
 
 .icon-circle:active {
-  background-color: var(--clr-medium-text);
+  background-color: #888888;
 }
 
 .container-image i {
-  color: var(--clr-dark-primary);
+  color: #042149;
 }
 
 
@@ -74,10 +74,10 @@ footer {
 
 .main-hero {
   background-image: url('../images/portfolio/backgrounds/BKG-Gipetto-Hero-min.jpg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 5px solid var(--clr-dark-accent);
+  border-bottom: 5px solid #D68A2A;
 } /* Desktop/Mobile */
 
 .main-hero {
@@ -88,31 +88,31 @@ footer {
 /* -- 02: MAIN PROJECTS -- */
 
 .main-projects {
-  background-color: var(--clr-bkg-offwhite);
+  background-color: #FAFAFA;
 }
 
 .main-project {
-  border: 1px solid var(--clr-bkg-panelborder);
+  border: 1px solid #BFBFBF;
 } /* Section Padding Default */
 
 .main-project.one {
   background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../images/portfolio/mockups/Mockup-Project-01-min.jpg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 } /* Desktop */
 
 .main-project.two {
   background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../images/portfolio/mockups/Mockup-Project-02-min.jpg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 } /* Desktop */
 
 .main-project.three {
   background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.6) 100%), url('../images/portfolio/mockups/Mockup-Project-03-min.jpg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 } /* Desktop */
 
@@ -120,9 +120,9 @@ footer {
 /* -- 03: PAST WORKS -- */
 
 .main-past-works {
-  background-color: var(--clr-medium-primary);
-  border-top: 5px solid var(--clr-dark-accent);
-  border-bottom: 5px solid var(--clr-dark-accent);
+  background-color: #2F496D;
+  border-top: 5px solid #D68A2A;
+  border-bottom: 5px solid #D68A2A;
 }
 
 .main-past-works .container-paragraph {
@@ -133,26 +133,26 @@ footer {
 /* -- 04: MAIN GALLERY -- */
 
 .main-gallery {
-  background-color: var(--clr-medium-primary);
+  background-color: #2F496D;
 }
 
 .main-gallery a {
-  text-transform: initial;
   line-height: initial;
+  text-transform: initial;
 }
 
 .main-gallery .overlay {
-  position: absolute;
-  display: flex;
   align-items: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: rgba(4, 33, 73, .85);
-  overflow: hidden;
-  width: 100%;
+  bottom: 0;
+  display: flex;
   height: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
   transition: .3s ease;
+  width: 100%;
 }
 
 .text {
@@ -165,7 +165,7 @@ footer {
 }
 
 .main-gallery .description {
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 900;
   text-transform: uppercase;
@@ -187,7 +187,7 @@ footer {
 
 .main-gallery .container-image {
   position: relative;
-  border: 3px solid var(--clr-bkg-panelborder);
+  border: 3px solid #BFBFBF;
 }
 
 .main-gallery-image.one {
@@ -308,6 +308,43 @@ footer {
 
 
 /* ============================= */
+/* ++++++++ CONTACT ME +++++++++ */
+/* ============================= */
+
+.contact-form .panel-heading h2,
+.contact-form .panel-paragraph p,
+.contact-form .panel-component span {
+  color: white;
+}
+
+.contact-form .label-heading {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+button {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 0;
+}
+
+.contact-form {
+  background-image: url('../images/portfolio/backgrounds/BKG-ContactMe-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/* ============================= */
 /* ++ CASE STUDY - PROJECT 01 ++ */
 /* ============================= */
 
@@ -328,7 +365,7 @@ footer {
 /* -- 03: OVERVIEW -- */
 
 .cs-overview {
-  background-image: url('../images/foodle/backgrounds/BKG-Overview-01-min.jpg');
+  background-image: url('../images/foodle/backgrounds/BKG-Overview-01x70-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -346,12 +383,6 @@ footer {
 
 
 /* -- 06: DESIGN PROCESS -- */
-
-.cs-design-process img {
-  width: 7em;
-}
-
-
 /* -- 08: COMPETITIVE ANALYSIS -- */
 
 .cs-competitive-analysis img {
@@ -364,7 +395,7 @@ footer {
 /* -- 10: USER PERSONAS -- */
 
 .cs-user-personas .persona-name {
-  background-color: var(--clr-dark-accent);
+  background-color: #D68A2A;
 }
 
 .cs-user-personas h5 {
@@ -441,11 +472,11 @@ footer {
 }
 
 .cs-preference-testing img {
-  border: 1px solid var(--clr-bkg-panelborder);
+  border: 1px solid #BFBFBF;
 }
 
 .cs-preference-testing .panel-results {
-  background-color: var(--clr-dark-primary);
+  background-color: #042149;
   padding: .5em;
 }
 
@@ -474,21 +505,6 @@ footer {
 /* +++++++ GLOBAL STYLING ++++++ */
 /* ============================= */
 
-:root {
-  --clr-light-primary: #A1B0C9;
-  --clr-medium-primary: #2F496D;
-  --clr-dark-primary: #042149;
-  --clr-light-accent: #F9C686;
-  --clr-dark-accent: #D68A2A;
-  --clr-btn-outline: #737373;
-  --clr-bkg-white: #FFFFFF;
-  --clr-bkg-offwhite: #FAFAFA;
-  --clr-bkg-secborder: #E6E6E6;
-  --clr-bkg-panel: #F2F2F2;
-  --clr-bkg-panelborder: #BFBFBF;
-  --clr-bkg-placeholder: #70a7bf;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -496,12 +512,16 @@ footer {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
 }
 
 main {
   margin-top: 3.45em;
   position: relative;
+}
+
+body {
+  background: url('../images/portfolio/backgrounds/BKG-Noise-500x500x45-min.png') repeat 0 0, linear-gradient(93deg, rgba(51,51,51,1) 0%, rgba(17,17,17,1) 40%, rgba(17,17,17,1) 60%, rgba(51,51,51,1) 100%);
 }
 
 img {
@@ -518,8 +538,8 @@ img {
 .wrapper, .wrapper-padding, .box-padding {
   margin: 0 auto;
   /* border: 1px solid DeepPink; */
-  /* border: 1px solid Beige; */
-  /* background-color: rgba(255, 133, 0, .25); */
+  border: 1px solid Beige;
+  background-color: rgba(255, 133, 0, .25);
   /* background-color: rgba(255, 202, 139, .15); */
   /* background-color: rgba(255, 0, 0, .15); */
   /* background-color: rgba(0, 0, 255, .15); */
@@ -535,19 +555,19 @@ img {
   display: block;
   text-align: center;
   line-height: 1;
-  background-color: var(--clr-dark-accent);
-  border: 2px solid var(--clr-btn-outline);
+  background-color: #D68A2A;
+  border: 2px solid #737373;
   border-radius: .75em;
-  color: var(--clr-light-text);
+  color: #FFFFFF;
 }
 
 .btn-disabled {
-  background-color: var(--clr-medium-text);
-  border: 2px solid var(--clr-btn-outline);
+  background-color: #888888;
+  border: 2px solid #737373;
 }
 
 .BacktoTop img {
-  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.35);
   border-radius: 50%;
 }
 
@@ -563,11 +583,9 @@ img {
 */
 
 .image-border {
-  background-color: var(--clr-bkg-white);
-  border: 1px solid var(--clr-bkg-panelborder);
+  background-color: #FFFFFF;
+  border: 1px solid #BFBFBF;
 }
-
-
 
 
 /* ============================= */
@@ -575,13 +593,13 @@ img {
 /* ============================= */
 
 .panel-case {
-  background-color: var(--clr-bkg-panel);
-  border: 1px solid var(--clr-bkg-panelborder);
+  background-color: #F2F2F2;
+  border: 1px solid #BFBFBF;
 } /* Panel Case-Study Styling */
 
 .panel-main {
   background-color: rgba(4, 33, 73, .75);
-  border: 1px solid var(--clr-bkg-panelborder);
+  border: 1px solid #BFBFBF;
 } /* Panel Case-Study Styling */
 
 
@@ -592,7 +610,7 @@ img {
 .section-divider {
   text-align: center;
   padding: .75em 0;
-  background-color: var(--clr-medium-primary);
+  background-color: #2F496D;
 }
 
 
@@ -601,17 +619,17 @@ img {
 /* ============================= */
 
 section.cs-specification, section.cs-problem-solution, section.cs-project-brief, section.cs-user-survey, section.cs-user-stories, section.cs-content-strategy, section.cs-usability-test-01, section.cs-style-guide, section.cs-preference-testing, section.cs-developer-handoff {
-  background-color: var(--clr-bkg-white);
-  border: 1px solid var(--clr-bkg-secborder);
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
 } /* White BKG / Grey Outline */
 
 section.cs-design-process, section.cs-competitive-analysis, section.cs-user-personas, section.cs-user-flows, section.cs-sketches-wireframes, section.cs-brand-identity, section.cs-high-fidelity-mockup, section.cs-usability-test-02, section.cs-conclusion {
-  background-color: var(--clr-bkg-offwhite);
-  border: 1px solid var(--clr-bkg-secborder);
+  background-color: #FAFAFA;
+  border: 1px solid #E6E6E6;
 } /* Off-White BKG / Grey Outline */
 
 .cs-section-image-01, .cs-user-flows-image, .cs-content-strategy-image, .cs-sketches-wireframes-image, .cs-usability-test-01-image, .cs-brand-identity-image, .cs-high-fidelity-mockup-image, .cs-usability-test-02-image, .cs-section-image-02 {
-  border: 1px solid var(--clr-bkg-secborder);
+  border: 1px solid #E6E6E6;
 } /* BORDER ON BANNER IMAGES */
 
 nav a,
@@ -619,7 +637,7 @@ nav a,
 .main-projects h2, .main-projects p,
 .main-past-works h1, .main-past-works p,
 .main-gallery a, .about-hero h1, .about-hero p, footer h1, footer p {
-  color: var(--clr-light-text);
+  color: #FFFFFF;
 }
 
 
@@ -670,6 +688,10 @@ nav a,
 
 .hide {
   display: none;
+}
+
+.focus {
+  display: block;
 }
 
 

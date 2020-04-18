@@ -2,11 +2,10 @@
 
 
 /*  Compiled List of Media Query Styles for Portfolio Main / About Me / Case Study Pages  */
-/* Updated April 13, 2020 */
+/* Updated April 18, 2020 */
 
 /* ##### MOBILE VIEWPORTS ##### */
 
-/* small devices  */
 @media (min-width: 300px) and (max-width: 667px) {
 
   * .desktop {
@@ -27,13 +26,13 @@
 
   .mobile-menu h2 {
     font-size: 2em;
-    color: var(--clr-light-text);
+    color: #FFFFFF;
     margin-bottom: .5em;
   }
 
   .mobile-menu h2.disabled {
     color: #888;
-    text-shadow: 0px 1px 1px #1A1A1A;
+    text-shadow: 0 1px 1px #1A1A1A;
   }
 
   .modal {
@@ -70,7 +69,7 @@
 
   header {
     padding: .75em 0;
-    border-bottom: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid #D68A2A;
   }
 
   .nav_logo {
@@ -87,7 +86,7 @@
   /* COMMON ====================== */
 
   footer {
-    border-top: 3px solid var(--clr-dark-accent);
+    border-top: 3px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -96,6 +95,14 @@
 
   .container-image i {
     font-size: 1em;
+  }
+
+  footer.mini .box-padding {
+    padding: 1em 1em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 1em;
   }
 
 
@@ -108,7 +115,7 @@
   /* -- 01: MAIN HERO -- */
 
   .main-hero {
-    border-bottom: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid #D68A2A;
   }
 
   .main-hero img {
@@ -119,7 +126,7 @@
   /* -- 02: MAIN PROJECTS -- */
 
   .main-projects {
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
   .main-projects .panel-component.one .panel-image.one {
@@ -151,7 +158,7 @@
   }
 
   .main-past-works {
-    border-bottom: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid #D68A2A;
   }
 
 
@@ -172,7 +179,7 @@
   }
 
   .main-gallery-image {
-    border: 2px solid var(--clr-bkg-panelborder);
+    border: 2px solid #BFBFBF;
   }
 
   .main-gallery .description {
@@ -197,7 +204,7 @@
   /* -- 01: ABOUT ME HERO -- */
 
   .about-hero {
-    border-bottom: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid #D68A2A;
   }
 
   .about-hero img {
@@ -231,7 +238,7 @@
 
   .cs-synopsis .line-divider {
     padding: 1em 0;
-    border-bottom: 1px solid var(--clr-dark-text);
+    border-bottom: 1px solid #1A1A1A;
   }
 
   .cs-synopsis-image {
@@ -314,7 +321,7 @@
   } /* Panel Bullets Padding */
 
   .panel-main {
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
     border: none;
   } /* Panel Case-Study Styling */
 
@@ -464,7 +471,7 @@
     z-index: 1000;
     position: fixed;
     height: 39px;
-    top: 0px;
+    top: 0;
   }
 
   .mobile-bottom {
@@ -487,8 +494,6 @@
 
 }
 
-
-/* small devices  */
 @media (min-width: 300px) and (max-width: 667px) and (orientation: portrait) {
 
   /* ============================= */
@@ -583,10 +588,6 @@
     height: 50vh;
   }
 
-  .aboutarea-01 {
-    border-bottom: 3px solid var(--clr-dark-accent);
-  }
-
 
   /* -- 03: ABOUT ME 02 -- */
 
@@ -605,6 +606,59 @@
   .aboutarea-02 .container-component.one {
     order: 1;
   }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT =================== */
+
+  .contact-form .box-padding.master {
+    padding: 2em 1em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 2em 2em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 100%;
+    border: 1px solid green;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 1em;
+  }
+
+  .contact-form .panel-button {
+    margin-top: 2em;
+  }
+
+  .contact-form .container-paragraph {
+    margin-bottom: 1em;
+  }
+
 
 
   /* ============================= */
@@ -771,8 +825,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
   }
 
   .cs-competitive-analysis .panel-component {
@@ -816,10 +870,6 @@
 
   .cs-user-personas .panel-component {
     margin-bottom: 1em;
-  }
-
-  .cs-user-personas .panel-component:last-child {
-    margin-bottom: 0;
   }
 
   .cs-user-personas .persona-name {
@@ -988,9 +1038,13 @@
     padding: 3em 2em;
   }
 
+  .cs-preference-testing .panel-results.one {
+    display: none;
+  }
+
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
   .cs-preference-testing .container-button {
@@ -1005,6 +1059,10 @@
 
   .cs-preference-testing .panel-system {
     margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
   }
 
   .cs-preference-testing .panel-paragraph {
@@ -1089,8 +1147,6 @@
 
 }
 
-
-/* small devices  */
 @media (min-width: 300px) and (max-width: 667px) and (orientation: landscape) {
 
   /* ============================= */
@@ -1171,7 +1227,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    border-bottom: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid #D68A2A;
   }
 
   .main-projects .panel-component.one,
@@ -1278,10 +1334,6 @@
     height: 100%;
   }
 
-  .aboutarea-01 {
-    border-bottom: 3px solid var(--clr-dark-accent);
-  }
-
 
   /* -- 03: ABOUT ME 02 -- */
 
@@ -1313,6 +1365,61 @@
 
   .aboutarea-02 .about-02-image {
     height: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  .contact-form .box-padding.master {
+    padding: 1em 1em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 2em 2em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 47%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
   }
 
 
@@ -1502,8 +1609,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
   }
 
   .cs-competitive-analysis .panel-heading {
@@ -1556,9 +1663,14 @@
   }
 
   .cs-user-personas .panel-component-group.one,
-  .cs-user-personas .panel-component-group.two {
+  .cs-user-personas .panel-component-group.two,
+  .cs-user-personas .panel-component-group.three {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component-group.three {
+    margin-bottom: 1em;
   }
 
   .cs-user-personas .panel-component.one {
@@ -1585,8 +1697,13 @@
   }
 
   .cs-user-personas .panel-component.five {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.six {
     flex-basis: 50%;
-    padding-left: 1em;
+    padding-right: 1em;
     margin-bottom: 0;
   }
 
@@ -1803,42 +1920,36 @@
     padding: 3em 2em;
   }
 
-  .cs-preference-testing .panel-component-group {
+  .cs-preference-testing .panel-results.one {
+    display: none;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1em;
+    align-items: center;
   }
 
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
-    flex-basis: 50%;
-  }
-
+  .cs-preference-testing .panel-component.two,
   .cs-preference-testing .panel-component.three {
-    padding-right: .75em;
+    flex-basis: 49%;
   }
 
-  .cs-preference-testing .panel-component.four {
-    padding-left: .75em;
+  .cs-preference-testing .panel-results.two {
+    flex-basis: 100%;
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .panel-paragraph {
+    margin-bottom: 2em;
   }
 
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
-  .cs-preference-testing .panel-component.two {
-    margin-bottom: 2em;
-  }
-
-  .cs-preference-testing .panel-system {
-    margin-bottom: 2em;
-  }
-
-  .cs-preference-testing .panel-system:last-child {
-    margin-bottom: 0;
-  }
 
   .cs-preference-testing .container-button-group {
     display: flex;
@@ -1850,8 +1961,12 @@
     padding: 0 .5em;
   }
 
-  .cs-preference-testing .panel-paragraph {
+  .cs-preference-testing .panel-system {
     margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
   }
 
 
@@ -1961,13 +2076,10 @@
     display: none;
   }
 
-
 }
-
 
 /* ##### TABLET VIEWPORTS ##### */
 
-/* medium devices  */
 @media (min-width: 668px) and (max-width: 1024px) {
 
   * .mobile {
@@ -1983,7 +2095,7 @@
 
   header {
     padding: 1em 0;
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .nav_logo {
@@ -2008,7 +2120,7 @@
   /* COMMON ====================== */
 
   footer {
-    border-top: 5px solid var(--clr-dark-accent);
+    border-top: 5px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -2021,6 +2133,14 @@
 
   .container-image i {
     font-size: 1.5em;
+  }
+
+  footer.mini .box-padding {
+    padding: 1em 5em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 5em;
   }
 
 
@@ -2105,6 +2225,8 @@
     right: 0;
     bottom: 2em;
   }
+
+
 
 
   /* ============================= */
@@ -2208,7 +2330,8 @@
   .paragraph-04 {
     font-size: 1em;
     line-height: 1.35;
-  } /* Tablet */
+    letter-spacing: -.015em;
+  }
 
   .paragraph-05 {
     font-size: 1.2em;
@@ -2268,7 +2391,6 @@
 
 } /* ##### viewport: medium ##### */
 
-/* medium devices  */
 @media (min-width: 668px) and (max-width: 1024px) and (orientation: portrait) {
 
   /* ============================= */
@@ -2280,7 +2402,7 @@
   /* -- 01: MAIN HERO -- */
 
   .main-hero {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .main-hero img {
@@ -2374,7 +2496,7 @@
   /* -- 01: ABOUT ME HERO -- */
 
   .about-hero {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .about-hero img {
@@ -2423,10 +2545,6 @@
     height: 100%;
   }
 
-  .aboutarea-01 {
-    border-bottom: 5px solid var(--clr-dark-accent);
-  }
-
 
   /* -- 03: ABOUT ME 02 -- */
 
@@ -2458,6 +2576,61 @@
 
   .aboutarea-02 .about-02-image {
     height: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* PORTRAIT ==================== */
+
+  .contact-form .box-padding.master {
+    padding: 12em 2em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 3em 3em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 47%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
   }
 
 
@@ -2650,8 +2823,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
     text-align: center;
   }
 
@@ -2684,7 +2857,7 @@
 
   .cs-user-survey .panel-system {
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2em;
   }
@@ -2723,9 +2896,14 @@
   }
 
   .cs-user-personas .panel-component-group.one,
-  .cs-user-personas .panel-component-group.two {
+  .cs-user-personas .panel-component-group.two,
+  .cs-user-personas .panel-component-group.three {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component-group.three {
+    margin-bottom: 1em;
   }
 
   .cs-user-personas .panel-component.one {
@@ -2752,8 +2930,12 @@
   }
 
   .cs-user-personas .panel-component.five {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.six {
     flex-basis: 50%;
-    padding-left: 1em;
     margin-bottom: 0;
   }
 
@@ -2946,15 +3128,14 @@
     padding: 3em 2em;
   }
 
-  .cs-preference-testing .panel-component-group.one {
+  .cs-preference-testing .container-button-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 2em;
   }
 
-  .cs-preference-testing .panel-component.one,
-  .cs-preference-testing .panel-component.two {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-results.one {
+    display: none;
   }
 
   .cs-preference-testing .panel-component-group.two {
@@ -2963,18 +3144,23 @@
     justify-content: space-between;
   }
 
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
+  .cs-preference-testing .panel-component.two,
+  .cs-preference-testing .panel-component.three {
     flex-basis: 48.5%;
+  }
+
+  .cs-preference-testing .panel-results.two {
+    flex-basis: 100%;
+    margin-top: 1em;
   }
 
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
-  .cs-preference-testing .panel-component.five {
-    margin-top: 1em;
+  .cs-preference-testing .panel-component-group.one {
+    margin-bottom: 1em;
   }
 
   .cs-preference-testing .panel-system {
@@ -2990,12 +3176,6 @@
 
   .cs-usability-test-02-image {
     height: 40vh;
-  }
-
-  .cs-preference-testing .container-button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
   }
 
 
@@ -3091,7 +3271,6 @@
 
 } /* #### portrait #### */
 
-/* medium devices  */
 @media (min-width: 668px) and (max-width: 1024px) and (orientation: landscape) {
 
   /* ============================= */
@@ -3103,7 +3282,7 @@
   /* -- 01: MAIN HERO -- */
 
   .main-hero {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .main-hero img {
@@ -3207,7 +3386,7 @@
   /* -- 01: ABOUT ME HERO -- */
 
   .about-hero {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .about-hero img {
@@ -3267,11 +3446,6 @@
     height: 100%;
   }
 
-  .aboutarea-01 {
-    border-bottom: 5px solid var(--clr-dark-accent);
-  }
-
-
   /* -- 03: ABOUT ME 02 -- */
 
   .aboutarea-02 .box-padding {
@@ -3302,6 +3476,61 @@
 
   .aboutarea-02 .about-02-image {
     height: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE ==================== */
+
+  .contact-form .box-padding.master {
+    padding: 4em 10em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 3em 3em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 47%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
   }
 
 
@@ -3503,8 +3732,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
     text-align: center;
   }
 
@@ -3538,7 +3767,7 @@
 
   .cs-user-survey .panel-system {
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 2em;
   }
@@ -3577,9 +3806,14 @@
   }
 
   .cs-user-personas .panel-component-group.one,
-  .cs-user-personas .panel-component-group.two {
+  .cs-user-personas .panel-component-group.two,
+  .cs-user-personas .panel-component-group.three {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component-group.three {
+    margin-bottom: 1em;
   }
 
   .cs-user-personas .panel-component.one {
@@ -3606,8 +3840,12 @@
   }
 
   .cs-user-personas .panel-component.five {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.six {
     flex-basis: 50%;
-    padding-left: 1em;
     margin-bottom: 0;
   }
 
@@ -3616,6 +3854,7 @@
     justify-content: center;
     margin-top: 2em;
   }
+
 
   /* -- 11: USER STORIES -- */
 
@@ -3832,34 +4071,40 @@
     padding: 3em 4em;
   }
 
-  .cs-preference-testing .panel-component-group.one {
+  .cs-preference-testing .panel-component-group.master {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .cs-preference-testing .panel-component.one,
-  .cs-preference-testing .panel-component.two {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-results.two {
+    display: none;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    flex-basis: 36%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    flex-basis: 60%;
   }
 
   .cs-preference-testing .panel-component-group.two {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-component.two,
+  .cs-preference-testing .panel-component.three {
+    flex-basis: 49%;
   }
 
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
-  .cs-preference-testing .panel-component.five {
+  .cs-preference-testing .panel-results.one {
     margin-top: 1em;
   }
 
@@ -3977,10 +4222,8 @@
 
 } /* #### landscape #### */
 
-
 /* ##### DESKTOP VIEWPORTS ##### */
 
-/* large devices  */
 @media (min-width: 1025px) and (max-width: 1440px) {
 
   * .mobile {
@@ -3993,7 +4236,7 @@
   /* ============================= */
 
   header {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .nav-desktop {
@@ -4019,7 +4262,7 @@
   /* ============================= */
 
   footer {
-    border-top: 5px solid var(--clr-dark-accent);
+    border-top: 5px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -4034,12 +4277,18 @@
     font-size: 1.25em;
   }
 
+  footer.mini .box-padding {
+    padding: 1em 12.5em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 12.5em;
+  }
+
 
   /* ============================= */
-  /* +++++++++++++++++++++++++++++ */
   /* ++++++ PORTFOLIO: MAIN ++++++ */
-  /* +++++++++++++++++++++++++++++ */
-  /* COMMON ====================== */
+  /* ============================= */
 
   /* -- 04: MAIN GALLERY -- */
 
@@ -4057,6 +4306,59 @@
 
   .main-gallery .container-image.ten {
     display: none;
+  }
+
+
+  /* ============================= */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* ============================= */
+
+  .contact-form .box-padding.master {
+    padding: 20em 15em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 3em 3em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 47%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
   }
 
 
@@ -4113,7 +4415,7 @@
   }
 
   h3 {
-    font-size: 1.728em;
+    font-size: 1.5em;
   }
 
   h4 {
@@ -4132,8 +4434,8 @@
   }
 
   .paragraph-02 {
-    font-size: 1.44em;
-    line-height: 1.35;
+    font-size: 1.2em;
+    line-height: 1.45;
   }
 
   .paragraph-03 {
@@ -4143,8 +4445,8 @@
   .paragraph-04 {
     font-size: 1.2em;
     line-height: 1.35;
-  } /* Tablet */
-
+    letter-spacing: -.015em;
+  }
 
   .paragraph-05 {
     font-size: 1.2em;
@@ -4191,6 +4493,8 @@
   }
 
 
+
+
   /* ============================= */
   /* +++++++++++++++++++++++++++++ */
   /* ++++++++++ TESTING ++++++++++ */
@@ -4203,7 +4507,6 @@
 
 } /* #### viewport: large #### */
 
-/* large devices  */
 @media (min-width: 1025px) and (max-width: 1440px) {
 
   /* ============================= */
@@ -4214,11 +4517,11 @@
 
   .main-hero {
     position: relative;
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .main-hero img {
-    height: 3em;
+    height: 2.75em;
   }
 
   .main-hero .box-padding {
@@ -4342,11 +4645,11 @@
 
   .about-hero {
     position: relative;
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .about-hero img {
-    height: 3em;
+    height: 2.75em;
   }
 
   .about-hero .box-padding {
@@ -4379,7 +4682,7 @@
   /* -- 01: ABOUT ME 01 -- */
 
   .aboutarea-01 .box-padding {
-    padding: 3em 3em;
+    padding: 4em 4em;
   }
 
   .aboutarea-01 .container-system {
@@ -4394,8 +4697,6 @@
 
   .aboutarea-01 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-01 .about-01-image {
@@ -4406,7 +4707,7 @@
   /* -- 02: ABOUT ME 02 -- */
 
   .aboutarea-02 .box-padding {
-    padding: 3em 3em;
+    padding: 4em 4em;
   }
 
   .aboutarea-02 .container-system {
@@ -4429,8 +4730,6 @@
 
   .aboutarea-02 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-02 .about-02-image {
@@ -4538,7 +4837,7 @@
   /* -- 05: IMG BAN 01 -- */
 
   .cs-section-image-01 {
-   height: 40vh;
+   height: 45vh;
   }
 
 
@@ -4546,6 +4845,11 @@
 
   .cs-design-process .box-padding {
     padding: 4em 4em;
+  }
+
+  .cs-design-process .container-paragraph.one {
+    padding: 0 15em;
+    text-align: center;
   }
 
   .cs-design-process .panel-image {
@@ -4565,7 +4869,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: .5em;
+    margin-bottom: 1.25em;
   }
 
   .cs-design-process .panel-system-group {
@@ -4638,8 +4942,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
     text-align: center;
   }
 
@@ -4672,7 +4976,7 @@
 
   .cs-user-survey .panel-system {
    display: flex;
-   flex-wrap: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    margin-bottom: 2em;
   }
@@ -4702,7 +5006,7 @@
   /* -- 10: USER PERSONAS -- */
 
   .cs-user-personas .box-padding {
-    padding: 4em 10em;
+    padding: 4em 8em;
   }
 
   .cs-user-personas .panel-system-group {
@@ -4716,7 +5020,7 @@
   }
 
   .cs-user-personas .panel-case {
-    padding: 4em 4em;
+    padding: 3.75em 3.75em;
   }
 
   .cs-user-personas .container-button-group {
@@ -4734,9 +5038,6 @@
     margin-bottom: 1em;
   }
 
-  .cs-user-personas .panel-component:last-child {
-    margin-bottom: 0;
-  }
 
   /* -- 11: USER STORIES -- */
 
@@ -4765,7 +5066,7 @@
   /* -- 12: USER FLOWS IMG BAN -- */
 
   .cs-user-flows-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -4866,7 +5167,7 @@
   /* -- 16: USABILITY TEST 01 IMG BAN -- */
 
   .cs-usability-test-01-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -4887,7 +5188,7 @@
   /* -- 18: BRAND IDENTITY IMG BAN -- */
 
   .cs-brand-identity-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -4932,7 +5233,7 @@
   /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
 
   .cs-high-fidelity-mockup-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -4955,34 +5256,40 @@
     padding: 4em 10em;
   }
 
-  .cs-preference-testing .panel-component-group.one {
+  .cs-preference-testing .panel-component-group.master {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .cs-preference-testing .panel-component.one,
-  .cs-preference-testing .panel-component.two {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-results.two {
+    display: none;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    flex-basis: 36%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    flex-basis: 60%;
   }
 
   .cs-preference-testing .panel-component-group.two {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-component.two,
+  .cs-preference-testing .panel-component.three {
+    flex-basis: 49%;
   }
 
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
-  .cs-preference-testing .panel-component.five {
+  .cs-preference-testing .panel-results.one {
     margin-top: 1em;
   }
 
@@ -5004,7 +5311,7 @@
   /* -- 24: USABILITY TEST 02 IMG BAN -- */
 
   .cs-usability-test-02-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -5057,7 +5364,7 @@
   /* -- 27: IMG BAN 02 -- */
 
   .cs-section-image-02 {
-    height: 20vh;
+    height: 25vh;
   }
 
 
@@ -5071,7 +5378,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 5em 4em 5em;
+    margin: 0 0 4em 0;
   }
 
   .cs-conclusion .panel-system {
@@ -5105,10 +5412,8 @@
 
 } /* #### viewport: large #### */
 
-
 /* ##### X-LARGE DESKTOP VIEWPORTS ##### */
 
-/* extra large devices  */
 @media (min-width: 1441px) {
 
   * .mobile {
@@ -5121,7 +5426,7 @@
   /* ============================= */
 
   header {
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .nav-desktop {
@@ -5147,7 +5452,7 @@
   /* ============================= */
 
   footer {
-    border-top: 5px solid var(--clr-dark-accent);
+    border-top: 5px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -5160,6 +5465,14 @@
 
   .container-image i {
     font-size: 1.25em;
+  }
+
+  footer.mini .box-padding {
+    padding: 1em 12.5em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 12.5em;
   }
 
 
@@ -5187,6 +5500,64 @@
     display: none;
   }
 
+
+  /* ============================= */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* ============================= */
+
+  .contact-form .box-padding.master {
+    padding: 20em 23em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 3em 3em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 48%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form h2 {
+    font-size: 3em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
+  }
+
+
   /* ============================= */
   /* +++++++ GLOBAL STYLING ++++++ */
   /* ============================= */
@@ -5196,17 +5567,16 @@
   }
 
   body {
-    background: rgb(17,17,17);
-    background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(51,51,51,1) 100%);
+    background: url('../images/portfolio/backgrounds/BKG-Noise-500x500x45-min.png') repeat 0 0, linear-gradient(93deg, rgba(51,51,51,1) 0%, rgba(17,17,17,1) 40%, rgba(17,17,17,1) 60%, rgba(51,51,51,1) 100%);
   }
 
   .page-container {
     width: 1440px;
-    border: 1px solid #444;
+    border: 1px solid #333;
     position: relative;
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
   }
 
 
@@ -5263,7 +5633,7 @@
   }
 
   h3 {
-    font-size: 1.728em;
+    font-size: 1.5em;
   }
 
   h4 {
@@ -5282,8 +5652,8 @@
   }
 
   .paragraph-02 {
-    font-size: 1.44em;
-    line-height: 1.35;
+    font-size: 1.2em;
+    line-height: 1.45;
   }
 
   .paragraph-03 {
@@ -5293,8 +5663,8 @@
   .paragraph-04 {
     font-size: 1.2em;
     line-height: 1.35;
-  } /* Tablet */
-
+    letter-spacing: -.015em;
+  }
 
   .paragraph-05 {
     font-size: 1.2em;
@@ -5353,7 +5723,6 @@
 
 } /* #### viewport: extra large #### */
 
-/* extra large devices  */
 @media (min-width: 1441px) {
 
   /* ============================= */
@@ -5364,16 +5733,15 @@
 
   .main-hero {
     position: relative;
-    height: 70vh;
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .main-hero img {
-    height: 3em;
+    height: 2.75em;
   }
 
   .main-hero .box-padding {
-    padding: 13em 20em;
+    padding: 13em 18em;
   }
 
   .main-hero .container-component.one {
@@ -5493,11 +5861,11 @@
 
   .about-hero {
     position: relative;
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .about-hero img {
-    height: 3em;
+    height: 2.75em;
   }
 
   .about-hero .box-padding {
@@ -5530,7 +5898,7 @@
   /* -- 01: ABOUT ME 01 -- */
 
   .aboutarea-01 .box-padding {
-    padding: 3em 3em;
+    padding: 5em 5em;
   }
 
   .aboutarea-01 .container-system {
@@ -5545,8 +5913,6 @@
 
   .aboutarea-01 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-01 .about-01-image {
@@ -5557,7 +5923,7 @@
   /* -- 02: ABOUT ME 02 -- */
 
   .aboutarea-02 .box-padding {
-    padding: 3em 3em;
+    padding: 5em 5em;
   }
 
   .aboutarea-02 .container-system {
@@ -5580,8 +5946,6 @@
 
   .aboutarea-02 .container-image {
     height: 100%;
-    border-top: 5px solid var(--clr-dark-accent);
-    border-bottom: 5px solid var(--clr-dark-accent);
   }
 
   .aboutarea-02 .about-02-image {
@@ -5689,7 +6053,7 @@
   /* -- 05: IMG BAN 01 -- */
 
   .cs-section-image-01 {
-   height: 40vh;
+   height: 45vh;
   }
 
 
@@ -5697,6 +6061,11 @@
 
   .cs-design-process .box-padding {
     padding: 4em 4em;
+  }
+
+  .cs-design-process .container-paragraph.one {
+    padding: 0 15em;
+    text-align: center;
   }
 
   .cs-design-process .panel-image {
@@ -5716,8 +6085,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: .5em;
-  }
+    margin-bottom: 1.25em;
+    }
 
   .cs-design-process .panel-system-group {
     display: flex;
@@ -5789,8 +6158,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
     text-align: center;
   }
 
@@ -5815,6 +6184,7 @@
     margin-top: 2em;
   }
 
+
   /* -- 09: USER SURVEY -- */
 
   .cs-user-survey .box-padding {
@@ -5823,7 +6193,7 @@
 
   .cs-user-survey .panel-system {
    display: flex;
-   flex-wrap: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    margin-bottom: 2em;
   }
@@ -5867,7 +6237,7 @@
   }
 
   .cs-user-personas .panel-case {
-    padding: 4em 4em;
+    padding: 3.75em 3.75em;
   }
 
   .cs-user-personas .container-button-group {
@@ -5885,9 +6255,6 @@
     margin-bottom: 1em;
   }
 
-  .cs-user-personas .panel-component:last-child {
-    margin-bottom: 0;
-  }
 
   /* -- 11: USER STORIES -- */
 
@@ -5916,7 +6283,7 @@
   /* -- 12: USER FLOWS IMG BAN -- */
 
   .cs-user-flows-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -6017,7 +6384,7 @@
   /* -- 16: USABILITY TEST 01 IMG BAN -- */
 
   .cs-usability-test-01-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -6038,7 +6405,7 @@
   /* -- 18: BRAND IDENTITY IMG BAN -- */
 
   .cs-brand-identity-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -6083,7 +6450,7 @@
   /* -- 21: HIGH FIDELITY MOCKUP IMG BAN -- */
 
   .cs-high-fidelity-mockup-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -6106,34 +6473,40 @@
     padding: 4em 10em;
   }
 
-  .cs-preference-testing .panel-component-group.one {
+  .cs-preference-testing .panel-component-group.master {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .cs-preference-testing .panel-component.one,
-  .cs-preference-testing .panel-component.two {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-results.two {
+    display: none;
+  }
+
+  .cs-preference-testing .panel-component-group.one {
+    flex-basis: 36%;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
+    flex-basis: 60%;
   }
 
   .cs-preference-testing .panel-component-group.two {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
-    flex-basis: 48.5%;
+  .cs-preference-testing .panel-component.two,
+  .cs-preference-testing .panel-component.three {
+    flex-basis: 49%;
   }
 
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
-  .cs-preference-testing .panel-component.five {
+  .cs-preference-testing .panel-results.one {
     margin-top: 1em;
   }
 
@@ -6155,7 +6528,7 @@
   /* -- 24: USABILITY TEST 02 IMG BAN -- */
 
   .cs-usability-test-02-image {
-    height: 40vh;
+    height: 45vh;
   }
 
 
@@ -6208,7 +6581,7 @@
   /* -- 27: IMG BAN 02 -- */
 
   .cs-section-image-02 {
-    height: 20vh;
+    height: 25vh;
   }
 
 
@@ -6222,7 +6595,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 5em 4em 5em;
+    margin: 0 0 4em 0;
   }
 
   .cs-conclusion .panel-system {

@@ -15,7 +15,7 @@ html {
 } /* 16px */
 
 h1, h2, h3, h4, p, a, li, button {
-  color: var(--clr-dark-text);
+  color: #1A1A1A;
 }
 
 /* ======== */
@@ -124,7 +124,7 @@ h5 {
   font-weight: 400;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--clr-light-text);
+  color: #FFFFFF;
 } /* 16px */
 
 .copyright {
@@ -186,6 +186,10 @@ li {
   margin-bottom: .5em;
 }
 
+ol {
+  padding-left: 1em;
+}
+
 
 /* ============================= */
 /* ++++++ TYPE VARIABLES +++++++ */
@@ -230,7 +234,7 @@ li {
 }
 
 .disabled {
-  color: var(--clr-medium-text);
+  color: #888888;
 }
 
 .viewport p, .orientation p {
@@ -240,15 +244,4 @@ li {
   font-weight: 900;
   letter-spacing: 0.03em;
   color: white;
-}
-
-
-/* ============================= */
-/* +++++ BASE FORMATTING +++++++ */
-/* ============================= */
-
-:root {
-  --clr-light-text: #FFFFFF;
-  --clr-medium-text: #888888;
-  --clr-dark-text: #1A1A1A;
 }

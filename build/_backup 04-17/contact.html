@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+  <title>Contact Me | Mike Marin</title>
+
+  <!-- Metadata -->
+  <meta name="author" content="Mike Marin">
+  <meta name="description" content="Hi. You've found my portfolio. Please take a look.">
+  <meta name="keywords" content="bloc, ux, user experience">
+
+  <!-- Favicon -->
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="build/typography.css">
+  <link rel="stylesheet" href="build/layout.css">
+  <link rel="stylesheet" href="build/main.css">
+  <link rel="stylesheet" href="build/media-queries-xlrg-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-xlrg-common.css">
+  <link rel="stylesheet" href="build/media-queries-lrg-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-lrg-common.css">
+  <link rel="stylesheet" href="build/media-queries-med-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-med-portrait.css">
+  <link rel="stylesheet" href="build/media-queries-med-common.css">
+  <link rel="stylesheet" href="build/media-queries-sml-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-sml-portrait.css">
+  <link rel="stylesheet" href="build/media-queries-sml-common.css">
+
+</head>
+
+<body>
+
+  <div class="page-container">
+
+    <!-- ### MOBILE MENUS ### -->
+
+    <div class="mobile menus">
+
+      <div class="mobile-menu one modal" id="myModal-01">
+
+        <div class="modal-content flex fx-ctr-ctr">
+          <div class="box-padding">
+            <div class="modal-close">
+              <span class="close"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="modal-items txt-ctr">
+
+              <div class="panel-system">
+                <div class="panel-component-group one">
+
+                  <div class="panel-component one">
+                    <a href="index.html">
+                      <h2 class="u-case txt-ctr">home</h2>
+                    </a>
+                    <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">
+                      <h2 class="u-case txt-ctr">resume</h2>
+                    </a>
+                    <a href="about.html">
+                      <h2 class="u-case txt-ctr">about</h2>
+                    </a>
+                    <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">
+                      <h2 class="u-case txt-ctr">contact</h2>
+                    </a>
+                  </div><!-- ### panel-component.one ### -->
+
+                </div><!-- ### panel-component-group.one ### -->
+              </div><!-- ### panel-system ### -->
+
+            </div><!-- ### modal-items ### -->
+
+          </div><!-- ### box-padding ### -->
+        </div><!-- ### modal-content ### -->
+
+      </div><!-- ### mobile-menu.one modal ### -->
+
+    </div><!-- ### menus ### -->
+
+    <!-- ### HEADER/NAVIGATION ### -->
+
+    <header class="mobile">
+      <div class="container-nav">
+        <div class="box-padding">
+
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+          <div class="mobile-menu-icon txt-rt">
+            <a href="#0" onclick="myFunction02()" id="myBtn-01"><i class="fas fa-bars"></i></a>
+          </div>
+          <nav class="nav-mobile txt-rt">
+          </nav><!-- ### nav-mobile ### -->
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.mobile ### -->
+    <header class="desktop">
+      <div class="container-nav">
+        <div class="box-padding">
+
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+
+          <nav class="nav-desktop">
+            <a href="index.html#main-projects-anchor">Work</a>
+            <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">Resume</a>
+            <a href="about.html">About</a>
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">Contact</a>
+          </nav><!-- ### nav-desktop ### -->
+
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.desktop ### -->
+
+    <!-- ### MAIN ### -->
+
+    <main>
+
+      <section class="contact_form">
+
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <form action="https://formspree.io/mqkdvzzq" method="POST">
+          <label>
+            Your email:
+            <input type="text" name="_replyto">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
+
+      </section><!-- ### contact_form ### -->
+
+    </main><!-- ### main ### -->
+
+    <!-- ### FOOTER ### -->
+
+    <footer>
+
+      <div class="box-padding">
+
+        <div class="container-heading txt-ctr">
+          <h1>Get in Touch</h1>
+        </div>
+
+        <div class="container-paragraph margin-top-2em txt-ctr">
+          <p class="paragraph-01">
+            Thank you for stopping by.<br />
+            I hope you enjoyed what I have to show.
+          </p>
+          <p class="paragraph-01 p-last">
+            Have any questions or comments? Feel free to connect with me.
+          </p>
+        </div>
+
+        <div class="container-image margin-tb-2em flex fx-ctr-ctr">
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="container-footer set-solid txt-ctr">
+          <p class="copyright">
+            Copyright &copy; 2020 Mike Marin.<span class="remove"><br /></span> All Rights Reserved.
+          </p>
+        </div>
+
+      </div><!-- ### box-padding ### -->
+
+    </footer><!-- ### footer ### -->
+
+  </div><!-- ### page-container ### -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163302580-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163302580-1');
+</script>
+
+<!-- <script src="scripts/jquery-3.5.0.min.js"></script> -->
+<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous"></script>
+
+<!-- Font Awesome JS -->
+<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous" rel="noreferrer"></script>
+
+<!-- Small Viewport Menu Modal -->
+<script src="scripts/MenuModal.js"></script>
+
+<!-- Scroll Back to Top Button -->
+<script src="scripts/ScrollTop.js"></script>
+
+<!-- Show More Button -->
+<script src="scripts/ShowMore.js"></script>
+
+</body>
+
+</html>

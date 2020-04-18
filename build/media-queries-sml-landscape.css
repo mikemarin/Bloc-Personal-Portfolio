@@ -82,7 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    border-bottom: 3px solid var(--clr-dark-accent);
+    border-bottom: 3px solid #D68A2A;
   }
 
   .main-projects .panel-component.one,
@@ -189,10 +189,6 @@
     height: 100%;
   }
 
-  .aboutarea-01 {
-    border-bottom: 3px solid var(--clr-dark-accent);
-  }
-
 
   /* -- 03: ABOUT ME 02 -- */
 
@@ -224,6 +220,61 @@
 
   .aboutarea-02 .about-02-image {
     height: 100%;
+  }
+
+
+  /* ============================= */
+  /* +++++++++++++++++++++++++++++ */
+  /* ++++++++ CONTACT ME +++++++++ */
+  /* +++++++++++++++++++++++++++++ */
+  /* LANDSCAPE =================== */
+
+  .contact-form .box-padding.master {
+    padding: 1em 1em;
+  }
+
+  .contact-form .box-padding.one {
+    padding: 2em 2em;
+  }
+
+  .contact-form .panel-component-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-form .panel-component.one,
+  .contact-form .panel-component.two {
+    flex-basis: 47%;
+  }
+
+  .contact-form .panel-heading {
+    margin-bottom: 2em;
+  }
+
+  .contact-form .panel-component h4 {
+    margin-bottom: .3em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  input {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+
+  textarea {
+    height: 10em;
+  }
+
+  .contact-form .panel-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-form .panel-button {
+    margin-top: 1em;
   }
 
 
@@ -413,8 +464,8 @@
 
   .cs-competitive-analysis .panel-image {
     padding: 1em 0;
-    background-color: var(--clr-bkg-white);
-    border: 1px solid var(--clr-bkg-panelborder);
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
   }
 
   .cs-competitive-analysis .panel-heading {
@@ -467,9 +518,14 @@
   }
 
   .cs-user-personas .panel-component-group.one,
-  .cs-user-personas .panel-component-group.two {
+  .cs-user-personas .panel-component-group.two,
+  .cs-user-personas .panel-component-group.three {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .cs-user-personas .panel-component-group.three {
+    margin-bottom: 1em;
   }
 
   .cs-user-personas .panel-component.one {
@@ -496,8 +552,13 @@
   }
 
   .cs-user-personas .panel-component.five {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  .cs-user-personas .panel-component.six {
     flex-basis: 50%;
-    padding-left: 1em;
+    padding-right: 1em;
     margin-bottom: 0;
   }
 
@@ -714,42 +775,36 @@
     padding: 3em 2em;
   }
 
-  .cs-preference-testing .panel-component-group {
+  .cs-preference-testing .panel-results.one {
+    display: none;
+  }
+
+  .cs-preference-testing .panel-component-group.two {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1em;
+    align-items: center;
   }
 
-  .cs-preference-testing .panel-component.three,
-  .cs-preference-testing .panel-component.four {
-    flex-basis: 50%;
-  }
-
+  .cs-preference-testing .panel-component.two,
   .cs-preference-testing .panel-component.three {
-    padding-right: .75em;
+    flex-basis: 49%;
   }
 
-  .cs-preference-testing .panel-component.four {
-    padding-left: .75em;
+  .cs-preference-testing .panel-results.two {
+    flex-basis: 100%;
+    margin-top: 1em;
+  }
+
+  .cs-preference-testing .panel-paragraph {
+    margin-bottom: 2em;
   }
 
   .cs-preference-testing .panel-option {
     padding: .5em 0;
-    background-color: var(--clr-dark-primary);
+    background-color: #042149;
   }
 
-  .cs-preference-testing .panel-component.two {
-    margin-bottom: 2em;
-  }
-
-  .cs-preference-testing .panel-system {
-    margin-bottom: 2em;
-  }
-
-  .cs-preference-testing .panel-system:last-child {
-    margin-bottom: 0;
-  }
 
   .cs-preference-testing .container-button-group {
     display: flex;
@@ -761,8 +816,12 @@
     padding: 0 .5em;
   }
 
-  .cs-preference-testing .panel-paragraph {
+  .cs-preference-testing .panel-system {
     margin-bottom: 2em;
+  }
+
+  .cs-preference-testing .panel-system:last-child {
+    margin-bottom: 0;
   }
 
 
@@ -871,6 +930,5 @@
   .orientation .medium p, .orientation .large p, .orientation .x-large p {
     display: none;
   }
-
 
 }

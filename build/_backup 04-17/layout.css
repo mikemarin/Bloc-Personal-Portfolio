@@ -1,0 +1,179 @@
+@charset "UTF-8"; /* CSS Document */
+
+
+/* ============================= */
+/* ++++ CONTAINER VARIABLES ++++ */
+/* ============================= */
+
+.container-full {
+  width: 100%;
+}
+
+.container-half {
+  width: 50%;
+}
+
+.container-third {
+  width: 33.33%;
+}
+
+.container-quarter {
+  width: 25%;
+}
+
+.container-fifth {
+  width: 20%;
+}
+
+
+/* ============================= */
+/* +++++++ MARGIN NUDGES +++++++ */
+/* ============================= */
+
+.margin-top-1em {
+  margin-top: 1em;
+}
+
+.margin-top-15em {
+  margin-top: 1.5em;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+
+.margin-top-3em {
+  margin-top: 3em;
+}
+
+.margin-top-4em {
+  margin-top: 4em;
+}
+
+.margin-btm-05em {
+  margin-bottom: .5em;
+}
+
+.margin-btm-1em {
+  margin-bottom: 1em;
+}
+
+.margin-btm-15em {
+  margin-bottom: 1.5em;
+}
+
+.margin-btm-2em {
+  margin-bottom: 2em;
+}
+
+.margin-btm-3em {
+  margin-bottom: 3em;
+}
+
+.margin-btm-4em {
+  margin-bottom: 4em;
+}
+
+.margin-tb-1em {
+  margin: 1em 0;
+}
+
+.margin-tb-2em {
+  margin: 2em 0;
+}
+
+.margin-tb-3em {
+  margin: 3em 0;
+}
+
+.margin-tb-4em {
+  margin: 4em 0;
+}
+
+.margin-lr-05em {
+  margin: 0 .5em;
+}
+
+.margin-lr-1em {
+  margin: 0 1em;
+}
+
+.margin-lr-3em {
+  margin: 0 3em;
+}
+
+.margin-in-lf-1em {
+  margin-right: 1em;
+} /* Inside Left Column */
+
+.margin-in-rt-1em {
+  margin-left: 1em;
+} /* Inside Right Column */
+
+.margin-in-lf-15em {
+  margin-right: 1.5em;
+} /* Inside Left Column */
+
+.margin-in-rt-15em {
+  margin-left: 1.5em;
+} /* Inside Right Column */
+
+.margin-in-lf-2em {
+  margin-right: 2em;
+} /* Inside Left Column */
+
+.margin-in-rt-2em {
+  margin-left: 2em;
+} /* Inside Right Column */
+
+
+/* ============================= */
+/* ++++++ FLEX FORMATTING ++++++ */
+/* ============================= */
+
+.flex {
+  display: flex;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-ctr {
+  justify-content: center;
+}
+
+.fx-v-ctr {
+  align-items: center;
+}
+
+.fx-ctr-ctr {
+  justify-content: center;
+  align-items: center;
+}
+
+.fx-ctr-btm {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fx-btm {
+  align-items: flex-end;
+}
+
+.fx-rt {
+  justify-content: flex-end;
+}
+
+.fx-rt-ctr {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fx-space-between {
+  justify-content: space-between;
+}

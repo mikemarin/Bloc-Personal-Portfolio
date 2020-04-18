@@ -17,7 +17,7 @@
 
   header {
     padding: 1em 0;
-    border-bottom: 5px solid var(--clr-dark-accent);
+    border-bottom: 5px solid #D68A2A;
   }
 
   .nav_logo {
@@ -42,7 +42,7 @@
   /* COMMON ====================== */
 
   footer {
-    border-top: 5px solid var(--clr-dark-accent);
+    border-top: 5px solid #D68A2A;
   }
 
   footer .box-padding {
@@ -55,6 +55,14 @@
 
   .container-image i {
     font-size: 1.5em;
+  }
+
+  footer.mini .box-padding {
+    padding: 1em 5em;
+  }
+
+  footer.mini .container-image {
+    padding: 1em 5em;
   }
 
 
@@ -139,6 +147,8 @@
     right: 0;
     bottom: 2em;
   }
+
+
 
 
   /* ============================= */
@@ -242,7 +252,8 @@
   .paragraph-04 {
     font-size: 1em;
     line-height: 1.35;
-  } /* Tablet */
+    letter-spacing: -.015em;
+  }
 
   .paragraph-05 {
     font-size: 1.2em;

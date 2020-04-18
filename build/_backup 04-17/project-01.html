@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+  <title>Case Study | Foodle iOS App</title>
+
+  <!-- Metadata -->
+  <meta name="author" content="Mike Marin">
+  <meta name="description" content="Hi. You've found my portfolio. Please take a look.">
+  <meta name="keywords" content="bloc, ux, user experience">
+
+  <!-- Favicon -->
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="build/typography.css">
+  <link rel="stylesheet" href="build/layout.css">
+  <link rel="stylesheet" href="build/main.css">
+  <link rel="stylesheet" href="build/media-queries-xlrg-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-xlrg-common.css">
+  <link rel="stylesheet" href="build/media-queries-lrg-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-lrg-common.css">
+  <link rel="stylesheet" href="build/media-queries-med-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-med-portrait.css">
+  <link rel="stylesheet" href="build/media-queries-med-common.css">
+  <link rel="stylesheet" href="build/media-queries-sml-landscape.css">
+  <link rel="stylesheet" href="build/media-queries-sml-portrait.css">
+  <link rel="stylesheet" href="build/media-queries-sml-common.css">
+
+</head>
+
+<body>
+
+  <div class="page-container">
+
+    <!-- ### CONTROLS ### -->
+
+    <div class="controls">
+
+      <!-- ### SCROLL TO TOP ### -->
+
+      <div class="BacktoTop">
+        <a href="#0" onclick="topFunction()" id="BacktoTop" title="Back to Top"><img src="images/portfolio/icons/Icon-CircleArrow-Up.svg" alt="Image" /></a>
+      </div>
+
+    </div><!-- ### controls ### -->
+
+    <!-- ### MOBILE MENUS ### -->
+
+    <div class="mobile menus">
+
+      <div class="mobile-menu one modal" id="myModal-01">
+
+        <div class="modal-content flex fx-ctr-ctr">
+          <div class="box-padding">
+            <div class="modal-close">
+              <span class="close"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="modal-items txt-ctr">
+
+              <div class="panel-system">
+                <div class="panel-component-group one">
+
+                  <div class="panel-component one">
+                    <a href="index.html">
+                      <h2 class="u-case">home</h2>
+                    </a>
+                    <a href="index.html#main-projects-anchor">
+                      <h2 class="u-case">main projects</h2>
+                    </a>
+                    <a href="index.html#main-past-works-anchor">
+                      <h2 class="u-case">past works</h2>
+                    </a>
+                  </div><!-- ### panel-component.one ### -->
+
+                </div><!-- ### panel-component-group.one ### -->
+
+                <div class="panel-component-group two">
+
+                    <div class="panel-component two">
+                      <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">
+                        <h2 class="u-case">resume</h2>
+                      </a>
+                      <a href="about.html">
+                        <h2 class="u-case">about</h2>
+                      </a>
+                      <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">
+                        <h2 class="u-case">contact</h2>
+                      </a>
+
+                  </div><!-- ### panel-component-group.two ### -->
+
+                </div><!-- ### panel-component.two ### -->
+              </div><!-- ### panel-system ### -->
+
+            </div><!-- ### modal-items ### -->
+
+          </div><!-- ### box-padding ### -->
+        </div><!-- ### modal-content ### -->
+
+      </div><!-- ### mobile-menu.one modal ### -->
+
+    </div><!-- ### menus ### -->
+
+    <!-- ### HEADER/NAVIGATION ### -->
+
+    <header class="mobile">
+      <div class="container-nav">
+        <div class="box-padding">
+
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+          <div class="mobile-menu-icon txt-rt">
+            <a href="#0" onclick="myFunction02()" id="myBtn-01"><i class="fas fa-bars"></i></a>
+          </div>
+          <nav class="nav-mobile txt-rt">
+          </nav><!-- ### nav-mobile ### -->
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.mobile ### -->
+    <header class="desktop">
+      <div class="container-nav">
+        <div class="box-padding">
+
+          <div class="nav_logo">
+            <a href="index.html"><img src="images/portfolio/logos/Logo-MikeMarin-Reverse.svg" alt="SVG" /></a>
+          </div>
+
+          <nav class="nav-desktop">
+            <a href="index.html#main-projects-anchor">Work</a>
+            <a href="pdf/portfolio/2020-Resume-MikeMarin.pdf" target="_blank">Resume</a>
+            <a href="about.html">About</a>
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and...">Contact</a>
+          </nav><!-- ### nav-desktop ### -->
+
+        </div><!-- ### box-padding ### -->
+      </div><!-- ### container-nav ### -->
+    </header><!-- ### header.desktop ### -->
+
+    <!-- ### MAIN ### -->
+
+    <main>
+
+      <!-- ### 01: SYNOPSIS HERO ### -->
+
+      <a id="01-cs-synopsis-anchor"></a>
+      <section class="cs-synopsis">
+
+        <div class="box-padding master">
+
+          <div class="container-system">
+
+            <div class="container-component one">
+              <div class="box-padding">
+
+                <div class="container-image two">
+                  <svg class"shadow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 130" style="enable-background:new 0 0 250 130;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #F34213;
+                      }
+                    </style>
+                    <path class="st0" d="M61.8,73.6c-14.2,0-25.7,11.5-25.7,25.5c0,14.1,11.5,25.5,25.7,25.5c14.2,0,25.7-11.5,25.7-25.5
+                    C87.5,85.1,76,73.6,61.8,73.6z M61.8,110.4c-6.2,0-11.3-5-11.3-11.2c0-6.2,5.1-11.2,11.3-11.2s11.3,5,11.3,11.2
+                    C73.1,105.4,68,110.4,61.8,110.4z M39.2,35h-21V18.2h35.4V0H0v129.4h18.3V53.2h21V35z M75.6,18c-14.2,0-25.7,11.5-25.7,25.5
+                    c0,14.1,11.5,25.5,25.7,25.5c14.2,0,25.7-11.5,25.7-25.5C101.3,29.5,89.7,18,75.6,18z M75.6,54.8c-6.2,0-11.3-5-11.3-11.2
+                    c0-6.2,5.1-11.2,11.3-11.2c6.2,0,11.3,5,11.3,11.2C86.9,49.8,81.8,54.8,75.6,54.8z M126.6,0c-0.1,0-0.3,0-0.4,0v0h-18.3v129.4h18.3
+                    v0c0.1,0,0.3,0,0.4,0c24.9,0,44.4-28.4,44.4-64.7C171,28.4,151.5,0,126.6,0z M126.6,110.4c-0.1,0-0.3,0-0.4,0V19c0.1,0,0.3,0,0.4,0
+                    c11.8,0,24.9,18.8,24.9,45.7C151.5,91.6,138.4,110.4,126.6,110.4z M250,18.2V0h-41.9v101.8h18.3H250V83.6h-23.6V53.2h10.3V35h-10.3
+                    V18.2H250z M198.5,0h-18.3v129.4H235v-18.2h-36.5V0z" />
+                  </svg>
+                </div>
+
+                <div class="line-divider"></div>
+
+                <div class="container-paragraph">
+                  <p class="paragraph-01 p-last sans-serif">
+                    Foodle is a conceptual iOS application that takes research-driven data and crosses it with online content creation and collaboration. It allows users to find, create, photograph and share their favorite food and recipes with the world.
+                  </p>
+                </div>
+
+                <div class="container-button">
+                  <a href="https://www.figma.com/proto/oblVml14UzWMLGyLAy4gZg/Foodle-Hi-Fi-MVP-Prototype?node-id=556%3A25979&viewport=774%2C635%2C0.1002010703086853&scaling=scale-down" class="button-01" target="_blank">MVP Prototype</a>
+                </div>
+
+              </div><!-- ### box-padding ### -->
+            </div><!-- ### container-component.one ### -->
+
+            <div class="container-component two">
+              <div class="container-image one">
+                <img src="images/foodle/mockups/Mockup-Iphone-Foodle-min.png" alt="Image" />
+              </div>
+            </div><!-- ### container-component.two ### -->
+
+          </div><!-- ### container-system ### -->
+
+        </div><!-- ### box-padding.master ### -->
+
+      </section>
+
+      <!-- ### 02: SPECIFICATION ### -->
+
+      <a id="02-cs-specification-anchor"></a>
+      <section class="cs-specification">
+
+        <div class="box-padding">
+
+          <div class="container-group">
+
+            <div class="container-list">
+              <div class="row one">
+                <h3 class="u-line">Roles</h3>
+                <ul class="list-items-01">
+                  <li>UX Strategist</li>
+                  <li>UX Researcher</li>
+                  <li>Content Strategist</li>
+                  <li>Information Architect</li>
+                  <li>UI Designer</li>
+                </ul>
+              </div>
+              <div class="row two">
+                <h3 class="u-line">Duration</h3>
+                <ul class="list-items-01">
+                  <li>8 Weeks</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container-list">
+              <h3 class="u-line">Deliverables</h3>
+              <ul class="list-items-01">
+                <li>User Survey</li>
+                <li>User Personas</li>
+                <li>User Stories</li>
+                <li>User Flows</li>
+                <li>Content Strategy</li>
+                <li>Low-Fi Wireframes</li>
+                <li>Brand Identity</li>
+                <li>Style Guide</li>
+                <li>High Fidelity Mockups</li>
+                <li>Preference Testing</li>
+                <li>Usability Testing</li>
+              </ul>
+            </div>
+
+            <div class="container-list">
+              <h3 class="u-line">Software</h3>
+              <ul class="list-items-01">
+                <li>Figma</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>UsabilityHub</li>
+                <li>Google Forms</li>
+                <li>Google Docs</li>
+                <li>Google Sheets</li>
+                <li>OmniGraffle</li>
+              </ul>
+            </div>
+
+          </div><!-- ### container-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 03: OVERVIEW ### -->
+
+      <a id="03-cs-overview-anchor"></a>
+      <section class="cs-overview">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Overview</h2>
+            <h3>The Concept of Foodle</h3>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02 sans-serif">
+              As a society, we've evolved from hunting and gathering food on our own to ordering food through the drive thru at our local eatery. The old time tradition of preparing and eating healthy food has been mostly put aside for the sake of convenience. But at what cost?
+            </p>
+            <p class="paragraph-02 p-last sans-serif">
+              What Foodle sets out to achieve is to present its users with the ability to plan what they'd like to eat ahead of time for the week, month, etc. Users will be able to search and select recipes from a database born of collaboration with online sources as well as personal contributions from other users. They will also have the ability to rate their favorite recipes, photograph their food creations, and post those creations for their followers and community to view.
+            </p>
+          </div>
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 04: PROBLEM SOLUTION ### -->
+
+      <a id="04-cs-problem-solution-anchor"></a>
+      <section class="cs-problem-solution">
+
+        <div class="box-padding">
+
+          <div class="container-group">
+
+            <div class="cs-problem panel-case panel-pad">
+
+              <div class="container-heading margin-btm-2em txt-ctr">
+                <h2>Problem</h2>
+                <h3>Ideas Without a Direction</h3>
+              </div>
+
+              <div class="container-paragraph">
+
+                <p class="paragraph-02 sans-serif">
+                  Our client had the idea of creating a new application that would be able to fit in under the broad umbrella of online content storage and organization with a focus on content creation, organization and collaboration. The app needed to be able to leverage the “network effect” to ensure positive growth so collaboration was a big focus. With this in mind I knew that a social sharing application could have a strong foundation to build on. With this as my starting point, I started thinking about what people of all types might have in common.
+                </p>
+                <p class="paragraph-02 p-last sans-serif">
+                  After researching different ideas I came to the conclusion that food would be an interesting and uniting focal point for this application. It is widely popular with all types of demographics and people love to post and share what they eat when they are eating it. What better way to bring people together than with their obsession with food.
+                </p>
+              </div>
+            </div>
+
+            <div class="cs-solution panel-case panel-pad">
+
+              <div class="container-heading margin-btm-2em txt-ctr">
+                <h2>Solution</h2>
+                <h3>Finding a Niche Market</h3>
+              </div>
+
+              <div class="container-paragraph">
+
+                <p class="paragraph-02 sans-serif">
+                  The solution I proposed was to explore the idea of food as a unifying concept that could incorporate sharing, content creation and collaboration. These were the biggest deliverables our client requested and following this approach allowed for more creative exploration in a niche area not over-saturated by a multitude of similar applications.
+                </p>
+
+                <p class="paragraph-02 sans-serif">
+                  The problem as I saw it was I needed to “Establish an app direction that refined the clients requirements into a deliverable that can stand out in a saturated market.
+                </p>
+
+                <p class="paragraph-02 sans-serif">
+                  After reviewing this list again, I saw this as sort of a recipe with each of the requirements as ingredients, with one part organization, a dash or collaboration, a sprinkle of online posting, and the main ingredient. FOOD!
+                </p>
+
+                <p class="paragraph-02 p-last sans-serif">
+                  That’s how the idea of Foodle was born.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- ### container-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 05: IMG BAN ### -->
+
+      <div class="cs-section-image-01"></div>
+
+      <!-- ### 06: DESIGN PROCESS ### -->
+
+      <a id="06-cs-design-process-anchor"></a>
+      <section class="cs-design-process">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Design Process</h2>
+            <h3>Sequential Steps to Foodle</h3>
+          </div>
+
+          <div class="container-paragraph one margin-btm-2em">
+            <p class="paragraph-02 p-last">
+              There were a number of different steps I worked with that led to conceptualizing and developing the idea that would lead to Foodle.
+            </p>
+          </div>
+
+          <div class="panel-system-group">
+
+            <div class="panel-system one">
+
+              <div class="panel-image">
+                <img src="images/foodle/icons/Icon-01-Discovery.svg" alt="SVG" />
+              </div>
+
+              <div class="panel-component">
+
+                <div class="panel-heading">
+                  <h3 class="u-case">Discovery</h3>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    These processes reviewed the requirements given by the client and checked to see if those were good enough to proceed with, or could some of them work in a more interesting direction for the project.
+                  </p>
+                </div>
+
+              </div><!-- ### panel-component ### -->
+            </div><!-- ### panel-system.one ### -->
+
+            <div class="panel-system two">
+
+              <div class="panel-image">
+                <img src="images/foodle/icons/Icon-02-Strategy.svg" alt="SVG" />
+              </div>
+
+              <div class="panel-component">
+
+                <div class="panel-heading">
+                  <h3 class="u-case">Strategy</h3>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    Next step took the information collected from the previous step and started to work with it to produce a more detailed direction.
+                  </p>
+                </div>
+
+              </div><!-- ### panel-component ### -->
+            </div><!-- ### panel-system.two ### -->
+
+            <div class="panel-system third">
+
+              <div class="panel-image">
+                <img src="images/foodle/icons/Icon-03-Information-Architecture.svg" alt="SVG" />
+              </div>
+
+              <div class="panel-component">
+
+                <div class="panel-heading">
+                  <h3 class="u-case set-solid">Information Architecture</h3>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    Visuals were created and applied to the bones of the previous steps to bring the wireframes to life. A brand identity was conceptualized and created along with documentation showing guidelines and proper use of color, type, iconography and imagery.
+                  </p>
+                </div>
+
+              </div><!-- ### panel-component ### -->
+            </div><!-- ### panel-system.three ### -->
+
+            <div class="panel-system four">
+
+              <div class="panel-image">
+                <img src="images/foodle/icons/Icon-04-Visual-Design.svg" alt="SVG" />
+              </div>
+
+              <div class="panel-component">
+
+                <div class="panel-heading">
+                  <h3 class="u-case set-solid">Visual Design</h3>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    This was reached after all feedback and design changes had been corrected. All created assets and documentation was packaged for future developers of the project.
+                  </p>
+                </div>
+
+              </div><!-- ### panel-component ### -->
+            </div><!-- ### panel-system.four ### -->
+
+            <div class="panel-system five">
+
+              <div class="panel-image">
+                <img src="images/foodle/icons/Icon-05-Development.svg" alt="SVG" />
+              </div>
+
+              <div class="panel-component">
+
+                <div class="panel-heading">
+                  <h3 class="u-case set-solid">Developer Handoff</h3>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    To assist with bringing the idea to the public, a case study was written on the entire project from start to finish.
+                  </p>
+                </div>
+
+              </div><!-- ### panel-component ### -->
+            </div><!-- ### panel-system.five ### -->
+
+          </div><!-- ### panel-system-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### DIVIDER ### -->
+
+      <a id="process-01-discovery-anchor"></a>
+      <div class="section-divider">
+        <div class="box-padding">
+          <p class="process u-case">
+            <span class="divider-bold">Discovery</span><span class="divider-hide">: What Problems Are We Solving?</span>
+          </p>
+        </div><!-- ### box-padding ### -->
+      </div>
+
+      <!-- ### 07: PROJECT BRIEF ### -->
+
+      <a id="07-cs-project-brief-anchor"></a>
+      <section class="cs-project-brief">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Project Brief</h2>
+            <h3>Client Requirements List</h3>
+          </div>
+
+          <div class="container-paragraph one">
+            <p class="paragraph-02">
+              The client for this project had a number of feature ideas that they'd like to have seen in an app that was directed toward the cloud storage and organizational market. On review of the design brief, there were two main feature groups I classified the ideas that were presented.
+            </p>
+          </div>
+
+          <div class="container-system">
+
+            <div class="container-component one">
+              <div class="container-paragraph two">
+                <p class="paragraph-02">
+                  At this point, the more I looked at the features, the more it shaped into a variation of Dropbox, Google Drive, or other similar apps. I wanted to challenge myself by taking the requirements given and looking into different ways they could be achieved.
+                </p>
+                <p class="paragraph-02 p-last">
+                  The topic of food was chosen as a direction I could take this app idea instead of a vanilla cloud storage app with similar features amongst its competitors.
+                </p>
+              </div>
+            </div><!-- ### container-component.one ### -->
+
+            <div class="container-component two">
+
+              <div class="panel-system panel-case panel-pad">
+
+                <div class="panel-list panel-bullets">
+                  <h4 class="u-case u-line">General</h4>
+                  <ul class="list-items-02">
+                    <li>Saving online web content.</li>
+                    <li>Organizing content into categories, tags, groups, and/or folders.</li>
+                    <li>Creating content.</li>
+                    <li>Uploading files.</li>
+                  </ul>
+                </div>
+
+                <div class="panel-list panel-bullets">
+                  <h4 class="u-case u-line">Collaboration</h4>
+                  <ul class="list-items-02">
+                    <li>Sharing content with other users.</li>
+                    <li>Connecting and collaborating with other users within the app.</li>
+                  </ul>
+                </div>
+
+              </div><!-- ### panel-system ### -->
+
+              <div class="container-button-group">
+
+                <div class="container-button">
+                  <a href="pdf/foodle/01_ProjectIntroduction.pdf" class="button-01" target="_blank">Project Introduction</a>
+                </div>
+
+              </div><!-- ### container button-group ### -->
+
+            </div><!-- ### container-component.two ### -->
+
+          </div><!-- ### container-system ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 08: COMPETITIVE ANALYSIS ### -->
+
+      <a id="08-cs-competitive-analysis-anchor"></a>
+      <section class="cs-competitive-analysis">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Competitive Analysis</h2>
+            <h3>Seeking Out Competition</h3>
+          </div>
+
+          <div class="container-paragraph one margin-btm-2em">
+            <p class="paragraph-02 p-last">
+              The creation of the Competitive Analysis started as the foundation for this project. Here, I aimed to identify three different competitors that had features similar to what the client was requesting.
+            </p>
+          </div>
+
+          <div class="panel-system-group">
+            <div class="panel-system panel-case panel-pad">
+
+              <div class="panel-component one">
+
+                <div class="panel-image">
+                  <img src="images/foodle/logos/Logo-FeedFeed-min.png" alt="Image" />
+                </div>
+
+                <div class="panel-heading txt-ctr">
+                  <h4 class="u-case">The Feed Feed</h4>
+                </div>
+
+              </div><!-- ### panel-component.one ### -->
+
+              <div class="panel-component two">
+
+                <div class="panel-image">
+                  <img src="images/foodle/logos/Logo-Instagram-min.png" alt="Image" />
+                </div>
+
+                <div class="panel-heading txt-ctr">
+                  <h4 class="u-case">Instagram</h4>
+                </div>
+
+              </div><!-- ### panel-component.two ### -->
+
+              <div class="panel-component three">
+
+                <div class="panel-image">
+                  <img src="images/foodle/logos/Logo-Pinterest-min.png" alt="Image" />
+                </div>
+
+                <div class="panel-heading txt-ctr">
+                  <h4 class="u-case">Pinterest</h4>
+                </div>
+
+              </div><!-- ### panel-component.three ### -->
+
+            </div><!-- ### panel-system ### -->
+          </div><!-- ### panel-system-group ### -->
+
+          <div class="container-system-group">
+            <div class="container-component one">
+              <div class="container-paragraph two">
+                <p class="paragraph-02">
+                  The initial direction was for the app to follow the lines of a file sharing & storage application. However, with the idea of tailoring it towards food, I was able to find and research competitors with similar features that also fit the topic. The three options I chose were TheFeedFeed.com, Pinterest and Instagram.
+                </p>
+                <p class="paragraph-02">
+                  I learned that each competitor utilizes food as a topic, either partially or fully, and offer users different ways to interact with the platform.
+                </p>
+              </div>
+            </div><!-- ### container-component.one ### -->
+            <div class="container-component two">
+              <div class="container-paragraph three">
+                <p class="paragraph-02 p-last">
+                  However, each platform uses different features and no one platform contains all the features requested by the client. I also put together flow charts showing how these platforms handled common tasks and also served as a reference for similar implementation.
+                </p>
+              </div>
+
+              <div class="container-button-group">
+                <div class="container-button">
+                  <a href="pdf/foodle/02_CompetitiveAnalysis-01_Research.pdf" class="button-01" target="_blank">Research</a>
+                </div>
+                <div class="container-button">
+                  <a href="pdf/foodle/02_CompetitiveAnalysis-02_Flowcharts.pdf" class="button-01" target="_blank">Flowcharts</a>
+                </div>
+              </div><!-- ### container-button-group ### -->
+            </div><!-- ### container-component.two ### -->
+          </div><!-- ### container-system-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### DIVIDER ### -->
+
+      <a id="process-02-strategy-anchor"></a>
+      <div class="section-divider">
+        <div class="box-padding">
+          <p class="process u-case">
+            <span class="divider-bold">Strategy</span><span class="divider-hide">: How Should We Solve These Problems, and Why Solve Them That Way?</span>
+          </p>
+        </div><!-- ### box-padding ### -->
+      </div>
+
+      <!-- ### 09: USER SURVEY ### -->
+
+      <a id="09-cs-user-survey-anchor"></a>
+      <section class="cs-user-survey">
+
+        <div class="box-padding">
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>User Survey</h2>
+            <h3>Shaping the Idea Through User Input</h3>
+          </div>
+
+          <div class="container-paragraph margin-btm-2em">
+            <p class="paragraph-02 p-last">
+              After researching and gaining an understanding of the features competitors were implementing, I started this step by creating a list of questions that were meant to discover further information about my target audience. I wanted to figure out why users would be interested in using my proposed app and what types of features they would like to see within. The survey was taken by 18 participants in 48 hours.
+            </p>
+          </div>
+
+          <div class="container-image-group">
+
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-Circle-01.svg" alt="SVG" />
+            </div><!-- ### container-image ### -->
+
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-Circle-02.svg" alt="SVG" />
+            </div><!-- ### container-image ### -->
+
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-Circle-03.svg" alt="SVG" />
+            </div><!-- ### container-image ### -->
+
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-Circle-04.svg" alt="SVG" />
+            </div><!-- ### container-image ### -->
+
+          </div><!-- ### container-image-group ### -->
+
+          <div class="panel-system">
+
+            <div class="panel-component one panel-case panel-pad">
+
+              <div class="panel-heading">
+                <h4 class="u-case margin-btm-05em">I structured the questions to learn:</h4>
+              </div>
+
+              <div class="panel-list panel-bullets">
+                <ul class="list-items-02">
+                  <li>A general sense of user technical aptitude.</li>
+                  <li>What types of applications are used to serve user needs for Cloud Storage.</li>
+                  <li>Understanding of how cloud storage was utilized, and in what situations.</li>
+                  <li>How the idea of collaboration was viewed by audiences using applications.</li>
+                  <li>How open users were to having sharing and collaboration features in an app featuring food.</li>
+                  <li>What was the frequency users cooked for themselves and who they cooked for.</li>
+                  <li>Did they share anything online with their social groups they were part of?</li>
+                  <li>What types of content do they share?</li>
+                  <li>How receptive they were to early feature ideas of the app.</li>
+                </ul>
+              </div>
+
+            </div><!-- ### panel-component ### -->
+
+            <div class="panel-component two panel-case panel-pad">
+
+              <div class="panel-heading">
+                <h4 class="u-case margin-btm-05em">Some key data points were:</h4>
+              </div>
+
+              <div class="panel-list panel-bullets">
+                <ul class="list-items-02">
+                  <li><span>44%</span> of users were moderate tech users that relied on a few key apps throughout their day.</li>
+                  <li><span>72%</span> are familiar and use an online storage/data repository of some form.</li>
+                  <li><span>92.3%</span> use these services to share files with others and about the same amount of users share links to their files instead of sending the files themselves.</li>
+                  <li><span>76.9%</span> of people thought the idea for collaboration with others was useful for business applications, but weren’t something they’d regularly use in their personal lives.</li>
+                  <li><span>66.7%</span> of people cook for themselves and their families regularly with 1-2 days off.</li>
+                  <li><span>87.5%</span> of people shared what they ate with their social group usually in the form of message posts.</li>
+                  <li>The majority <span>38.9%</span> of users surveyed were between the ages of 25-35.</li>
+                </ul>
+              </div>
+
+            </div><!-- ### panel-component ### -->
+
+          </div><!-- ### panel-system ### -->
+
+          <div class="container-paragraph">
+            <p class="paragraph-02 p-last">
+              While the purpose of this survey was to gauge general information from a potential user base, it also was meant to propose feature ideas for my future app. I learned that people generally used collaboration in professional settings and not so much in personal ones. They also tended to share quite a bit online with those in their social groups, whether it be recipes or images of the food they consumed.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+
+            <div class="container-button">
+              <a href="pdf/foodle/03_UserSurveys-01_Questions.pdf" class="button-01" target="_blank">Questions</a>
+            </div>
+
+            <div class="container-button">
+              <a href="pdf/foodle/03_UserSurveys-02_Answers.pdf" class="button-01" target="_blank">Answers</a>
+            </div>
+
+            <div class="container-button">
+              <a href="pdf/foodle/03_UserSurveys-03_Analysis.pdf" class="button-01" target="_blank">Results Analysis</a>
+            </div>
+
+          </div><!-- ### container-button-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 10: USER PERSONAS ### -->
+
+      <a id="10-cs-user-personas-anchor"></a>
+      <section class="cs-user-personas">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>User Personas</h2>
+            <h3>Deciphering my Target Audience</h3>
+          </div>
+
+          <div class="container-paragraph one margin-btm-2em">
+            <p class="paragraph-02">
+              Of those surveyed, the two biggest age groups were ages 25-35 (38.9%) and 18-25 (22.2%). Of those two demographics, two main types of people were more readily apparent; students and professionals.
+            </p>
+            <p class="paragraph-02 p-last">
+              Filtering down the data into these two different personas gave me some insight on what types of features I should be considering.
+            </p>
+          </div>
+
+          <div class="panel-system-group">
+            <div class="panel-system one panel-case panel-pad">
+
+              <div class="panel-component-group one">
+
+                <div class="panel-component one">
+
+                  <div class="panel-image one">
+                    <img src="images/foodle/photos/Photo-Persona-Girl-min.jpg" class="image-border" alt="Image" />
+                  </div>
+
+                </div><!-- ### panel-component.one ### -->
+
+                <div class="panel-component two">
+
+                  <div class="persona-name">
+                    <h5 class="u-case">Terry R.</h5>
+                  </div>
+
+                  <div class="persona-class">
+                    <h4 class="u-case">Trendsetting Millennial</h4>
+                  </div>
+
+                  <div class="persona-description">
+                    <p class="paragraph-04 one">
+                      College Student
+                    </p>
+                    <p class="paragraph-04 two">
+                      <strong>Age:</strong> 22 | <strong>Location:</strong> Austin, TX | <strong>Gender:</strong> Female
+                    </p>
+                  </div>
+
+                </div><!-- ### panel-component.two ### -->
+              </div><!-- ### panel-component-group.one ### -->
+
+              <div class="panel-component three">
+
+                <h4 class="u-case margin-btm-05em">Motivation:</h4>
+                <p class="paragraph-04">
+                  Terry loves to look at various online repositories that feature images of food. She looks at many different sites, but has no way to catalog them effectively. She has used apps like Pinterest and Evernote, but they didn’t offer tagging features or searchable ways to find the images she was looking for easily. She finds inspiration in her photos by looking at other people just like her that do the same thing she does.
+                </p>
+
+              </div><!-- ### panel-component.three ### -->
+
+              <div class="panel-component-group three">
+
+                <div class="panel-component six">
+                  <h4 class="u-case margin-btm-05em">Goals:</h4>
+                  <ol class="list-items-03">
+                    <li>Share photos taken instantly to social networks.</li>
+                    <li>Add trendy filters to the photo taken.</li>
+                    <li>Would like to save favorited items in a one place.</li>
+                  </ol>
+                </div><!-- ### panel-component.six ### -->
+
+                <div class="panel-component four">
+                  <h4 class="u-case margin-btm-05em">Frustrations:</h4>
+                  <ol class="list-items-03">
+                    <li>Common photo apps are too complex to use.</li>
+                    <li>Can’t speak to her phone to take photo.</li>
+                    <li>Doesn’t like to cook for herself.</li>
+                  </ol>
+                </div><!-- ### panel-component.four ### -->
+
+              </div><!-- ### panel-component-group.three ### -->
+
+              <div class="panel-component-group two">
+
+                <div class="panel-component five">
+                  <h4 class="u-case margin-btm-05em">Quote:</h4>
+                  <p class="paragraph-04">
+                    "If only we could take pictures of morning coffees with custom tree designs in the milk all the time! There would be no war in the world."
+                  </p>
+                </div><!-- ### panel-component.five ### -->
+
+              </div><!-- ### panel-component-group.two ### -->
+
+            </div><!-- ### panel-system.one ### -->
+
+            <div class="panel-system two panel-case panel-pad">
+
+              <div class="panel-component-group one">
+
+                <div class="panel-component one">
+
+                  <div class="panel-image">
+                    <img src="images/foodle/photos/Photo-Persona-Guy-min.jpg" class="image-border" alt="Image" />
+                  </div>
+
+                </div><!-- ### panel-component.one ### -->
+
+                <div class="panel-component two">
+
+                  <div class="persona-name">
+                    <h5 class="u-case">Hunter S.</h5>
+                  </div>
+
+                  <div class="persona-class">
+                    <h4 class="u-case">Busy Professional</h4>
+                  </div>
+
+                  <div class="persona-description">
+                    <p class="paragraph-04 one">
+                      College Student
+                    </p>
+                    <p class="paragraph-04 two">
+                      <strong>Age:</strong> 35 | <strong>Location:</strong> Riverside, CA | <strong>Gender:</strong> Male
+                    </p>
+                  </div>
+
+                </div><!-- ### panel-component.two ### -->
+              </div><!-- ### panel-component-group.one ### -->
+
+              <div class="panel-component three">
+
+                <h4 class="u-case margin-btm-05em">Motivation:</h4>
+                <p class="paragraph-04">
+                  Hunter loves his family, and wants them to be happy. He knows that good food is prepared with love and caring in the home, and knows that his family appreciates all that he has done for them. Hunter also likes to be in control of everything. He just can’t stand those quick easy trips to fast food restaurants down the street, and is very stern with anyone who would take his family to such places.
+                </p>
+
+              </div><!-- ### panel-component.three ### -->
+
+              <div class="panel-component-group three">
+
+                <div class="panel-component six">
+
+                  <h4 class="u-case margin-btm-05em">Goals:</h4>
+                  <ol class="list-items-03">
+                    <li>Cataloging recipes in different categories.</li>
+                    <li>Making easy lists from those recipes ingredients.</li>
+                    <li>Integration into a calendar.</li>
+                  </ol>
+
+                </div><!-- ### panel-component.six ### -->
+
+                <div class="panel-component four">
+
+                  <h4 class="u-case margin-btm-05em">Frustrations:</h4>
+                  <ol class="list-items-03">
+                    <li>When his wife cooks.</li>
+                    <li>Manually has to enter ingredients by hand.</li>
+                    <li>Manually has to add items to a calendar.</li>
+                  </ol>
+
+                </div><!-- ### panel-component.four ### -->
+              </div><!-- ### panel-component-group.three ### -->
+
+              <div class="panel-component-group two">
+
+                <div class="panel-component five">
+
+                  <h4 class="u-case margin-btm-05em">Quote:</h4>
+                  <p class="paragraph-04">
+                    "Meal prepping gives my soul inner peace in a way that three kids, a wife, and a mortgage never could."
+                  </p>
+
+                </div><!-- ### panel-component.five ### -->
+
+              </div><!-- ### panel-component-group.two ### -->
+          </div><!-- ### panel-system-group ### -->
+
+          </div><!-- ### panel-system.two ### -->
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/04_UserPersonas.pdf" class="button-01" target="_blank">User Personas</a>
+            </div>
+          </div>
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### DIVIDER ### -->
+
+      <a id="process-03-information-architecture-anchor"></a>
+      <div class="section-divider">
+        <div class="box-padding">
+          <p class="process u-case">
+            <span class="divider-bold">Information Architecture</span><span class="divider-hide">: What the Foundation of our Solution Looks Like.</span>
+          </p>
+        </div><!-- ### box-padding ### -->
+      </div>
+
+      <!-- ### 11: USER STORIES ### -->
+
+      <a id="11-cs-user-stories-anchor"></a>
+      <section class="cs-user-stories">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>User Stories</h2>
+            <h3>Seeking Out Competition</h3>
+          </div>
+
+          <div class="container-paragraph margin-btm-2em">
+            <p class="paragraph-02">
+              After reviewing the results of the user survey I performed earlier as well as the new personas, I listed out my feature ideas and user tasks that could be used in the app. From my point of view of each persona, I also envisioned the subject matter on each screen that the users would be interacting with, and put together tasks based on the data collected and grouped them not only by new or returning users, but priority as well.
+            </p>
+
+            <p class="paragraph-02">
+              I created 24 user stories sorted by priority to help me choose what tasks were more important to include in the app MVP.
+            </p>
+
+            <p class="paragraph-02 p-last">
+              Some of these tasks include:
+            </p>
+          </div>
+
+          <div class="panel-system-group">
+            <div class="panel-system one panel-case panel-pad">
+              <div class="panel-bullets">
+                <h4 class="u-case margin-btm-05em">As a new user...</h4>
+                <ul class="list-items-02">
+                  <li>I want to be able to log in with a username and password so that I can return to the app at any time and view my personal configurations and settings.</li>
+                  <li>I'd like to be able to use the app with basic functionality as a guest user without signing in so that I can at least try out without providing personal information.</li>
+                  <li>I want to be able to see a visual onboarding process so that I can understand how to work within the app.</li>
+                </ul>
+              </div>
+            </div><!-- ### panel-system.one ### -->
+
+            <div class="panel-system two panel-case panel-pad">
+              <div class="panel-bullets">
+                <h4 class="u-case margin-btm-05em">As a returning user...</h4>
+                <ul class="list-items-02">
+                  <li>I want to be able to search for something on any screen I interact with so I can find what I'm looking for easily.</li>
+                  <li>I want to be able to speak to Siri or comparable mobile AI to ask questions, get recipes, look up ingredients, etc so that if my hands are busy, I can still use the app.</li>
+                  <li>To have a user participate in contests, or streaks where I collect badges, coupons for completion so that I can have some positive reinforcement that I'm making good food decisions.</li>
+                </ul>
+              </div><!-- ### panel-bullets ### -->
+            </div><!-- ### panel-system.two ### -->
+          </div><!-- ### panel-system-group ### -->
+
+          <div class="container-paragraph">
+            <p class="paragraph-02 p-last">
+              Doing this step in the process allowed for more creativity in what features I wanted to explore. Assigning priority also provided a way to differentiate a general nice to have feature, a standard feature, and a critical need feature.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/05_UserStories.pdf" class="button-01" target="_blank">User Stories</a>
+            </div>
+          </div>
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 12: USER FLOWS IMG BAN ### -->
+
+      <div class="cs-user-flows-image"></div>
+
+      <!-- ### 13: USER FLOWS ### -->
+
+      <a id="13-cs-user-flows-anchor"></a>
+      <section class="cs-user-flows">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>User Flows</h2>
+            <h3>Visualizing User Task Paths</h3>
+          </div>
+
+          <div class="container-paragraph margin-btm-2em">
+            <p class="paragraph-02">
+              Considering the amount of tasks that were initially considered for the app, after assigning priority in the previous exercise I began the work of planning how to go about completing each task by mapping out user flows. I also chose to develop the app MVP as an iOS application instead of a web application as I wanted to leverage some of the hardware of the mobile device.
+            </p>
+            <p class="paragraph-02 p-last">
+              Here are the 13 user flows that I chose to work with in.
+            </p>
+          </div>
+
+            <div class="panel-system panel-case panel-pad">
+              <div class="panel-bullets">
+                <ul class="list-items-02">
+                  <li>Log in with a username and password.</li>
+                  <li>Use the app with basic functionality as a guest user.</li>
+                  <li>See a visual on boarding process.</li>
+                  <li>Access and view my settings at all times.</li>
+                  <li>Link my social media accounts to the app.</li>
+                  <li>See my feed showing different posts, recipes of the day.</li>
+                  <li>Use the mobile device camera.</li>
+                </ul>
+              </div>
+              <div class="panel-bullets">
+                <ul class="list-items-02">
+                  <li>Tag my photographs.</li>
+                  <li>Select individual recipes based on different criteria.</li>
+                  <li>Share the recipes I find via text, tweet, or email.</li>
+                  <li>View a recipe, and scale the ingredients up or down.</li>
+                  <li>Dump all ingredients to a list.</li>
+                  <li>Create a meal planning calendar.</li>
+                </ul>
+              </div>
+            </div><!-- ### panel-system ### -->
+
+          <div class="container-paragraph">
+            <p class="paragraph-02 p-last">
+              Getting my user flows down on paper gave me a good start as to how many steps users would take to get to the end of the task. It also allowed me to get to visualize how those steps would need to be connected to other steps.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+
+            <div class="container-button">
+              <a href="pdf/foodle/06_UserFlows-01_Sketches.pdf" class="button-01" target="_blank">Sketches</a>
+            </div>
+
+            <div class="container-button">
+              <a href="pdf/foodle/06_UserFlows-02_Diagrams.pdf" class="button-01" target="_blank">Diagrams</a>
+            </div>
+          </div><!-- ### container-button-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 14: CONTENT STRATEGY ### -->
+
+      <a id="14-cs-content-strategy-anchor"></a>
+      <section class="cs-content-strategy">
+
+        <div class="container-system">
+
+          <div class="container-component one">
+            <div class="container-image">
+              <div class="cs-content-strategy-image"></div>
+            </div>
+          </div><!-- ### container-component.one ### -->
+
+          <div class="container-component two">
+            <div class="box-padding">
+
+              <div class="container-heading margin-btm-2em txt-ctr">
+                <h2>Content Strategy</h2>
+                <h3>Finding Direction for Future Visuals</h3>
+              </div>
+
+              <div class="container-paragraph">
+                <p class="paragraph-02">
+                  With the user flows finished, my thinking started on how to start thinking about content and actions on a more granular level. Aside from the screens, I had to determine what actions I wanted to have on each screen and drawing up an outline really helped with consolidating what would go where. Doing some work on color schemes and imagery gave me a good idea on where I wanted to take the app design in later stages. Even though the app's design changed from initial conception, this was an important step to take as I was able to reference what I did here to see what worked and what I needed to improve on.
+                </p>
+                <p class="paragraph-02 p-last">
+                  I also began to work out how the tasks would be logically organized within the app by creating a sitemap. This was very helpful in laying out and sorting where I wanted information to be accessed from within the app.
+                </p>
+              </div>
+
+              <div class="container-button-group">
+                <div class="container-button">
+                  <a href="pdf/foodle/07_ContentStrategy-01_EarlyDirection.pdf" class="button-01" target="_blank">Early Direction</a>
+                </div>
+                <div class="container-button">
+                  <a href="pdf/foodle/07_ContentStrategy-02_Sitemap.pdf" class="button-01" target="_blank">Site Map</a>
+                </div>
+              </div><!-- ### container-button-group ### -->
+            </div><!-- ### box-padding ### -->
+          </div><!-- ### container-component.two ### -->
+
+        </div><!-- ### container-system ### -->
+
+      </section>
+
+      <!-- ### 15: SKETCHES WIREFRAMES ### -->
+
+      <a id="15-cs-sketches-wireframes-anchor"></a>
+      <section class="cs-sketches-wireframes">
+
+        <div class="container-system">
+
+          <div class="container-component one">
+            <div class="container-image">
+              <div class="cs-sketches-wireframes-image"></div>
+            </div>
+          </div><!-- ### container-component.one ### -->
+
+          <div class="container-component two">
+            <div class="box-padding">
+
+              <div class="container-heading margin-btm-2em txt-ctr">
+                <h2>Sketches / Wireframes</h2>
+                <h3>Laying out the Bones</h3>
+              </div>
+
+              <div class="container-paragraph">
+                <p class="paragraph-02">
+                  Using the information provided by the sitemap, I started to work out how I wanted information to be shown on each screen of the app. On paper I drew what I believed would be a rough representation of the screens that I would show in each feature. At the stage, I wasn’t worried about content or detail and just put the thoughts to paper. Creating wireframes this way helped me work out different layout ideas from screen to screen, as well as assisted in broader thinking of other screens that I hadn't accounted for in my sitemap such as confirmation and error screens.
+                </p>
+                <p class="paragraph-02 p-last">
+                  Once I was satisfied with the arrangement of the elements on each app screen, I proceeded to create low fidelity wireframes in Figma and prepared the screens for my first usability test.
+                </p>
+              </div>
+
+              <div class="container-button-group">
+
+                <div class="container-button">
+                  <a href="pdf/foodle/08-LowFidelityWireframes-01_Sketches.pdf" class="button-01" target="_blank">Sketches</a>
+                </div>
+
+                <div class="container-button">
+                  <a href="pdf/foodle/08-LowFidelityWireframes-02_Wireframes.pdf" class="button-01" target="_blank">Wireframes</a>
+                </div>
+
+              </div><!-- ### container button-group ### -->
+
+            </div><!-- ### box-padding ### -->
+          </div><!-- ### container-component.two ### -->
+
+        </div><!-- ### container-system ### -->
+
+      </section>
+
+      <!-- ### 16: USABILITY TEST IMG BAN ### -->
+
+      <div class="cs-usability-test-01-image"></div>
+
+      <!-- ### 17: USABILITY TEST 01 ### -->
+
+      <a id="17-cs-usability-test-01-anchor"></a>
+      <section class="cs-usability-test-01">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Usability Test 01</h2>
+            <h3>Testing Wireframe User Flows</h3>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02">
+              For my first round of testing I chose testers that represented the demographics that my personas were built on and let them have a go at the prototype. These initial tests were done with two in a personal setting and one remotely. While I worked well with the two that were done in the same room, the one done remotely was a bit challenging since I wasn’t able to read the body language of test subject like the other two.
+            </p>
+
+            <p class="paragraph-02">
+              Working with the test subjects in person, I was able to listen to them as they worked through the scenarios that I provided them. They all had familiar working with mobile apps before and we didn’t have a moment where they were stumped, however they did provide some valuable insight on what I could improve upon in later testing, since this was only showing plain wireframes.
+            </p>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02">
+              One thing I learned in these tests was how privacy was a concern amongst these users. I learned that users wanted to try out the app prior to providing their personal info, just in case they didn't want to commit fully to the app. Adding another place to sign in after bypassing the welcome / login screens was what I thinking to solve this problem.
+            </p>
+
+            <p class="paragraph-02">
+              Adding confirmation screens and user feedback screens were also requested as when users where interacting with the wireframe prototype, they were expecting more details to be shown on screen other than the basics of each screen.
+            </p>
+
+            <p class="paragraph-02 p-last">
+              Provided below is the script that I followed with my test subjects, the notes that I took during our sessions, and the prototype that I used within those sessions.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/10_UsabilityTesting-01_Script.pdf" class="button-01 set-solid" target="_blank">Interview Script</a>
+            </div>
+            <div class="container-button">
+              <a href="pdf/foodle/10_UsabilityTesting-02_Notes.pdf" class="button-01 set-solid" target="_blank">Interview Notes</a>
+            </div>
+            <div class="container-button">
+              <a href="https://www.figma.com/proto/io1vaihSWNuDxrFgbriPzd/Foodle-Lo-Fi-Wireframe-Prototype?node-id=7%3A669&viewport=534%2C527%2C0.1533806025981903&scaling=scale-down" class="button-01 set-solid" target="_blank">Low Fidelity Prototype</a>
+            </div>
+          </div><!-- ### container-button-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### DIVIDER ### -->
+
+      <a id="process-04-visual-design"></a>
+      <div class="section-divider">
+        <div class="box-padding">
+          <p class="process u-case">
+            <span class="divider-bold">Visual Design</span><span class="divider-hide">: Layer on the Details of our Solution.</span>
+          </p>
+        </div><!-- ### box-padding ### -->
+      </div>
+
+      <!-- ### 18: BRAND IDENTITY IMG BAN ### -->
+
+      <div class="cs-brand-identity-image"></div>
+
+      <!-- ### 19: BRAND IDENTITY ### -->
+
+      <a id="19-cs-brand-identity-anchor"></a>
+      <section class="cs-brand-identity">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Brand Identity</h2>
+            <h3>Shaping the Visual Identity</h3>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02">
+              In thinking about the visual approach to this app, I first had to establish a name for it. The idea came through using both a mind mapping and list making exercise where I wrote down everything I could regarding my thoughts and feelings towards this idea. With tossing around different names, I came up with the unusual but fun name of Foodle.
+            </p>
+            <p class="paragraph-02 p-last">
+              Sketches were created to stylize the name into a logo that I felt represented what I had in mind for the brand. The moodboards served as a place where I placed visuals and design elements that I wanted to retain and draw inspiration from in later designs.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/11_Branding-01_Summary.pdf" class="button-01" target="_blank">Brand Summary</a>
+            </div>
+            <div class="container-button">
+              <a href="pdf/foodle/11_Branding-03_Sketches-Mindmap.pdf" class="button-01 set-solid" target="_blank">Mind Maps / Sketches</a>
+            </div>
+            <div class="container-button">
+              <a href="pdf/foodle/12_Branding-03_Moodboards.pdf" class="button-01" target="_blank">Mood Boards</a>
+            </div>
+          </div><!-- ### container-button-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 20: STYLE GUIDE ### -->
+
+      <a id="20-cs-style-guide-anchor"></a>
+      <section class="cs-style-guide">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Style Guide</h2>
+            <h3>Guidelines for the Brand</h3>
+          </div>
+
+          <div class="container-paragraph margin-btm-2em">
+            <p class="paragraph-02 p-last">
+              Reviewing other references along with the moodboard choices put me in a good position to start working on a draft of Foodle’s style guide. This allowed me to further narrow down specific imagery, colors, and typography usages to assist with future styling needs. This formal style guide was meant to aid future developers and marketers on how to utilize the Foodle brand.
+            </p>
+          </div>
+
+          <div class="container-image-group">
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-StyleGuide-01.svg" alt="Image" />
+            </div>
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-StyleGuide-02.svg" alt="Image" />
+            </div>
+            <div class="container-image">
+              <img src="images/foodle/diagrams/Diagram-StyleGuide-03.svg" alt="Image" />
+            </div>
+          </div><!-- ### container-image-group ### -->
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/13_Branding-01_StyleGuide.pdf" class="button-01" target="_blank">Style Guide</a>
+            </div>
+          </div>
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 21: HIGH FIDELITY MOCKUP IMG BAN ### -->
+
+      <div class="cs-high-fidelity-mockup-image"></div>
+
+      <!-- ### 22: HIGH FIDELITY MOCKUP ### -->
+
+      <a id="22-cs-high-fidelity-mockup-anchor"></a>
+      <section class="cs-high-fidelity-mockup">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-1em txt-ctr">
+            <h2>High Fidelity Mockup</h2>
+            <h3>Adding Meat to Foodles Bones</h3>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02 p-last">
+              Referencing the ideas that I had that came from the logo, color swatches, photos, and iconography, I began to refine the low fidelity wireframes into these mockups. I continued the same fun colors scheme and worked within the established iOS guidelines to work out the proportions of for this MVP. Utilizing the component system of Figma made working with instances of each unique occurrence a breeze, and helped with the consistency of the finished product.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/14_HighFidelityMockups.pdf" class="button-01" target="_blank">Mockups</a>
+            </div>
+          </div>
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 23: PREFERENCE TESTING ### -->
+
+      <a id="23-cs-preference-testing-anchor"></a>
+      <section class="cs-preference-testing">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Preference Testing</h2>
+            <h3>Testing Design Concepts</h3>
+          </div>
+
+          <div class="container-paragraph margin-btm-2em">
+            <p class="paragraph-02">
+              After establishing a concise direction for the art style of the MVP, there were a few times where I went back and forth about including a specific style of an element. Adding Preference Testing to this project allowed for testers to remark whether they liked one different style or another. I found this quite useful as I was looking for more immediate snap reactions other than long drawn out reasons why they liked one or another. Testing was done via link provided through Slack and other messaging apps, and subjects were friends and other peers from Bloc. While the test was active, I had a total of 20 participants that gave their opinions.
+            </p>
+          </div>
+
+          <div class="panel-system one panel-case panel-pad">
+
+            <div class="panel-component-group master">
+
+              <div class="panel-component-group one">
+                <div class="panel-heading margin-btm-05em">
+                  <h3 class="set-solid">Test 01</h3>
+                  <h4 class="u-case set-solid">Which Tab Bar Design Do You Prefer?</h4>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    Since Foodle was meant to provide users a way to photograph their content to share with other users, I wanted to have a dedicated camera button for users to easily tap to access this feature. My first attempt to address this was to have it as an icon on the Tab Bar with its name below. While it conveyed the message, another approach I wanted to go with was having a circular button in the center of the bar. This was similar to the shutter button on iOS and I believed users would relate to this one more. I was correct in that assumption, however, what I found was the protruding arch at the top of the button was covering content, and I found that problematic when scrolling through content. I took the idea of B and confined it to the height of the Tab Bar. The final solution looked much cleaner and still was easy to understand.
+                  </p>
+                </div>
+
+                <div class="panel-results one txt-ctr">
+                  <h3 class="u-case">85% of Testers Chose B</h3>
+                </div>
+              </div><!-- ### panel-component-group.one ### -->
+
+              <div class="panel-component-group two">
+
+                <div class="panel-component two">
+                  <div class="panel-option txt-ctr">
+                    <h3 class="u-case">A</h3>
+                  </div>
+                  <div class="panel-image">
+                    <img src="images/foodle/screens/Screen-Pref01-A-Dashboard-min.jpg" alt="Image" />
+                  </div>
+                </div><!-- ### panel-component.two ### -->
+
+                <div class="panel-component three">
+                  <div class="panel-option txt-ctr">
+                    <h3 class="u-case">B</h3>
+                  </div>
+                  <div class="panel-image">
+                    <img src="images/foodle/screens/Screen-Pref01-B-Dashboard-min.jpg" alt="Image" />
+                  </div>
+                </div><!-- ### panel-component.three ### -->
+
+                <div class="panel-results two txt-ctr border">
+                  <h3 class="u-case">85% of Testers Chose B</h3>
+                </div>
+
+              </div><!-- ### panel-component-group.two ### -->
+
+            </div><!-- ### panel-component-group.master ### -->
+
+          </div><!-- ### panel-system.one ### -->
+
+          <div class="panel-system two panel-case panel-pad">
+
+            <div class="panel-component-group master">
+
+              <div class="panel-component-group one">
+                <div class="panel-heading margin-btm-05em">
+                  <h3 class="set-solid">Test 02</h3>
+                  <h4 class="u-case set-solid">Which icon styling do you prefer?</h4>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    I wanted to give users the option to delete their selected meal plans and chose to present this with a persistent button on each item. No swiping actions or hidden gestures, just tap to delete the item. I wanted to see how this would translate without the color background and just adding the icon along with a dark gradient. The users tested found option A to be more visually appealing than B.
+                  </p>
+                </div>
+
+                <div class="panel-results one txt-ctr">
+                  <h3 class="u-case">90% of Testers Chose A</h3>
+                </div>
+              </div><!-- ### panel-component-group.one ### -->
+
+              <div class="panel-component-group two">
+
+                <div class="panel-component two">
+                  <div class="panel-option txt-ctr">
+                    <h3 class="u-case">A</h3>
+                  </div>
+                  <div class="panel-image">
+                    <img src="images/foodle/screens/Screen-Pref02-A-Weekly-min.jpg" alt="Image" />
+                  </div>
+                </div><!-- ### panel-component.two ### -->
+
+                <div class="panel-component three">
+                  <div class="panel-option txt-ctr">
+                    <h3 class="u-case">B</h3>
+                  </div>
+                  <div class="panel-image">
+                    <img src="images/foodle/screens/Screen-Pref02-B-Weekly-min.jpg" alt="Image" />
+                  </div>
+                </div><!-- ### panel-component.three ### -->
+
+                <div class="panel-results two txt-ctr border">
+                  <h3 class="u-case">90% of Testers Chose A</h3>
+                </div>
+
+              </div><!-- ### panel-component-group.two ### -->
+
+            </div><!-- ### panel-component-group.master ### -->
+
+          </div><!-- ### panel-system.two ### -->
+
+          <div class="panel-system three panel-case panel-pad">
+
+            <div class="panel-component-group master">
+
+              <div class="panel-component-group one">
+                <div class="panel-heading margin-btm-05em">
+                  <h3 class="set-solid">Test 03</h3>
+                  <h4 class="u-case set-solid">Which button styling do you prefer?</h4>
+                </div>
+
+                <div class="panel-paragraph">
+                  <p class="paragraph-04">
+                    For this test I was looking for feedback on a style of button that persisted on the screen as the user scrolled through the content. I had used the pattern shown in option A before on the recipe screen, and thought it would work well on the recipe card screen as well. I also thought of using a floating button that had the same persistent on screen behavior. My initial feeling on B was that it was too similar a design to the 'meal plan' button at the top of the card. Testers felt the same and agreed option A would be the winner.
+                  </p>
+                </div>
+
+                <div class="panel-results one txt-ctr">
+                  <h3 class="u-case">80% of Testers Chose A</h3>
+                </div>
+              </div><!-- ### panel-component-group.one ### -->
+
+              <div class="panel-component-group two">
+
+                <div class="panel-component two">
+                  <div class="panel-option txt-ctr">
+                    <h3 class="u-case">A</h3>
+                  </div>
+                  <div class="panel-image">
+                    <img src="images/foodle/screens/Screen-Pref03-A-Recipe-min.jpg" alt="Image" />
+                  </div>
+                </div><!-- ### panel-component.two ### -->
+
+                <div class="panel-component three">
+                  <div class="panel-option txt-ctr">
+                    <h3 class="u-case">B</h3>
+                  </div>
+                  <div class="panel-image">
+                    <img src="images/foodle/screens/Screen-Pref03-B-Recipe-min.jpg" alt="Image" />
+                  </div>
+                </div><!-- ### panel-component.three ### -->
+
+                <div class="panel-results two txt-ctr border">
+                  <h3 class="u-case">80% of Testers Chose A</h3>
+                </div>
+
+              </div><!-- ### panel-component-group.two ### -->
+
+            </div><!-- ### panel-component-group.master ### -->
+
+          </div><!-- ### panel-system.three ### -->
+
+          <div class="container-button-group">
+
+            <div class="container-button">
+              <a href="pdf/foodle/15_PreferenceTesting-01_Results.pdf" class="button-01" target="_blank">Results</a>
+            </div>
+
+            <div class="container-button">
+              <a href="pdf/foodle/15_PreferenceTesting-02_Analysis.pdf" class="button-01" target="_blank">Analysis</a>
+            </div>
+          </div><!-- ### container-button-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### 24: USABILITY TEST 02 IMG BAN ### -->
+
+      <div class="cs-usability-test-02-image"></div>
+
+      <!-- ### 25: USABILITY TEST 02 ### -->
+
+      <a id="25-cs-usability-test-02-anchor"></a>
+      <section class="cs-usability-test-02">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Usability Test 02</h2>
+            <h3>Testing Mockup MVP</h3>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02">
+              With the second round of testing, I went a different approach and did these tests all remotely. I received some valuable feedback that allowed my prototypes to be more expressive in the future, along with the benefit for getting better feedback as well. However, using this method caused my time spent working with my prototype to balloon more than expected. Instead of testing linear user flows like before, I prototyped all the screens together in a comprehensive prototype. While time consuming to put together, I learned this method would allow complete immersion of the user in the app, and other than a fully functional HTML prototype, this was the next best thing.
+            </p>
+
+            <p class="paragraph-02 p-last">
+              In this prototype, I categorized two sets of screens between the user signing in or not.. This took the testers to different screens and even though the testing was done over cellular, they were impressed with the level of thought and detail that was put into the prototypes. The feedback given by the users was more visual than interaction based, and I made sure that most of it was implemented it in the final version of Foodle's MVP.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="pdf/foodle/16_UsabilityTesting-01_Script.pdf" class="button-01" target="_blank">Interview Script</a>
+            </div>
+            <div class="container-button">
+              <a href="pdf/foodle/16_UsabilityTesting-02_Notes.pdf" class="button-01" target="_blank">Interview Notes</a>
+            </div>
+            <div class="container-button">
+              <a href="https://www.figma.com/proto/oblVml14UzWMLGyLAy4gZg/Foodle-Hi-Fi-MVP-Prototype?node-id=556%3A25979&scaling=min-zoom" class="button-01" target="_blank">High Fidelity Prototype</a>
+            </div>
+          </div><!-- ### container-button-group ### -->
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+      <!-- ### DIVIDER ### -->
+
+      <a id="Process-05-Developer-anchor"></a>
+      <div class="section-divider">
+        <div class="box-padding">
+          <p class="process u-case">
+            <span class="divider-bold">Developer</span><span class="divider-hide">: Asset Information and Documentation.</span>
+          </p>
+        </div><!-- ### box-padding ### -->
+      </div>
+
+      <!-- ### 26: DEVELOPER HANDOFF ### -->
+
+      <a id="26-cs-developer-handoff-anchor"></a>
+      <section class="cs-developer-handoff">
+
+        <div class="box-padding master">
+
+          <div class="container-group one">
+
+            <div class="container-group two">
+              <div class="container-image">
+                <img src="images/foodle/icons/Icon-DeveloperHandoff.svg" alt="SVG" />
+              </div>
+            </div><!-- ### container-group.two ### -->
+
+            <div class="container-group three">
+
+              <div class="box-padding one">
+                <div class="container-heading margin-btm-2em txt-ctr">
+                  <h2>Developer Handoff</h2>
+                  <h3>Keep Consistency with Final Design</h3>
+                </div>
+
+                <div class="container-paragraph">
+                  <p class="paragraph-02 p-last">
+                    As part of the finishing touches of this project, a document highlighting usage of assets was created and meant to be distributed to future developers. It provides links to the finished MVP prototype, the layered design file, as well as static assets such as images and iconography. It also provides a link to the style guide along with all associated assets.
+                  </p>
+                </div>
+
+                <div class="container-button-group">
+                  <div class="container-button">
+                    <a href="pdf/foodle/17_FinishingTouches.pdf" class="button-01" target="_blank">Foodle Asset Usage</a>
+                  </div>
+                </div>
+
+              </div><!-- ### box-padding.one ### -->
+
+            </div><!-- ### container-group.three ### -->
+
+          </div><!-- ### container-group.one ### -->
+
+
+
+        </div><!-- ### box-padding.master ### -->
+
+      </section>
+
+      <!-- ### 27: IMG BAN ### -->
+
+      <div class="cs-section-image-02"></div>
+
+      <!-- ### 28: CONCLUSION ### -->
+
+      <a id="28-cs-conclusion-anchor"></a>
+      <section class="cs-conclusion">
+
+        <div class="box-padding">
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Conclusion</h2>
+            <h3>My Thoughts on the Foodle Project</h3>
+          </div>
+
+          <div class="panel-system-group">
+
+            <div class="panel-system one panel-case panel-pad">
+              <div class="panel-heading">
+                <h4 class="u-case margin-btm-05em">What Worked?</h4>
+              </div>
+              <div class="panel-paragraph">
+                <p class="paragraph-04">
+                  I think the idea to solve the client requirements was done fairly adequately. I purposely didn’t want to go to another Dropbox clone, and I believe the attempt to take the idea I came up with and work it to meet the client feature requirement worked out fairly well. I’m happy with the feedback that I’ve received from testers regarding the visuals of this project, and glad they add to the final polished look of the MVP. The idea of this app was fairly solid and I received a good bit of feedback on how it could be used by people in the future if it was expanded upon and created.
+                </p>
+              </div>
+            </div><!-- ### panel-system.one ### -->
+
+            <div class="panel-system two panel-case panel-pad">
+              <div class="panel-heading">
+                <h4 class="u-case margin-btm-05em">What Didn't?</h4>
+              </div>
+              <div class="panel-paragraph">
+                <p class="paragraph-04">
+                  I think in the current technological era there are so many things grabbing for your attention, people take for granted on how those things actually came into existence. Not many people find it fascinating to see the early steps of how something came to be, they just want to see the finished product. Feedback is important and necessary to keep a project progressing, and if the feedback is more towards the end result instead of the step that you’re at, the progression stagnates a bit. Asking questions and following up is a key factor I learned to help keep pushing progress forward.
+                </p>
+              </div>
+            </div><!-- ### panel-system.two ### -->
+
+            <div class="panel-system three panel-case panel-pad">
+              <div class="panel-heading">
+                <h4 class="u-case margin-btm-05em">What Surprised You?</h4>
+              </div>
+              <div class="panel-paragraph">
+                <p class="paragraph-04">
+                  The level of detail that I went through going into the usability testing. Not only did I have to coordinate with others, but I provided a great amount of detail about each encounter. Since this has been done before, I did the same amount of note taking as done previously, but it’s hard to see how a good majority of it was beneficial as it wasn’t leveraged in the revisions. Maybe with more testing in the future, my approach will become more concise instead of trying to distill the whole scene onto paper.
+                </p>
+              </div>
+            </div><!-- ### panel-system.three ### -->
+
+          </div><!-- ### panel-system-group ### -->
+
+          <div class="container-heading margin-btm-2em txt-ctr">
+            <h2>Bottom Line Takeaway</h2>
+          </div>
+
+          <div class="container-paragraph">
+            <p class="paragraph-02 p-last">
+              Gauging the time needed to do a thorough project is something that is hard to visualize in the beginning. Having a great idea and giving yourself time to do the research beforehand will save you a lot of time in the future.
+            </p>
+          </div>
+
+          <div class="container-button-group">
+            <div class="container-button">
+              <a href="index.html" class="button-01">Return to Homepage</a>
+            </div>
+          </div>
+
+        </div><!-- ### box-padding ### -->
+
+      </section>
+
+    </main><!-- ### main ### -->
+
+    <!-- ### FOOTER ### -->
+
+    <footer>
+
+      <div class="box-padding">
+
+        <div class="container-heading txt-ctr">
+          <h1>Get in Touch</h1>
+        </div>
+
+        <div class="container-paragraph margin-top-2em txt-ctr">
+          <p class="paragraph-01">
+            Thank you for stopping by.<br />
+            I hope you enjoyed what I have to show.
+          </p>
+          <p class="paragraph-01 p-last">
+            Have any questions or comments? Feel free to connect with me.
+          </p>
+        </div>
+
+        <div class="container-image margin-tb-2em flex fx-ctr-ctr">
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="mailto:mike.w.marin@gmail.com?subject=Hi.%20I%20just%20checked%20out%20your%20site%20and..."><i class="fas fa-envelope"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://www.linkedin.com/in/mikewmarin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://dribbble.com/mike_marin" target="_blank"><i class="fab fa-dribbble"></i></a>
+          </div>
+
+          <div class="icon-circle flex fx-ctr-ctr">
+            <a href="https://github.com/mikemarin" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="container-footer set-solid txt-ctr">
+          <p class="copyright">
+            Copyright &copy; 2020 Mike Marin.<span class="remove"><br /></span> All Rights Reserved.
+          </p>
+        </div>
+
+      </div><!-- ### box-padding ### -->
+
+    </footer><!-- ### footer ### -->
+
+  </div><!-- ### page-container ### -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163302580-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163302580-1');
+</script>
+
+<!-- Font Awesome JS -->
+<script src="https://kit.fontawesome.com/27e5afb52e.js" crossorigin="anonymous" rel="noreferrer"></script>
+
+<!-- Small Viewport Menu Modal -->
+<script src="scripts/MenuModal.js"></script>
+
+<!-- Scroll Back to Top Button -->
+<script src="scripts/ScrollTop.js"></script>
+
+</body>
+
+</html>
