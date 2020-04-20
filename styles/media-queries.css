@@ -631,7 +631,6 @@
   .contact-form .panel-component.one,
   .contact-form .panel-component.two {
     flex-basis: 100%;
-    border: 1px solid green;
   }
 
   input, textarea {
